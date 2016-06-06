@@ -1,0 +1,13 @@
+.button {
+	padding: 20px 40px;
+	display: inline-block;
+	background-color: color(black);
+	color: color(white);
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: color(blue);
+	}
+}

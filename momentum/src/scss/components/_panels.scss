@@ -1,0 +1,22 @@
+.panel-container {
+	@include span(8);	
+  	@include scut-clearfix;
+  	background-color: color(white);
+	margin: 0 auto;
+	float: none;
+
+	.panel {
+		@include span(5);
+		text-align: center;
+		padding-bottom: spacer(1/4);
+
+		h3 {
+			text-transform: uppercase;
+		}
+
+		p {
+			margin-bottom: spacer(1/2);
+			font-size: 20px;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: color(blue);
+	font-weight: normal;
+	line-height: 1.22222;
+}
+
+h1, h2 {
+	font-size: 48px;
+	text-align: center;
+
+	@include media-above($break-large) {
+		font-size: 100px;
+	}
+}
+
+h3 {
+	font-size: 50px;
+}
+
+a {
+	border: 0;
+	color: color(blue);
+	text-decoration: none;
+	transition: color .8s ease-out;
+	
+	.wrap-content &,
+	.menu-inline & {
+		color: color(link);
+	}
+	.wrap-sidebar & {
+		color: color(link-muted);
+	}
+}

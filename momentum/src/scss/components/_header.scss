@@ -1,0 +1,92 @@
+.wrap-header {
+	@extend %wrap;
+	padding: 0;
+	display: inline-block;
+	background: color(blue);
+	color: color(white);
+	width: 100%;
+
+	@include media-above($break-large) {
+		height: 80px;
+	}
+
+	header[role=banner] {
+		@include media-above($break-medium) {
+			position: relative;
+		}
+
+		.site-branding {
+			text-transform: uppercase;
+
+			@include media-above($break-medium) {
+				@include span(2.5);
+				padding-top: spacer(1/2);
+			}
+		}
+
+		.site-navigation {
+			clear: both;
+
+			@include media-above($break-medium) {
+				@include span(5);
+				clear: none;
+			}
+
+			.menu-inline {
+
+				@include media-above($break-medium) {
+					display: flex;
+					margin: 0 auto;
+					width: 380px;
+				}
+
+				li {
+					margin: auto;
+					box-sizing: border-box;
+					width: 100%;
+					text-align: center;
+					font-size: 16px;
+
+
+					@include media-above($break-medium) {
+						width: auto;
+					}
+
+					a {
+						color: color(white);
+						line-height: 80px;
+					}
+				}
+			}
+		}
+
+
+		h1 {
+			display: inline;
+			float: left;
+			font-size: 30px;
+			margin: 0;
+
+			a {
+				color: color(white);
+			}
+		}
+
+		.join-cta {
+			width: 100%;
+			display: block;
+
+			@include media-above($break-medium) {
+				float: right;
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 80px;
+				line-height: 80px;
+				padding: 0;
+				width: 170px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

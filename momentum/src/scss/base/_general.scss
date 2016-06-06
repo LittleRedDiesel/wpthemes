@@ -1,0 +1,32 @@
+// ==== GENERAL ==== //
+
+html {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: color(white); 
+  color: color(text);
+  font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", Arimo, sans-serif;
+  line-height: 1.44444;
+}
+
+figure {
+  margin: 0;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+section {
+	&.bg-img-section {
+		position: relative;
+		overflow: hidden;
+	}
+}
