@@ -49,6 +49,8 @@ module.exports = {
     bundles: { // Bundles are defined by a name and an array of chunks (below) to concatenate; warning: this method offers no dependency management!
       core: ['core']
     , pageloader: ['pageloader', 'core']
+    , vendor: ['vendor']
+    , modules: ['modules']
     }
   , chunks: { // Chunks are arrays of paths or globs matching a set of source files; this way you can organize a bunch of scripts that go together into pieces that can then be bundled (above)
       // The core chunk is loaded no matter what; put essential scripts that you want loaded by your theme in here
@@ -66,6 +68,12 @@ module.exports = {
       , modules+'wp-ajax-page-loader/wp-ajax-page-loader.js'
       , src+'js/page-loader.js'
       ]
+    , vendor: [
+      src+'js/vendor/*'
+    ]
+    , modules: [
+      src+'js/modules/*'
+    ]
     }
   , dest: build+'js/' // Where the scripts end up in your theme
   , lint: {

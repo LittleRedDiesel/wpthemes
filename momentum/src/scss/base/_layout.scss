@@ -32,10 +32,6 @@
 .site-content, .section-content {
 	@include scut-center-block($width-site);
 	z-index: 1;
-	@extend %spacer-below;
-	article {
-	@extend %spacer-below-2;
-	}
 }
 .site-navigation {
 	display: none;
@@ -51,4 +47,19 @@
 }
 .alignleft {
 	float: left;
+}
+
+// Horizontally divided page
+
+.horizontal-divide-container {
+	position: relative;
+
+	.bg-black-divide {
+		position: absolute;
+		background: color(black);
+		height: 635px;
+		width: 100%;
+		z-index: -1;
+		bottom: 0;
+	}
 }

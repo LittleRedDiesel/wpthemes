@@ -26,8 +26,47 @@ img {
 
 section {
 	text-align: center;
+	
 	&.bg-img-section {
 		position: relative;
+		overflow: hidden;
+	}
+	
+	&.bg-blue-section {
+		background-color: color(blue);
+		
+		h1, h2, p, .button {
+			color: color(white);
+		}
+	}
+	
+	&.bg-grey-section {
+		background-color: color(stone);
+	}
+
+	&.bg-black-section {
+		background-color: color(black);
+		
+		h1, h2 {
+			color: color(blue);
+		}
+
+		p, .button, a {
+			color: color(white);
+		}
+	}
+	
+	.section-content {
+		margin-bottom: 0;
+		padding: 80px 0;
+
+		h1, h2 {
+			margin: 0;
+		}
+	}
+
+	&.section-carousel {
+		height: 715px;
 		overflow: hidden;
 	}
 }

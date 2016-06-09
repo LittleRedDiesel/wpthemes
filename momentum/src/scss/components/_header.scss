@@ -53,8 +53,15 @@
 					}
 
 					a {
+						font-family: 'din_mittel_regular';
 						color: color(white);
 						line-height: 80px;
+					}
+
+					&.current-menu-item {
+						a {
+							color: color(black);
+						}
 					}
 				}
 			}
@@ -62,6 +69,7 @@
 
 
 		h1 {
+			font-family: 'din_blackregular', sans-serif;
 			display: inline;
 			float: left;
 			font-size: 30px;

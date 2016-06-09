@@ -1,0 +1,15 @@
+.mt-carousel {
+	max-width: 1440px;
+	margin: 0 auto;
+	
+	img {
+		width: 100%;
+	}
+
+	.slick-prev,
+	.slick-next {
+		&:before {
+			color: color(black);
+		}
+	}
+}

@@ -1,0 +1,80 @@
+.featured-list {
+	@include scut-clearfix;
+	list-style-type: none;
+	margin: 0 auto;
+
+	&.team-list {
+		@include span(8);
+		float: none;
+		margin-bottom: 80px;
+	}
+
+	&.testimonial-list {
+		@include span(10);
+		margin-bottom: 75px;
+
+		li {
+			position: relative;
+
+			&:before {
+				content: '';
+				width: 1px;
+				height: 162px;
+				background-color: color(border);
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			&:first-child {
+				&:before {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+
+	&.class-list {
+
+		li {
+			img {
+				display: block;
+				margin: 0 auto 20px;
+			}
+		}
+	}
+
+	li {
+		@include span(8);
+		padding: 0;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+
+		@include media-above($break-medium) {
+			@include span(3.3);
+		}
+
+		.title {
+			color: color(blue);
+			font-family: 'din_blackregular', sans-serif;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-family: 'thirsty_roughlight', sans-serif;
+			color: color(black);
+			font-size: 20px;
+			width: 100%;
+			max-width: 370px;
+			margin: 0 auto;
+		}		
+
+		.detail p {
+			font-family: sans-serif;
+		}
+
+
+	}
+}

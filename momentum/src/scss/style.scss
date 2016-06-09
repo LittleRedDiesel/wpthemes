@@ -27,6 +27,7 @@ Domain Path: #{metadata(theme-text-domain-path)}
 
 // Normalize: make browsers render things more consistently
 @import "base/normalize";
+@import "base/fonts";
 @import "base/typography";
 
 // Reset: eliminate default browser styling (optional; commented out by default)
@@ -47,6 +48,9 @@ Domain Path: #{metadata(theme-text-domain-path)}
 @import "components/menus";
 @import "components/navigation";
 @import "components/panels";
+@import "components/lists";
+@import "components/carousel";
+@import "components/map";
 
 // Sections
 @import "components/panel-section";

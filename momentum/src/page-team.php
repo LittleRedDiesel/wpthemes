@@ -5,42 +5,48 @@ Template Name: Team
 ?>
 
 
-<?php get_header(); ?>
-  <div id="wrap-content" class="wrap-content">
-    <div id="content" class="site-content">
-      <section id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-        <?php if ( have_posts() ) {
-          while ( have_posts() ) : the_post(); ?>
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
-              <header class="entry-header">
-                <h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-              </header>
-              <footer class="entry-meta">
-                <?php printf( __( 'Posted <time datetime="%1$s">%2$s</time> by %3$s. ', 'voidx' ), get_post_time('c'), get_the_date(), get_the_author() ); ?>
-                <?php _e( 'Categories: ', 'voidx' ); the_category( ', ' ); echo '. '; ?>
-              </footer>
-              <div class="entry-content">
-                <?php the_content(); ?>
-                <?php wp_link_pages(); ?>
-              </div>
-            </article>
-          <?php endwhile;
-        } else { ?>
-          <article id="post-0" class="post no-results not-found">
-            <header class="entry-header">
-              <h1><?php _e( 'Not found', 'voidx' ); ?></h1>
-            </header>
-            <div class="entry-content">
-              <p><?php _e( 'Sorry, but your request could not be completed.', 'voidx' ); ?></p>
-              <?php get_search_form(); ?>
-            </div>
-          </article>
-        <?php } ?>
-        </main>
-        <?php voidx_post_navigation(); ?>
-      </section>
-    </div>
-  </div>
-<?php get_sidebar(); ?>
+<?php get_header(); ?>	
+<main id="main" class="site-main" role="main">
+	<section id="content" class="site-content">
+		<h1><?php the_field('team_section_title'); ?></h1>
+		<p><?php the_field('team_section_subtitle'); ?></p>
+		<?php
+		$post_objects = get_field('team_members_to_display');
+
+		if( $post_objects ): ?>
+		<ul class="featured-list team-list">
+			<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
+			<?php setup_postdata($post); ?>
+			<li>
+				<img src="<?php the_field('team_photo'); ?>" />
+				<span class="title"><?php the_title(); ?></span>
+				<div class="detail"><?php the_content(); ?></div>
+				<?php the_excerpt(); ?>
+				<a href="mailto:<?php the_field('team_email_address'); ?>"><?php the_field('team_email_address'); ?></a>
+				<span class="tel"><?php the_field('team_phone_number'); ?></span>
+			</li>
+			<?php endforeach; ?>
+		</ul>
+		  <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+		<?php endif; ?>     
+		<a href="" class="button"><?php the_field('team_section_button'); ?></a>
+		<div>
+			<?php $loop = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1 ) ); ?>
+			<ul class="featured-list team-list">
+				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+				<li>
+					<img src="<?php the_field('team_photo'); ?>" />
+					<span class="title"><?php the_title(); ?></span>
+					<div class="detail"><?php the_content(); ?></div>
+					<?php the_excerpt(); ?>
+					<a href="mailto:<?php the_field('team_email_address'); ?>"><?php the_field('team_email_address'); ?></a>
+					<span class="tel"><?php the_field('team_phone_number'); ?></span>
+				</li>
+
+				<?php endwhile; wp_reset_query(); ?>
+			</ul> 		  	
+		</div>
+	</section>
+</main>
 <?php get_footer(); ?>

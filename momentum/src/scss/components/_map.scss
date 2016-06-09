@@ -1,0 +1,21 @@
+.acf-map {
+	width: 555px;
+	height: 555px;
+	overflow:hidden;
+	border-radius:999px;
+	-moz-border-radius:999px;
+	-webkit-border-radius:999px;
+	-o-border-radius:999px;
+	position:fixed;
+	margin: 60px auto 0;
+
+	&.map-large {
+		width: 830px;
+		height: 830px;
+	}
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
+}

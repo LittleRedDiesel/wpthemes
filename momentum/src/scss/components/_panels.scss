@@ -6,15 +6,21 @@
 	float: none;
 
 	.panel {
-		@include span(5);
-		text-align: center;
-		padding-bottom: spacer(1/4);
+		@include span(10);
+
+		@include media-above($break-medium) {
+			@include span(5);
+			text-align: center;
+			padding-bottom: spacer(1/4);
+		}
 
 		h3 {
+			font-family: 'din_blackregular', sans-serif;
 			text-transform: uppercase;
 		}
 
 		p {
+			font-family: 'din_mittel_regular';
 			margin-bottom: spacer(1/2);
 			font-size: 20px;
 		}
