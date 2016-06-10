@@ -25,9 +25,9 @@ Template Name: Location
     <div class="social">
       <h4>Follow us</h4>
       <ul>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>Twitter</li>
+        <li><a href="" target="_blank" class="icon icon-facebook"><span>Facebook</span></a></li>
+        <li><a href="https://twitter.com/crossfithackney" target="_blank" class="icon icon-twitter"><span>Twitter</span></a></li>
+        <li><a href="https://www.instagram.com/momentumtraining/" target="_blank" class="icon icon-insta"><span>Instagram</span></a></li>
       </ul>
     </div>
 

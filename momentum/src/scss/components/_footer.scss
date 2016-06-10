@@ -1,3 +1,15 @@
 footer[role=contentinfo] {
+	height: 80px;
+	color: color(white);
 
+	.icon-up-arrow {
+		float: right;
+		margin-top: 30px;
+		color: color(white);
+		line-height: 30px;
+		font-size: 420px;
+		height: 30px;
+		overflow: hidden;
+		display: inline-block;
+	}
 }

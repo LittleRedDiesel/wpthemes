@@ -1,0 +1,50 @@
+.blog-main {
+	background-color: color(stone);
+
+	.blog-content {
+		background-color: color(white);
+	}
+}
+
+.post {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 40px 0;
+
+	@include media-above($break-medium) {
+		width: 70%;
+		padding: 60px 0;
+
+	}
+
+	&:after {
+		content: '.......';
+		font-size: 30px;
+		display: block;
+		text-align: center;
+		color: color(blue);
+	}
+
+	.entry-meta {
+		font-size: 14px;
+	}
+
+	.post-title {
+		font-size: 30px;
+
+		@include media-above($break-medium) {
+			font-size: 40px;
+			margin-top: 0;
+		}
+	}
+
+	p {
+		font-size: 20px;
+
+		img {
+			display: block;
+			margin: 20px auto;
+		}
+	}
+}

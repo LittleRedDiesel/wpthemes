@@ -2,7 +2,9 @@
 
 .nav-posts {
   @extend %clearfix;
-  @extend %spacer-below-3;
+  padding-bottom: 120px;
+  width: 80%;
+  margin: 0 auto;
 }
 .nav-previous {
   box-sizing: border-box;

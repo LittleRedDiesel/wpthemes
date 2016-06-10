@@ -3,6 +3,14 @@
 	.section-content {
 		padding-bottom: 0;
 
+		&.hero-content {
+			padding: 100px 0 0;
+
+			h1 {
+				margin-bottom: 100px;
+			}
+		}
+
 		h1 {
 			font-family: 'din_blackregular', sans-serif;
 			color: color(white);

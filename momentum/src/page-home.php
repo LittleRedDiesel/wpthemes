@@ -9,16 +9,16 @@ Template Name: Home
 	<div class="wrap-content">
 		<section class="bg-img-section panel-section">
 			<img src="<?php the_field('image_background'); ?>" class="banner-image" />
-			<div class="section-content">
+			<div class="section-content hero-content">
 				<h1><?php the_field('section_title'); ?></h1>
 				<div class="panel-container">
 					<div class="panel panel-1">
-						<h3><?php the_field('incentive_title'); ?></h3>
+						<h3 class="ellipsis-post"><?php the_field('incentive_title'); ?></h3>
 						<p><?php the_field('incentive_desc'); ?></p>
 						<a href="" class="button"><?php the_field('incentive_button_text'); ?></a>
 					</div>
-					<div class="panel panel-2">
-						<h3><?php the_field('incentive_title_2'); ?></h3>
+					<div class="panel panel-2 right-panel">
+						<h3 class="ellipsis-post"><?php the_field('incentive_title_2'); ?></h3>
 						<p><?php the_field('incentive_description_2'); ?></p>
 						<a href="" class="button"><?php the_field('incentive_button_text_2'); ?></a>
 					</div>
@@ -27,7 +27,7 @@ Template Name: Home
 		</section>
 		<section>
 			<div class="section-content">
-				<h2><?php the_field('copy-section-title'); ?></h2>
+				<h2 class="ellipsis-pre"><?php the_field('copy-section-title'); ?></h2>
 				<p><?php the_field('copy-section-subtitle'); ?></p>
 				<h3><?php the_field('copy-section-secondary-title'); ?></h3>
 				<div><?php the_field('copy-section-wysiwyg'); ?></div>
@@ -110,6 +110,15 @@ Template Name: Home
 			      <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
 			    </div>
 			    <?php endif; ?>
+
+				<div class="social">
+					<h4>Follow us</h4>
+					<ul>
+						<li><a href="" class="icon icon-facebook"><span>Facebook</span></a></li>
+						<li><a href="" class="icon icon-twitter"><span>Twitter</span></a></li>
+						<li><a href="" class="icon icon-insta"><span>Instagram</span></a></li>
+					</ul>
+				</div>
 			</div>
 		</section>
 		<section>
