@@ -1,15 +1,25 @@
 footer[role=contentinfo] {
 	height: 80px;
+	position: relative;
 	color: color(white);
 
-	.icon-up-arrow {
-		float: right;
-		margin-top: 30px;
-		color: color(white);
+	p {
+		width: 100%;
+		font-size: 16px;
+		margin: 0;
+		line-height: 80px;
+		text-align: center;
+	}
+
+	.icon-arrow-up {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		color: #fff;
 		line-height: 30px;
 		font-size: 420px;
 		height: 30px;
 		overflow: hidden;
-		display: inline-block;
+		transform: translateY(-50%);
 	}
 }

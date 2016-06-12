@@ -7,7 +7,7 @@ h6 {
 	font-family: 'din_mittel_bold', sans-serif;
 	color: color(blue);
 	font-weight: normal;
-	line-height: 1.22222;
+	line-height: 1;
 }
 
 h1, h2 {
@@ -27,14 +27,14 @@ a {
 	border: 0;
 	color: color(blue);
 	text-decoration: none;
-	transition: color .8s ease-out;
+	transition: all .4s ease-out;
 
 	&:hover {
-		color: color(black);
+		color: color(white);
 	}
 
 	&:before {
-		transition: color .8s ease-out;
+		transition: all .4s ease-out;
 	}
 
 	&.icon {
@@ -44,6 +44,11 @@ a {
 			display: block;
 			overflow: hidden;
 		}
+	}
+
+	&.med-link {
+		font-size: 30px;
+		margin: 0 auto;
 	}
 }
 

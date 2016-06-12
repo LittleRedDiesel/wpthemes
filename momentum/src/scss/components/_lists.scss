@@ -6,7 +6,32 @@
 	&.team-list {
 		@include span(8);
 		float: none;
-		margin-bottom: 80px;
+
+		li {
+
+			p {
+				font-size: 30px;
+				position: relative;
+				padding: 50px 0;
+
+				&:before, &:after {
+					content: '“';
+					display: block;
+					font-size: 60px;
+					position: absolute;
+					top: 20px;
+					left: 50%;
+					transform: translateX(-50%);
+					line-height: 45px;
+				}
+
+				&:after {
+					content: '”';
+					bottom: -20px;
+					top: initial;
+				}
+			}
+		}
 	}
 
 	&.testimonial-list {
@@ -15,6 +40,7 @@
 
 		li {
 			position: relative;
+			padding: 0;
 
 			&:before {
 				content: '';
@@ -30,6 +56,31 @@
 			&:first-child {
 				&:before {
 					background-color: transparent;
+				}
+			}
+
+			p {
+				font-size: 25px;
+				position: relative;
+				padding: 50px 40px;
+				max-width: 100%;
+				width: 100%;
+
+				&:before, &:after {
+					content: '“';
+					display: block;
+					font-size: 60px;
+					position: absolute;
+					top: 20px;
+					left: 50%;
+					transform: translateX(-50%);
+					line-height: 45px;
+				}
+
+				&:after {
+					content: '”';
+					bottom: -20px;
+					top: initial;
 				}
 			}
 		}

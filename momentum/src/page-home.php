@@ -53,6 +53,9 @@ Template Name: Home
 				        <?php setup_postdata($post); ?>
 				        <li>
 				            <a href="<?php the_permalink(); ?>">
+				            	<div class="circular-clip">
+				            		<img src="<?php the_field('team_photo'); ?>" />
+				            	</div>
 				            	<span class="title"><?php the_title(); ?></span>
 				            	<?php the_excerpt(); ?>
 				            </a>
@@ -72,7 +75,7 @@ Template Name: Home
 
 				if( $post_objects ): ?>
 				    <ul class="featured-list testimonial-list">
-				    <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
+				    <?php foreach( $post_objects as $post): ?>
 				        <?php setup_postdata($post); ?>
 				        <li>
 				            <a href="<?php the_permalink(); ?>">
@@ -82,7 +85,7 @@ Template Name: Home
 				        </li>
 				    <?php endforeach; ?>
 				    </ul>
-				    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				    <?php wp_reset_postdata(); ?>
 				<?php endif; ?>
 				
 				<a href="" class="button"><?php the_field('testimonial_section_button'); ?></a>
@@ -98,8 +101,10 @@ Template Name: Home
 		<section class="bg-black-section">
 			<div class="section-content">
 				<h2><?php the_field('map_section_title'); ?></h2>
-				<p><?php the_field('map_section_address'); ?></p>
-				<a href=""><?php the_field('map_section_contact'); ?></a>
+				<p><?php the_field('map_section_address'); ?><br/>
+					<a class="med-link" href="mailto:<?php the_field('map_section_contact'); ?>"><?php the_field('map_section_contact'); ?></a>
+				</p>
+				
 			    <?php 
 
 			    $location = get_field('map_coordinates');
@@ -125,6 +130,12 @@ Template Name: Home
 			<div class="section-content">
 				<h2><?php the_field('contact_section_title'); ?></h2>
 				<?php the_field('contact_section_content'); ?>
+				<form>
+					<div class="input-wrapper">
+						<input type="text" placeholder="Enter your email address here" />
+						<input type="submit" value="Send">
+					</div>
+				</form>
 			</div>
 		</section>        
 	</div>

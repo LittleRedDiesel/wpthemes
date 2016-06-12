@@ -5,3 +5,12 @@
 	top: 0;
 	z-index: -1;
 }
+
+.circular-clip {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 20px;
+	border-radius: 200px;
+	position: relative;
+	overflow: hidden;
+}
