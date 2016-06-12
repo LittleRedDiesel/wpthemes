@@ -20,7 +20,11 @@ h1, h2 {
 }
 
 h3 {
-	font-size: 50px;
+	font-size: 30px;
+
+	@include media-above($break-large) {
+		font-size: 50px;
+	}
 }
 
 a {
@@ -47,14 +51,22 @@ a {
 	}
 
 	&.med-link {
-		font-size: 30px;
 		margin: 0 auto;
+		font-size: 16px;
+
+		@include media-above($break-large) {
+			font-size: 30px;
+		}
 	}
 }
 
 p {
 	font-family: 'din_mittel_regular';
-	font-size: 35px;
+	font-size: 16px;
+
+	@include media-above($break-large) {
+		font-size: 35px;
+	}
 }
 
 .page .wrap-main {
@@ -62,12 +74,23 @@ p {
 		margin: 60px auto 50px;
 		max-width: 760px;
 		line-height: 90px;
+
+		&.title-wide {
+			max-width: 100%;
+			@include span(9);
+			float: none;
+		}
 	}
 
 	p {
 		@include span(8);
-		margin: 0 auto 60px;
+		margin: 0 auto 20px;
 		float: none;
+		padding: 0;
+
+		@include media-above($break-large) {
+			margin: 0 auto 60px;
+		}
 	}
 }
 

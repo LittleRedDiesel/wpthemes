@@ -20,6 +20,8 @@
 .site-header,
 .site-footer {
 	@include scut-center-block($width-site);
+	width: 100%;
+	max-width: $width-site;
 }
 .site-title {
 	margin-top: 0;
@@ -29,11 +31,13 @@
 }
 .site-content, .section-content {
 	@include scut-center-block($width-site);
+	width: 100%;
+	max-width: $width-site;
 	z-index: 1;
 }
 .site-navigation {
 	display: none;
-	@include media-above($break-medium) {
+	@include media-above($break-large) {
 		display: inline-block !important; // Handles an edge case where user resizes after menu is hidden on smaller screens
 	}
 	&.active {

@@ -111,17 +111,20 @@ Template Name: Home
 
 			    if( !empty($location) ):
 			    ?>
-			    <div class="acf-map">
-			      <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
-			    </div>
+			<div class="map-wrapper">
+				<div class="overlay" onClick="style.pointerEvents='none'"></div>
+				<div class="acf-map">
+					<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+				</div>
+			</div>
 			    <?php endif; ?>
 
 				<div class="social">
 					<h4>Follow us</h4>
 					<ul>
-						<li><a href="" class="icon icon-facebook"><span>Facebook</span></a></li>
-						<li><a href="" class="icon icon-twitter"><span>Twitter</span></a></li>
-						<li><a href="" class="icon icon-insta"><span>Instagram</span></a></li>
+						<li><a href="https://www.facebook.com/crossfithackney/" target="_blank" class="icon icon-facebook"><span>Facebook</span></a></li>
+						<li><a href="https://twitter.com/crossfithackney" target="_blank" class="icon icon-twitter"><span>Twitter</span></a></li>
+						<li><a href="https://www.instagram.com/momentumtraining/" target="_blank" class="icon icon-insta"><span>Instagram</span></a></li>
 					</ul>
 				</div>
 			</div>

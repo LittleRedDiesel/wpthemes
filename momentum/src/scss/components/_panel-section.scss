@@ -4,10 +4,21 @@
 		padding-bottom: 0;
 
 		&.hero-content {
-			padding: 100px 0 0;
+			padding: 75px 0 0;
+
+			@include media-above($break-large) {
+				padding: 100px 0 0;
+			}
 
 			h1 {
+				font-size: 48px;
+				line-height: 1;
 				margin-bottom: 100px;
+
+				@include media-above($break-large) {
+					font-size: 100px;
+					line-height: 1;
+				}
 			}
 		}
 

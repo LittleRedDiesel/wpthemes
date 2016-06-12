@@ -1,7 +1,12 @@
 .social {
-	width: 160px;
+	padding: 30px 0 0;
+	width: 230px;
 	margin: 0 auto;
-	padding: 50px 0 70px;
+
+	@include media-above($break-large) {
+		width: 180px;
+		padding: 50px 0 70px;
+	}
 
 	h4 {
 		color: color(white);
@@ -16,25 +21,20 @@
 		display: flex;
 
 		li {
-			margin: 0;
-			float: left;
-
-			&:first-child {
-				a {
-					width: 30px;
-				}
-			}
+			margin: auto; 
 
 			a {
 				position: relative;
 				width: 60px;
 				display: block;
 
-				&:before {color: color(white);
+				&:before {
+					color: color(white);
 					font-size: 30px;
 					position: absolute;
 					line-height: 30px;
-					right: -0;
+				    right: 50%;
+				    transform: translateX(50%);
 				}
 
 				&:hover {

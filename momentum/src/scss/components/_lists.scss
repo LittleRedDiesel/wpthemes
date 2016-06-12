@@ -4,13 +4,20 @@
 	margin: 0 auto;
 
 	&.team-list {
-		@include span(8);
+		@include span(9);
 		float: none;
 
+		@include media-above($break-large) {
+			@include span(8);
+			float: none;
+		}
+
 		li {
+			padding: 0;
 
 			p {
 				font-size: 30px;
+				width: 100%;
 				position: relative;
 				padding: 50px 0;
 
@@ -97,13 +104,12 @@
 	}
 
 	li {
-		@include span(8);
-		padding: 0;
-		float: none;
-		margin: 0 auto;
 		text-align: center;
+		float: none;
+		padding: 0;
+		margin: 0 auto;
 
-		@include media-above($break-medium) {
+		@include media-above($break-large) {	
 			@include span(3.3);
 		}
 

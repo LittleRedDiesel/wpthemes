@@ -12,7 +12,7 @@
 	text-align: left;
 	padding: 40px 0;
 
-	@include media-above($break-medium) {
+	@include media-above($break-large) {
 		width: 70%;
 		padding: 60px 0;
 
@@ -33,7 +33,7 @@
 	.post-title {
 		font-size: 30px;
 
-		@include media-above($break-medium) {
+		@include media-above($break-large) {
 			font-size: 40px;
 			margin-top: 0;
 		}

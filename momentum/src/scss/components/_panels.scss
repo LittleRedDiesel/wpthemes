@@ -9,24 +9,39 @@
 		@include span(10);
 		overflow: hidden;
 		position: relative;
-		min-height: 345px;
+		padding-bottom: 50px;
+		background-color: color(white);
 
-		@include media-above($break-medium) {
+		@include media-above($break-large) {
 			@include span(5);
+			background-color: transparent;
+			min-height: 345px;
 			text-align: center;
 			padding-bottom: spacer(1/4);
 		}
 
 		&:before {
 			content: '';
-			width: 1px;
-			height: 80px;
-			background-color: #bbbbb6;
+			width: 80px;
+			height: 1px;
+			background-color: color(black);
 			position: absolute;
-			left: 0;
-			top: 50%;
-			-webkit-transform: translateY(-50%);
-			transform: translateY(-50%);
+			left: 50%;
+			top: 0;
+			bottom: 0;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+
+			@include media-above($break-large) {
+				width: 1px;
+				height: 80px;
+				background-color: color(black);
+				position: absolute;
+				left: 0;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
 		}
 
 		&:first-of-type {
@@ -36,30 +51,42 @@
 
 			&:after {
 				content: '';
-				position: absolute;
 				width: 1100%;
 				height: 1100%;
+				position: absolute;
 				top: -10px;
 				right: -500%;
 				background-color: color(white);
-				transform-origin: 54% 0;
-				transform: rotate(45deg);
 				z-index: -1;
+
+				@include media-above($break-large) {
+					transform-origin: 54% 0;
+					transform: rotate(45deg);
+				}
 			}
 		}
 
 		&.right-panel {
+			padding-bottom: 0;
+
 			&:after {
 				content: '';
-				position: absolute;
 				width: 1100%;
 				height: 1100%;
+				position: absolute;
 				top: 0;
 				left: 250.5%;
-				background-color: color(white);
-				transform-origin: 54% 0;
-				transform: rotate(45deg);
 				z-index: -1;
+				background-color: color(white);
+
+				@include media-above($break-large) {
+					transform-origin: 54% 0;
+					transform: rotate(45deg);
+				}
+			}
+
+			h3 {
+				margin-top: 50px;
 			}
 		}
 
@@ -72,8 +99,12 @@
 		p {
 			font-family: 'din_mittel_regular';
 			margin-bottom: spacer(1/2);
-			font-size: 20px;
-			max-width: 300px;
+			font-size: 16px;
+
+			@include media-above($break-large) {
+				font-size: 20px;
+				max-width: 300px;
+			}
 		}
 	}
 }

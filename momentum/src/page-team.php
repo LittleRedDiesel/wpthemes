@@ -18,7 +18,9 @@ Template Name: Team
 			<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
 			<?php setup_postdata($post); ?>
 			<li>
-				<img src="<?php the_field('team_photo'); ?>" />
+				<div class="circular-clip">
+					<img src="<?php the_field('team_photo'); ?>" />
+				</div>
 				<span class="title"><?php the_title(); ?></span>
 				<div class="detail"><?php the_content(); ?></div>
 				<?php the_excerpt(); ?>
