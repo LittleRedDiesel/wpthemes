@@ -2,6 +2,7 @@
 	@include scut-clearfix;
 	list-style-type: none;
 	margin: 0 auto;
+	padding: 0;
 
 	&.team-list {
 		@include span(9);
@@ -39,6 +40,71 @@
 				}
 			}
 		}
+
+		&.team-page {
+			width: 100%;
+
+			li {
+				@include media-above($break-large) {	
+					@include span(3.3);
+					margin-bottom: 100px;
+				}
+
+				&:nth-child(4){
+					clear:left;
+				}
+
+				.detail {
+					p {
+						padding: 20px 0 0;
+						margin-bottom: 40px;
+						font-size: 20px;
+						line-height: 30px;
+
+						&:before,
+						&:after {
+							content: '';
+						}
+					}
+				}
+
+				p {
+					font-size: 24px;
+					line-height: 30px;
+					margin: 0 auto 40px;
+					padding: 0;
+
+					&:before, &:after {
+						padding-right: 4px;
+						content: '“';
+						display: inline;
+						position: initial;
+						font-size: 24px;
+						line-height: 30px;
+					}
+					
+					&:after {
+						content: '”';
+						padding-right: 0;
+						padding-left: 4px;
+					}
+				}
+
+				.contact-email {
+					font-family: 'DINPro-Medium', sans-serif;
+					font-size: 24px;
+					line-height: 48px;
+				}
+
+				.contact-tel {
+					font-family: 'DINPro-Medium', sans-serif;
+					color: color(blue);
+					display: block;
+					font-size: 24px;
+					line-height: 36px;
+				}
+			}
+		}
 	}
 
 	&.testimonial-list {
@@ -71,6 +137,7 @@
 				position: relative;
 				padding: 50px 40px;
 				max-width: 100%;
+				line-height: 36px;
 				width: 100%;
 
 				&:before, &:after {
@@ -94,11 +161,19 @@
 	}
 
 	&.class-list {
+		display: flex;
+		flex-wrap: wrap;
 
 		li {
+
 			img {
 				display: block;
 				margin: 0 auto 20px;
+			}
+
+
+			&:nth-child(4){
+				clear:left;
 			}
 		}
 	}
@@ -129,7 +204,10 @@
 		}		
 
 		.detail p {
-			font-family: sans-serif;
+			font-family: 'DINPro-Light', sans-serif;
+			font-size: 20px;
+			line-height: 30px;
+			margin-top: 20px;
 		}
 
 

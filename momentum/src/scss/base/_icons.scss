@@ -24,33 +24,36 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-twitter:before {
-    content: "\e9d1";
-}
-.icon-uniE900:before {
+.icon-arrow_left:before {
     content: "\e900";
 }
-.icon-arrow_left:before {
+.icon-arrow_right:before {
     content: "\e901";
 }
-.icon-arrow_right:before {
+.icon-arrow_up:before {
     content: "\e902";
 }
-.icon-arrow_up_overlay:before {
+.icon-close:before {
     content: "\e903";
 }
-.icon-arrow-up:before {
+.icon-diamond:before {
     content: "\e904";
 }
-.icon-close:before {
+.icon-dots:before {
     content: "\e905";
 }
-.icon-diamond:before {
+.icon-nav_burger:before {
     content: "\e906";
+}
+.icon-twitter:before {
+    content: "\e9d1";
 }
 .icon-facebook:before {
     content: "\e907";
 }
 .icon-insta:before {
     content: "\e908";
+}
+.icon-menu:before {
+    content: "\e5d2";
 }

@@ -9,11 +9,19 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+	outline: none;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
 body {
   background: color(white); 
   color: color(text);
   font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", Arimo, sans-serif;
-  line-height: 1.44444;
+  line-height: 1;
 }
 
 figure {
@@ -36,7 +44,7 @@ section {
 	&.bg-blue-section {
 		background-color: color(blue);
 		
-		h1, h2, .button {
+		h1, h2, h3, h4, .button {
 			color: color(white);
 		}
 
@@ -54,6 +62,10 @@ section {
 	
 	&.bg-grey-section {
 		background-color: color(stone);
+	}
+
+	&.bg-white-section {
+		background-color: color(white);
 	}
 
 	&.bg-black-section {
@@ -86,6 +98,14 @@ section {
 			padding: 80px 0;
 		}
 
+		&.padding-reduced {
+			padding: 40px 0;
+
+			h1 {
+				margin-top: 50px;
+			}
+		}
+
 		h1, h2 {
 			margin: 0 0 20px;
 
@@ -115,6 +135,7 @@ section {
 
 		iframe {
 			width: 100%;
+			border: 0;
 			height: 685px;
 		}
 	}

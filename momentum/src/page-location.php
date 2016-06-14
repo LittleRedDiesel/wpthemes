@@ -10,16 +10,19 @@ Template Name: Location
   <section id="content" class="site-content">
     <h1><?php the_field('map_section_address'); ?></h1>
     <p><?php the_field('map-section-subtitle'); ?></p>
-    <a href=""><?php the_field('map_section_contact'); ?></a>
+    <a href="mailto:<?php the_field('map_section_contact'); ?>" class="med-link"><?php the_field('map_section_contact'); ?></a>
     <?php 
 
     $location = get_field('map_coordinates');
 
     if( !empty($location) ):
     ?>
-    <div class="acf-map map-large">
-      <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
-    </div>
+      <div class="map-wrapper">
+        <div class="overlay" onClick="style.pointerEvents='none'"></div>
+        <div class="acf-map map-large">
+          <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+        </div>
+      </div>
     <?php endif; ?>
 
     <div class="social">

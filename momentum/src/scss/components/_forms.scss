@@ -1,7 +1,12 @@
 input {
-	font-size: 30px;
-	line-height: 48px;
 	font-family: 'din_mittel_bold', sans-serif;
+	font-size: 16px;
+
+	@include media-above($break-large) {
+		font-size: 30px;
+		line-height: 48px;
+	}
+
 
 	&[type='text'] {
 		border: 0;
@@ -12,9 +17,13 @@ input {
 		text-transform: uppercase;
 		background-color: transparent;
 		border: 0;
-		font-size: 24px;
+		font-size: 16px;
 		color: color(blue);
 		transition: all .4s ease-out;
+
+		@include media-above($break-large) {
+			font-size: 24px;
+		}
 
 		&:hover {
 			color:color(black);
@@ -25,22 +34,37 @@ input {
 .input-wrapper {
 	border-bottom: 1px solid color(black);	
 	display: inline-block;
-	@include span(4);
+	@include span(8);
 	padding: 0;
 	float: none;
 	margin: 0 auto;
 
+	@include media-above($break-large) {
+		@include span(4);
+		padding: 0;
+		float: none;
+	}
+
 	input {
 
 		&[type='text'] {
-			@include span(7);
+			@include span(8);
 			padding: 0;
+
+			@include media-above($break-large) {
+				@include span(7);
+				padding: 0;
+			}
 		}
 
 		&[type='submit'] {
-			@include span(3);
+			@include span(2);
 			padding: 0;
 			text-align: right;
+
+			@include media-above($break-large) {
+				@include span(3);
+			}
 		}
 	}
 

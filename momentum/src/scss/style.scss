@@ -11,6 +11,9 @@
 // Library: mixins, functions, etc. specific to this theme
 @import "settings/library";
 
+// Vendor styles
+@import "vendor/slick";
+
 /*!
 Theme Name: #{metadata(theme-name)}
 Theme URI: #{metadata(theme-uri)}
@@ -40,6 +43,7 @@ Domain Path: #{metadata(theme-text-domain-path)}
 // Base styles
 @import "base/general";
 @import "base/layout";
+@import "components/sidebar";
 
 // Components
 @import "components/buttons";
@@ -55,6 +59,8 @@ Domain Path: #{metadata(theme-text-domain-path)}
 @import "components/forms";
 @import "components/social";
 @import "components/blog";
+@import "components/lightbox";
+@import "components/table";
 
 // Sections
 @import "components/panel-section";

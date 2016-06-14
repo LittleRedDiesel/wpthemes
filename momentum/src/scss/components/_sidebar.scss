@@ -1,0 +1,68 @@
+.wrap-sidebar {
+	@include span(10);
+	text-align: left;
+	padding: 30px 0 0 30px;
+
+	@include media-above($break-large) {
+		@include span(3);	
+		padding: 30px 0 0 30px;
+	}
+
+	h2 {
+		font-size: 20px;
+		text-align: left;
+	}
+
+	input[type='search'],
+	input[type='submit'] {
+		font-size: 16px;
+		height: 30px;
+		border-radius: 2px;
+		float: left;
+	}
+
+	input[type='submit'] {
+		background-color: color(blue);
+		color: color(white);
+		text-transform: initial;
+		line-height: 30px;
+
+		&:hover {
+			background-color: color(black);
+			color: color(white);
+		}
+	}
+
+	aside {
+		clear:both;
+		margin-top: 20px;
+		float: left;
+	}
+
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+
+		li {
+			margin-bottom: 5px;
+
+			a {
+				color: color(black);
+
+				&:hover {
+					color: color(blue);
+				}
+			}
+		}
+	}	
+}
+
+.content-sidebar {
+	@include span(10);
+
+	@include media-above($break-large) {
+		@include span(7);
+		float: right;
+	}
+
+}

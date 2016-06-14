@@ -1,10 +1,9 @@
 .mt-carousel {
 	max-width: 100%;
-	height: 185px;
+	height: 20%;
 
 	@include media-above($break-large) {
 		height: 715px;
-		overflow:hidden;
 		margin: 0 auto;
 	}
 	
@@ -14,33 +13,107 @@
 
 	.slick-prev,
 	.slick-next {
+		position: absolute;
+		border: none;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 0;
+		background-color: transparent;
 		z-index: 1;
 
-		height: 80px;
+		&:focus {
+			outline: none;
+		}
 		
 		&:before {
-			position: absolute;
-			left: 0;
-			color: color(blue);
-			top: 0;
-			font-size: 480px;
-			line-height: 80px;
-			position: absolute;
-			content: "\e902";
+			color: color(white);
+			font-size: 50px;
+			content: "\e901";
+			z-index: 999;
 			font-family: 'icomoon';
+
+			@include media-above($break-large) {
+				font-size: 140px;
+			}
 		}
 	}
 
 	.slick-next {
-		right: 15%;
-		height: 80px;
+		right: 2%;
+
+		@include media-above($break-large) {
+			right: 5%;
+		}
 	}
 
 	.slick-prev {
-		left: 0;
+		left: 2%;
+		
+		@include media-above($break-large) {
+			left: 5%;
+		}
 
 		&:before {
-			content: "\e901";
+			content: "\e900";
+		}
+	}
+
+	.slick-dots {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+		list-style-type: none;
+
+		li {
+			float: left;
+
+			button {
+				border: none;
+				font-size: 0;
+				background-color: transparent;
+
+				&:focus {
+					outline: none;
+				}
+
+				&:before {
+					z-index: 999;
+					font-family: 'icomoon';
+					content: '\e904';
+					color: rgba(255,255,255, 0.4);
+					font-size: 10px;
+
+					@include media-above($break-large) {
+						font-size: 20px;
+					}
+				}
+			}
+
+			&.slick-active {
+				button {
+					&:before {
+						color: color(white);
+					}
+				}
+			}
+		}
+	}
+
+	&.title-carousel {
+
+		.slick-slide {
+			position: relative;
+			height: 715px;
+
+			h1 {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				color: color(white);
+				margin: 0;
+				transform: translate(-50%, -50%);
+			}
 		}
 	}
 }

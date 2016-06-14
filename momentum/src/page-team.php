@@ -10,40 +10,53 @@ Template Name: Team
 	<section id="content" class="site-content">
 		<h1><?php the_field('team_section_title'); ?></h1>
 		<p><?php the_field('team_section_subtitle'); ?></p>
+
 		<?php
 		$post_objects = get_field('team_members_to_display');
 
 		if( $post_objects ): ?>
-		<ul class="featured-list team-list">
+		<ul class="featured-list team-list team-page ">
 			<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
 			<?php setup_postdata($post); ?>
 			<li>
 				<div class="circular-clip">
 					<img src="<?php the_field('team_photo'); ?>" />
 				</div>
-				<span class="title"><?php the_title(); ?></span>
+				<span class="title ellipsis-post"><?php the_title(); ?></span>
 				<div class="detail"><?php the_content(); ?></div>
 				<?php the_excerpt(); ?>
-				<a href="mailto:<?php the_field('team_email_address'); ?>"><?php the_field('team_email_address'); ?></a>
-				<span class="tel"><?php the_field('team_phone_number'); ?></span>
+				<a class="contact-email" href="mailto:<?php the_field('team_email_address'); ?>"><?php the_field('team_email_address'); ?></a>
+				<span class="contact-tel"><?php the_field('team_phone_number'); ?></span>
+				<a href="" class="ellipsis-pre ellipsis-link lightbox-trigger" data-lightbox="qual-<?php echo $post->ID ?>">View qualifications</a>
+				<div class="qualifications qual-<?php echo $post->ID ?>">
+					<div class="circular-clip">
+						<img src="<?php the_field('team_photo'); ?>" />
+					</div>
+					<h4 class="ellipsis-post"><?php the_field('qualifications_title'); ?></h4>
+					<?php the_field('qualifications_list'); ?>
+				</div>
 			</li>
 			<?php endforeach; ?>
 		</ul>
 		  <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 		<?php endif; ?>     
-		<a href="" class="button"><?php the_field('team_section_button'); ?></a>
-		<div>
-			<?php $loop = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1 ) ); ?>
-			<ul class="featured-list team-list">
-				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<a href="" class="button button-expand"><?php the_field('team_section_button'); ?></a>
 
+
+		<!-- Extra team members -->
+		<div class="team-further js-hidden">
+			<?php $loop = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1, 'cat' => -5, 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
+			<ul class="featured-list team-list team-page">
+				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<li>
-					<img src="<?php the_field('team_photo'); ?>" />
-					<span class="title"><?php the_title(); ?></span>
+					<div class="circular-clip">
+						<img src="<?php the_field('team_photo'); ?>" />
+					</div>
+					<span class="title ellipsis-post"><?php the_title(); ?></span>
 					<div class="detail"><?php the_content(); ?></div>
 					<?php the_excerpt(); ?>
-					<a href="mailto:<?php the_field('team_email_address'); ?>"><?php the_field('team_email_address'); ?></a>
-					<span class="tel"><?php the_field('team_phone_number'); ?></span>
+					<a class="contact-email"  href="mailto:<?php the_field('team_email_address'); ?>"><?php the_field('team_email_address'); ?></a>
+					<span class="contact-tel"><?php the_field('team_phone_number'); ?></span>
 				</li>
 
 				<?php endwhile; wp_reset_query(); ?>

@@ -45,8 +45,8 @@ function wpb_adding_scripts() {
   
   wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', array(), '3', true );
 
-  wp_enqueue_script('vendor');  
-  wp_enqueue_script('modules');   
+  wp_enqueue_script('vendor');   
+  wp_enqueue_script('modules'); 
 }
 add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );  
 
@@ -57,7 +57,7 @@ function voidx_widgets_init() {
   register_sidebar( array(
   'name'          => __( 'Main sidebar', 'voidx' ),
   'id'            => 'sidebar-main',
-  'description'   => __( 'Appears to the right side of most posts and pages.', 'voidx' ),
+  'description'   => __( 'Appears to the left side of the blog page.', 'voidx' ),
   'before_widget' => '<aside id="%1$s" class="widget %2$s">',
   'after_widget'  => '</aside>',
   'before_title'  => '<h2>',
@@ -138,6 +138,7 @@ function new_post_types(){
     'hierarchical'       => false,
     'menu_position'      => null,
     'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt'),
+    'taxonomies' => array('featured-team-member', 'category'),
   );
 
 
@@ -176,4 +177,18 @@ function new_post_types(){
   register_post_type( 'team', $teamargs);
   register_post_type( 'classes', $classargs);
   register_post_type( 'testimonials', $testimonialargs);
+}
+
+
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+  if( is_category() ) {
+    $post_type = get_query_var('post_type');
+    if($post_type)
+        $post_type = $post_type;
+    else
+        $post_type = array('nav_menu_item', 'post', 'team'); // don't forget nav_menu_item to allow menus to work!
+    $query->set('post_type',$post_type);
+    return $query;
+    }
 }

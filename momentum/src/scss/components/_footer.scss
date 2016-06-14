@@ -1,7 +1,11 @@
 footer[role=contentinfo] {
-	height: 80px;
+	height: 160px;
 	position: relative;
 	color: color(white);
+
+	@include media-above($break-large) {
+		height: 80px;
+	}
 
 	p {
 		width: 100%;
@@ -11,15 +15,58 @@ footer[role=contentinfo] {
 		text-align: center;
 	}
 
-	.icon-arrow-up {
+	.icon-arrow_up {
 		position: absolute;
 		top: 50%;
 		right: 0;
-		color: #fff;
+		color: color(white);
 		line-height: 30px;
-		font-size: 420px;
+		font-size: 50px;
 		height: 30px;
 		overflow: hidden;
 		transform: translateY(-50%);
+
+		@include media-above($break-large) {
+			font-size: 50px;
+		}
+
+		&:hover {
+			color: color(black);
+		}	
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		bottom: 0;
+		position: absolute;
+		display: table;
+		list-style-type: none;
+
+		@include media-above($break-large) {
+
+		}
+
+		li {
+			height: 80px;
+			display: table-cell;
+			vertical-align: middle;
+			position: relative;
+
+			&:first-child {
+				padding-right: 50px;
+
+				&:after {
+					padding-right: 25px;
+					content: '';
+					width: 1px;
+					height: 50%;
+					position: absolute;
+					border-right: 1px solid color(white);
+				}
+			}
+
+
+		}
 	}
 }

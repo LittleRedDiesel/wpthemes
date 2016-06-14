@@ -1,5 +1,5 @@
 .button {
-	font-family: 'din_mittel_regular', sans-serif;
+	font-family: 'DINPro-Medium', sans-serif;
 	padding: 20px 40px;
 	display: inline-block;
 	background-color: color(black);
@@ -10,5 +10,9 @@
 
 	&:hover {
 		background-color: color(blue);
+	}
+
+	&.button-expand {
+		margin-bottom: 100px;
 	}
 }

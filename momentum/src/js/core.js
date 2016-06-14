@@ -321,28 +321,84 @@
 		});
 
 
-		if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
-		window.onmousewheel = document.onmousewheel = wheel;
-		 
-		function wheel(event) {
-		    var delta = 0;
-		    if (event.wheelDelta) delta = event.wheelDelta / 120;
-		    else if (event.detail) delta = -event.detail / 3;
-		 
-		    handle(delta);
-		    if (event.preventDefault) event.preventDefault();
-		    event.returnValue = false;
+	$('.lightbox-trigger').click(function(e) {
+		
+		//prevent default action (hyperlink)
+		e.preventDefault();
+		
+		//Get clicked link href
+		var lbRef = $(this).data('lightbox'),
+			lbClass = '.' + lbRef,
+			lbContent = $(lbClass).html();
+
+		/* 	
+		If the lightbox window HTML already exists in document, 
+		change the img src to to match the href of whatever link was clicked
+		
+		If the lightbox window HTML doesn't exists, create it and insert it.
+		(This will only happen the first time around)
+		*/
+		
+		if ($('.lightbox').length > 0) { // #lightbox exists
+			
+			//place href as img src value
+			$('.lightbox-content').html(lbContent);
+		   	
+			//show lightbox window - you could use .show('fast') for a transition
+			$('.lightbox').show();
 		}
-		 
-		function handle(delta) {
-		    var time = 300; // delay time
-		    var distance = 100; // delta point 
-		    // Dom where it will apply 
-		    $('html, body').stop().animate({
-		        scrollTop: $(window).scrollTop() - (distance * delta)
-		    }, time );
+		
+		else { //#lightbox does not exist - create and insert (runs 1st time only)
+			
+			//create HTML markup for lightbox window
+			var lightbox = 
+			'<div class="lightbox">' +
+				'<a href="#" class="icon icon-close"><span>Click to close</span></a>' +
+				'<div class="lightbox-content">' + //insert clicked link's href into img src
+					lbContent +
+				'</div>' +	
+			'</div>';
+				
+			//insert lightbox HTML into page
+			$('body').append(lightbox);
+		}
+		
+	});
+	
+	//Click anywhere on the page to get rid of lightbox window
+	$('.lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+		$('.lightbox').hide();
+	});
+
+
+	$('.button-expand').on('click', function(e){
+		e.preventDefault();
+		$('.js-hidden').fadeIn(function(){
+			$('.js-hidden').removeClass('js-hidden');
+			$('.button-expand').remove();
+		});
+	});
+
+
+	// Interactive panels 
+	$('.js-switch-panel').on('click', function(e){
+		e.preventDefault();
+		$(this).parents('.panel-container').find('.js-active').removeClass('js-active');
+		$(this).parent('.panel').addClass('js-active');
+
+		var panel = $(this).data('panel');
+		console.log(panel);
+
+		if($(this).parents('.primary-panels').length){
+			$('.primary-panels-display > .js-active').removeClass('js-active');
+			$('.' + panel).addClass('js-active');
+		} else if($(this).parents('.secondary-panels').length){
+			$('.tertiary-panels > .js-active').removeClass('js-active');
+			$('.' + panel).addClass('js-active');
 		}
 
+
+	});
 
 	}
   });

@@ -8,11 +8,12 @@
 	
 	@include media-above($break-large) {
 		width: 100%;
+		height: auto;
 	}
-
 }
 
 .circular-clip {
+	background-color: color(stone);
 	width: 200px;
 	height: 200px;
 	margin: 0 auto 20px;

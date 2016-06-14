@@ -8,16 +8,18 @@ Template Name: Home
 <main id="main" class="site-main" role="main">
 	<div class="wrap-content">
 		<section class="bg-img-section panel-section">
-			<img src="<?php the_field('image_background'); ?>" class="banner-image" />
+			<div class="image-mask">
+				<img src="<?php the_field('image_background'); ?>" class="banner-image" />
+			</div>
 			<div class="section-content hero-content">
 				<h1><?php the_field('section_title'); ?></h1>
 				<div class="panel-container">
-					<div class="panel panel-1">
+					<div class="panel panel-clipped panel-1">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title'); ?></h3>
 						<p><?php the_field('incentive_desc'); ?></p>
 						<a href="" class="button"><?php the_field('incentive_button_text'); ?></a>
 					</div>
-					<div class="panel panel-2 right-panel">
+					<div class="panel panel-2 panel-clipped right-panel">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title_2'); ?></h3>
 						<p><?php the_field('incentive_description_2'); ?></p>
 						<a href="" class="button"><?php the_field('incentive_button_text_2'); ?></a>
@@ -39,6 +41,7 @@ Template Name: Home
 				<div><img src="<?php the_field('carousel_image_2'); ?>" /></div>
 				<div><img src="<?php the_field('carousel_image_3'); ?>" /></div>
 				<div><img src="<?php the_field('carousel_image_4'); ?>" /></div>
+				<div><img src="<?php the_field('carousel_image_5'); ?>" /></div>
 			</div>
 		</section>
 		<section>
@@ -88,7 +91,27 @@ Template Name: Home
 				    <?php wp_reset_postdata(); ?>
 				<?php endif; ?>
 				
-				<a href="" class="button"><?php the_field('testimonial_section_button'); ?></a>
+				<a href="" class="button lightbox-trigger"><?php the_field('testimonial_section_button'); ?></a>
+			</div>
+			<div class="lightbox">
+				<a href="" class="icon"><span>Close</span></a>
+				<?php
+				$post_objects = get_field('featured_testimonials');
+
+				if( $post_objects ): ?>
+				    <ul class="featured-list testimonial-list">
+				    <?php foreach( $post_objects as $post): ?>
+				        <?php setup_postdata($post); ?>
+				        <li>
+				            <a href="<?php the_permalink(); ?>">
+				            	<?php the_excerpt(); ?>
+				            	<span class="title"><?php the_title(); ?></span>
+				            </a>
+				        </li>
+				    <?php endforeach; ?>
+				    </ul>
+				    <?php wp_reset_postdata(); ?>
+				<?php endif; ?>
 			</div>
 		</section>
 		<section class="bg-blue-section">
