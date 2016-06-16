@@ -13,8 +13,7 @@
 	@extend %wrap;
 	background: color(blue);
 	@include media-above($break-large) {
-		padding-left: spacer(2);
-		padding-right: spacer(2);
+		padding: 0 30px;
 	}
 }
 .site-header,

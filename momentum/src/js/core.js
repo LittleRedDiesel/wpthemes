@@ -14,6 +14,10 @@
 			slidesToScroll: 1
 		});
 
+		if($(window).width < 620) {
+			console.log('mobile');
+		}
+
 		/*
 		*  new_map
 		*
@@ -366,9 +370,19 @@
 	});
 	
 	//Click anywhere on the page to get rid of lightbox window
-	$('.lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+	$('.lightbox .icon-close').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
 		$('.lightbox').hide();
 	});
+
+	$('.lightbox .js-back-to-top').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+		event.preventDefault();
+
+		$('.lightbox').animate({
+			scrollTop: 0 ,
+		 	}, 700
+		);
+	});
+
 
 
 	$('.button-expand').on('click', function(e){

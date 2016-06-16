@@ -16,6 +16,10 @@
 		li {
 			padding: 0;
 
+			@include media-above($break-large) {
+				padding: 0 1%;
+			}
+
 			p {
 				font-size: 30px;
 				width: 100%;
@@ -90,18 +94,12 @@
 					}
 				}
 
-				.contact-email {
-					font-family: 'DINPro-Medium', sans-serif;
-					font-size: 24px;
-					line-height: 48px;
-				}
+				.ellipsis-link {
 
-				.contact-tel {
-					font-family: 'DINPro-Medium', sans-serif;
-					color: color(blue);
-					display: block;
-					font-size: 24px;
-					line-height: 36px;
+					&:before {
+						font-size: 50px;
+						top: -50px;
+					} 
 				}
 			}
 		}

@@ -35,7 +35,7 @@
 	&.click-panels {
 
 		.section-content {
-			padding: 50px 0 0;
+			padding-top: 0;
 
 			.panel-container {
 				display: flex;
@@ -43,7 +43,7 @@
 
 			.panel {
 				min-height: auto;
-				padding-bottom: 50px;
+				padding: 50px 0;
 
 				&:before {
 					height: 130px;
@@ -102,6 +102,7 @@
 				font-family: 'DINPro-Medium', sans-serif;
 				max-width: 350px;
 				line-height: 30px;
+				margin-top: 30px;
 			}
 
 			> .panel {
