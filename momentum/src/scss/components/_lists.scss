@@ -1,4 +1,4 @@
-.featured-list {
+div.featured-list {
 	@include scut-clearfix;
 	list-style-type: none;
 	margin: 0 auto;
@@ -13,7 +13,7 @@
 			float: none;
 		}
 
-		li {
+		> div {
 			padding: 0;
 
 			@include media-above($break-large) {
@@ -48,7 +48,7 @@
 		&.team-page {
 			width: 90%;
 
-			li {
+			> div {
 				@include media-above($break-medium) {	
 					@include span(3.3);
 					margin-bottom: 100px;
@@ -109,7 +109,7 @@
 		@include span(10);
 		margin-bottom: 75px;
 
-		li {
+		> div {
 			position: relative;
 			padding: 0;
 
@@ -131,6 +131,10 @@
 				&:before {
 					background-color: transparent;
 				}
+			}
+
+			.title {
+				color: color(black);
 			}
 
 			p {
@@ -169,7 +173,7 @@
 		display: flex;
 		flex-wrap: wrap;
 
-		li {
+		> div {
 
 			p {
 				max-width: 90%;
@@ -188,7 +192,7 @@
 		}
 	}
 
-	li {
+	> div {
 		text-align: center;
 		float: none;
 		padding: 0 0 60px;

@@ -54,20 +54,18 @@ Template Name: Home
 				$post_objects = get_field('team_members_to_display');
 
 				if( $post_objects ): ?>
-				    <ul class="featured-list team-list">
+				    <div class="featured-list team-list mobile-carousel">
 				    <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
 				        <?php setup_postdata($post); ?>
-				        <li>
-				            <a href="<?php the_permalink(); ?>">
-				            	<div class="circular-clip">
-				            		<img src="<?php the_field('team_photo'); ?>" />
-				            	</div>
-				            	<span class="title"><?php the_title(); ?></span>
-				            	<?php the_excerpt(); ?>
-				            </a>
-				        </li>
+				        <div>
+							<div class="circular-clip">
+								<img src="<?php the_field('team_photo'); ?>" />
+							</div>
+							<span class="title"><?php the_title(); ?></span>
+							<?php the_excerpt(); ?>
+				        </div>
 				    <?php endforeach; ?>
-				    </ul>
+				    </div>
 				    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 				<?php endif; ?>			
 				<a href="<?php the_field('team_section_homepage_button_link'); ?>" class="button"><?php the_field('team_section_button'); ?></a>
@@ -80,15 +78,15 @@ Template Name: Home
 				$post_objects = get_field('featured_testimonials');
 
 				if( $post_objects ): ?>
-				    <ul class="featured-list testimonial-list">
+				    <div class="featured-list testimonial-list mobile-carousel">
 				    <?php foreach( $post_objects as $post): ?>
 				        <?php setup_postdata($post); ?>
-				        <li class="ellipsis">
+				        <div class="ellipsis">
 				            <?php the_excerpt(); ?>
 				            <span class="title"><?php the_title(); ?></span>
-				        </li>
+				        </div>
 				    <?php endforeach; ?>
-				    </ul>
+				    </div>
 				    <?php wp_reset_postdata(); ?>
 				<?php endif; ?>
 				
@@ -100,16 +98,16 @@ Template Name: Home
 				$post_objects = get_field('featured_testimonials');
 
 				if( $post_objects ): ?>
-				    <ul class="featured-list testimonial-list">
+				    <div class="featured-list testimonial-list">
 				    <?php foreach( $post_objects as $post): ?>
 				        <?php setup_postdata($post); ?>
-				        <li>
+				        <div>
 				        	<span class="title ellipsis-post"><?php the_title(); ?></span>
 							<?php the_excerpt(); ?>
 							
-				        </li>
+				        </div>
 				    <?php endforeach; ?>
-				    </ul>
+				    </div>
 				    <a href="#" class="icon icon-arrow_up js-back-to-top"><span>Return to top</span></a>
 				    <?php wp_reset_postdata(); ?>
 				<?php endif; ?>

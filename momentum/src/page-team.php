@@ -15,10 +15,10 @@ Template Name: Team
 		$post_objects = get_field('team_members_to_display');
 
 		if( $post_objects ): ?>
-		<ul class="featured-list team-list team-page ">
+		<div class="featured-list team-list team-page ">
 			<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
 			<?php setup_postdata($post); ?>
-			<li>
+			<div>
 				<div class="circular-clip">
 					<img src="<?php the_field('team_photo'); ?>" />
 				</div>
@@ -35,9 +35,9 @@ Template Name: Team
 					<h4 class="ellipsis-post"><?php the_field('qualifications_title'); ?></h4>
 					<?php the_field('qualifications_list'); ?>
 				</div>
-			</li>
+			</div>
 			<?php endforeach; ?>
-		</ul>
+		</div>
 		  <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 		<?php endif; ?>     
 		<a href="" class="button button-expand"><?php the_field('team_section_button'); ?></a>
@@ -46,9 +46,9 @@ Template Name: Team
 		<!-- Extra team members -->
 		<div class="team-further js-hidden">
 			<?php $loop = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1, 'cat' => -5, 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
-			<ul class="featured-list team-list team-page">
+			<div class="featured-list team-list team-page">
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-				<li>
+				<div>
 					<div class="circular-clip">
 						<img src="<?php the_field('team_photo'); ?>" />
 					</div>
@@ -57,10 +57,10 @@ Template Name: Team
 					<?php the_excerpt(); ?>
 					<a class="contact-email"  href="mailto:<?php the_field('team_email_address'); ?>"><?php the_field('team_email_address'); ?></a>
 					<span class="contact-tel"><?php the_field('team_phone_number'); ?></span>
-				</li>
+				</div>
 
 				<?php endwhile; wp_reset_query(); ?>
-			</ul> 		  	
+			</div> 		  	
 		</div>
 	</section>
 </main>

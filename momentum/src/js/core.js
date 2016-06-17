@@ -48,8 +48,15 @@
 			slidesToScroll: 1
 		});
 
-		if($(window).width < 620) {
-			console.log('mobile');
+		if($(window).width() < 800) {
+			$('.mobile-carousel').slick({
+				dots: true,
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				prevArrow: null,
+				nextArrow: null
+			});
 		}
 
 		/*
@@ -436,7 +443,7 @@
 		$(this).parent('.panel').addClass('js-active');
 
 		var panel = $(this).data('panel');
-		
+
 		if($(this).parents('.primary-panels').length){
 			$('.primary-panels-display > .js-active').removeClass('js-active');
 			$('.' + panel).addClass('js-active');

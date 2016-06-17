@@ -39,7 +39,7 @@
 	.featured-list.testimonial-list {
 		margin-top: 50px;
 		
-		li {
+		> div {
 			float: none;
 			margin: 0 auto;
 
@@ -49,6 +49,10 @@
 
 			&:before {
 				content: none;
+			}
+
+			.title {
+				color: color(blue);
 			}
 
 			p {
