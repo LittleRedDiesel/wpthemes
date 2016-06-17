@@ -24,6 +24,19 @@
 			}
 		}
 	}
+
+	&.home-carousel {
+		height: 160px;
+
+		@include media-above($break-large) {
+			height: 715px;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
 		
 	.slick-prev,
 	.slick-next {
@@ -138,6 +151,7 @@
 	}
 }
 
+
 .mobile-carousel.slick-initialized {
 	height: auto;
 
@@ -152,7 +166,7 @@
 	}
 
 	.slick-dots {
-		bottom: -5%;
+		bottom: -4%;
 
 	
 		li {
@@ -179,7 +193,7 @@
 		}
 
 		.slick-dots {
-			bottom: -17%;
+			bottom: -12%;
 		}
 	}
 }

@@ -2,7 +2,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5, 
 h6 {
 	font-family: 'din_mittel_bold', sans-serif;
 	color: color(blue);
@@ -28,6 +28,7 @@ h3 {
 
 	&.heading-reduced {
 		font-size: 30px;
+		margin: 60px auto 20px; 
 
 		@include media-above($break-large) {
 			font-size: 45px;
@@ -135,7 +136,8 @@ p {
 
 	p {
 		padding: 0 20px;
-		margin: 0 auto 20px;
+		font-size: 18px;
+		margin: 0 auto 30px;
 		float: none;
 		line-height: 30px;
 

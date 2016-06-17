@@ -98,6 +98,15 @@ section {
 			padding: 80px 0;
 		}
 
+		&.narrow-para {
+
+			p {
+				@include media-above($break-large) {
+					max-width: 760px;
+				}
+			}
+		}
+
 		&.padding-reduced {
 			padding: 20px 0;
 
@@ -129,7 +138,7 @@ section {
 		h2 {
 			@include span(9);
 			float: none;
-			margin: 0 auto 20px;
+			margin: 0 auto 10px;
 
 			@include media-above($break-large) {
 				@include span(8);

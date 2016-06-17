@@ -8,11 +8,12 @@
 	}
 
 	.panel {
-		@include span(10);
+		@include span(8.5);
+		margin: 0 auto;
+		float: none;
 		overflow: hidden;
 		position: relative;
 		padding-bottom: 50px;
-		background-color: color(white);
 
 		@include media-above($break-large) {
 			@include span(5);
@@ -72,7 +73,12 @@
 		}
 
 		&.right-panel {
+			background-color: color(white);
 			padding-bottom: 0;
+
+			@include media-above($break-large) {
+				background-color: transparent;
+			}
 
 		&.panel-clipped {
 
@@ -109,6 +115,7 @@
 			margin-bottom: spacer(1/2);
 			font-size: 16px;
 			max-width: 300px;
+			line-height: 24px;
 
 			@include media-above($break-large) {
 				font-size: 20px;

@@ -39,7 +39,7 @@ Template Name: Home
 			</div>
 		</section>
 		<section class="section-carousel">
-			<div class="mt-carousel title-carousel">
+			<div class="mt-carousel home-carousel title-carousel">
 				<div><img src="<?php the_field('carousel_image_1'); ?>" /></div>
 				<div><img src="<?php the_field('carousel_image_2'); ?>" /></div>
 				<div><img src="<?php the_field('carousel_image_3'); ?>" /></div>
@@ -114,7 +114,7 @@ Template Name: Home
 			</div>
 		</section>
 		<section class="bg-blue-section">
-			<div class="section-content">
+			<div class="section-content narrow-para">
 				<h2><?php the_field('button_section_title'); ?></h2>
 				<?php the_field('button_section_wysiwyg'); ?>
 				<a href="<?php the_field('button_section_link'); ?>" class="button"><?php the_field('button_section_button'); ?></a>

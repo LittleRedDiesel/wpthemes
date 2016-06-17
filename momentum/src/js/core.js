@@ -461,7 +461,7 @@
 
 	$(ellipsis).each(function(){
 
-    	if ($(this).height() > 250) {
+    	if ($(this).height() > 300) {
     	
 	        var words = $(this).html().split(/\s+/);
 	        words.push('...');
@@ -469,7 +469,7 @@
 	        do {
 	            words.splice(-2, 1);
 	            $(this).html( words.join(' ') );
-	        } while($(this).height() > 250);
+	        } while($(this).height() > 300);
 
     	}
 	});
