@@ -80,7 +80,7 @@ Template Name: Join us
 				</div>
 			</div>
 			<a href="#" class="icon icon-arrow_up js-back-to-top"><span>Return to top</span></a>
-			<p><?php the_field('bottom_title'); ?></p>
+			<p class="bottom-title"><?php the_field('bottom_title'); ?></p>
 			<a class="contact-email" href="mailto:info@momentum-training.com"><?php the_field('contact_email'); ?></a>
 			<span class="contact-tel"><?php the_field('contact_tel'); ?></span>
 		</div>

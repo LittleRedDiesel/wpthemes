@@ -45,14 +45,14 @@
 	.panel {
 		&:before {
 			height: 90%;
-			background-color: color(darkstone);
+			background-color: color(darkborder);
 		}
 	}
 
 	.horizonal-division {
 		clear: both;
 		position: relative;
-		padding-bottom: 30px;
+		padding: 10px 0 60px;
 		display: inline-block;
 
 		&:after {
@@ -61,9 +61,9 @@
 			left: 50%;
 			transform: translateX(-50%);
 			bottom: 0;
-			width: 60%;
+			width: 285px;
 			height: 1px;
-			background-color: color(darkstone);
+			background-color: color(darkborder);
 			margin: 30px auto;
 			display: block;
 		}
@@ -191,6 +191,17 @@
 	img {
 		height: 130px;
 		margin-bottom: 20px;
+	}
+
+	.bottom-title {
+		max-width: 400px;
+		color: color(blue);
+		margin: 30px auto 10px;
+	}
+
+	.contact-email,
+	.contact-tel {
+		color: color(white);
 	}
 }
 
