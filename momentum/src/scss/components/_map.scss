@@ -22,8 +22,12 @@
 		}
 
 		&.map-large {
-			width: 830px;
-			height: 830px;
+			margin-top: 50px;
+
+			@include media-above($break-large) {
+				width: 830px;
+				height: 830px;
+			}
 		}
 	}
 

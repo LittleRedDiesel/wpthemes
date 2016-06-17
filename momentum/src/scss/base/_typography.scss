@@ -78,6 +78,15 @@ a {
 		font-size: 18px;
 		font-family: 'din_mittel_regular', sans-serif;
 	}
+
+	&.link-spacer {
+		margin-top: 10px;
+		display: inline-block;
+
+		@include media-above($break-large) {
+			margin-top: 30px;
+		}
+	}
 }
 
 button {
@@ -116,21 +125,28 @@ p {
 		&.page-title {
 			font-size: 48px;
 			margin: 50px auto 50px;
-			max-width: 300px;
+			max-width: 90%;
 			line-height: 48px;
 
 			@include media-above($break-large) {
-				margin: 60px auto 50px;
-				font-size: 100px;
-				max-width: 760px;
-				line-height: 90px;
+				margin: 60px auto 30px;
+				font-size: 72px;
+				max-width: 52%;
+				line-height: 72px;
 			}			
 		}
 
 		&.title-wide {
-			max-width: 100%;
-			@include span(9);
-			float: none;
+			max-width: 90%;
+			font-size: 30px;
+			line-height: 36px;
+			margin-bottom: 40px;
+
+			@include media-above($break-large) {
+				font-size: 72px;
+				max-width: 70%;
+				line-height: 72px;
+			}
 		}
 	}
 
@@ -143,17 +159,19 @@ p {
 
 		&.intro-para {
 			font-size: 18px;
-			max-width: 90%;
+			max-width: 95%;
 			margin-bottom: 50px;
 
 			@include media-above($break-large) {
 				font-size: 35px;
+				max-width: 90%;
 				margin: 0 auto 60px;
 			}
 		}
 
 		@include media-above($break-large) {
 			margin: 0 auto 60px;
+			max-width: 90%;
 			font-size: 35px;
 			line-height: 55px;
 		}
@@ -189,9 +207,14 @@ p {
 		font-size: 14px;
 		position: relative;
 		display: inline-block;
-		padding-top: 30px;
-		margin-top: 50px;
+		padding-top: 10px;
+		margin-top: 40px;
 		font-family: 'din_mittel_bold';
+
+		@include media-above($break-medium) {	
+			padding-top: 30px;
+			margin-top: 50px;
+		}
 
 			&:before {
 				position: absolute;
@@ -223,14 +246,24 @@ p {
 
 .contact-email {
 	font-family: 'DINPro-Medium', sans-serif;
-	font-size: 24px;
-	line-height: 48px;
+	font-size: 18px;
+	line-height: 24px;
+	
+	@include media-above($break-medium) {	
+		font-size: 24px;
+		line-height: 48px;
+	}
 }
 
 .contact-tel {
 	font-family: 'DINPro-Medium', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
 	color: color(blue);
 	display: block;
-	font-size: 24px;
-	line-height: 36px;
+	
+	@include media-above($break-medium) {	
+		font-size: 24px;
+		line-height: 36px;
+	}
 }

@@ -7,82 +7,82 @@ Template Name: Join us
 <main id="main" class="site-main" role="main">
 	<div class="help-<?php echo $post->ID ?>">
 		<div class="lightbox-columns">
-			<h3>Let us help you</h3>
-			<p class="subtitle ellipsis-post">Choose one of the two options below</p>
+			<h3><?php the_field('columns_title'); ?></h3>
+			<p class="subtitle ellipsis-post"><?php the_field('columns_subtitle'); ?></p>
 			<div class="panel-container">
 				<div class="panel panel-1">
-					<h4 class="ellipsis-post">MET-CON ONLY</h4>
-					<p class="column-intro">Want to get fit fast and lose some of that stubborn body fat of Lorem ipsumroin gravida nibh vel velit auctor aliquetenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-					<span class="intro-cost">£200</span>
-					<span class="class-duration horizonal-division">x month</span>
-					<span class="zigzag-post">Just want to get fit fast</span>
-					<span class="column-division-title">Sweat</span>
-					<p>Quick  easy movements that you will be doing for 60 min lalalala...</p>
+					<h4 class="ellipsis-post"><?php the_field('lhs-title'); ?></h4>
+					<p class="column-intro"><?php the_field('lhs-description'); ?></p>
+					<span class="intro-cost"><?php the_field('lhs-cost'); ?></span>
+					<span class="class-duration horizonal-division"><?php the_field('lhs-duration'); ?></span>
+					<span class="zigzag-post"><?php the_field('lhs-zigzag-title-1'); ?></span>
+					<span class="column-division-title"><?php the_field('lhs_div_1_motivation'); ?></span>
+					<p><?php the_field('lhs_div_1_explanation'); ?></p>
 					<ul>
 						<li>
-							<img src="<?php bloginfo('template_directory');  ?>/images/class-metabolic-logo.png" />
-							<span class="class-name">Metabolic conditioning</span>
-							<span class="class-duration">Unlimited</span>
+							<img src="<?php the_field('lhs_div_1_img'); ?>" />
+							<span class="class-name"><?php the_field('lhs_div_1_title'); ?></span>
+							<span class="class-duration"><?php the_field('lhs_div_1_duration'); ?></span>
 						</li>
 					</ul>
 				</div>
 				<div class="panel panel-2">
-					<h4 class="ellipsis-post">FULL PACKAGE</h4>
-					<p class="column-intro">Want to get fit fast and lose some of that stubborn body fat  of Lorem ipsumroin gravida nibh vel velit auctor aliquetenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio</p>
-					<span class="intro-cost">£600</span>
-					<span class="class-duration horizonal-division">x 3 Month Unlimited Classes</span>
-					<span class="zigzag-post">First month</span>
-					<span class="column-division-title">Learn</span>
-					<p>Learn functional movements, learn about fitness</p>
+					<h4 class="ellipsis-post"><?php the_field('rhs_title'); ?></h4>
+					<p class="column-intro"><?php the_field('rhs_description'); ?></p>
+					<span class="intro-cost"><?php the_field('rhs_cost'); ?></span>
+					<span class="class-duration horizonal-division"><?php the_field('rhs_duration'); ?></span>
+					<span class="zigzag-post"><?php the_field('rhs_zigzag_title_1'); ?></span>
+					<span class="column-division-title"><?php the_field('rhs_div_1_movitation'); ?></span>
+					<p><?php the_field('rhs_div_1_explanation'); ?></p>
 					<ul class="horizonal-division">
 						<li class="double">
-							<img src="<?php bloginfo('template_directory');  ?>/images/class-metabolic-logo.png" />
-							<span class="class-name">Metabolic conditioning</span>
-							<span class="class-duration">Unlimited</span>
+							<img src="<?php the_field('rhs_div_1_img_1'); ?>" />
+							<span class="class-name"><?php the_field('rhs_div_1_title_1'); ?></span>
+							<span class="class-duration"><?php the_field('rhs_div_1_duration_1'); ?></span>
 						</li>
 						<li class="double">
-							<img src="<?php bloginfo('template_directory');  ?>/images/class-my-momentum-pt.png" />
-							<span class="class-name">Personal training</span>
-							<span class="class-duration">4 sessions</span>
+							<img src="<?php the_field('rhs_div_1_img_2'); ?>" />
+							<span class="class-name"><?php the_field('rhs_div_1_title_2'); ?></span>
+							<span class="class-duration"><?php the_field('rhs_div_1_duration_2'); ?></span>
 						</li>
 					</ul>
-					<span class="zigzag-post">Second month</span>
-					<span class="column-division-title">Develop</span>
-					<p>Develop your skills, strength and physical preparedness</p>
+					<span class="zigzag-post"><?php the_field('rhs_zigzag_title_2'); ?></span>
+					<span class="column-division-title"><?php the_field('rhs_div_2_movitation'); ?></span>
+					<p><?php the_field('rhs_div_2_explanation'); ?></p>
 					<ul class="horizonal-division">
 						<li>
-							<img src="<?php bloginfo('template_directory');  ?>/images/class-metabolic-logo.png" />
-							<span class="class-name">Metabolic conditioning</span>
-							<span class="class-duration">Unlimited</span>
+							<img src="<?php the_field('rhs_div_2_img_1'); ?>" />
+							<span class="class-name"><?php the_field('rhs_div_2_title_1'); ?></span>
+							<span class="class-duration"><?php the_field('rhs_div_2_duration_1'); ?></span>
 						</li>
 						<li>
-							<img src="<?php bloginfo('template_directory');  ?>/images/class-crossfit-engineering.png" />
-							<span class="class-name">Crossfit engineering</span>
-							<span class="class-duration">Unlimited</span>
+							<img src="<?php the_field('rhs_div_2_img_2'); ?>" />
+							<span class="class-name"><?php the_field('rhs_div_2_title_2'); ?></span>
+							<span class="class-duration"><?php the_field('rhs_div_2_duration_2'); ?></span>
 						</li>
 						<li>
-							<img src="<?php bloginfo('template_directory');  ?>/images/barbell-club.png" />
-							<span class="class-name">Barbell club</span>
-							<span class="class-duration">Unlimited</span>
+							<img src="<?php the_field('rhs_div_2_img_3'); ?>" />
+							<span class="class-name"><?php the_field('rhs_div_2_title_3'); ?></span>
+							<span class="class-duration"><?php the_field('rhs_div_2_duration_3'); ?></span>
 						</li>
 						<li>
-							<img src="<?php bloginfo('template_directory');  ?>/images/class-my-momentum-pt.png" />
-							<span class="class-name">Personal training</span>
-							<span class="class-duration">2 sessions</span>
+							<img src="<?php the_field('rhs_div_2_img_4'); ?>" />
+							<span class="class-name"><?php the_field('rhs_div_2_title_4'); ?></span>
+							<span class="class-duration"><?php the_field('rhs_div_2_duration_4'); ?></span>
 						</li>
 					</ul>
-					<span class="zigzag-post">Third month</span>
-					<span class="column-division-title">Build</span>
-					<p>Build functional movement at high intensity</p>
-					<span class="class-name bold">All classes</span>
-					<span class="class-duration">Unlimited</span><br />
-					<a href="#" class="button blue">Sign up</a>
+					<span class="zigzag-post"><?php the_field('rhs_zigzag_title_3'); ?></span>
+					<span class="column-division-title"><?php the_field('rhs_div_3_movitation'); ?></span>
+					<p><?php the_field('rhs_div_3_explanation'); ?></p>
+					<span class="class-name bold"><?php the_field('rhs_div_3_title'); ?></span>
+					<span class="class-duration"><?php the_field('rhs_div_3_duration'); ?></span><br />
+					<a href="#" class="button blue"><?php the_field('rhs_div_3_button_text'); ?></a>
 				</div>
 			</div>
 			<a href="#" class="icon icon-arrow_up js-back-to-top"><span>Return to top</span></a>
-			<p>Please, give us a shout if you need any help</p>
-			<a class="contact-email" href="mailto:info@momentum-training.com">info@momentum-training.com</a>
-			<span class="contact-tel">07515522068</span>
+			<p><?php the_field('bottom_title'); ?></p>
+			<a class="contact-email" href="mailto:info@momentum-training.com"><?php the_field('contact_email'); ?></a>
+			<span class="contact-tel"><?php the_field('contact_tel'); ?></span>
 		</div>
 	</div>
 	<section class="section-carousel">

@@ -8,8 +8,8 @@ Template Name: Location
 <?php get_header(); ?>
 <main id="main" class="site-main horizontal-divide-container" role="main">
   <section id="content" class="site-content">
-    <h1><?php the_field('map_section_address'); ?></h1>
-    <p><?php the_field('map-section-subtitle'); ?></p>
+    <h1 class="page-title"><?php the_field('map_section_address'); ?></h1>
+    <p class="intro-para"><?php the_field('map-section-subtitle'); ?></p>
     <a href="mailto:<?php the_field('map_section_contact'); ?>" class="med-link"><?php the_field('map_section_contact'); ?></a>
     <?php 
 

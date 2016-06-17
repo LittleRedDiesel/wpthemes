@@ -14,10 +14,15 @@
 
 .circular-clip {
 	background-color: color(stone);
-	width: 200px;
-	height: 200px;
+	width: 115px;
+	height: 115px;
 	margin: 0 auto 20px;
 	border-radius: 200px;
 	position: relative;
 	overflow: hidden;
+
+	@include media-above($break-large) {
+		width: 200px;
+		height: 200px;
+	}
 }

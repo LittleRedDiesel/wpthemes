@@ -81,11 +81,17 @@
 
 	ul {
 		list-style-type: none;
+		padding: 0 20px;
 
 		li {
+			font-size: 16px;
 			font-family: 'DINPro-Medium', sans-serif;
-			font-size: 20px;
-			padding: 15px;
+			padding: 10px;
+
+			@include media-above($break-large) {
+				font-size: 20px;
+				padding: 15px;
+			}
 		}
 	}
 

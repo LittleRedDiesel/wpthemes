@@ -69,9 +69,13 @@
 	.bg-black-divide {
 		position: absolute;
 		background: color(black);
-		height: 635px;
+		height: 320px;
 		width: 100%;
 		z-index: -1;
 		bottom: 0;
+
+		@include media-above($break-large) {
+			height: 635px;
+		}
 	}
 }
