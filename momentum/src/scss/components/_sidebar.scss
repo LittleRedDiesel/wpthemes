@@ -21,6 +21,10 @@
 		float: left;
 	}
 
+	input[type='search'] {
+		line-height: 30px;
+	}
+
 	input[type='submit'] {
 		background-color: color(blue);
 		color: color(white);
@@ -48,6 +52,7 @@
 
 			a {
 				color: color(black);
+				font-family: 'din_mittel_regular', sans-serif;
 
 				&:hover {
 					color: color(blue);
