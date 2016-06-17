@@ -108,8 +108,22 @@ p {
 		@include media-above($break-large) {
 			margin: 60px auto 50px;
 			font-size: 100px;
-			max-width: 760px;
+			max-width: 80%;
 			line-height: 90px;
+		}
+
+		&.page-title {
+			font-size: 48px;
+			margin: 50px auto 50px;
+			max-width: 300px;
+			line-height: 48px;
+
+			@include media-above($break-large) {
+				margin: 60px auto 50px;
+				font-size: 100px;
+				max-width: 760px;
+				line-height: 90px;
+			}			
 		}
 
 		&.title-wide {
@@ -120,10 +134,21 @@ p {
 	}
 
 	p {
-		@include span(8);
+		padding: 0 20px;
 		margin: 0 auto 20px;
 		float: none;
-		padding: 0;
+		line-height: 30px;
+
+		&.intro-para {
+			font-size: 18px;
+			max-width: 90%;
+			margin-bottom: 50px;
+
+			@include media-above($break-large) {
+				font-size: 35px;
+				margin: 0 auto 60px;
+			}
+		}
 
 		@include media-above($break-large) {
 			margin: 0 auto 60px;

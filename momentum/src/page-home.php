@@ -5,6 +5,9 @@ Template Name: Home
 ?>
 
 <?php get_header(); ?>
+<!-- <div class="loader-wrapper">
+	<h1 class="loader">Momentum</h1>
+</div> -->
 <main id="main" class="site-main" role="main">
 	<div class="wrap-content">
 		<section class="bg-img-section panel-section">
@@ -17,7 +20,7 @@ Template Name: Home
 					<div class="panel panel-clipped panel-1">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title'); ?></h3>
 						<p><?php the_field('incentive_desc'); ?></p>
-						<a href="" class="button"><?php the_field('incentive_button_text'); ?></a>
+						<a href="mailto:<?php the_field('incentive_button_link'); ?>" class="button"><?php the_field('incentive_button_text'); ?></a>
 					</div>
 					<div class="panel panel-2 panel-clipped right-panel">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title_2'); ?></h3>
@@ -36,7 +39,7 @@ Template Name: Home
 			</div>
 		</section>
 		<section class="section-carousel">
-			<div class="mt-carousel">
+			<div class="mt-carousel title-carousel">
 				<div><img src="<?php the_field('carousel_image_1'); ?>" /></div>
 				<div><img src="<?php the_field('carousel_image_2'); ?>" /></div>
 				<div><img src="<?php the_field('carousel_image_3'); ?>" /></div>
@@ -80,11 +83,9 @@ Template Name: Home
 				    <ul class="featured-list testimonial-list">
 				    <?php foreach( $post_objects as $post): ?>
 				        <?php setup_postdata($post); ?>
-				        <li>
-				            <a href="<?php the_permalink(); ?>">
-				            	<?php the_excerpt(); ?>
-				            	<span class="title"><?php the_title(); ?></span>
-				            </a>
+				        <li class="ellipsis">
+				            <?php the_excerpt(); ?>
+				            <span class="title"><?php the_title(); ?></span>
 				        </li>
 				    <?php endforeach; ?>
 				    </ul>
@@ -94,7 +95,7 @@ Template Name: Home
 				<a href="" class="button lightbox-trigger"><?php the_field('testimonial_section_button'); ?></a>
 			</div>
 			<div class="lightbox">
-				<a href="" class="icon"><span>Close</span></a>
+				<a href="#" class="icon icon-close"><span>Close</span></a>
 				<?php
 				$post_objects = get_field('featured_testimonials');
 
@@ -103,13 +104,13 @@ Template Name: Home
 				    <?php foreach( $post_objects as $post): ?>
 				        <?php setup_postdata($post); ?>
 				        <li>
-				            <a href="<?php the_permalink(); ?>">
-				            	<?php the_excerpt(); ?>
-				            	<span class="title"><?php the_title(); ?></span>
-				            </a>
+				        	<span class="title ellipsis-post"><?php the_title(); ?></span>
+							<?php the_excerpt(); ?>
+							
 				        </li>
 				    <?php endforeach; ?>
 				    </ul>
+				    <a href="#" class="icon icon-arrow_up js-back-to-top"><span>Return to top</span></a>
 				    <?php wp_reset_postdata(); ?>
 				<?php endif; ?>
 			</div>

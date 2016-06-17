@@ -46,6 +46,7 @@ Domain Path: #{metadata(theme-text-domain-path)}
 @import "components/sidebar";
 
 // Components
+@import "components/loader";
 @import "components/buttons";
 @import "components/images";
 @import "components/header";

@@ -1,8 +1,11 @@
 .panel-container {
-	@include span(8);	
   	@include scut-clearfix;
 	margin: 0 auto;
-	float: none;
+
+	@include media-above($break-large) {
+		@include span(8);	
+		float: none;
+	}
 
 	.panel {
 		@include span(10);
@@ -14,7 +17,7 @@
 		@include media-above($break-large) {
 			@include span(5);
 			background-color: transparent;
-			min-height: 345px;
+			min-height: 355px;
 			text-align: center;
 			padding-bottom: spacer(1/4);
 		}
@@ -105,11 +108,11 @@
 			font-family: 'din_mittel_regular';
 			margin-bottom: spacer(1/2);
 			font-size: 16px;
+			max-width: 300px;
 
 			@include media-above($break-large) {
 				font-size: 20px;
 				line-height: 30px;
-				max-width: 300px;
 			}
 		}
 	}
@@ -124,10 +127,21 @@
 	&.secondary-panels {
 
 		.panel {
-			min-height: 0;
+			width: 50%;
+			padding: 0 15px 0 30px;
+
+			@include media-above($break-large) {
+				min-height: 0;
+			}
 			
 			&:before {
 				content: none;
+			}
+
+			&.right-panel {
+				.panel {
+					padding: 0 30px 0 15px;
+				}
 			}
 
 			h4 {
@@ -143,11 +157,16 @@
 					&:after {
 						font-family: 'icomoon';
 						content: '\e902';
-						margin-top: 30px;
+						margin-top: 10px;
 						display: block;
 						line-height: 20px;
 						transform: rotate(180deg);
-						font-size: 40px;
+						font-size: 20px;
+
+						@include media-above($break-large) {
+							font-size: 40px;
+							margin-top: 30px;
+						}
 					}
 				}
 			}
@@ -168,12 +187,20 @@
 				display: block;
 				
 				p {
-					font-size: 35px;
-					@include span(6);	
+					font-size: 16px;
+					@include span(8);	
 					float: none;
-					margin: 50px auto 30px;
-					line-height: 55px;
+					margin: 10px auto 30px;
+					line-height: 24px;
 					max-width: initial;
+
+					@include media-above($break-large) {
+						@include span(6);	
+						float: none;
+						margin: 50px auto 30px;
+						font-size: 35px;
+						line-height: 55px;
+					}
 				}
 			}
 

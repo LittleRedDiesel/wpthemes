@@ -9,7 +9,7 @@ Template Name: Team
 <main id="main" class="site-main" role="main">
 	<section id="content" class="site-content">
 		<h1><?php the_field('team_section_title'); ?></h1>
-		<p><?php the_field('team_section_subtitle'); ?></p>
+		<p class="intro-para"><?php the_field('team_section_subtitle'); ?></p>
 
 		<?php
 		$post_objects = get_field('team_members_to_display');

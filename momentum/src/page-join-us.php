@@ -129,7 +129,8 @@ Template Name: Join us
 					</div>
 					<div class="panel panel4">
 						<?php the_field('tertiary_panel_2_content'); ?>
-						<a href="#" class="button"><?php the_field('tertiary_panel_2_button_text'); ?></a>
+						<a href="#" class="button"><?php the_field('tertiary_panel_2_button_text'); ?></a><br />
+						<a href="#" class="small-link lightbox-trigger" data-lightbox="help-<?php echo $post->ID ?>"><?php the_field('tertiary_panel_1_small_link_text'); ?></a>
 					</div>
 				</div>
 			</div>

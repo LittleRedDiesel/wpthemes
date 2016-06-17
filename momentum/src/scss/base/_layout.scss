@@ -18,9 +18,13 @@
 }
 .site-header,
 .site-footer {
-	@include scut-center-block($width-site);
 	width: 100%;
-	max-width: $width-site;
+
+	@include media-above($break-large) {
+		@include scut-center-block($width-site);
+		width: 100%;
+		max-width: $width-site;
+	}
 }
 .site-title {
 	margin-top: 0;
@@ -29,10 +33,14 @@
 	@extend %hide;
 }
 .site-content, .section-content {
-	@include scut-center-block($width-site);
 	width: 100%;
-	max-width: $width-site;
-	z-index: 1;
+
+	@include media-above($break-large) {
+		@include scut-center-block($width-site);
+		width: 100%;
+		max-width: $width-site;
+		z-index: 1;
+	}
 }
 .site-navigation {
 	display: none;

@@ -7,6 +7,40 @@
 	if ($.timeago) {
 		$('time').timeago();
 
+
+		function createCookie(name,value,days) {
+			if (days) {
+			    var date = new Date();
+			    date.setTime(date.getTime()+(days*24*60*60*1000));
+			    var expires = "; expires="+date.toGMTString();
+			}
+			else var expires = "";
+			document.cookie = name+"="+value+expires+"; path=/";
+			}
+
+			function readCookie(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0;i < ca.length;i++) {
+			    var c = ca[i];
+			    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+		}	
+
+		setTimeout(function(){
+			if (readCookie('referer') == null){
+	        	$('body').addClass('loaded');
+	        }
+	        createCookie('referer',1,0);
+	    }, 2000);
+
+		if (readCookie('referer') == 1){
+			$('.loader-wrapper').remove();
+		}
+
+		// Carousel behaviour
 		$('.mt-carousel').slick({
 			dots: true,
 			infinite: true,
@@ -370,11 +404,12 @@
 	});
 	
 	//Click anywhere on the page to get rid of lightbox window
-	$('.lightbox .icon-close').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+	$('.lightbox .icon-close').live('click', function(e) { //must use live, as the lightbox element is inserted into the DOM
+		e.preventDefault;
 		$('.lightbox').hide();
 	});
 
-	$('.lightbox .js-back-to-top').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+	$('.lightbox .js-back-to-top').live('click', function(event) { //must use live, as the lightbox element is inserted into the DOM
 		event.preventDefault();
 
 		$('.lightbox').animate({
@@ -401,8 +436,7 @@
 		$(this).parent('.panel').addClass('js-active');
 
 		var panel = $(this).data('panel');
-		console.log(panel);
-
+		
 		if($(this).parents('.primary-panels').length){
 			$('.primary-panels-display > .js-active').removeClass('js-active');
 			$('.' + panel).addClass('js-active');
@@ -411,8 +445,28 @@
 			$('.' + panel).addClass('js-active');
 		}
 
-
 	});
+
+
+	// Ellipsis crop
+
+	var ellipsis = $('.ellipsis p');
+
+	$(ellipsis).each(function(){
+
+    	if ($(this).height() > 250) {
+    	
+	        var words = $(this).html().split(/\s+/);
+	        words.push('...');
+
+	        do {
+	            words.splice(-2, 1);
+	            $(this).html( words.join(' ') );
+	        } while($(this).height() > 250);
+
+    	}
+	});
+
 
 	}
   });

@@ -8,26 +8,32 @@ footer[role=contentinfo] {
 	}
 
 	p {
-		width: 100%;
+		float: left;
 		font-size: 16px;
 		margin: 0;
 		line-height: 80px;
 		text-align: center;
+
+		@include media-above($break-large) {
+			width: 100%;
+			float: none;
+		}
 	}
 
 	.icon-arrow_up {
 		position: absolute;
-		top: 50%;
+		top: 40px;
 		right: 0;
 		color: color(white);
 		line-height: 30px;
-		font-size: 50px;
+		font-size: 30px;
 		height: 30px;
 		overflow: hidden;
 		transform: translateY(-50%);
 
 		@include media-above($break-large) {
 			font-size: 50px;
+			top: 50%;
 		}
 
 		&:hover {
