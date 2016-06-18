@@ -23,6 +23,7 @@
 		font-size: 20px;
 		position: absolute;
 		top: 50px;
+		cursor: pointer;
 		right: 20px;
 
 		@include media-above($break-large) {
@@ -70,8 +71,11 @@
 
 				&:after,
 				&:before {
-					display: initial;
-					position: initial;
+					transform: initial;
+					-ms-transform: initial; 
+					-webkit-transform: initial; 
+					display: inline;
+					position: static;
 					font-size: 20px;
 					line-height: 30px;
 				}   
@@ -97,6 +101,7 @@
 
 	.icon-arrow_up {
 		padding-bottom: 100px;
+		cursor: pointer;
 
 		&:before {
 			border-radius: 50px;
@@ -109,6 +114,7 @@
 		}
 
 		&:hover {
+
 			&:before {
 				color: color(blue);
 				border-color: color(blue);

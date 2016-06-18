@@ -439,8 +439,8 @@
 
 
 	// Interactive panels
-	if($('.panel-1').hasClass('js-active')){
-		$('.panel-1').parents('.panel-container').addClass('left');
+	if($('.primary-panels .panel-1').hasClass('js-active')){
+		$('.primary-panels .panel-1').parents('.panel-container').addClass('left');
 	} else {
 		$('.left').removeClass('left');
 	}
@@ -460,9 +460,9 @@
 			$('.' + panel).addClass('js-active');
 		}
 
-		if($('.panel-1').hasClass('js-active')){
-			$('.panel-1').parents('.panel-container').toggleClass('left');
-		} else if($('.panel-2').hasClass('js-active')) {
+		if($('.primary-panels .panel-1').hasClass('js-active')){
+			$('.primary-panels .panel-1').parents('.panel-container').addClass('left');
+		} else if($('.primary-panels .panel-2').hasClass('js-active')) {
 			$('.left').removeClass('left');
 		}
 

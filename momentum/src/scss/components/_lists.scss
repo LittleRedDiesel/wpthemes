@@ -44,8 +44,9 @@ div.featured-list {
 
 				&:after {
 					content: '”';
+					top: auto;
 					bottom: -20px;
-					top: initial;
+					
 				}
 			}
 
@@ -108,7 +109,7 @@ div.featured-list {
 
 						@include media-above($break-large) {	
 							display: inline;
-							position: initial;
+							position: static;
 							font-size: 24px;
 							line-height: 30px;
 						}
@@ -190,7 +191,7 @@ div.featured-list {
 				&:after {
 					content: '”';
 					bottom: -20px;
-					top: initial;
+					top: auto;
 				}
 			}
 		}

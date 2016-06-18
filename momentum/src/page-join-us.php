@@ -120,7 +120,9 @@ Template Name: Join us
 					$carouselimage1 = get_field('carousel_image_1');
 
 					if( !empty($carouselimage1) ): ?>
-					<div><img src="<?php echo $carouselimage1['url']; ?>" alt="<?php echo $carouselimage1['alt']; ?>" /></div>
+					<div><img src="<?php echo $carouselimage1['url']; ?>" alt="<?php echo $carouselimage1['alt']; ?>" />
+						<h1><?php the_field('section_title'); ?></h1>
+					</div>
 					<?php endif; 
 
 					$carouselimage2 = get_field('carousel_image_2');
