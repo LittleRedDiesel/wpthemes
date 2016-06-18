@@ -1,9 +1,11 @@
 table {
+	display: none;
 	width: 100%;
 	padding: 0 20px;
 	margin-top: 55px;
 
 	@include media-above($break-large) {
+		display: table;
 		padding: 0 30px;
 		margin-top: 80px;
 	}
@@ -20,6 +22,19 @@ table {
 					border-bottom: 0;
 				}
 			}
+		}
+
+		&.row-border {
+			td, th {
+				border-bottom: 1px solid color(eggshell);
+			}
+
+			&.padding-bottom {
+				td, th {
+					padding-bottom: 18px;
+				}
+			}
+				
 		}
 
 		&.topspace {
@@ -82,6 +97,82 @@ table {
 				padding-bottom: 20px;
 			}
 		}
+	}
+
+	&.mobile-price-table {
+		display: table;
+		padding: 0 15px;
+
+		@include media-above($break-large) {
+			display: none;
+		}
+
+		tr {
+			th {
+				font-size: 14px;
+				font-family: 'DINPro-Medium';
+				text-align: center;
+			}
+
+			td {
+				&.title-row {
+					padding: 18px 0;
+					font-family: 'DINPro-Medium';
+					text-transform: uppercase;
+					border-bottom: 1px solid color(eggshell);
+				}
+
+				&.black-title-row {
+					color: color(black);
+					text-transform: uppercase;
+					padding-top: 18px;
+					font-size: 16px;
+				}
+
+				&.duration-row {
+					text-transform: initial;
+					padding-bottom: 18px;
+					font-family: 'DINPro-Medium';
+					font-size: 16px;
+					border-bottom: 1px solid color(eggshell);
+
+					&.terms {
+						border-bottom: 0;
+						font-family: 'DINPro-Light';
+
+						&.padding-top {
+							padding-top: 18px;
+						}
+					}
+				}
+			}
+
+			&.thirds-divided-row {
+				td {
+					padding: 20px;
+					text-align: center;
+					border-right: 1px solid color(eggshell);
+					border-bottom: 1px solid color(eggshell);
+
+					&:last-child {
+						border-right: 0;
+					}
+
+					&.sum {
+						font-size: 24px;
+					} 
+
+					> span {
+						display: block;
+						text-transform: initial;
+						font-family: 'DINPro-Light';
+						font-size: 14px;
+						color: color(white);
+					}
+				}
+			}
+		}
+
 	}
 
 }

@@ -5,6 +5,7 @@
 	@include media-above($break-large) {
 		@include span(8);	
 		float: none;
+		background-color: white\9;
 	}
 
 	.panel {

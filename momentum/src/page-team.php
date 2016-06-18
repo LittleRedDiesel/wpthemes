@@ -16,7 +16,7 @@ Template Name: Team
 		<div class="featured-list team-list team-page ">
 			<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
 			<?php setup_postdata($post); ?>
-			<div>
+			<div class="list-item">
 				<div class="circular-clip">
 				<?php 
 
@@ -60,9 +60,9 @@ Template Name: Team
 		<!-- Extra team members -->
 		<div class="team-further js-hidden">
 			<?php $loop = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1, 'cat' => -5, 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
-			<div class="featured-list team-list team-page">
+			<div class="featured-list team-list team-page masonry-list">
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-				<div>
+				<div class="list-item">
 					<div class="circular-clip">
 					<?php 
 

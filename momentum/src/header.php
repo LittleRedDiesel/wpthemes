@@ -19,7 +19,7 @@
   <div id="page" class="hfeed site site-wrapper">
 	<div id="wrap-header" class="wrap-header">
 	  <header id="masthead" class="site-header" role="banner">
-		<button id="responsive-menu-toggle" class="icon icon-menu"><span><?php _e( 'Menu', 'voidx' ); ?></span></button>
+		<a id="responsive-menu-toggle" class="icon icon-menu"><span><?php _e( 'Menu', 'voidx' ); ?></span></a>
 		<div class="site-branding">
 		  <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div>

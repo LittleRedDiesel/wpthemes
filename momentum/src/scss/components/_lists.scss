@@ -10,6 +10,7 @@ div.featured-list {
 
 		@include media-above($break-large) {
 			@include span(8);
+			padding: 0;
 			float: none;
 		}
 
@@ -24,8 +25,12 @@ div.featured-list {
 				font-size: 30px;
 				width: 100%;
 				position: relative;
-				padding: 50px 0;
+				padding: 50px 0 20px;
 				line-height: 36px;
+
+				@include media-above($break-large) {
+					padding: 50px 0;
+				}
 
 				&:before, &:after {
 					content: '“';
@@ -64,23 +69,18 @@ div.featured-list {
 				margin-bottom: 75px;
 
 				@include media-above($break-medium) {	
-					@include span(3.3);
+					padding: 0;
 					margin-bottom: 100px;
-				}
-
-				&:nth-child(4){
-					clear:left;
 				}
 
 				.detail {
 					p {
-						padding: 20px 0 0;
+						padding: 0;
 						margin-bottom: 30px;
 						font-size: 16px;
 						line-height: 24px;						
 
 						@include media-above($break-medium) {	
-							padding: 20px 0 0;
 							margin-bottom: 40px;
 							font-size: 20px;
 							line-height: 30px;
@@ -198,10 +198,10 @@ div.featured-list {
 	}
 
 	&.class-list {
-		display: flex;
-		flex-wrap: wrap;
+
 
 		> div {
+			margin: 0;
 
 			p {
 				max-width: 90%;
@@ -213,10 +213,6 @@ div.featured-list {
 				max-width: 90%;
 			}
 
-
-			&:nth-child(4){
-				clear:left;
-			}
 		}
 	}
 
@@ -229,6 +225,7 @@ div.featured-list {
 		@include media-above($break-large) {	
 			@include span(3.3);
 			padding: 0;
+			margin: 0;
 		}
 
 		.title {
@@ -241,11 +238,11 @@ div.featured-list {
 			font-family: 'thirsty_roughlight', sans-serif;
 			color: color(black);
 			font-size: 20px;
-			
 			margin: 0 auto;
 
 			@include media-above($break-large) {
-				max-width: 370px;width: 100%;
+				max-width: 370px;
+				width: 100%;
 			}
 		}		
 
@@ -254,7 +251,7 @@ div.featured-list {
 			font-family: 'DINPro-Light', sans-serif;
 			font-size: 20px;
 			line-height: 30px;
-			margin-top: 20px;
+			margin-top: 0;
 		}
 
 

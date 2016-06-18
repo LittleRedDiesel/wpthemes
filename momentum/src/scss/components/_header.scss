@@ -54,6 +54,8 @@
 						color: color(white);
 						letter-spacing: 1px;
 						line-height: 80px;
+						padding: 0 10px;
+    					display: inline-block;
 					}
 
 					&.current-menu-item {
@@ -86,6 +88,10 @@
 
 		.join-cta {
 			width: 100%;
+			font-size: 16px;
+			height: 80px;
+			padding: 0;
+			line-height: 80px;
 			display: block;
 
 			@include media-above($break-large) {
@@ -93,9 +99,6 @@
 				position: absolute;
 				top: 0;
 				right: 0;
-				height: 80px;
-				line-height: 80px;
-				padding: 0;
 				width: 170px;
 				text-transform: uppercase;
 			}

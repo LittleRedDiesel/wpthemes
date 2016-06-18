@@ -4,7 +4,6 @@
 	margin: 0 auto;
 
 	@include media-above($break-large) {
-		width: 180px;
 		padding: 50px 0 70px;
 	}
 
@@ -21,7 +20,13 @@
 		display: flex;
 
 		li {
-			margin: auto; 
+			margin: auto;
+			float: left;
+			padding: 10px;
+
+			&:first-child {
+				padding-left: 0;
+			}
 
 			a {
 				position: relative;

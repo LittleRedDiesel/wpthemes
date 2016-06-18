@@ -356,6 +356,120 @@ Template Name: Join us
 					<td colspan="4" class="leftalign">*** 3 month time limit</td>
 				</tr>
 			</table>
+
+			<table class="mobile-price-table">
+				<tr class="row-border">
+					<th>1 Month contract</th>
+					<th>6 Month contract</th>
+					<th>12 Month contract</th>
+				</tr>
+				<tr>
+					<td colspan="3" class="title-row">All classes</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="black-title-row">All classes unlimited*</td>
+				</tr>
+				<tr class="row-border">
+					<td colspan="3" class="duration-row">32 sessions x month</td>
+				</tr>
+				<tr class="thirds-divided-row">
+					<td class="sum">£195<span>£6.10 x session</span></td>
+					<td class="sum">£180<span>£5.62 x session</span></td>
+					<td class="sum">£160<span>£5.00 x session</span></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="black-title-row">All classes</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="duration-row">13 sessions x month</td>
+				</tr>
+				<tr class="thirds-divided-row">
+					<td class="sum">£155<span>£11.90 x session</span></td>
+					<td class="sum">£140<span>£10.76 x session</span></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="black-title-row">All classes</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="duration-row">9 sessions x month</td>
+				</tr>
+				<tr class="thirds-divided-row">
+					<td class="sum">£155<span>£12.77 x session</span></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="title-row">Off peak</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="black-title-row">Off peak unlimited**</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="duration-row">Unlimited</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="thirds-divided-row">
+					<td class="sum">£155<span>£3.59 x session</span></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="title-row">Met-con only</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="black-title-row">Met-con only</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="duration-row">13 sessions x month</td>
+				</tr>
+				<tr class="thirds-divided-row">
+					<td class="sum">£140<span>£10.76 x session</span></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="black-title-row">Met-con only</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="duration-row">9 sessions x month</td>
+				</tr>
+				<tr class="thirds-divided-row">
+					<td class="sum">£105<span>£10.76 x session</span></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="title-row">Pay as you go</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="black-title-row">Single session</td>
+				</tr>
+				<tr class="row-border padding-bottom">
+					<td colspan="3" class="sum">£20</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="black-title-row">10 Session pack***</td>
+				</tr>
+				<tr class="row-border padding-bottom">
+					<td colspan="3" class="sum">£175</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="duration-row terms padding-top">*	Unlimited memberships entitle you to a maximum of 32 sessions a month.</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="duration-row terms">** 	Off-peak classes: 8am and 5.30pm week days. 12pm Saturday. All day Sunday. All Open Gym sessions</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="duration-row terms">***	3 month time limit</td>
+				</tr>
+
+			</table>
 		</div>
 	</section>
 	<section class="bg-grey-section">

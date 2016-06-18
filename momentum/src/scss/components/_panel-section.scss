@@ -127,6 +127,7 @@
 
 			@include media-above($break-large) {
 				padding: 70px 0 80px;
+				display: inline-block;
 			}
 
 			h4 {

@@ -2,16 +2,24 @@
 	display:none;
 
 	h3 {
-		color: color(white);
+		width: 90%;
 		font-family: 'thirsty_roughlight';
-		font-size: 72px;
-		margin: 0 auto 15px;
+
+		@include media-above($break-large) {
+			color: color(white);
+			font-size: 72px;
+			margin: 0 auto 15px;
+		}
 	}
 
 	.subtitle {
-		font-size: 30px;
-		margin: 0 auto;
-		max-width: 500px;
+		width: 90%;
+		
+		@include media-above($break-large) {
+			font-size: 30px;
+			margin: 0 auto;
+			max-width: 500px;
+		}
 
 		&:after {
 			color: color(blue);
@@ -44,8 +52,10 @@
 
 	.panel {
 		&:before {
-			height: 90%;
-			background-color: color(darkborder);
+			@include media-above($break-large) {
+				height: 90%;
+				background-color: color(darkborder);
+			}
 		}
 	}
 

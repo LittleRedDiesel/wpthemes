@@ -48,7 +48,7 @@
 			slidesToScroll: 1
 		});
 
-		if($(window).width() < 800) {
+		if($(window).width() < 801) {
 			$('.mobile-carousel').slick({
 				dots: true,
 				infinite: true,
@@ -412,7 +412,7 @@
 		
 	});
 	
-	//Click anywhere on the page to get rid of lightbox window
+	//Click the cross to get rid of lightbox window
 	$('.lightbox .icon-close').live('click', function(e) { //must use live, as the lightbox element is inserted into the DOM
 		e.preventDefault;
 		$('.lightbox').hide();
@@ -434,6 +434,9 @@
 		$('.js-hidden').fadeIn(function(){
 			$('.js-hidden').removeClass('js-hidden');
 			$('.button-expand').remove();
+			$grid.imagesLoaded().progress( function() {
+			  $grid.masonry('layout');
+			});
 		});
 	});
 
@@ -472,7 +475,7 @@
 
 	// Ellipsis crop
 
-	var ellipsis = $('.ellipsis p');
+	var ellipsis = $('.ellipsis > p');
 
 	$(ellipsis).each(function(){
 
@@ -489,6 +492,16 @@
     	}
 	});
 
+
+	// Masonry
+	if($(window).width() > 800) {
+		var $grid = $('.masonry-list').masonry({
+			// options
+			itemSelector: '.list-item',
+			columnWidth: '.list-item',
+			percentPosition: true
+		});
+	}
 
 	}
   });
