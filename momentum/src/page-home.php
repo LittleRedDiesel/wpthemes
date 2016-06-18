@@ -12,19 +12,28 @@ Template Name: Home
 	<div class="wrap-content">
 		<section class="bg-img-section panel-section">
 			<div class="image-mask">
-				<img src="<?php the_field('image_background'); ?>" class="banner-image" />
+				<?php 
+
+				$image1 = get_field('image_background');
+
+				if( !empty($image1) ): ?>
+
+					<img src="<?php echo $image1['url']; ?>" class="banner-image" alt="<?php echo $image1['alt']; ?>" />
+
+				<?php endif; ?>
+
 			</div>
 			<div class="section-content hero-content">
 				<h1><?php the_field('section_title'); ?></h1>
 				<div class="panel-container">
 					<div class="panel panel-clipped panel-1">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title'); ?></h3>
-						<p><?php the_field('incentive_desc'); ?></p>
+						<?php the_field('incentive_desc'); ?>
 						<a href="mailto:<?php the_field('incentive_button_link'); ?>" class="button"><?php the_field('incentive_button_text'); ?></a>
 					</div>
 					<div class="panel panel-2 panel-clipped right-panel">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title_2'); ?></h3>
-						<p><?php the_field('incentive_description_2'); ?></p>
+						<?php the_field('incentive_description_2'); ?>
 						<a href="" class="button"><?php the_field('incentive_button_text_2'); ?></a>
 					</div>
 				</div>
@@ -33,18 +42,44 @@ Template Name: Home
 		<section>
 			<div class="section-content">
 				<h2 class="ellipsis-pre"><?php the_field('copy-section-title'); ?></h2>
-				<p><?php the_field('copy-section-subtitle'); ?></p>
-				<h3><?php the_field('copy-section-secondary-title'); ?></h3>
 				<div><?php the_field('copy-section-wysiwyg'); ?></div>
 			</div>
 		</section>
 		<section class="section-carousel">
 			<div class="mt-carousel home-carousel title-carousel">
-				<div><img src="<?php the_field('carousel_image_1'); ?>" /></div>
-				<div><img src="<?php the_field('carousel_image_2'); ?>" /></div>
-				<div><img src="<?php the_field('carousel_image_3'); ?>" /></div>
-				<div><img src="<?php the_field('carousel_image_4'); ?>" /></div>
-				<div><img src="<?php the_field('carousel_image_5'); ?>" /></div>
+				<?php 
+
+				$carouselimage1 = get_field('carousel_image_1');
+
+				if( !empty($carouselimage1) ): ?>
+				<div><img src="<?php echo $carouselimage1['url']; ?>" alt="<?php echo $carouselimage1['alt']; ?>" /></div>
+				<?php endif; 
+
+				$carouselimage2 = get_field('carousel_image_2');
+
+				if( !empty($carouselimage2) ): ?>
+				<div><img src="<?php echo $carouselimage2['url']; ?>" alt="<?php echo $carouselimage2['alt']; ?>" /></div>
+				<?php endif; 
+
+				$carouselimage3 = get_field('carousel_image_3');
+
+				if( !empty($carouselimage3) ): ?>
+				<div><img src="<?php echo $carouselimage3['url']; ?>" alt="<?php echo $carouselimage3['alt']; ?>" /></div>
+				<?php endif; 
+
+				$carouselimage4 = get_field('carousel_image_4');
+
+				if( !empty($carouselimage4) ): ?>
+				<div><img src="<?php echo $carouselimage4['url']; ?>" alt="<?php echo $carouselimage4['alt']; ?>" /></div>
+				<?php endif; 
+
+				$carouselimage5 = get_field('carousel_image_5');
+
+				if( !empty($carouselimage5) ): ?>
+				<div><img src="<?php echo $carouselimage5['url']; ?>" alt="<?php echo $carouselimage5['alt']; ?>" /></div>
+				<?php endif; 
+
+				?>
 			</div>
 		</section>
 		<section>
@@ -59,7 +94,15 @@ Template Name: Home
 				        <?php setup_postdata($post); ?>
 				        <div>
 							<div class="circular-clip">
-								<img src="<?php the_field('team_photo'); ?>" />
+								<?php 
+
+									$teamimage = get_field('team_photo');
+
+									if( !empty($teamimage) ): ?>
+
+										<img src="<?php echo $teamimage['url']; ?>" alt="<?php echo $teamimage['alt']; ?>" />
+
+								<?php endif; ?>
 							</div>
 							<span class="title"><?php the_title(); ?></span>
 							<?php the_excerpt(); ?>

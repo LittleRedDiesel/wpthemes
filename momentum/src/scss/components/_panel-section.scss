@@ -39,6 +39,28 @@
 
 			.panel-container {
 				display: flex;
+				position: relative;
+
+				&:after {
+					top: 100%;
+					left: 75%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+					border-color: rgba(216, 216, 212, 0);
+					border-top-color: color(stone);
+					border-width: 30px;
+					margin-left: -30px;
+				}
+
+				&.left {
+					&:after {
+						left: 25%;
+					}
+				}
 			}
 
 			.panel {
@@ -62,6 +84,7 @@
 					content: none;
 
 					@include media-above($break-large) {
+						content: '';
 						height: 130px;
 						background-color: color(darkstone);
 					}
@@ -84,21 +107,6 @@
 				}
 
 				&.js-active {
-
-					&:after {
-						top: 100%;
-						left: 50%;
-						border: solid transparent;
-						content: " ";
-						height: 0;
-						width: 0;
-						position: absolute;
-						pointer-events: none;
-						border-color: rgba(216, 216, 212, 0);
-						border-top-color: #d8d8d4;
-						border-width: 30px;
-						margin-left: -30px;
-					}
 
 					h3,
 					.right-panel h3 {

@@ -229,13 +229,13 @@ p {
 .ellipsis-post {
 	margin-bottom: 0!important;
 	position: relative;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 	display: block;
 
 	&:after {
 		font-family: 'icomoon';
 		position: absolute;
-		bottom: -25px;
+		bottom: 0;
 		content: '\e905';
 		font-size: 80px;
 		line-height: 30px;

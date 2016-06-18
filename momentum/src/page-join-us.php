@@ -20,7 +20,11 @@ Template Name: Join us
 					<p><?php the_field('lhs_div_1_explanation'); ?></p>
 					<ul>
 						<li>
-							<img src="<?php the_field('lhs_div_1_img'); ?>" />
+							<?php 
+								$lhs_div_1_img = get_field('lhs_div_1_img');
+								if( !empty($lhs_div_1_img) ): ?>
+									<img src="<?php echo $lhs_div_1_img['url']; ?>" alt="<?php echo $lhs_div_1_img['alt']; ?>" />
+							<?php endif; ?>
 							<span class="class-name"><?php the_field('lhs_div_1_title'); ?></span>
 							<span class="class-duration"><?php the_field('lhs_div_1_duration'); ?></span>
 						</li>
@@ -36,12 +40,20 @@ Template Name: Join us
 					<p><?php the_field('rhs_div_1_explanation'); ?></p>
 					<ul class="horizonal-division">
 						<li class="double">
-							<img src="<?php the_field('rhs_div_1_img_1'); ?>" />
+							<?php 
+								$rhs_div_1_img_1 = get_field('rhs_div_1_img_1');
+								if( !empty($rhs_div_1_img_1) ): ?>
+									<img src="<?php echo $rhs_div_1_img_1['url']; ?>" alt="<?php echo $rhs_div_1_img_1['alt']; ?>" />
+							<?php endif; ?>
 							<span class="class-name"><?php the_field('rhs_div_1_title_1'); ?></span>
 							<span class="class-duration"><?php the_field('rhs_div_1_duration_1'); ?></span>
 						</li>
 						<li class="double">
-							<img src="<?php the_field('rhs_div_1_img_2'); ?>" />
+							<?php 
+								$rhs_div_1_img_2 = get_field('rhs_div_1_img_2');
+								if( !empty($rhs_div_1_img_2) ): ?>
+									<img src="<?php echo $rhs_div_1_img_2['url']; ?>" alt="<?php echo $rhs_div_1_img_2['alt']; ?>" />
+							<?php endif; ?>
 							<span class="class-name"><?php the_field('rhs_div_1_title_2'); ?></span>
 							<span class="class-duration"><?php the_field('rhs_div_1_duration_2'); ?></span>
 						</li>
@@ -51,22 +63,38 @@ Template Name: Join us
 					<p><?php the_field('rhs_div_2_explanation'); ?></p>
 					<ul class="horizonal-division">
 						<li>
-							<img src="<?php the_field('rhs_div_2_img_1'); ?>" />
+							<?php 
+								$rhs_div_1_img_1 = get_field('rhs_div_2_img_1');
+								if( !empty($rhs_div_2_img_1) ): ?>
+									<img src="<?php echo $rhs_div_2_img_1['url']; ?>" alt="<?php echo $rhs_div_2_img_1['alt']; ?>" />
+							<?php endif; ?>
 							<span class="class-name"><?php the_field('rhs_div_2_title_1'); ?></span>
 							<span class="class-duration"><?php the_field('rhs_div_2_duration_1'); ?></span>
 						</li>
 						<li>
-							<img src="<?php the_field('rhs_div_2_img_2'); ?>" />
+							<?php 
+								$rhs_div_2_img_2 = get_field('rhs_div_2_img_2');
+								if( !empty($rhs_div_2_img_2) ): ?>
+									<img src="<?php echo $rhs_div_2_img_2['url']; ?>" alt="<?php echo $rhs_div_2_img_2['alt']; ?>" />
+							<?php endif; ?>
 							<span class="class-name"><?php the_field('rhs_div_2_title_2'); ?></span>
 							<span class="class-duration"><?php the_field('rhs_div_2_duration_2'); ?></span>
 						</li>
 						<li>
-							<img src="<?php the_field('rhs_div_2_img_3'); ?>" />
+							<?php 
+								$rhs_div_2_img_3 = get_field('rhs_div_2_img_3');
+								if( !empty($rhs_div_2_img_3) ): ?>
+									<img src="<?php echo $rhs_div_2_img_3['url']; ?>" alt="<?php echo $rhs_div_2_img_3['alt']; ?>" />
+							<?php endif; ?>
 							<span class="class-name"><?php the_field('rhs_div_2_title_3'); ?></span>
 							<span class="class-duration"><?php the_field('rhs_div_2_duration_3'); ?></span>
 						</li>
 						<li>
-							<img src="<?php the_field('rhs_div_2_img_4'); ?>" />
+							<?php 
+								$rhs_div_2_img_4 = get_field('rhs_div_2_img_4');
+								if( !empty($rhs_div_2_img_4) ): ?>
+									<img src="<?php echo $rhs_div_2_img_4['url']; ?>" alt="<?php echo $rhs_div_2_img_4['alt']; ?>" />
+							<?php endif; ?>
 							<span class="class-name"><?php the_field('rhs_div_2_title_4'); ?></span>
 							<span class="class-duration"><?php the_field('rhs_div_2_duration_4'); ?></span>
 						</li>
@@ -87,13 +115,39 @@ Template Name: Join us
 	</div>
 	<section class="section-carousel">
 		<div class="mt-carousel title-carousel">
-			<div><img src="<?php the_field('carousel_image_1'); ?>" />
-				<h1><?php the_field('section_title'); ?></h1>
-			</div>
-			<div><img src="<?php the_field('carousel_image_2'); ?>" /></div>
-			<div><img src="<?php the_field('carousel_image_3'); ?>" /></div>
-			<div><img src="<?php the_field('carousel_image_4'); ?>" /></div>
-			<div><img src="<?php the_field('carousel_image_5'); ?>" /></div>
+				<?php 
+
+					$carouselimage1 = get_field('carousel_image_1');
+
+					if( !empty($carouselimage1) ): ?>
+					<div><img src="<?php echo $carouselimage1['url']; ?>" alt="<?php echo $carouselimage1['alt']; ?>" /></div>
+					<?php endif; 
+
+					$carouselimage2 = get_field('carousel_image_2');
+
+					if( !empty($carouselimage2) ): ?>
+					<div><img src="<?php echo $carouselimage2['url']; ?>" alt="<?php echo $carouselimage2['alt']; ?>" /></div>
+					<?php endif; 
+
+					$carouselimage3 = get_field('carousel_image_3');
+
+					if( !empty($carouselimage3) ): ?>
+					<div><img src="<?php echo $carouselimage3['url']; ?>" alt="<?php echo $carouselimage3['alt']; ?>" /></div>
+					<?php endif; 
+
+					$carouselimage4 = get_field('carousel_image_4');
+
+					if( !empty($carouselimage4) ): ?>
+					<div><img src="<?php echo $carouselimage4['url']; ?>" alt="<?php echo $carouselimage4['alt']; ?>" /></div>
+					<?php endif; 
+
+					$carouselimage5 = get_field('carousel_image_5');
+
+					if( !empty($carouselimage5) ): ?>
+					<div><img src="<?php echo $carouselimage5['url']; ?>" alt="<?php echo $carouselimage5['alt']; ?>" /></div>
+					<?php endif; 
+
+				?>
 		</div>
 	</section>
 	<section class="bg-grey-section panel-section click-panels">
@@ -123,7 +177,6 @@ Template Name: Join us
 				<div class="panel-container tertiary-panels">
 					<div class="panel panel3 js-active">
 						<?php the_field('tertiary_panel_1_content'); ?>
-						
 						<a href="#" class="button"><?php the_field('tertiary_panel_1_button_text'); ?></a><br/>
 						<a href="#" class="small-link lightbox-trigger" data-lightbox="help-<?php echo $post->ID ?>"><?php the_field('tertiary_panel_1_small_link_text'); ?></a>
 					</div>

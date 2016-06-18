@@ -260,9 +260,11 @@
 			var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
 
 			// create marker
+			var iconBase = 'http://momentum.lrd-dev.com/wp-content/themes/momentumtraining/images/';
 			var marker = new google.maps.Marker({
 				position	: latlng,
-				map			: map
+				map			: map,
+				icon: iconBase + 'map-marker.png'
 			});
 
 			// add to array
@@ -436,7 +438,13 @@
 	});
 
 
-	// Interactive panels 
+	// Interactive panels
+	if($('.panel-1').hasClass('js-active')){
+		$('.panel-1').parents('.panel-container').addClass('left');
+	} else {
+		$('.left').removeClass('left');
+	}
+
 	$('.js-switch-panel').on('click', function(e){
 		e.preventDefault();
 		$(this).parents('.panel-container').find('.js-active').removeClass('js-active');
@@ -451,6 +459,13 @@
 			$('.tertiary-panels > .js-active').removeClass('js-active');
 			$('.' + panel).addClass('js-active');
 		}
+
+		if($('.panel-1').hasClass('js-active')){
+			$('.panel-1').parents('.panel-container').toggleClass('left');
+		} else if($('.panel-2').hasClass('js-active')) {
+			$('.left').removeClass('left');
+		}
+
 
 	});
 

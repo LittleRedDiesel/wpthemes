@@ -18,7 +18,15 @@ Template Name: Team
 			<?php setup_postdata($post); ?>
 			<div>
 				<div class="circular-clip">
-					<img src="<?php the_field('team_photo'); ?>" />
+				<?php 
+
+					$teamimage = get_field('team_photo');
+
+					if( !empty($teamimage) ): ?>
+
+						<img src="<?php echo $teamimage['url']; ?>" alt="<?php echo $teamimage['alt']; ?>" />
+
+				<?php endif; ?>
 				</div>
 				<span class="title ellipsis-post"><?php the_title(); ?></span>
 				<div class="detail"><?php the_content(); ?></div>
@@ -28,7 +36,15 @@ Template Name: Team
 				<a href="" class="ellipsis-pre ellipsis-link lightbox-trigger" data-lightbox="qual-<?php echo $post->ID ?>">View qualifications</a>
 				<div class="qualifications qual-<?php echo $post->ID ?>">
 					<div class="circular-clip">
-						<img src="<?php the_field('team_photo'); ?>" />
+					<?php 
+
+						$teamimage = get_field('team_photo');
+
+						if( !empty($teamimage) ): ?>
+
+							<img src="<?php echo $teamimage['url']; ?>" alt="<?php echo $teamimage['alt']; ?>" />
+
+					<?php endif; ?>
 					</div>
 					<h4 class="ellipsis-post"><?php the_field('qualifications_title'); ?></h4>
 					<?php the_field('qualifications_list'); ?>
@@ -48,7 +64,15 @@ Template Name: Team
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div>
 					<div class="circular-clip">
-						<img src="<?php the_field('team_photo'); ?>" />
+					<?php 
+
+						$teamimage2 = get_field('team_photo');
+
+						if( !empty($teamimage2) ): ?>
+
+							<img src="<?php echo $teamimage2['url']; ?>" alt="<?php echo $teamimage2['alt']; ?>" />
+
+					<?php endif; ?>
 					</div>
 					<span class="title ellipsis-post"><?php the_title(); ?></span>
 					<div class="detail"><?php the_content(); ?></div>
