@@ -9,7 +9,7 @@ Template Name: Join us
 		<div class="lightbox-columns">
 			<h3><?php the_field('columns_title'); ?></h3>
 			<p class="subtitle ellipsis-post"><?php the_field('columns_subtitle'); ?></p>
-			<div class="panel-container">
+			<div class="panel-container lightbox-panel">
 				<div class="panel panel-1">
 					<h4 class="ellipsis-post"><?php the_field('lhs-title'); ?></h4>
 					<p class="column-intro"><?php the_field('lhs-description'); ?></p>
@@ -29,6 +29,7 @@ Template Name: Join us
 							<span class="class-duration"><?php the_field('lhs_div_1_duration'); ?></span>
 						</li>
 					</ul>
+					<a href="#" class="button blue"><?php the_field('lhs_div_1_button_text'); ?></a>
 				</div>
 				<div class="panel panel-2">
 					<h4 class="ellipsis-post"><?php the_field('rhs_title'); ?></h4>
@@ -179,12 +180,12 @@ Template Name: Join us
 				<div class="panel-container tertiary-panels">
 					<div class="panel panel3 js-active">
 						<?php the_field('tertiary_panel_1_content'); ?>
-						<a href="#" class="button"><?php the_field('tertiary_panel_1_button_text'); ?></a><br/>
+						<a href="<?php the_field('tertiary_panel_1_button_link'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text'); ?></a><br/>
 						<a href="#" class="small-link lightbox-trigger" data-lightbox="help-<?php echo $post->ID ?>"><?php the_field('tertiary_panel_1_small_link_text'); ?></a>
 					</div>
 					<div class="panel panel4">
 						<?php the_field('tertiary_panel_2_content'); ?>
-						<a href="#" class="button"><?php the_field('tertiary_panel_2_button_text'); ?></a><br />
+						<a href="<?php the_field('tertiary_panel_2_button_link'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text'); ?></a><br />
 						<a href="#" class="small-link lightbox-trigger" data-lightbox="help-<?php echo $post->ID ?>"><?php the_field('tertiary_panel_1_small_link_text'); ?></a>
 					</div>
 				</div>
@@ -193,295 +194,26 @@ Template Name: Join us
 	</section>
 	<section class="bg-blue-section">
 		<div class="section-content padding-reduced">
-			<h4 class="ellipsis-post">Our classes</h4>
-			<h1 class="title-wide">Membership prices</h1>
+			<h1 class="title-wide"><?php the_field('table_section_title'); ?></h1>
 			<table>
-				<tr class="border">
-					<th>All classes</th>
-					<th></th>
-					<th>1 month contract</th>
-					<th>6 month contract</th>
-					<th>12 month contract</th>
-				</tr>
-				<tr class="topspace">
-					<td></td>
-					<td>All classes unlimited</td>
-					<td class="sum">£195</td>
-					<td class="sum">£180</td>
-					<td class="sum">£160</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>32 sessions x month</td>
-					<td>£6.10 x session</td>
-					<td>£5.62 x session</td>
-					<td>£5.00 x session</td>
-				</tr>
-				<tr class="topspace">
-					<td></td>
-					<td>All classes</td>
-					<td class="sum">£155</td>
-					<td class="sum">£140</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>13 sessions x month</td>
-					<td>£11.90 x session</td>
-					<td>£10.76 x session</td>
-					<td></td>
-				</tr>
-				<tr class="topspace">
-					<td></td>
-					<td>All classes</td>
-					<td class="sum">£155</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>9 sessions x month</td>
-					<td>£12.77 x session</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="border">
-					<td>Off peak</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="topspace">
-					<td></td>
-					<td>Off peak unlimited</td>
-					<td class="sum">£155</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>Unlimited</td>
-					<td>£3.59 x session</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="border">
-					<td>Met-con only</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="topspace">
-					<td></td>
-					<td>Met-con only</td>
-					<td class="sum">£140</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>13 sessions x month</td>
-					<td>£10.76 x session</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="topspace">
-					<td></td>
-					<td>Met-con only</td>
-					<td class="sum">£105</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>9 sessions x month</td>
-					<td>£10.76 x session</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="border">
-					<td>Pay as you go</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="topspace med">
-					<td></td>
-					<td>Single session</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td class="sum">£20</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="topspace med">
-					<td></td>
-					<td>10 session pack</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td class="sum">£175</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="border">
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="terms topspace">
-					<td></td>
-					<td colspan="4" class="leftalign">* Unlimited memberships entitle you to a maximum of 32 sessions a month.</td>
-				</tr>
-				<tr class="terms">
-					<td></td>
-					<td colspan="4" class="leftalign">** Off-peak classes: 8am and 5.30pm weekdays. 12pm Saturday. All day Sunday. All Open Gym sessions</td>
-				</tr>
-				<tr class="terms">
-					<td></td>
-					<td colspan="4" class="leftalign">*** 3 month time limit</td>
-				</tr>
+				<?php the_field('desktop_layout'); ?>
 			</table>
 
 			<table class="mobile-price-table">
-				<tr class="row-border">
-					<th>1 Month contract</th>
-					<th>6 Month contract</th>
-					<th>12 Month contract</th>
-				</tr>
-				<tr>
-					<td colspan="3" class="title-row">All classes</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="black-title-row">All classes unlimited*</td>
-				</tr>
-				<tr class="row-border">
-					<td colspan="3" class="duration-row">32 sessions x month</td>
-				</tr>
-				<tr class="thirds-divided-row">
-					<td class="sum">£195<span>£6.10 x session</span></td>
-					<td class="sum">£180<span>£5.62 x session</span></td>
-					<td class="sum">£160<span>£5.00 x session</span></td>
-				</tr>
-				<tr>
-					<td colspan="3" class="black-title-row">All classes</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="duration-row">13 sessions x month</td>
-				</tr>
-				<tr class="thirds-divided-row">
-					<td class="sum">£155<span>£11.90 x session</span></td>
-					<td class="sum">£140<span>£10.76 x session</span></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td colspan="3" class="black-title-row">All classes</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="duration-row">9 sessions x month</td>
-				</tr>
-				<tr class="thirds-divided-row">
-					<td class="sum">£155<span>£12.77 x session</span></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td colspan="3" class="title-row">Off peak</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td colspan="3" class="black-title-row">Off peak unlimited**</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td colspan="3" class="duration-row">Unlimited</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="thirds-divided-row">
-					<td class="sum">£155<span>£3.59 x session</span></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td colspan="3" class="title-row">Met-con only</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="black-title-row">Met-con only</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="duration-row">13 sessions x month</td>
-				</tr>
-				<tr class="thirds-divided-row">
-					<td class="sum">£140<span>£10.76 x session</span></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td colspan="3" class="black-title-row">Met-con only</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="duration-row">9 sessions x month</td>
-				</tr>
-				<tr class="thirds-divided-row">
-					<td class="sum">£105<span>£10.76 x session</span></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td colspan="3" class="title-row">Pay as you go</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="black-title-row">Single session</td>
-				</tr>
-				<tr class="row-border padding-bottom">
-					<td colspan="3" class="sum">£20</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="black-title-row">10 Session pack***</td>
-				</tr>
-				<tr class="row-border padding-bottom">
-					<td colspan="3" class="sum">£175</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="duration-row terms padding-top">*	Unlimited memberships entitle you to a maximum of 32 sessions a month.</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="duration-row terms">** 	Off-peak classes: 8am and 5.30pm week days. 12pm Saturday. All day Sunday. All Open Gym sessions</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="duration-row terms">***	3 month time limit</td>
-				</tr>
-
+				<?php the_field('mobile_layout'); ?>
 			</table>
 		</div>
 	</section>
 	<section class="bg-grey-section">
 		<div class="section-content padding-reduced">
-			<h4 class="ellipsis-post">Our Timetable</h4>
+			<h4 class="ellipsis-post"><?php the_field('timetable_mini_title'); ?></h4>
 			<h1 class="title-wide"><?php the_field('timetable_section_heading'); ?></h1>
 			<?php if (have_posts()) : while (have_posts()) : the_post();?>
 			<?php the_content(); ?>
 			<?php endwhile; endif; ?>
 
 			<div class="feature-content">
-				<iframe src="https://clients.mindbodyonline.com/classic/home?studioid=106685"></iframe>
+				<iframe style="position: absolute; top: -9999em; visibility: hidden;" onload="this.style.position='static'; this.style.visibility='visible';" src="https://clients.mindbodyonline.com/classic/home?studioid=106685"></iframe>
 			</div>
 		</div>
 	</section> 

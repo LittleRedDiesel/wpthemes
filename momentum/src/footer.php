@@ -7,6 +7,9 @@
           </ul>
         	<p>&copy;Momentum Training 2016</p>
           <a href="" class="icon icon-arrow_up js-back-to-top"><span>Return to top</span></a>
+          <nav class="site-footer-navigation">
+            <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'menu-footer', 'menu_class' => 'menu-inline' ) ); ?>
+          </nav>
         </footer>
       </div>
     </div>

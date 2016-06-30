@@ -3,21 +3,21 @@
 
 	h3 {
 		width: 90%;
+		margin: 0 auto 15px;
 		font-family: 'thirsty_roughlight';
 
 		@include media-above($break-large) {
 			color: color(white);
 			font-size: 72px;
-			margin: 0 auto 15px;
 		}
 	}
 
 	.subtitle {
 		width: 90%;
+		margin: 0 auto;
 		
 		@include media-above($break-large) {
 			font-size: 30px;
-			margin: 0 auto;
 			max-width: 500px;
 		}
 
@@ -47,7 +47,11 @@
 	}
 
 	h4 {
-		font-size: 36px;
+		font-size: 24px;
+
+		@include media-above($break-large) {
+			font-size: 36px;
+		}
 	}
 
 	.panel {

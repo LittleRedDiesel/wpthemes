@@ -150,9 +150,9 @@ section {
 
 	.feature-content {
 		height: 685px;
-		@include span(8);
-		float: none;
+		width: 90%;
 		margin: 0 auto 100px;
+		overflow: scroll;
 
 		iframe {
 			width: 100%;

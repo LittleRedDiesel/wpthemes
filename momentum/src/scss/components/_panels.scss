@@ -8,6 +8,10 @@
 		background-color: white\9;
 	}
 
+	&.lightbox-panel {
+		background-color: transparent;
+	}
+
 	.panel {
 		@include span(8.5);
 		margin: 0 auto;

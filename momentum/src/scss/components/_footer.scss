@@ -1,21 +1,22 @@
 footer[role=contentinfo] {
-	height: 160px;
+	height: 180px;
 	position: relative;
 	color: color(white);
 
 	@include media-above($break-large) {
-		height: 80px;
+		height: 120px;
 	}
 
 	p {
 		float: left;
 		font-size: 16px;
-		margin: 0;
-		line-height: 80px;
+		margin: 70px 0 0 0;
+		line-height: 50px;
 		text-align: center;
 
 		@include media-above($break-large) {
 			width: 100%;
+			line-height: 80px;
 			float: none;
 		}
 	}
@@ -33,7 +34,7 @@ footer[role=contentinfo] {
 
 		@include media-above($break-large) {
 			font-size: 50px;
-			top: 50%;
+			top: 30%;
 		}
 
 		&:hover {
@@ -44,20 +45,20 @@ footer[role=contentinfo] {
 	ul {
 		margin: 0;
 		padding: 0;
-		bottom: 0;
+		top: 0;
 		position: absolute;
 		display: table;
 		list-style-type: none;
 
-		@include media-above($break-large) {
-
-		}
-
 		li {
-			height: 80px;
 			display: table-cell;
 			vertical-align: middle;
 			position: relative;
+			height: 80px;
+
+			@include media-above($break-large) {
+				height: 80px;
+			}
 
 			&:first-child {
 				padding-right: 50px;
@@ -66,9 +67,13 @@ footer[role=contentinfo] {
 					padding-right: 25px;
 					content: '';
 					width: 1px;
-					height: 50%;
+					height: 25%;
 					position: absolute;
 					border-right: 1px solid color(white);
+
+					@include media-above($break-large) {
+						height: 50%;
+					}
 				}
 			}
 

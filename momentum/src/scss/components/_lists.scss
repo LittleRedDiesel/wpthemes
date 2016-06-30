@@ -1,19 +1,13 @@
 div.featured-list {
 	@include scut-clearfix;
 	list-style-type: none;
+	clear: both;
 	margin: 0 auto;
 	padding: 0;
+    width: 100%;
+    overflow: hidden;
 
 	&.team-list {
-		@include span(9);
-		float: none;
-
-		@include media-above($break-large) {
-			@include span(8);
-			padding: 0;
-			float: none;
-		}
-
 		> div {
 			padding: 0;
 
@@ -21,15 +15,26 @@ div.featured-list {
 				padding: 0 1%;
 			}
 
+			&.list-item {
+				padding: 0 5%;
+
+				@include media-above($break-large) {
+					padding: 0;
+					display: inline;
+				}
+			}
+
 			p {
 				font-size: 30px;
-				width: 100%;
+				width: 85%;
 				position: relative;
 				padding: 50px 0 20px;
 				line-height: 36px;
 
 				@include media-above($break-large) {
+					width: 100%;
 					padding: 50px 0;
+					margin-bottom: 40px;
 				}
 
 				&:before, &:after {
@@ -63,7 +68,6 @@ div.featured-list {
 		}
 
 		&.team-page {
-			width: 90%;
 
 			> div {
 				margin-bottom: 75px;
@@ -71,6 +75,8 @@ div.featured-list {
 				@include media-above($break-medium) {	
 					padding: 0;
 					margin-bottom: 100px;
+					margin-left: initial;
+					margin-right: initial;
 				}
 
 				.detail {
@@ -101,6 +107,7 @@ div.featured-list {
 
 					@include media-above($break-medium) {	
 						margin: 0 auto 40px;
+						width: 85%;
 					}
 
 					&:before, &:after {
@@ -129,6 +136,10 @@ div.featured-list {
 						top: -50px;
 					} 
 				}
+			}
+
+			&.team-further {
+				height: 0;
 			}
 		}
 	}
@@ -198,7 +209,6 @@ div.featured-list {
 	}
 
 	&.class-list {
-
 
 		> div {
 			margin: 0;

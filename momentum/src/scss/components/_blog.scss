@@ -6,16 +6,14 @@
 	}
 }
 
-.post {
+.blog > article {
 	width: 80%;
 	margin: 0 auto;
 	text-align: left;
 	padding: 40px 0;
 
 	@include media-above($break-large) {
-		@include span(7);
 		padding: 60px 0;
-
 	}
 
 	&:after {
@@ -39,8 +37,14 @@
 		}
 	}
 
+	h2, h1 {
+		font-size: 34px;
+	}
+
 	p {
 		font-size: 20px;
+		line-height: 26px;
+		font-family: 'DINPro-Light', sans-serif;
 
 		img {
 			display: block;

@@ -28,43 +28,6 @@
 				@include span(5);
 				clear: none;
 			}
-
-			.menu-inline {
-
-				@include media-above($break-large) {
-					display: flex;
-					margin: 0 auto;
-					width: 400px;
-				}
-
-				li {
-					margin: auto;
-					box-sizing: border-box;
-					width: 100%;
-					text-align: center;
-					font-size: 16px;
-
-
-					@include media-above($break-large) {
-						width: auto;
-					}
-
-					a {
-						font-family: 'DINPro-Medium';
-						color: color(white);
-						letter-spacing: 1px;
-						line-height: 80px;
-						padding: 0 10px;
-    					display: inline-block;
-					}
-
-					&.current-menu-item {
-						a {
-							color: color(black);
-						}
-					}
-				}
-			}
 		}
 
 
@@ -104,6 +67,8 @@
 			}
 
 			&:after {
+				content: none;
+
 				@include media-above($break-large) {
 					transition: all .4s ease-out;
 					bottom: -15px;
@@ -161,7 +126,7 @@
 			&:before {
 				color: color(white);
 				font-size: 30px;
-				line-height: 75px;
+				line-height: 77px;
 			}
 		}
 	}

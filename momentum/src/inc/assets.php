@@ -42,8 +42,6 @@ function voidx_enqueue_scripts() {
     );
   } // WP AJAX Page Loader configuration ends
 
-
-
   // Default script name; used when conditional blocks (above) aren't triggered
   if ( empty( $script_name ) )
     $script_name = '-core';

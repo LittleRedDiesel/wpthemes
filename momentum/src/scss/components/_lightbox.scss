@@ -14,7 +14,7 @@
 	color: color(white);
 
 	@include media-above($break-large) {
-		padding-top: 130px;
+		padding-top: 100px;
 	}
 
 	.icon-close {
@@ -28,7 +28,7 @@
 
 		@include media-above($break-large) {
 			font-size: 30px;
-			top: 130px;
+			top: 100px;
 			right: 5%;
 		}
 
@@ -85,7 +85,7 @@
 
 	ul {
 		list-style-type: none;
-		padding: 0 20px 50px 20px;
+		padding: 0 20px 80px 20px;
 
 		li {
 			font-size: 16px;

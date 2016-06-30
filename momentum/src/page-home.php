@@ -34,7 +34,7 @@ Template Name: Home
 					<div class="panel panel-2 panel-clipped right-panel">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title_2'); ?></h3>
 						<?php the_field('incentive_description_2'); ?>
-						<a href="" class="button"><?php the_field('incentive_button_text_2'); ?></a>
+						<a href="<?php the_field('incentive_button_link2'); ?>" class="button"><?php the_field('incentive_button_text_2'); ?></a>
 					</div>
 				</div>
 			</div>
@@ -87,7 +87,7 @@ Template Name: Home
 				<h2><?php the_field('team_section_title'); ?></h2>
 				<?php
 				$post_objects = get_field('team_members_to_display');
-
+				
 				if( $post_objects ): ?>
 				    <div class="featured-list team-list mobile-carousel">
 				    <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>

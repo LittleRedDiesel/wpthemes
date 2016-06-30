@@ -12,7 +12,7 @@ Template Name: Timetable
 		<?php endwhile; endif; ?>
 
 		<div class="feature-content">
-			<iframe src="https://clients.mindbodyonline.com/classic/home?studioid=106685"></iframe>
+			<iframe src="https://clients.mindbodyonline.com/classic/ws?studioid=106685&stype=-7&sView=day&sLoc=0"></iframe>
 		</div>
 	</section>    
 </main>

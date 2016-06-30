@@ -38,6 +38,9 @@ function voidx_setup() {
 }
 add_action( 'after_setup_theme', 'voidx_setup', 11 );
 
+
+
+
 // Add JS to footer
 function wpb_adding_scripts() {
   wp_register_script('vendor', get_template_directory_uri() . '/js/wp-vendor.js','','1.1', true);

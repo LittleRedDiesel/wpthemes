@@ -428,15 +428,35 @@
 	});
 
 
+	// Masonry
+	if($(window).width() > 800) {
+		$grid = $('.masonry-list').imagesLoaded( function() {
+		  // init Masonry after all images have loaded
+		  $grid.masonry({
+				itemSelector: '.list-item',
+				fitWidth: true, 
+				percentPosition: true
+		  });
+		});
+	}
+
 
 	$('.button-expand').on('click', function(e){
 		e.preventDefault();
-		$('.js-hidden').fadeIn(function(){
-			$('.js-hidden').removeClass('js-hidden');
+		$('.team-further').addClass('masonry-list');
+		$('.masonry-list').css('height', 'auto');
+
 			$('.button-expand').remove();
-			$grid.imagesLoaded().progress( function() {
-			  $grid.masonry('layout');
+
+		$grid = $('.masonry-list').imagesLoaded( function() {
+		  // init Masonry after all images have loaded
+
+			$grid.masonry({
+				itemSelector: '.list-item',
+				columnWidth: '.list-item',
+				percentPosition: true
 			});
+
 		});
 	});
 
@@ -493,15 +513,6 @@
 	});
 
 
-	// Masonry
-	if($(window).width() > 800) {
-		var $grid = $('.masonry-list').masonry({
-			// options
-			itemSelector: '.list-item',
-			columnWidth: '.list-item',
-			percentPosition: true
-		});
-	}
 
 	}
   });

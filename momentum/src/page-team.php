@@ -33,22 +33,30 @@ Template Name: Team
 				<?php the_excerpt(); ?>
 				<a class="contact-email" href="mailto:<?php the_field('team_email_address'); ?>"><?php the_field('team_email_address'); ?></a>
 				<span class="contact-tel"><?php the_field('team_phone_number'); ?></span>
-				<a href="" class="ellipsis-pre ellipsis-link lightbox-trigger" data-lightbox="qual-<?php echo $post->ID ?>">View qualifications</a>
-				<div class="qualifications qual-<?php echo $post->ID ?>">
-					<div class="circular-clip">
-					<?php 
+				<?php 
 
-						$teamimage = get_field('team_photo');
+					$qualifications_list = get_field('qualifications_list');
 
-						if( !empty($teamimage) ): ?>
+					if( !empty($qualifications_list) ): ?>
 
-							<img src="<?php echo $teamimage['url']; ?>" alt="<?php echo $teamimage['alt']; ?>" />
+						<a href="" class="ellipsis-pre ellipsis-link lightbox-trigger" data-lightbox="qual-<?php echo $post->ID ?>">View qualifications</a>
+						<div class="qualifications qual-<?php echo $post->ID ?>">
+							<div class="circular-clip">
+							<?php 
 
-					<?php endif; ?>
-					</div>
-					<h4 class="ellipsis-post"><?php the_field('qualifications_title'); ?></h4>
-					<?php the_field('qualifications_list'); ?>
-				</div>
+								$teamimage = get_field('team_photo');
+
+								if( !empty($teamimage) ): ?>
+
+									<img src="<?php echo $teamimage['url']; ?>" alt="<?php echo $teamimage['alt']; ?>" />
+
+							<?php endif; ?>
+							</div>
+							<h4 class="ellipsis-post"><?php the_field('qualifications_title'); ?></h4>
+							<?php the_field('qualifications_list'); ?>
+						</div>
+
+				<?php endif; ?>
 			</div>
 			<?php endforeach; ?>
 		</div>
@@ -58,9 +66,9 @@ Template Name: Team
 
 
 		<!-- Extra team members -->
-		<div class="team-further js-hidden">
+
 			<?php $loop = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1, 'cat' => -5, 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
-			<div class="featured-list team-list team-page masonry-list">
+			<div class="team-further featured-list team-list team-page">
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div class="list-item">
 					<div class="circular-clip">
@@ -79,11 +87,35 @@ Template Name: Team
 					<?php the_excerpt(); ?>
 					<a class="contact-email"  href="mailto:<?php the_field('team_email_address'); ?>"><?php the_field('team_email_address'); ?></a>
 					<span class="contact-tel"><?php the_field('team_phone_number'); ?></span>
+					<?php 
+
+						$qualifications_list = get_field('qualifications_list');
+
+						if( !empty($qualifications_list) ): ?>
+
+							<a href="" class="ellipsis-pre ellipsis-link lightbox-trigger" data-lightbox="qual-<?php echo $post->ID ?>">View qualifications</a>
+							<div class="qualifications qual-<?php echo $post->ID ?>">
+								<div class="circular-clip">
+								<?php 
+
+									$teamimage = get_field('team_photo');
+
+									if( !empty($teamimage) ): ?>
+
+										<img src="<?php echo $teamimage['url']; ?>" alt="<?php echo $teamimage['alt']; ?>" />
+
+								<?php endif; ?>
+								</div>
+								<h4 class="ellipsis-post"><?php the_field('qualifications_title'); ?></h4>
+								<?php the_field('qualifications_list'); ?>
+							</div>
+
+					<?php endif; ?>
 				</div>
 
 				<?php endwhile; wp_reset_query(); ?>
 			</div> 		  	
-		</div>
+
 	</section>
 </main>
 <?php get_footer(); ?>
