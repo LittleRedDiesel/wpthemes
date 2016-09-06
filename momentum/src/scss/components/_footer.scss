@@ -14,9 +14,10 @@ footer[role=contentinfo] {
 		line-height: 50px;
 		text-align: center;
 
-		@include media-above($break-large) {
+		@include media-above($break-medium) {
 			width: 100%;
 			line-height: 80px;
+			margin: 0;
 			float: none;
 		}
 	}
@@ -48,7 +49,12 @@ footer[role=contentinfo] {
 		top: 0;
 		position: absolute;
 		display: table;
+		width: 70%;
 		list-style-type: none;
+
+		@include media-above($break-medium) {
+			width: auto;
+		}	
 
 		li {
 			display: table-cell;

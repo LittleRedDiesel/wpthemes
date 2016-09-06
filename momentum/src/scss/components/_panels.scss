@@ -77,6 +77,22 @@
 			}
 		}
 
+		&.panel-clipped {
+			@include media-above($break-large) {
+				position: relative;
+			}
+
+			.button {
+				@include media-above($break-large) {
+					position: absolute;
+					bottom: 12px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+
+		}
+
 		&.right-panel {
 			background-color: color(white);
 			padding-bottom: 0;

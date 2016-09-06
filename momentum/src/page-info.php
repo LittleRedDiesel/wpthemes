@@ -13,10 +13,10 @@ Template Name: Information page
             while ( have_posts() ) : the_post(); ?>
 
                 <header class="entry-header">
-                    <h1 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+                    <h1 class="post-title"><?php the_title(); ?></h1>
                 </header>
     
-                <div class="entry-content">
+                <div class="entry-content info-content">
                 <?php the_content(); ?>
                 </div>
 

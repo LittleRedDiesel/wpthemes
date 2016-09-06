@@ -24,7 +24,7 @@
 
 	  @include media-above($break-large) {
 		margin: 0 auto;
-		width: 450px;
+		width: 460px;
 	  }
 
 	  li {
@@ -101,7 +101,7 @@ footer[role=contentinfo] .site-footer-navigation {
 
 			a {
 				font-size: 16px;
-				line-height: initial;
+				line-height: 20px;
 				padding: 0;
 			}
 

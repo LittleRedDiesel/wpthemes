@@ -282,7 +282,17 @@ p {
 		margin-bottom: 20px;
 
 		@include media-above($break-medium) {	
-			font-size: 24px;
+			font-size: 22px;
+			line-height: 30px;
 		}
+
+		&:last-child {
+			margin-bottom: 80px;
+		}
+	}
+
+	.info-content {
+		width: 90%;
+		margin: 0 auto;
 	}
 }

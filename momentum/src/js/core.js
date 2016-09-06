@@ -512,6 +512,25 @@
     	}
 	});
 
+		// Join us page tab control
+		var oldURL = document.referrer,
+			currentURL = window.location.href;
+			console.log(currentURL);
+
+		if (oldURL === "http://www.momentum-training.com/" && currentURL === 'http://www.momentum-training.com/join-us/?join'){
+			$('.js-active').removeClass('js-active');
+			$('.panel-2, .panel2, .panel4').addClass('js-active');
+		}
+
+
+	// Table
+	$('.mptt-shortcode-event').each(function(){
+		if($(this).children('div').length === 3){
+
+			$(this).addClass('three-children');
+			$(this).children('.mptt-event-container').css('width', '33%');
+		}
+	});
 
 
 	}

@@ -34,7 +34,7 @@ Template Name: Home
 					<div class="panel panel-2 panel-clipped right-panel">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title_2'); ?></h3>
 						<?php the_field('incentive_description_2'); ?>
-						<a href="<?php the_field('incentive_button_link2'); ?>" class="button"><?php the_field('incentive_button_text_2'); ?></a>
+						<a href="<?php the_field('incentive_button_link2'); ?>?join" class="button"><?php the_field('incentive_button_text_2'); ?></a>
 					</div>
 				</div>
 			</div>
@@ -198,12 +198,7 @@ Template Name: Home
 			<div class="section-content">
 				<h2><?php the_field('contact_section_title'); ?></h2>
 				<?php the_field('contact_section_content'); ?>
-				<form>
-					<div class="input-wrapper">
-						<input type="text" placeholder="Enter your email address here" />
-						<input type="submit" value="Send">
-					</div>
-				</form>
+				<?php the_field('email_form'); ?>
 			</div>
 		</section>        
 	</div>

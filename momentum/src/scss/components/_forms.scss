@@ -31,7 +31,12 @@ input {
 	}
 }
 
-.input-wrapper {
+#cc_form_1 input.t {
+	font-family: din_mittel_bold,sans-serif!important;
+}
+
+.input-wrapper,
+.kws_input_fields.gform_fields {
 	border-bottom: 1px solid color(black);	
 	display: inline-block;
 	@include span(8);
@@ -45,9 +50,22 @@ input {
 		float: none;
 	}
 
+	.kws_input_container {
+		padding-top: 0;
+	}
+
+	.cc_success {
+		color: color(blue);
+		width: 45%;
+		margin: 0 auto;
+	}
+
 	input {
+		font-family: din_mittel_bold,sans-serif;
 
 		&[type='text'] {
+			color: color(darkborder);
+			font-family: din_mittel_bold,sans-serif;
 			@include span(8);
 			padding: 0;
 
@@ -64,6 +82,11 @@ input {
 
 			@include media-above($break-large) {
 				@include span(3);
+			}
+
+			&:hover {
+				background-color: initial;
+				color: initial;
 			}
 		}
 	}
