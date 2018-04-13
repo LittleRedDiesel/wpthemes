@@ -27,7 +27,7 @@
 			    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
 			}
 			return null;
-		}	
+		}
 
 		setTimeout(function(){
 			if (readCookie('referer') == null){
@@ -41,6 +41,7 @@
 		}
 
 		// Carousel behaviour
+
 		$('.mt-carousel').slick({
 			dots: true,
 			infinite: true,
@@ -59,6 +60,10 @@
 			});
 		}
 
+		setTimeout(function() {
+	        $('.slick-initialized').hide().css('visibility','visible').fadeIn('700');
+	    }, 200);
+
 		/*
 		*  new_map
 		*
@@ -73,7 +78,7 @@
 		*/
 
 		function new_map( $el ) {
-			
+
 			// var
 			var $markers = $el.find('.marker');
 
@@ -202,7 +207,7 @@
 			]
 
 			var styledMap = new google.maps.StyledMapType(stylesArray, {name: "Styled Map"});
-			
+
 			// vars
 			var args = {
 				zoom		: 16,
@@ -211,33 +216,33 @@
 			      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
 			    }
 			};
-			
-			
-			// create map	        	
+
+
+			// create map
 			var map = new google.maps.Map( $el[0], args);
-			
+
 			map.mapTypes.set('map_style', styledMap);
 			map.setMapTypeId('map_style');
 
 			// add a markers reference
 			map.markers = [];
-			
-			
+
+
 			// add markers
 			$markers.each(function(){
-				
+
 				add_marker( $(this), map );
-				
+
 			});
-			
-			
+
+
 			// center map
 			center_map( map );
-			
-			
+
+
 			// return
 			return map;
-			
+
 		}
 
 		/*
@@ -260,7 +265,7 @@
 			var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
 
 			// create marker
-			var iconBase = 'http://momentum.lrd-dev.com/wp-content/themes/momentumtraining/images/';
+			var iconBase = 'http://momentum-training.com/wp-content/themes/momentumtraining/images/';
 			var marker = new google.maps.Marker({
 				position	: latlng,
 				map			: map,
@@ -320,12 +325,19 @@
 			{
 				// set center of map
 				map.setCenter( bounds.getCenter() );
-				map.setZoom( 16 );
+				map.setZoom( 17 );
 			}
 			else
 			{
-				// fit to bounds
-				map.fitBounds( bounds );
+        // fit to bounds
+    		  map.setCenter( bounds.getCenter() );
+          if ($(window).width() < 960) {
+    	   	   map.setZoom( 14 ); // Change the zoom value as required
+           } else {
+             map.setZoom( 15 ); // Change the zoom value as required
+           }
+    		  //map.fitBounds( bounds ); // This is the default setting which I have uncommented to stop the World Map being repeated
+
 			}
 
 		}
@@ -369,49 +381,49 @@
 
 
 	$('.lightbox-trigger').click(function(e) {
-		
+
 		//prevent default action (hyperlink)
 		e.preventDefault();
-		
+
 		//Get clicked link href
 		var lbRef = $(this).data('lightbox'),
 			lbClass = '.' + lbRef,
 			lbContent = $(lbClass).html();
 
-		/* 	
-		If the lightbox window HTML already exists in document, 
+		/*
+		If the lightbox window HTML already exists in document,
 		change the img src to to match the href of whatever link was clicked
-		
+
 		If the lightbox window HTML doesn't exists, create it and insert it.
 		(This will only happen the first time around)
 		*/
-		
+
 		if ($('.lightbox').length > 0) { // #lightbox exists
-			
+
 			//place href as img src value
 			$('.lightbox-content').html(lbContent);
-		   	
+
 			//show lightbox window - you could use .show('fast') for a transition
 			$('.lightbox').show();
 		}
-		
+
 		else { //#lightbox does not exist - create and insert (runs 1st time only)
-			
+
 			//create HTML markup for lightbox window
-			var lightbox = 
+			var lightbox =
 			'<div class="lightbox">' +
 				'<a href="#" class="icon icon-close"><span>Click to close</span></a>' +
 				'<div class="lightbox-content">' + //insert clicked link's href into img src
 					lbContent +
-				'</div>' +	
+				'</div>' +
 			'</div>';
-				
+
 			//insert lightbox HTML into page
 			$('body').append(lightbox);
 		}
-		
+
 	});
-	
+
 	//Click the cross to get rid of lightbox window
 	$('.lightbox .icon-close').live('click', function(e) { //must use live, as the lightbox element is inserted into the DOM
 		e.preventDefault;
@@ -434,7 +446,7 @@
 		  // init Masonry after all images have loaded
 		  $grid.masonry({
 				itemSelector: '.list-item',
-				fitWidth: true, 
+				fitWidth: true,
 				percentPosition: true
 		  });
 		});
@@ -500,7 +512,7 @@
 	$(ellipsis).each(function(){
 
     	if ($(this).height() > 300) {
-    	
+
 	        var words = $(this).html().split(/\s+/);
 	        words.push('...');
 
@@ -531,6 +543,15 @@
 			$(this).children('.mptt-event-container').css('width', '33%');
 		}
 	});
+
+	$( document ).ready(function() {
+	if($('#constant-contact-signup-errors').length){
+		$('html, body').animate({
+            scrollTop: $('#constant-contact-signup-errors').offset().top + 'px'
+        }, 1000, 'swing');
+	}
+});
+
 
 
 	}

@@ -37,7 +37,7 @@ input {
 
 .input-wrapper,
 .kws_input_fields.gform_fields {
-	border-bottom: 1px solid color(black);	
+	border-bottom: 1px solid color(black);
 	display: inline-block;
 	@include span(8);
 	padding: 0;
@@ -91,4 +91,57 @@ input {
 		}
 	}
 
+}
+
+.mailchimp-form {
+	width: 80%;
+}
+
+@media screen and (min-width: 800px) {
+	.featured-list.team-list .list-item {
+		width: 50%;
+	}
+
+	.mailchimp-form {
+		width: 80%;
+	}
+
+	.featured-list.team-further > .list-item {
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.page-template-page-home .team-list {
+		width: 100%;
+	}
+
+	.page-template-page-home .featured-list.team-list>div {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.page-template-page-home .team-list {
+		width: 75%;
+	}
+
+	.page-template-page-home .featured-list.team-list>div {
+		width: 50%;
+	}
+
+	.mailchimp-form {
+		width: 50%;
+	}
+}
+
+table tr td a {
+	font-size: inherit;
+	font-family: inherit;
+	color: #222;
+	text-decoration: underline;
+}
+
+table tr td a:hover {
+	text-decoration: none;
 }
