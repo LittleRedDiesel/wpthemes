@@ -12,6 +12,10 @@
 .wrap-footer {
 	@extend %wrap;
 	background: color(blue);
+	width: 100%;
+  float: left;
+  clear: both;
+
 	@include media-above($break-large) {
 		padding: 0 30px;
 	}

@@ -22,7 +22,7 @@ Template Name: Locations
 
       $the_query = new WP_Query($args);
 
-      echo "<div class='map-wrapper'><div class='overlay' onClick='style.pointerEvents='none''></div><div class='acf-map map-large'>";
+      echo "<div class='map-wrapper'><div class='acf-map map-large'>";
 
       while ( $the_query->have_posts() ) : $the_query->the_post();
       $location = get_field('location_lat');

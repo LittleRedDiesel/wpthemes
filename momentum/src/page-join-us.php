@@ -7,7 +7,7 @@ Template Name: Join us
 <main id="main" class="site-main" role="main">
 	<section class="section-carousel">
 		<div class="mt-carousel title-carousel">
-				<?php 
+				<?php
 
 					$carouselimage1 = get_field('carousel_image_1');
 
@@ -15,31 +15,31 @@ Template Name: Join us
 					<div><img src="<?php echo $carouselimage1['url']; ?>" alt="<?php echo $carouselimage1['alt']; ?>" />
 						<h1><?php the_field('section_title'); ?></h1>
 					</div>
-					<?php endif; 
+					<?php endif;
 
 					$carouselimage2 = get_field('carousel_image_2');
 
 					if( !empty($carouselimage2) ): ?>
 					<div><img src="<?php echo $carouselimage2['url']; ?>" alt="<?php echo $carouselimage2['alt']; ?>" /></div>
-					<?php endif; 
+					<?php endif;
 
 					$carouselimage3 = get_field('carousel_image_3');
 
 					if( !empty($carouselimage3) ): ?>
 					<div><img src="<?php echo $carouselimage3['url']; ?>" alt="<?php echo $carouselimage3['alt']; ?>" /></div>
-					<?php endif; 
+					<?php endif;
 
 					$carouselimage4 = get_field('carousel_image_4');
 
 					if( !empty($carouselimage4) ): ?>
 					<div><img src="<?php echo $carouselimage4['url']; ?>" alt="<?php echo $carouselimage4['alt']; ?>" /></div>
-					<?php endif; 
+					<?php endif;
 
 					$carouselimage5 = get_field('carousel_image_5');
 
 					if( !empty($carouselimage5) ): ?>
 					<div><img src="<?php echo $carouselimage5['url']; ?>" alt="<?php echo $carouselimage5['alt']; ?>" /></div>
-					<?php endif; 
+					<?php endif;
 
 				?>
 		</div>
@@ -71,11 +71,17 @@ Template Name: Join us
 				<div class="panel-container tertiary-panels">
 					<div class="panel panel3 js-active">
 						<?php the_field('tertiary_panel_1_content'); ?>
-						<a href="<?php the_field('tertiary_panel_1_button_link'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text'); ?></a><br/>
+						<div class="sister-buttons">
+							<a href="<?php the_field('tertiary_panel_1_button_link'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text'); ?></a>
+							<a href="<?php the_field('tertiary_panel_1_button_link_2'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text_2'); ?></a>
+						</div>
 					</div>
 					<div class="panel panel4">
 						<?php the_field('tertiary_panel_2_content'); ?>
-						<a href="<?php the_field('tertiary_panel_2_button_link'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text'); ?></a><br />
+						<div class="sister-buttons">
+							<a href="<?php the_field('tertiary_panel_2_button_link'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text'); ?></a>
+							<a href="<?php the_field('tertiary_panel_2_button_link_2'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text_2'); ?></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -105,6 +111,6 @@ Template Name: Join us
 				<iframe style="position: absolute; top: -9999em; visibility: hidden;" onload="this.style.position='static'; this.style.visibility='visible';" src="https://clients.mindbodyonline.com/classic/home?studioid=106685"></iframe>
 			</div>
 		</div>
-	</section> 
+	</section>
 </main>
 <?php get_footer(); ?>

@@ -29,12 +29,15 @@ Template Name: Home
 					<div class="panel panel-clipped panel-1">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title'); ?></h3>
 						<?php the_field('incentive_desc'); ?>
-						<a href="<?php the_field('incentive_button_link'); ?>" class="button"><?php the_field('incentive_button_text'); ?></a>
+						<div class="sister-buttons">
+							<a href="<?php the_field('incentive_button_link'); ?>" class="button"><?php the_field('incentive_button_text'); ?></a>
+							<a href="<?php the_field('incentive_button2_link'); ?>" class="button"><?php the_field('incentive_button2_text'); ?></a>
+						</div>
 					</div>
 					<div class="panel panel-2 panel-clipped right-panel">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title_2'); ?></h3>
 						<?php the_field('incentive_description_2'); ?>
-						<a href="<?php the_field('incentive_button_link2'); ?>?join" class="button"><?php the_field('incentive_button_text_2'); ?></a>
+						<a href="<?php the_field('incentive_button_link_2'); ?>?join" class="button"><?php the_field('incentive_button_text_2'); ?></a>
 					</div>
 				</div>
 			</div>
@@ -163,6 +166,16 @@ Template Name: Home
 				<a href="<?php the_field('button_section_link'); ?>" class="button"><?php the_field('button_section_button'); ?></a>
 			</div>
 		</section>
+		<section class="bg-grey-section">
+			<div class="section-content halves-container">
+				<div class="section-half" style="background-image: url('<?php the_field('location_block_1_image'); ?>');">
+					<h2><?php the_field('location_block_1_name'); ?></h2>
+				</div>
+				<div class="section-half" style="background-image: url('<?php the_field('location_block_2_image'); ?>');">
+					<h2><?php the_field('location_block_2_name'); ?></h2>
+				</div>
+			</div>
+		</section>
 		<section class="bg-black-section">
 			<div class="section-content">
 				<h2><?php the_field('map_section_title'); ?></h2>
@@ -180,7 +193,7 @@ Template Name: Home
 
 					$the_query = new WP_Query($args);
 
-					echo "<div class='map-wrapper'><div class='overlay' onClick='style.pointerEvents='none''></div><div class='acf-map'>";
+					echo "<div class='map-wrapper'><div class='acf-map'>";
 
 					while ( $the_query->have_posts() ) : $the_query->the_post();
 					$location = get_field('location_lat');

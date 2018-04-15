@@ -3,7 +3,7 @@
 	margin: 0 auto;
 
 	@include media-above($break-large) {
-		@include span(8);	
+		@include span(8);
 		float: none;
 		background-color: white\9;
 	}
@@ -82,14 +82,18 @@
 				position: relative;
 			}
 
-			.button {
-				@include media-above($break-large) {
-					position: absolute;
-					bottom: 12px;
-					left: 50%;
-					transform: translateX(-50%);
-				}
-			}
+      .sister-buttons {
+        width: 50%;
+        margin: 0 auto;
+
+        .button {
+          margin-bottom: 0;
+
+          &:first-child {
+              margin: 0 0 5px 0;
+          }
+        }
+      }
 
 		}
 
@@ -161,7 +165,7 @@
 			@include media-above($break-large) {
 				min-height: 0;
 			}
-			
+
 			&:before {
 				content: none;
 			}
@@ -213,17 +217,17 @@
 
 			&.js-active {
 				display: block;
-				
+
 				p {
 					font-size: 16px;
-					@include span(8);	
+					@include span(8);
 					float: none;
 					margin: 10px auto 30px;
 					line-height: 24px;
 					max-width: initial;
 
 					@include media-above($break-large) {
-						max-width:700px;	
+						max-width:700px;
 						margin: 50px auto 30px;
 						font-size: 35px;
 						line-height: 55px;
