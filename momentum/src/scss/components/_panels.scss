@@ -83,8 +83,16 @@
 			}
 
       .sister-buttons {
-        width: 50%;
         margin: 0 auto;
+
+
+        @include media-above($break-large) {
+          width: 50%;
+          position: absolute;
+          bottom: 12px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
 
         .button {
           margin-bottom: 0;

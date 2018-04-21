@@ -37,7 +37,10 @@ Template Name: Home
 					<div class="panel panel-2 panel-clipped right-panel">
 						<h3 class="ellipsis-post"><?php the_field('incentive_title_2'); ?></h3>
 						<?php the_field('incentive_description_2'); ?>
-						<a href="<?php the_field('incentive_button_link_2'); ?>?join" class="button"><?php the_field('incentive_button_text_2'); ?></a>
+						<div class="sister-buttons">
+							<a href="<?php the_field('incentive_button_link_2'); ?>" class="button"><?php the_field('incentive_button_text_2'); ?></a>
+							<a href="<?php the_field('incentive_button2_link_2'); ?>" class="button"><?php the_field('incentive_button2_text_2'); ?></a>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -65,7 +65,7 @@
 				}
 
 				&.primary-panels {
-					
+
 					.panel {
 						float: left;
 						width: 50%;
@@ -173,6 +173,13 @@
 				}
 
 
+			}
+
+			&.panels-calendar {
+
+				 p {
+					max-width: 100%;
+				}
 			}
 		}
 

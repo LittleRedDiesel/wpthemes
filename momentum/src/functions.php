@@ -157,7 +157,6 @@ function new_post_types(){
     'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt'),
   );
 
-
   $teamargs = array(
     'labels' => $teamlabels,
     'description' => "",
@@ -174,7 +173,6 @@ function new_post_types(){
     'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt'),
     'taxonomies' => array('featured-team-member', 'category'),
   );
-
 
   $testimonialargs = array(
     'labels' => $testimoniallabels,
@@ -208,10 +206,44 @@ function new_post_types(){
     'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt'),
   );
 
+  $pricelabels = array(
+    'name' =>  'Prices',
+    'singular_name' => 'Price',
+    'menu_name'          => __( 'Prices'),
+    'name_admin_bar'     => __( 'Prices'),
+    'add_new'            => __( 'Add New'),
+    'add_new_item'       => __( 'Add New Price'),
+    'new_item'           => __( 'New Price'),
+    'edit_item'          => __( 'Edit Price'),
+    'view_item'          => __( 'View Price'),
+    'all_items'          => __( 'All Prices'),
+    'search_items'       => __( 'Search Prices'),
+    'parent_item_colon'  => __( 'Parent Prices:'),
+    'not_found'          => __( 'No Prices found.'),
+    'not_found_in_trash' => __( 'No Prices found in Trash.')
+  );
+
+  $priceargs = array(
+    'labels' => $pricelabels,
+    'description' => "",
+    'public'             => true,
+    'publicly_queryable' => true,
+    'show_ui'            => true,
+    'show_in_menu'       => true,
+    'query_var'          => true,
+    'rewrite'            => false,
+    'capability_type'    => 'post',
+    'has_archive'        => true,
+    'hierarchical'       => false,
+    'menu_position'      => null,
+    'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt'),
+  );
+
   register_post_type( 'team', $teamargs);
   register_post_type( 'classes', $classargs);
   register_post_type( 'testimonials', $testimonialargs);
   register_post_type( 'locations', $locationargs);
+  register_post_type( 'prices', $priceargs);
 }
 
 

@@ -23,7 +23,7 @@
 	@include media-above($break-wide) {
 		height: 715px;
 	}
-	
+
 	.slick-slide {
 		width: 100%;
 
@@ -31,7 +31,7 @@
 		img {
 			position: absolute;
 			width: 100%;
-		
+
 
 			@include media-above($break-large) {
 				margin: 0;
@@ -47,7 +47,7 @@
 			height: auto;
 		}
 	}
-		
+
 	.slick-prev,
 	.slick-next {
 		position: absolute;
@@ -61,7 +61,7 @@
 		&:focus {
 			outline: none;
 		}
-		
+
 		&:before {
 			color: color(white);
 			font-size: 50px;
@@ -85,7 +85,7 @@
 
 	.slick-prev {
 		left: 2%;
-		
+
 		@include media-above($break-large) {
 			left: 5%;
 		}
@@ -174,7 +174,6 @@
 	}
 }
 
-
 .mobile-carousel.slick-initialized {
 	height: auto;
 
@@ -191,7 +190,7 @@
 	.slick-dots {
 		bottom: -4%;
 
-	
+
 		li {
 
 			button {

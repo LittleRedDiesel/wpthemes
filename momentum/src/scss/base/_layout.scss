@@ -42,6 +42,7 @@
 	@include media-above($break-large) {
 		@include scut-center-block($width-site);
 		width: 100%;
+		float: none;
 		max-width: $width-site;
 		z-index: 1;
 	}
@@ -69,6 +70,9 @@
 
 .horizontal-divide-container {
 	position: relative;
+	float: left;
+	clear: both;
+	width: 100%;
 
 	.bg-black-divide {
 		position: absolute;
@@ -79,7 +83,7 @@
 		bottom: 0;
 
 		@include media-above($break-large) {
-			height: 478px;
+			height: 635px;
 		}
 	}
 }

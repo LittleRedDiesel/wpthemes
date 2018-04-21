@@ -64,6 +64,7 @@
 	        $('.slick-initialized').hide().css('visibility','visible').fadeIn('700');
 	    }, 200);
 
+
 		/*
 		*  new_map
 		*
@@ -368,8 +369,6 @@
 
 		});
 
-
-
 		// Footer smooth scroll to top
 		$('.js-back-to-top').on('click', function(event){
 			event.preventDefault();
@@ -452,7 +451,6 @@
 		});
 	}
 
-
 	$('.button-expand').on('click', function(e){
 		e.preventDefault();
 		$('.team-further').addClass('masonry-list');
@@ -504,26 +502,6 @@
 
 	});
 
-
-	// Ellipsis crop
-
-	var ellipsis = $('.ellipsis > p');
-
-	$(ellipsis).each(function(){
-
-    	if ($(this).height() > 300) {
-
-	        var words = $(this).html().split(/\s+/);
-	        words.push('...');
-
-	        do {
-	            words.splice(-2, 1);
-	            $(this).html( words.join(' ') );
-	        } while($(this).height() > 300);
-
-    	}
-	});
-
 		// Join us page tab control
 		var oldURL = document.referrer,
 			currentURL = window.location.href;
@@ -534,7 +512,6 @@
 			$('.panel-2, .panel2, .panel4').addClass('js-active');
 		}
 
-
 	// Table
 	$('.mptt-shortcode-event').each(function(){
 		if($(this).children('div').length === 3){
@@ -544,16 +521,35 @@
 		}
 	});
 
-	$( document ).ready(function() {
-	if($('#constant-contact-signup-errors').length){
-		$('html, body').animate({
-            scrollTop: $('#constant-contact-signup-errors').offset().top + 'px'
-        }, 1000, 'swing');
-	}
-});
+	$(document).ready(function() {
+    if($('#constant-contact-signup-errors').length){
+      $('html, body').animate({
+        scrollTop: $('#constant-contact-signup-errors').offset().top + 'px'
+      }, 1000, 'swing');
+    }
 
+    // Ellipsis crop
 
+    var ellipsis = $('.ellipsis > p');
 
-	}
+    $(ellipsis).each(function(){
+
+        if ($(this).height() > 300) {
+
+            var words = $(this).html().split(/\s+/);
+            words.push('...');
+
+            do {
+                words.splice(-2, 1);
+                $(this).html( words.join(' ') );
+            } while($(this).height() > 300);
+
+        }
+    });
   });
-}(jQuery));
+
+
+
+  }
+  });
+  }(jQuery));

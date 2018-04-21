@@ -18,7 +18,7 @@ Template Name: Timetable
 					</div>
 				</div>
 			</div>
-			<section class="bg-white-section primary-panels-display panels-display">
+			<section class="bg-white-section primary-panels-display panels-display panels-calendar">
 				<div class="panel panel1 js-active">
 					<?php the_field('panel_1_content'); ?>
 				</div>

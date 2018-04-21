@@ -24,10 +24,13 @@
 .sister-buttons {
 	.button {
 		margin-bottom: 10px;
-		min-width: 220px;
+		padding: 20px;
+		min-width:170px;
 
 		@include media-above($break-large) {
-			margin-botton: 0;
+			margin-bottom: 0;
+			padding: 20px 40px;
+			min-width: 220px;
 		}
 
 		&:first-child {
