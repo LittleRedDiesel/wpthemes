@@ -68,6 +68,7 @@
 
 			&:after {
 				content: none;
+				border-width: 0;
 
 				@include media-above($break-large) {
 					transition: all .4s ease-out;
@@ -84,7 +85,7 @@
 					border-width: 15px;
 					margin-left: -15px;
 					z-index: 9998;
-				}				
+				}
 			}
 
 			&:hover {
@@ -99,19 +100,24 @@
 
 			&.page-active {
 				&:after {
-					top: 100%;
-					left: 50%;
-					border: solid transparent;
-					content: " ";
-					height: 0;
-					width: 0;
-					position: absolute;
-					pointer-events: none;
-					border-color: rgba(34, 34, 34, 0);
-					border-top-color: #222222;
-					border-width: 15px;
-					margin-left: -15px;
-					z-index: 9999;
+					content: none;
+					border-width: 0;
+
+					@include media-above($break-large) {
+						top: 100%;
+						left: 50%;
+						border: solid transparent;
+						content: " ";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+						border-color: rgba(34, 34, 34, 0);
+						border-top-color: #222222;
+						border-width: 15px;
+						margin-left: -15px;
+						z-index: 9999;
+					}
 				}
 			}
 		}

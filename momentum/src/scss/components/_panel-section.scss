@@ -15,9 +15,10 @@
 				line-height: 1;
 				margin-bottom: 100px;
 				text-transform: initial;
-				max-width: 65%;
+				max-width: 90%;
 
 				@include media-above($break-large) {
+					max-width: 70%;
 					font-size: 100px;
 					line-height: 1;
 					max-width: 710px;

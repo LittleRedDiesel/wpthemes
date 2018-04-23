@@ -95,6 +95,26 @@ input {
 
 .mailchimp-form {
 	width: 80%;
+
+	input[type=email] {
+		border: none;
+		width: 80%;
+		text-align: left;
+		float: left;
+	}
+
+	input[type=submit]{
+		position: absolute;
+		right: 0;
+		line-height: 1;
+		background-color: white;
+		top: 2px;
+		width: 20%;
+
+		@include media-above($break-large) {
+			top: 15px;
+		}
+	}
 }
 
 @media screen and (min-width: 800px) {

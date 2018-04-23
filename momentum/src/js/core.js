@@ -2,43 +2,8 @@
 
 // A simple wrapper for all your custom jQuery; everything in this file will be run on every page
 ;(function($){
+
   $(function(){
-	// Example integration: JavaScript-based human-readable timestamps
-	if ($.timeago) {
-		$('time').timeago();
-
-
-		function createCookie(name,value,days) {
-			if (days) {
-			    var date = new Date();
-			    date.setTime(date.getTime()+(days*24*60*60*1000));
-			    var expires = "; expires="+date.toGMTString();
-			}
-			else var expires = "";
-			document.cookie = name+"="+value+expires+"; path=/";
-			}
-
-			function readCookie(name) {
-			var nameEQ = name + "=";
-			var ca = document.cookie.split(';');
-			for(var i=0;i < ca.length;i++) {
-			    var c = ca[i];
-			    while (c.charAt(0)==' ') c = c.substring(1,c.length);
-			    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-			}
-			return null;
-		}
-
-		setTimeout(function(){
-			if (readCookie('referer') == null){
-	        	$('body').addClass('loaded');
-	        }
-	        createCookie('referer',1,0);
-	    }, 2000);
-
-		if (readCookie('referer') == 1){
-			$('.loader-wrapper').remove();
-		}
 
 		// Carousel behaviour
 
@@ -440,7 +405,7 @@
 
 
 	// Masonry
-	if($(window).width() > 800) {
+	if($('.masonry-list').length && $(window).width() > 800) {
 		$grid = $('.masonry-list').imagesLoaded( function() {
 		  // init Masonry after all images have loaded
 		  $grid.masonry({
@@ -549,7 +514,5 @@
   });
 
 
-
-  }
   });
   }(jQuery));

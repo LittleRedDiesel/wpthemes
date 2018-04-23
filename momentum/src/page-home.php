@@ -184,7 +184,7 @@ Template Name: Home
 				<h2><?php the_field('map_section_title'); ?></h2>
 				<p><?php the_field('map_section_address1'); ?><br/>
 					<?php the_field('map_section_address2'); ?><br/>
-					<a class="med-link" href="mailto:<?php the_field('map_section_contact'); ?>"><?php the_field('map_section_contact'); ?></a>
+					<a class="med-link blue" href="mailto:<?php the_field('map_section_contact'); ?>"><?php the_field('map_section_contact'); ?></a>
 				</p>
 
 				<?php
@@ -220,7 +220,7 @@ Template Name: Home
 				<div class="social">
 					<h4>Follow us</h4>
 					<ul>
-						<li><a href="https://www.facebook.com/crossfithackney/" target="_blank" class="icon icon-facebook"><span>Facebook</span></a></li>
+						<li><a href="https://www.facebook.com/momentumtrainingandcrossfithackney/" target="_blank" class="icon icon-facebook"><span>Facebook</span></a></li>
 						<li><a href="https://twitter.com/crossfithackney" target="_blank" class="icon icon-twitter"><span>Twitter</span></a></li>
 						<li><a href="https://www.instagram.com/momentumtraining/" target="_blank" class="icon icon-insta"><span>Instagram</span></a></li>
 					</ul>

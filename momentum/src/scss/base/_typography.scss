@@ -8,6 +8,10 @@ h6 {
 	color: color(blue);
 	font-weight: normal;
 	line-height: 1;
+
+	&.black {
+		color: color(black);
+	}
 }
 
 h1, h2 {
@@ -71,6 +75,10 @@ a {
 
 		@include media-above($break-large) {
 			font-size: 30px;
+		}
+
+		&.blue {
+			color: color(blue);
 		}
 	}
 
@@ -196,6 +204,15 @@ p {
 				margin-bottom: 70px;
 			}
 		}
+
+		&.prices-title {
+			margin-bottom: 20px;
+			font-size: 40px;
+
+			@include media-above($break-large) {
+				font-size: 90px;
+			}
+		}
 	}
 
 	p {
@@ -242,7 +259,6 @@ p {
 	}
 
 	.carousel-footer {
-		border-top: 1px solid color(white);
 		padding: 50px 0 20px;
 		font-size: 14px;
 		display: block;

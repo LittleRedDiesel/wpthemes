@@ -1,7 +1,7 @@
 .map-wrapper {
 	@include scut-center-block($width-site);
 	width: 100%;
-	position: relative; 
+	position: relative;
 	clear: both;
 
 	.acf-map {
@@ -22,6 +22,20 @@
 			margin: 60px auto 0;
 		}
 
+		>div {
+			height: 160%!important;
+			width: 160%!important;
+			top: -30%!important;
+			left: -30%!important;
+
+			@include media-above($break-large) {
+				height: 100%;
+				width: 100%;
+				left: 0;
+				top: 0;
+			}
+		}
+
 		&.map-large {
 			margin-top: 50px;
 
@@ -38,10 +52,10 @@
 	}
 
 	.overlay {
-	   position: absolute; 
+	   position: absolute;
 	   width: 100%;
 	   height: 100%;
-	   top: 0;  
+	   top: 0;
 	   z-index: 999;
 	}
 
