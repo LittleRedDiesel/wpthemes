@@ -467,6 +467,16 @@
 
 	});
 
+  // timetables
+  $('#panel1').on('click', function(){
+  		teamup.calendar({provider_id:1174690,width:"100%",height:"600px",view:"month"});
+  });
+
+  	$('#panel2').on('click', function(){
+  			teamup.calendar({provider_id:1756846,width:"100%",height:"600px",view:"month"});
+  	});
+
+
 		// Join us page tab control
 		var oldURL = document.referrer,
 			currentURL = window.location.href;

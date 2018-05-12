@@ -47,6 +47,8 @@ function wpb_adding_scripts() {
 
   wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBc4ePmRzjvngPriEIh2WWOVkizllZFShQ&v=3.exp&sensor=false', array(), '3', true );
 
+  wp_enqueue_script( 'teamup', 'https://assets.goteamup.com/teamup.js', array(), '3', false );
+
   wp_enqueue_script('vendor');
 }
 add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );

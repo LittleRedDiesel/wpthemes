@@ -20,10 +20,18 @@ Template Name: Timetable
 			</div>
 			<section class="bg-white-section primary-panels-display panels-display panels-calendar">
 				<div class="panel panel1 js-active">
-					<?php the_field('panel_1_content'); ?>
+					<?php
+					 	the_field('panel_1_content');
+					?>
+					<script type='text/javascript'>teamup.calendar({provider_id:1174690,width:"100%",height:"600px",view:"month",target_element_id:"teamup-widget-1174690"});</script>
+					<div id="teamup-widget-1174690"></div>
 				</div>
 				<div class="panel panel2">
-					<?php the_field('panel_2_content'); ?>
+					<?php
+						the_field('panel_2_content');
+					?>
+					<script type='text/javascript'>teamup.calendar({provider_id:1756846,width:"100%",height:"600px",view:"month",target_element_id:"teamup-widget-1756846"});</script>
+					<div id="teamup-widget-1756846"></div>
 				</div>
 			</section>
 		</section>
@@ -32,4 +40,5 @@ Template Name: Timetable
 		<?php endwhile; endif; ?>
 	</section>
 </main>
+
 <?php get_footer(); ?>

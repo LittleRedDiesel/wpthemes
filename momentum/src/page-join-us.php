@@ -58,6 +58,18 @@ Template Name: Join us
 		<section class="bg-white-section primary-panels-display panels-display">
 			<div class="panel panel1 js-active">
 				<?php the_field('primary_panel_1_content'); ?>
+				<div class="sister-buttons">
+					<!-- If these buttons exist - display them -->
+					<?php
+					$pp1b1 = get_field('primary_panel_1_button_1_text');
+					if( !empty($pp1b1) ): ?>
+					<a href="<?php the_field('primary_panel_1_button_1_link'); ?>" class="button"><?php the_field('primary_panel_1_button_1_text'); ?></a>
+					<?php endif;
+					$pp1b2 = get_field('primary_panel_1_button_2_text');
+					if( !empty($pp1b2) ): ?>
+					<a href="<?php the_field('primary_panel_1_button_2_link'); ?>" class="button"><?php the_field('primary_panel_1_button_2_text'); ?></a>
+					<?php endif; ?>
+				</div>
 			</div>
 			<div class="panel panel2">
 				<div class="panel-container secondary-panels">
@@ -136,8 +148,16 @@ Template Name: Join us
 						<span class="classes-secondary caps med-font"><?php the_field('price_frequency'); ?></span>
 						<span class="spm blue medium-bold"><?php the_field('sessions_per_month'); ?></span>
 						<div class="sister-buttons">
+							<!-- If these buttons exist - display them -->
+							<?php
+							$cpb1 = get_field('price_button_1_text');
+							if( !empty($cpb1) ): ?>
 							<a href="<?php the_field('price_button_1_link'); ?>" class="button"><?php the_field('price_button_1_text'); ?></a>
+							<?php endif;
+							$cpb2 = get_field('price_button_2_text');
+							if( !empty($cpb2) ): ?>
 							<a href="<?php the_field('price_button_2_link'); ?>" class="button"><?php the_field('price_button_2_text'); ?></a>
+							<?php endif; ?>
 						</div>
 					</div>
 
