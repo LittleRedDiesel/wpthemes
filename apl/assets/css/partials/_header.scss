@@ -1,0 +1,35 @@
+header {
+  background-color: $color--primary;
+  height: 64px;
+
+  .navbar {
+    padding: .25rem 1rem;
+  }
+
+  .primary-logo {
+    max-width: 100px;
+  }
+
+  #primaryNavTop li {
+    display: block;
+
+    @include r(1024) {
+      display: none;
+    }
+  }
+
+}
+
+.breadcrumb {
+  font-size: 1.1em;
+
+  .separator {
+    margin: 0 5px;
+  }
+
+  .breadcrumb-item {
+    &.active {
+      color: $b;
+    }
+  }
+}
