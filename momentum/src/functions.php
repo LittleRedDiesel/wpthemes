@@ -39,19 +39,17 @@ function voidx_setup() {
 add_action( 'after_setup_theme', 'voidx_setup', 11 );
 
 
-
+add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
 
 // Add JS to footer
 function wpb_adding_scripts() {
   wp_register_script('vendor', get_template_directory_uri() . '/js/wp-vendor.js','','1.1', true);
+  
+  wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBlxRmqp6OzfqvEaqKBBjkxIw-q_z6tI7o&v=3.exp&sensor=false', array(), '3', true );
 
-  wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBc4ePmRzjvngPriEIh2WWOVkizllZFShQ&v=3.exp&sensor=false', array(), '3', true );
-
-  wp_enqueue_script( 'teamup', 'https://assets.goteamup.com/teamup.js', array(), '3', false );
-
-  wp_enqueue_script('vendor');
+  wp_enqueue_script('vendor');   
 }
-add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );
+add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );  
 
 
 
@@ -126,38 +124,6 @@ function new_post_types(){
     'not_found_in_trash' => __( 'No Classes found in Trash.')
   );
 
-  $locationlabels = array(
-    'name' =>  'Locations',
-    'singular_name' => 'Location',
-    'menu_name'          => __( 'Locations'),
-    'name_admin_bar'     => __( 'Locations'),
-    'add_new'            => __( 'Add New'),
-    'add_new_item'       => __( 'Add New Location'),
-    'new_item'           => __( 'New Location'),
-    'edit_item'          => __( 'Edit Location'),
-    'view_item'          => __( 'View Location'),
-    'all_items'          => __( 'All Locations'),
-    'search_items'       => __( 'Search Locations'),
-    'parent_item_colon'  => __( 'Parent Locations:'),
-    'not_found'          => __( 'No Locations found.'),
-    'not_found_in_trash' => __( 'No Locations found in Trash.')
-  );
-
-  $locationargs = array(
-    'labels' => $locationlabels,
-    'description' => "",
-    'public'             => true,
-    'publicly_queryable' => true,
-    'show_ui'            => true,
-    'show_in_menu'       => true,
-    'query_var'          => true,
-    'rewrite'            => false,
-    'capability_type'    => 'post',
-    'has_archive'        => true,
-    'hierarchical'       => false,
-    'menu_position'      => null,
-    'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt'),
-  );
 
   $teamargs = array(
     'labels' => $teamlabels,
@@ -175,6 +141,7 @@ function new_post_types(){
     'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt'),
     'taxonomies' => array('featured-team-member', 'category'),
   );
+
 
   $testimonialargs = array(
     'labels' => $testimoniallabels,
@@ -208,44 +175,9 @@ function new_post_types(){
     'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt'),
   );
 
-  $pricelabels = array(
-    'name' =>  'Prices',
-    'singular_name' => 'Price',
-    'menu_name'          => __( 'Prices'),
-    'name_admin_bar'     => __( 'Prices'),
-    'add_new'            => __( 'Add New'),
-    'add_new_item'       => __( 'Add New Price'),
-    'new_item'           => __( 'New Price'),
-    'edit_item'          => __( 'Edit Price'),
-    'view_item'          => __( 'View Price'),
-    'all_items'          => __( 'All Prices'),
-    'search_items'       => __( 'Search Prices'),
-    'parent_item_colon'  => __( 'Parent Prices:'),
-    'not_found'          => __( 'No Prices found.'),
-    'not_found_in_trash' => __( 'No Prices found in Trash.')
-  );
-
-  $priceargs = array(
-    'labels' => $pricelabels,
-    'description' => "",
-    'public'             => true,
-    'publicly_queryable' => true,
-    'show_ui'            => true,
-    'show_in_menu'       => true,
-    'query_var'          => true,
-    'rewrite'            => false,
-    'capability_type'    => 'post',
-    'has_archive'        => true,
-    'hierarchical'       => false,
-    'menu_position'      => null,
-    'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt'),
-  );
-
   register_post_type( 'team', $teamargs);
   register_post_type( 'classes', $classargs);
   register_post_type( 'testimonials', $testimonialargs);
-  register_post_type( 'locations', $locationargs);
-  register_post_type( 'prices', $priceargs);
 }
 
 
@@ -261,3 +193,4 @@ function query_post_type($query) {
     return $query;
     }
 }
+

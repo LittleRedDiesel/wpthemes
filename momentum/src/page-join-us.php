@@ -7,7 +7,7 @@ Template Name: Join us
 <main id="main" class="site-main" role="main">
 	<section class="section-carousel">
 		<div class="mt-carousel title-carousel">
-				<?php
+				<?php 
 
 					$carouselimage1 = get_field('carousel_image_1');
 
@@ -15,31 +15,31 @@ Template Name: Join us
 					<div><img src="<?php echo $carouselimage1['url']; ?>" alt="<?php echo $carouselimage1['alt']; ?>" />
 						<h1><?php the_field('section_title'); ?></h1>
 					</div>
-					<?php endif;
+					<?php endif; 
 
 					$carouselimage2 = get_field('carousel_image_2');
 
 					if( !empty($carouselimage2) ): ?>
 					<div><img src="<?php echo $carouselimage2['url']; ?>" alt="<?php echo $carouselimage2['alt']; ?>" /></div>
-					<?php endif;
+					<?php endif; 
 
 					$carouselimage3 = get_field('carousel_image_3');
 
 					if( !empty($carouselimage3) ): ?>
 					<div><img src="<?php echo $carouselimage3['url']; ?>" alt="<?php echo $carouselimage3['alt']; ?>" /></div>
-					<?php endif;
+					<?php endif; 
 
 					$carouselimage4 = get_field('carousel_image_4');
 
 					if( !empty($carouselimage4) ): ?>
 					<div><img src="<?php echo $carouselimage4['url']; ?>" alt="<?php echo $carouselimage4['alt']; ?>" /></div>
-					<?php endif;
+					<?php endif; 
 
 					$carouselimage5 = get_field('carousel_image_5');
 
 					if( !empty($carouselimage5) ): ?>
 					<div><img src="<?php echo $carouselimage5['url']; ?>" alt="<?php echo $carouselimage5['alt']; ?>" /></div>
-					<?php endif;
+					<?php endif; 
 
 				?>
 		</div>
@@ -58,18 +58,6 @@ Template Name: Join us
 		<section class="bg-white-section primary-panels-display panels-display">
 			<div class="panel panel1 js-active">
 				<?php the_field('primary_panel_1_content'); ?>
-				<div class="sister-buttons">
-					<!-- If these buttons exist - display them -->
-					<?php
-					$pp1b1 = get_field('primary_panel_1_button_1_text');
-					if( !empty($pp1b1) ): ?>
-					<a href="<?php the_field('primary_panel_1_button_1_link'); ?>" class="button"><?php the_field('primary_panel_1_button_1_text'); ?></a>
-					<?php endif;
-					$pp1b2 = get_field('primary_panel_1_button_2_text');
-					if( !empty($pp1b2) ): ?>
-					<a href="<?php the_field('primary_panel_1_button_2_link'); ?>" class="button"><?php the_field('primary_panel_1_button_2_text'); ?></a>
-					<?php endif; ?>
-				</div>
 			</div>
 			<div class="panel panel2">
 				<div class="panel-container secondary-panels">
@@ -83,95 +71,36 @@ Template Name: Join us
 				<div class="panel-container tertiary-panels">
 					<div class="panel panel3 js-active">
 						<?php the_field('tertiary_panel_1_content'); ?>
-						<div class="sister-buttons">
-							<a href="<?php the_field('tertiary_panel_1_button_link'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text'); ?></a>
-							<a href="<?php the_field('tertiary_panel_1_button_link_2'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text_2'); ?></a>
-						</div>
+						<a href="<?php the_field('tertiary_panel_1_button_link'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text'); ?></a><br/>
 					</div>
 					<div class="panel panel4">
 						<?php the_field('tertiary_panel_2_content'); ?>
-						<div class="sister-buttons">
-							<a href="<?php the_field('tertiary_panel_2_button_link'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text'); ?></a>
-							<a href="<?php the_field('tertiary_panel_2_button_link_2'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text_2'); ?></a>
-						</div>
+						<a href="<?php the_field('tertiary_panel_2_button_link'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text'); ?></a><br />
 					</div>
 				</div>
 			</div>
 		</section>
 	</section>
-	<section class="bg-blue-section" id="Prices">
-		<div class="section-content">
-			<h1 class="title-med prices-title"><?php the_field('prices_title'); ?></h1>
-				<h2 class="prices-subtitle"><?php the_field('prices_subtitle1'); ?></h2>
+	<section class="bg-blue-section">
+		<div class="section-content padding-reduced">
+			<h1 class="title-wide"><?php the_field('table_section_title'); ?></h1>
+			<?php the_field('desktop_layout'); ?>
 
-				<?php $loop = new WP_Query( array( 'post_type' => 'prices', 'posts_per_page' => -1 , 'orderby' => 'date', 'order' => 'ASC', 'meta_key' => 'price_type',
-	'meta_value'	=> 'Regular membership' ) ); ?>
-				<div class="prices-section regular-membership">
-					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<div class="price-slide">
-						<span class="classes-primary small-font caps"><?php the_field('price_classes'); ?></span>
-						<span class="contract caps small-font"><?php the_field('price_contract'); ?></span>
-						<span class="price large-font blue"><?php the_field('price_price'); ?></span>
-						<span class="pps medium-bold"><?php the_field('price_per_session'); ?></span>
-						<span class="classes-secondary caps med-font"><?php the_field('price_frequency'); ?></span>
-						<span class="spm blue medium-bold"><?php the_field('sessions_per_month'); ?></span>
-						<div class="sister-buttons">
-							<!-- If these buttons exist - display them -->
-							<?php
-							$pricebutton1 = get_field('price_button_1_text');
-							if( !empty($pricebutton1) ): ?>
-							<a href="<?php the_field('price_button_1_link'); ?>" class="button"><?php the_field('price_button_1_text'); ?></a>
-							<?php endif;
-							$pricebutton2 = get_field('price_button_2_text');
-							if( !empty($pricebutton2) ): ?>
-							<a href="<?php the_field('price_button_2_link'); ?>" class="button"><?php the_field('price_button_2_text'); ?></a>
-							<?php endif; ?>
-						</div>
-					</div>
-
-				<?php endwhile; ?>
-
-				</div>
-				<?php wp_reset_query(); ?>
-
-				<h2 class="prices-subtitle"><?php the_field('prices_subtitle2'); ?></h2>
-				<?php $loop = new WP_Query( array( 'post_type' => 'prices', 'posts_per_page' => -1 , 'orderby' => 'date', 'order' => 'ASC', 'meta_key' => 'price_type',
-	'meta_value'	=> 'Class pack' ) ); ?>
-				<div class="prices-section class-pack">
-					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-					<div class="price-slide">
-						<span class="classes-primary small-font caps"><?php the_field('price_classes'); ?></span>
-						<span class="contract caps small-font"><?php the_field('price_contract'); ?></span>
-						<span class="price large-font blue"><?php the_field('price_price'); ?></span>
-						<span class="pps medium-bold"><?php the_field('price_per_session'); ?></span>
-						<span class="classes-secondary caps med-font"><?php the_field('price_frequency'); ?></span>
-						<span class="spm blue medium-bold"><?php the_field('sessions_per_month'); ?></span>
-						<div class="sister-buttons">
-							<!-- If these buttons exist - display them -->
-							<?php
-							$cpb1 = get_field('price_button_1_text');
-							if( !empty($cpb1) ): ?>
-							<a href="<?php the_field('price_button_1_link'); ?>" class="button"><?php the_field('price_button_1_text'); ?></a>
-							<?php endif;
-							$cpb2 = get_field('price_button_2_text');
-							if( !empty($cpb2) ): ?>
-							<a href="<?php the_field('price_button_2_link'); ?>" class="button"><?php the_field('price_button_2_text'); ?></a>
-							<?php endif; ?>
-						</div>
-					</div>
-
-				<?php endwhile; ?>
-
-				</div>
-				<?php wp_reset_query(); ?>
-
-
-			<div class="carousel-footer">
-				<?php the_field('prices_section_footer'); ?>
-			</div>
+			<?php the_field('mobile_layout'); ?>
 		</div>
 	</section>
+	<section class="bg-grey-section">
+		<div class="section-content padding-reduced">
+			<h4 class="ellipsis-post"><?php the_field('timetable_mini_title'); ?></h4>
+			<h1 class="title-wide"><?php the_field('timetable_section_heading'); ?></h1>
+			<?php if (have_posts()) : while (have_posts()) : the_post();?>
+			<?php the_content(); ?>
+			<?php endwhile; endif; ?>
 
+			<div class="feature-content">
+				<?php the_field('mindbody_embed'); ?>
+			</div>
+		</div>
+	</section> 
 </main>
 <?php get_footer(); ?>

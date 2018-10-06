@@ -8,8 +8,9 @@ Template Name: Locations
 <?php get_header(); ?>
 <main id="main" class="site-main horizontal-divide-container" role="main">
   <section id="content" class="site-content">
-    <h1 class="page-title title-small black"><?php the_field('map_section_address1'); ?></h1>
-    <h1 class="page-title title-small black"><?php the_field('map_section_address2'); ?></h1>
+    <h1 class="page-title"><?php the_field('map_section_address1'); ?></h1>
+    <h1 class="page-title"><?php the_field('map_section_address2'); ?></h1>
+    <p class="intro-para"><?php the_field('map-section-subtitle'); ?></p>
     <a href="mailto:<?php the_field('map_section_contact'); ?>" class="med-link"><?php the_field('map_section_contact'); ?></a>
 
     <?php
@@ -21,7 +22,7 @@ Template Name: Locations
 
       $the_query = new WP_Query($args);
 
-      echo "<div class='map-wrapper'><div class='acf-map map-large'>";
+      echo "<div class='map-wrapper'><div class='overlay' onClick='style.pointerEvents='none''></div><div class='acf-map'>";
 
       while ( $the_query->have_posts() ) : $the_query->the_post();
       $location = get_field('location_lat');
