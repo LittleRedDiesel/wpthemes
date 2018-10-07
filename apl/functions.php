@@ -24,26 +24,26 @@ function wpgt_scripts() {
 	// Frontend scripts.
 	if ( ! is_admin() ) {
 		// Enqueue vendors first.
-		wp_enqueue_script( 'wpgt_vendorsJs', get_template_directory_uri() . '/assets/js/vendors.min.js' );
+		wp_enqueue_script( 'wpgt_vendorsJs', get_template_directory_uri() . '/assets/js/vendors.min.js', '', '', true  );
 
 		// Enqueue custom JS after vendors.
-		wp_enqueue_script( 'wpgt_customJs', get_template_directory_uri() . '/assets/js/custom.min.js' );
+		wp_enqueue_script( 'wpgt_customJs', get_template_directory_uri() . '/assets/js/custom.min.js', '', '', true );
 
 		// Minified and Concatenated styles.
 		wp_enqueue_style( 'wpgt_style', get_template_directory_uri() . '/style.min.css', array(), '1.0', 'all' );
+
 	}
 }
 // Hook.
 add_action( 'wp_enqueue_scripts', 'wpgt_scripts' );
-
-
-register_nav_menu( $location, $description );
 
 // Flex class on body
 add_filter( 'body_class', 'flexContainer');
 function flexContainer( $classes ) {
      if ( is_page(26) )
           $classes[] = 'flex-container';
+		else
+					$classes[] = 'layout-column';
 return $classes; }
 
 
@@ -58,7 +58,7 @@ function custom_breadcrumbs() {
     $home_title         = 'Home';
 
     // If you have any custom post types with custom taxonomies, put the taxonomy name below (e.g. product_cat)
-    $custom_taxonomy    = 'product_cat';
+    $custom_taxonomy    = 'contacts';
 
     // Get the query & post information
     global $post,$wp_query;
@@ -87,6 +87,7 @@ function custom_breadcrumbs() {
 
                 $post_type_object = get_post_type_object($post_type);
                 $post_type_archive = get_post_type_archive_link($post_type);
+
 
                 echo '<li class="breadcrumb-item item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive . '" title="' . $post_type_object->labels->name . '">' . $post_type_object->labels->name . '</a></li>';
                 echo '<li class="separator"> ' . $separator . ' </li>';
@@ -276,5 +277,64 @@ function custom_breadcrumbs() {
         echo '</ol></nav>';
 
     }
+
+}
+
+
+// Allow SVGs to be uploaded
+
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
+// Fix contact display options
+function fix_contacts() {
+    echo '<style type="text/css">
+						 .post-type-contacts #postdivrich {
+ 	        display: none;
+ 	    }</style>
+          ';
+}
+add_action('admin_head', 'fix_contacts');
+
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'sideNav' => __( 'sideNav' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
+
+/**
+ * Enable ACF 5 early access
+ * Requires at least version ACF 4.4.12 to work
+ */
+define('ACF_EARLY_ACCESS', '5');
+
+add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
+
+function my_wp_nav_menu_objects( $items, $args ) {
+
+	// loop
+	foreach( $items as &$item ) {
+
+		// vars
+		$icon = get_field('menu_icon', $item);
+
+
+		// append icon
+		if( $icon ) {
+			$item->title = ' <img src="'.$icon.'" /><span>' .$item->title. '</span>';
+		}
+
+	}
+
+	// return
+	return $items;
 
 }

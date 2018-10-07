@@ -81,11 +81,17 @@
  @if $point == 768 {
 	 @media (min-width: 768px) { @content; }
  }
+ @if $point == 992 {
+	 @media (min-width: 992px) { @content; }
+ }
  @if $point == 1024 {
 	 @media (min-width: 1024px) { @content; }
  }
  @if $point == 1140 {
 	 @media (min-width: 1140px) { @content; }
+ }
+ @if $point == 1200 {
+	@media (min-width: 1200px) { @content; }
  }
  @if $point == 1280 {
 	 @media (min-width: 1280px) { @content; }

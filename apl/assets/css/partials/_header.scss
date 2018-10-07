@@ -1,27 +1,102 @@
 header {
   background-color: $color--primary;
-  height: 64px;
+  height: 62px;
 
   .navbar {
-    padding: .25rem 1rem;
+    padding: 0;
+
+    .navbar-toggler {
+      color: $w;
+      border-color: $w;
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+    }
   }
 
   .primary-logo {
     max-width: 100px;
   }
 
+  .navbar-brand {
+    margin-left: 1rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+  }
+
+  .navbar-toggler {
+    margin-right: 1rem;
+  }
+
   #primaryNavTop li {
     display: block;
 
-    @include r(1024) {
+    @include r(992) {
       display: none;
     }
   }
 
+  // Mobile nav menu
+  .navbar-expand-lg {
+    .navbar-collapse {
+      padding: 10px;
+      z-index: 99;
+      background-color: #e9ecef;
+
+      @include r(768) {
+        padding: .25rem 1rem;
+      }
+
+      @include r(992) {
+        background-color: inherit;
+      }
+
+      ul {
+        li {
+          &.current-menu-item {
+            > a {
+              color: #212c64;
+              font-weight: bold;
+              background-color: rgba(158,158,158,0.2);
+            }
+          }
+          a {
+            padding: 10px;
+            width: 100%;
+            display: block;
+            font-size: 1rem;
+            border-bottom: 1px solid $gb;
+          }
+        }
+
+        &.sub-menu {
+          li {
+            a {
+              padding: 20px 10px;
+            }
+          }
+        }
+      }
+
+      form {
+        button {
+          color: $gb;
+          border-color: $gb;
+
+          @include r(1024) {
+            color: $w;
+            border-color: $w;
+          }
+        }
+      }
+    }
+  }
 }
 
 .breadcrumb {
-  font-size: 1.1em;
+  font-size: .8rem;
+  margin-bottom: 0;
 
   .separator {
     margin: 0 5px;
@@ -32,4 +107,25 @@ header {
       color: $b;
     }
   }
+}
+
+@media (min-width: 992px){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
 }

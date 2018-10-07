@@ -1,0 +1,38 @@
+.contact-card {
+  h2 {
+    margin-bottom: 20px;
+
+    a {
+      text-decoration: none;
+      transition: 2s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.post-body.contact-archive {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .contact-card {
+    margin: auto;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid $gb;
+    margin-bottom: 20px;
+
+    @include r(768)  {
+      width: 40%;
+    }
+
+    @include r(1280)  {
+      width: 30%;
+    }
+  }
+}

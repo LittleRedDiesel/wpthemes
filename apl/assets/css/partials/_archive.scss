@@ -1,0 +1,50 @@
+header.archive-header {
+  background-color: $c1;
+  height: initial;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  h2 {
+    box-sizing: border-box;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+.archive-page {
+  ol {
+    margin-left: 30px;
+    font-size: 20px;
+
+    li {
+      border-bottom: 1px solid $gb;
+      margin-bottom: 20px;
+      font-size: 16px;
+      padding-bottom: 20px;
+
+      h2 {
+        line-height: 22px;
+
+        a {
+          font-size: 18px;
+          font-weight: bold;
+          color: $color--primary;
+        }
+      }
+
+      .entry {
+        max-height: 150px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .post-header {
+    padding: 0 0 20px 0;
+  }
+}
+
+.category-link {
+  font-weight: bold;
+  color: $color--primary;
+}

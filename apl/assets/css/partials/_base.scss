@@ -4,41 +4,68 @@
 .wrap{
 	width: 100%;
 	height: 100%;
-	font-size: 5vh;
-	padding: 3vh;
+	padding: 20px 1rem;
+
+	@include r(1024)  {
+		padding: 20px 40px;
+	}
+
+	ul {
+		margin-left: 20px;
+
+		li {
+			margin-top: 5px;
+		}
+	}
 }
 
 .content{
-	display: table-cell;
+	display: inline-block;
 	width: 100%;
 	vertical-align: middle;
 	margin: 0 auto;
-	text-align: center;
+	text-align: left;
 
-	h1, p{
-		font-family: 'Roboto', sans-serif;
-		font-weight: 100;
-		@include r(240)  { font-weight: 100; }
-		@include r(320)  { font-weight: 100; }
-		@include r(480)  { font-weight: 100; }
-		@include r(768)  { font-weight: 100; }
-		@include r(1024) { font-weight: 100; }
-		@include r(1280) { font-weight: 100; }
+	> .search-results {
+	  float: left;
+	  margin: 20px 0 0;
+		width: 100%;
+		font-size: 22px;
+		display: block;
 
-	}
-
-	h1{
-		text-transform: uppercase;
-		@include r(240)  { text-transform: uppercase; }
-	    	@include r(320)  { text-transform: uppercase; }
-	    	@include r(480)  { text-transform: uppercase; }
-	    	@include r(768)  { text-transform: uppercase; }
-	    	@include r(1024) { text-transform: uppercase; }
-	    	@include r(1280) { text-transform: uppercase; }
+		p {
+			margin: 0;
+		}
 
 	}
 }
 
 b, strong {
 	color: $color--primary;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+
+}
+
+.sidebar-wrapper {
+	align-items: stretch;
+}
+
+.sitewide-seach {
+	margin: 30px 20px;
+
+	li {
+		margin-bottom: 10px;
+		a {
+			color: $color--primary;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 }

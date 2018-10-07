@@ -1,0 +1,128 @@
+.launch-container {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .page-list {
+    width: 95%;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 1450px;
+
+    @include r(768)  {
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    @include r(1024)  {
+      width: 80%;
+      margin: 40px auto;
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    li {
+      width: 100%;
+      float: left;
+      margin-bottom: 0;
+
+      @include r(768)  {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+
+      @include r(1024)  {
+        width: 25%;
+        margin-bottom: 20px;
+      }
+
+      a {
+        float: left;
+        width: 100%;
+        padding: 10px;
+        min-height: 62px;
+        position: relative;
+        cursor: pointer;
+        transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+        @include r(768)  {
+          width: 100%;
+        }
+
+        @include r(1024)  {
+          width: 90%;
+        }
+
+        &:hover {
+          background-color: rgba(158,158,158,0.2);
+          color: $color--primary;
+        }
+
+        span {
+          position: absolute;
+          left: 55px;
+          padding-right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+
+          @include r(768)  {
+            left: 70px;
+            padding-right: 30px;
+          }
+        }
+
+        img {
+          width: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+          position: absolute;
+          left: 10px;
+          height: 30px;
+
+          @include r(768)  {
+            width: 42px;
+            height: 42px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-logo {
+  max-width: 95%;
+  width: 750px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+
+  @include r(1024) {
+    height: 126px;
+  }
+}
+
+.primary-body-logo {
+  h1 {
+    text-align: center;
+    font-size: 1em;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    margin: 10px 0;
+
+    @include r(480) {
+      font-size: 2em;
+    }
+
+    @include r(1024) {
+      font-size: 3em;
+    }
+
+  }
+}

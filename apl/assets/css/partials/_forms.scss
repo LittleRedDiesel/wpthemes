@@ -1,0 +1,41 @@
+.post-search-box,
+.navbar-collapse {
+  form {
+    width: 100%;
+    margin: 0;
+
+    @include r(768)  {
+      width: initial;
+    }
+
+    .form-control {
+      width: 68%;
+      margin-right: 2%;
+
+      @include r(768)  {
+        width: initial;
+      }
+    }
+
+    .btn {
+      width: 30%;
+
+      @include r(768)  {
+        width: initial;
+      }
+
+      &.btn-outline-light {
+        color: #343a40;
+        background-color: transparent;
+        background-image: none;
+        border-color: #343a40;
+        @include r(992)  {
+          color: $w;
+          background-color: transparent;
+          background-image: none;
+          border-color: $w;
+        }
+      }
+    }
+  }
+}
