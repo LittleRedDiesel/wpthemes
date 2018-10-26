@@ -72,16 +72,34 @@ Template Name: Join us
 					<div class="panel panel3 js-active">
 						<?php the_field('tertiary_panel_1_content'); ?>
 						<div class="sister-buttons">
+							<!-- If these buttons exist - display them -->
+							<?php
+							$pricebutton3 = get_field('tertiary_panel_1_button_text');
+							if( !empty($pricebutton3) ): ?>
 							<a href="<?php the_field('tertiary_panel_1_button_link'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text'); ?></a>
+							<?php endif;
+							$pricebutton4 = get_field('tertiary_panel_1_button_text_2');
+							if( !empty($pricebutton4) ): ?>
 							<a href="<?php the_field('tertiary_panel_1_button_link_2'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text_2'); ?></a>
+							<?php endif; ?>
 						</div>
 					</div>
 					<div class="panel panel4">
 						<?php the_field('tertiary_panel_2_content'); ?>
+
 						<div class="sister-buttons">
+							<!-- If these buttons exist - display them -->
+							<?php
+							$pricebutton5 = get_field('tertiary_panel_2_button_text');
+							if( !empty($pricebutton5) ): ?>
 							<a href="<?php the_field('tertiary_panel_2_button_link'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text'); ?></a>
+							<?php endif;
+							$pricebutton6 = get_field('tertiary_panel_2_button_text_2');
+							if( !empty($pricebutton6) ): ?>
 							<a href="<?php the_field('tertiary_panel_2_button_link_2'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text_2'); ?></a>
+							<?php endif; ?>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -135,10 +153,20 @@ Template Name: Join us
 						<span class="pps medium-bold"><?php the_field('price_per_session'); ?></span>
 						<span class="classes-secondary caps med-font"><?php the_field('price_frequency'); ?></span>
 						<span class="spm blue medium-bold"><?php the_field('sessions_per_month'); ?></span>
+
 						<div class="sister-buttons">
+							<!-- If these buttons exist - display them -->
+							<?php
+							$pricebutton3 = get_field('price_button_1_text');
+							if( !empty($pricebutton3) ): ?>
 							<a href="<?php the_field('price_button_1_link'); ?>" class="button"><?php the_field('price_button_1_text'); ?></a>
+							<?php endif;
+							$pricebutton4 = get_field('price_button_2_text');
+							if( !empty($pricebutton4) ): ?>
 							<a href="<?php the_field('price_button_2_link'); ?>" class="button"><?php the_field('price_button_2_text'); ?></a>
+							<?php endif; ?>
 						</div>
+
 					</div>
 
 				<?php endwhile; ?>

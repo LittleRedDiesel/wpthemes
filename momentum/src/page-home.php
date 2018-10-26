@@ -31,7 +31,12 @@ Template Name: Home
 						<?php the_field('incentive_desc'); ?>
 						<div class="sister-buttons">
 							<a href="<?php the_field('incentive_button_link'); ?>" class="button"><?php the_field('incentive_button_text'); ?></a>
-							<a href="<?php the_field('incentive_button2_link'); ?>" class="button"><?php the_field('incentive_button2_text'); ?></a>
+
+							<?php $icb2 = get_field('incentive_button2_link');
+							if( !empty($icb2) ): ?>
+								<a href="<?php the_field('incentive_button2_link'); ?>" class="button"><?php the_field('incentive_button2_text'); ?></a>
+							<?php endif; ?>
+
 						</div>
 					</div>
 					<div class="panel panel-2 panel-clipped right-panel">
@@ -39,7 +44,12 @@ Template Name: Home
 						<?php the_field('incentive_description_2'); ?>
 						<div class="sister-buttons">
 							<a href="<?php the_field('incentive_button_link_2'); ?>" class="button"><?php the_field('incentive_button_text_2'); ?></a>
-							<a href="<?php the_field('incentive_button2_link_2'); ?>" class="button"><?php the_field('incentive_button2_text_2'); ?></a>
+
+							<?php $icb2l2 = get_field('incentive_button2_link_2');
+							if( !empty($icb2l2) ): ?>
+								<a href="<?php the_field('incentive_button2_link_2'); ?>" class="button"><?php the_field('incentive_button2_text_2'); ?></a>
+							<?php endif; ?>
+
 						</div>
 					</div>
 				</div>
@@ -175,6 +185,7 @@ Template Name: Home
 					<h2><?php the_field('location_block_1_name'); ?></h2>
 				</div>
 				<div class="section-half" style="background-image: url('<?php the_field('location_block_2_image'); ?>');">
+					<div class="overlay"></div>
 					<h2><?php the_field('location_block_2_name'); ?></h2>
 				</div>
 			</div>
