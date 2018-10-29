@@ -145,10 +145,12 @@ body{font-family:'Roboto',sans-serif;font-size:16px}
 .sitewide-seach li{margin-bottom:10px}
 .sitewide-seach li a{color:#212c64;text-decoration:underline}
 .sitewide-seach li a:hover{text-decoration:none}
-header{background-color:#212c64;height:62px}
+header{background-color:#212c64;height:64px}
 header .navbar{padding:0}
 header .navbar .navbar-toggler{color:#fff;border-color:#fff}
 header .navbar .navbar-toggler .navbar-toggler-icon{background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")}
+header .navbar .download-link{z-index:999;position:absolute;right:70px;top:15px}
+header .navbar .download-link img{max-width:32px;float:right;margin-right:20px}
 header .primary-logo{max-width:100px}
 header .navbar-brand{margin-left:1rem;margin-top:.25rem;margin-bottom:.25rem}
 header .navbar-toggler{margin-right:1rem}
@@ -250,6 +252,7 @@ header .navbar-expand-lg .navbar-collapse{background-color:inherit}
 .post-search-box form .btn.btn-outline-light,.navbar-collapse form .btn.btn-outline-light{color:#fff;background-color:transparent;background-image:none;border-color:#fff}
 }@media(min-width:1024px){.wp-caption .wp-caption-text,.gallery-caption{font:300 2rem/3.1rem sans-serif}
 .wrap{padding:20px 40px}
+header .navbar .download-link{right:290px}
 header .navbar-expand-lg .navbar-collapse form button{color:#fff;border-color:#fff}
 .launch-container .page-list{width:80%;margin:40px auto}
 .launch-container .page-list li{width:25%;margin-bottom:20px}
