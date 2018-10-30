@@ -1,0 +1,4639 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Delicate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-07 13:50+0530\n"
+"PO-Revision-Date: 2013-06-07 15:33+0530\n"
+"Last-Translator: \n"
+"Language-Team: designthemes\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: D:\\Program Files\\wamp\\www\\designthemes\\delicate"
+"\\wp-content\\themes\\dt_delicate\n"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/archive.php:92
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/search.php:87
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/taxonomy-portfolio_entries.php:92
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/tpl-blog.php:139
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content.php:35
+msgid "Featured"
+msgstr "recomandate"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/archive.php:107
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/taxonomy-portfolio_entries.php:107
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/tpl-blog.php:159
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content.php:50
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/theme.php:125
+msgid "Read More"
+msgstr "Citește mai mult"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:2
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Acest post este protejată prin parolă. Introduceți parola pentru a vedea "
+"orice comentarii."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:6
+msgid "No Comments"
+msgstr "No Comments"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:6
+msgid "Comment ( 1 )"
+msgstr "Comentariu (1)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:6
+msgid "Comments ( % )"
+msgstr "Comentarii (%)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:11
+msgid "Older Comments"
+msgstr "comentarii mai vechi"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:12
+msgid "Newer Comments"
+msgstr "Comentarii noi"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:22
+msgid "Comments are closed."
+msgstr "Comentariile sunt închise."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:29
+msgid "Post a Comment "
+msgstr "Trimiteți un comentariu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:31
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/contactform.php:12
+msgid "Your Name"
+msgstr "Numele tau"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:34
+msgid "Your Email"
+msgstr "E-mail dvs."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:36
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/theme.php:244
+msgid "Website"
+msgstr "website"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:38
+msgid "Your Message"
+msgstr "Mesajul dvs."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/comments.php:40
+msgid "Comment"
+msgstr "comentariu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/functions.php:22
+msgid "The quick brown fox jumps over the lazy dog"
+msgstr "Cele rapide maro vulpe sare peste în care câinele leneș"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/search.php:114
+msgid "Nothing Found"
+msgstr "nimic găsit"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/search.php:115
+msgid "Apologies, but no results were found for the requested archive."
+msgstr ""
+"Ne cerem scuze, dar nu au fost găsite rezultate pentru arhiva solicitat."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/searchform.php:2
+msgid "Enter Keyword"
+msgstr "Introduceți cuvântul cheie"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/searchform.php:8
+msgid "Go"
+msgstr "merge"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/tpl-blog.php:65
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/tpl-portfolio.php:71
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content-page.php:26
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content-single.php:91
+msgid " Edit "
+msgstr "edita"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/tpl-portfolio.php:79
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:292
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:433
+msgid "All"
+msgstr "toate"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/tpl-portfolio.php:158
+msgid "View Details "
+msgstr "Vezi detalii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:13
+msgid "Show Google+ One"
+msgstr "Arata Google+ O"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:15
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:82
+msgid "Standard"
+msgstr "standard"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:16
+msgid "Small"
+msgstr "mic"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:17
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:91
+msgid "Medium"
+msgstr "mediu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:18
+msgid "Tall"
+msgstr "înalt"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:20
+msgid "Arabic"
+msgstr "limba arabă"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:21
+msgid "Bengali"
+msgstr "Bengali"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:22
+msgid "Bulgarian"
+msgstr "bulgar"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:23
+msgid "Catalan"
+msgstr "catalan"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:24
+msgid "Chinese"
+msgstr "chinez"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:25
+msgid "Chinese (China)"
+msgstr "Chineză (China)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:26
+msgid "Chinese (Hong Kong)"
+msgstr "Chineză (Hong Kong)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:27
+msgid "Chinese (Taiwan)"
+msgstr "Chinese (Taiwan)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:28
+msgid "Croation"
+msgstr "Croation"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:29
+msgid "Czech"
+msgstr "ceh"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:30
+msgid "Danish"
+msgstr "danez"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:31
+msgid "Dutch"
+msgstr "olandez"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:32
+msgid "English (India)"
+msgstr "Engleză (India)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:33
+msgid "English (Ireland)"
+msgstr "Engleză (Irlanda)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:34
+msgid "English (Singapore)"
+msgstr "Engleză (Singapore)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:35
+msgid "English (South Africa)"
+msgstr "Engleză (Africa de Sud)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:36
+msgid "English (United Kingdom)"
+msgstr "Engleză (Marea Britanie)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:37
+msgid "Filipino"
+msgstr "filipineză"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:38
+msgid "Finnish"
+msgstr "finlandeză"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:39
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:125
+msgid "French"
+msgstr "franceză"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:40
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:126
+msgid "German"
+msgstr "german"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:41
+msgid "German (Switzerland)"
+msgstr "Germană (Elveția)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:42
+msgid "Greek"
+msgstr "grec"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:43
+msgid "Gujarati"
+msgstr "gujarati"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:44
+msgid "Hebrew"
+msgstr "evreiesc"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:45
+msgid "Hindi"
+msgstr "hindi"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:46
+msgid "Hungarian"
+msgstr "maghiar"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:47
+msgid "Indonesian"
+msgstr "indoneziană"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:48
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:127
+msgid "Italian"
+msgstr "italian"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:49
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:128
+msgid "Japanese"
+msgstr "japonez"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:50
+msgid "Kannada"
+msgstr "kannada"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:51
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:129
+msgid "Korean"
+msgstr "coreean"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:52
+msgid "Latvian"
+msgstr "leton"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:53
+msgid "Lingala"
+msgstr "Lingala"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:54
+msgid "Lithuanian"
+msgstr "lituanian"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:55
+msgid "Malay"
+msgstr "malaezian"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:56
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:57
+msgid "Marathi"
+msgstr "Marathi"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:58
+msgid "Norwegian"
+msgstr "norvegian"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:59
+msgid "Oriya"
+msgstr "Oriya"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:60
+msgid "Persian"
+msgstr "persană"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:61
+msgid "Polish"
+msgstr "polonez"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:62
+msgid "Portugese (Brazil)"
+msgstr "Portugheză (Brazilia)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:63
+msgid "Portugese (Portugal)"
+msgstr "Portugheză (Portugalia)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:64
+msgid "Romanian"
+msgstr "român"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:65
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:130
+msgid "Russian"
+msgstr "rus"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:66
+msgid "Serbian"
+msgstr "sârb"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:67
+msgid "Slovak"
+msgstr "slovac"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:68
+msgid "Slovenian"
+msgstr "sloven"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:69
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:131
+msgid "Spanish"
+msgstr "spaniol"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:70
+msgid "Swedish"
+msgstr "suedez"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:71
+msgid "Swiss German"
+msgstr "germană elvețiană"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:72
+msgid "Tamil"
+msgstr "tamil"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:73
+msgid "Telugu"
+msgstr "Telugu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:74
+msgid "Thai"
+msgstr "tailandez"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:75
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:132
+msgid "Turkish"
+msgstr "turc"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:76
+msgid "Ukranian"
+msgstr "ucraineană"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:77
+msgid "Vietnamese"
+msgstr "vietnameză"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:80
+msgid "Show Facebook like"
+msgstr "Arata ca Facebook"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:83
+msgid "Box Count"
+msgstr "Contele box"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:84
+msgid "Button Count"
+msgstr "Contele butonul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:88
+msgid "Show Digg"
+msgstr "Arată Digg"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:90
+msgid "Wide"
+msgstr "larg"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:92
+msgid "Compact"
+msgstr "compact"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:93
+msgid "Icon"
+msgstr "icoană"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:96
+msgid "Show Stumbleupon"
+msgstr "arata Stumbleupon"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:98
+msgid "style1"
+msgstr "STYLE1"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:99
+msgid "style2"
+msgstr "style2"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:100
+msgid "style3"
+msgstr "style3"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:101
+msgid "style4"
+msgstr "style4"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:102
+msgid "style5"
+msgstr "style5"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:103
+msgid "style6"
+msgstr "style6"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:105
+msgid "Show LinkedIn"
+msgstr "Arată LinkedIn"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:109
+msgid "Show Pintrest"
+msgstr "arata Pintrest"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:110
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:119
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:625
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:18
+msgid "None"
+msgstr "nici unul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:110
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:120
+msgid "Vertical"
+msgstr "vertical"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:110
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:121
+msgid "Horizontal"
+msgstr "orizontală"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:113
+msgid "Show Delicious"
+msgstr "arata Delicious"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:117
+msgid "Show Twitter"
+msgstr "Arată Twitter"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/include.php:124
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:475
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:35
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:362
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:444
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:110
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:136
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:383
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:408
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:447
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/portfolio_widgets.php:31
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_posts.php:31
+msgid "Select"
+msgstr "selecta"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:52
+msgid "This will restore all of your options to default. Are you sure?"
+msgstr ""
+"Acest lucru va restaura toate opțiunile la valorile implicite. Ești sigur?"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:53
+msgid ""
+"You are going to import the dummy data provided with the theme, kindly "
+"confirm?"
+msgstr ""
+"Aveți de gând pentru a importa datele false furnizate cu tema, cu "
+"amabilitate a confirma?"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:54
+msgid ""
+"Importing is disabled.. :), Please set Disable Import to NO in Buddha Panel "
+"General Settings"
+msgstr ""
+"Importul este dezactivat .. :), Vă rugăm să setați Disable Import a NO în "
+"Buddha Panoul Setări generale"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:55
+msgid "Click OK to backup your current saved options."
+msgstr "Faceți clic pe OK pentru a backup-opțiunile curente salvate."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:56
+msgid "Your options are backuped successfully"
+msgstr "Opțiunile dvs. sunt copiate cu succes"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:57
+msgid "Backup Process not working"
+msgstr "Procesul de backup nu funcționează"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:58
+msgid ""
+"Warning: All of your current options will be replaced with the data from "
+"your last backup! Proceed?"
+msgstr ""
+"Atenție: toate opțiunile actuale vor fi înlocuite cu datele din ultima "
+"copiere de rezervă! Proceda?"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:59
+msgid "Your options are restored from previous backup successfully"
+msgstr ""
+"Opțiunile dvs. sunt restaurate de la copii de rezervă anterioare cu succes"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:60
+msgid "Restore Process not working"
+msgstr "Procesul Restaurare nu funcționează"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:61
+msgid "Click ok import options from the above textarea"
+msgstr "Faceți clic pe Opțiuni ok import din textarea mai sus"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:62
+msgid "Your options are imported successfully"
+msgstr "Opțiunile dvs. sunt importate cu succes"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:63
+msgid "Import Process not working"
+msgstr "Procesul de import nu de lucru"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:87
+msgid "Error: Options not saved, please try again."
+msgstr "Eroare: opțiuni nu salvat, vă rugăm să încercați din nou."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:94
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_admin.php:96
+msgid "Options Saved."
+msgstr "Opțiuni salvate."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_media_uploader.php:73
+msgid "Delete Permanently"
+msgstr "Ștergeți definitiv"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_media_uploader.php:75
+msgid "Delete"
+msgstr "șterge"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_media_uploader.php:76
+#, php-format
+msgid "You are about to delete <strong>%s</strong>."
+msgstr "Ești pe cale să ștergeți <strong>%s</strong>."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_media_uploader.php:77
+msgid "Continue"
+msgstr "continua"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_media_uploader.php:78
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:289
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:311
+msgid "Cancel"
+msgstr "anula"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_media_uploader.php:81
+msgid "Move to Trash"
+msgstr "Mutați în Coșul de gunoi"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_media_uploader.php:82
+msgid "Undo"
+msgstr "anula"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:691
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:693
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:719
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content-single-portfolio.php:98
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:277
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:302
+msgid "Edit"
+msgstr "edita"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:717
+msgid "Your comment is awaiting moderation."
+msgstr "Comentariul dvs. așteaptă moderație."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:723
+msgid "Reply"
+msgstr "replică"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:818
+msgid "Home"
+msgstr "acasă"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:893
+msgid "Archive for Category: "
+msgstr "Arhiva pentru categoria:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:898
+msgid "Archive for Author: "
+msgstr "Arhiva de Autor:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:901
+msgid "Archive for Tag: "
+msgstr "Arhiva pentru Tag:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:903
+msgid "LOST"
+msgstr "LOST"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:905
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:8
+msgid "Search"
+msgstr "Caută"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:963
+msgid "Select Your Style"
+msgstr "Selectați stilul tau"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:965
+msgid "Choose your layout"
+msgstr "Alegeți aspectul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:972
+msgid "Patterns for Boxed Layout"
+msgstr "Modelelor de Layout cutie"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/register_public.php:979
+msgid "Color scheme"
+msgstr "schema de culori"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:289
+msgid "Select Post"
+msgstr "Selectați Mesaj"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:318
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_pages.php:29
+msgid "Select Page"
+msgstr "alege pagina"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:348
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:370
+msgid "Select Category"
+msgstr "Selectați Categorie"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:537
+msgid "Footer Column"
+msgstr "Coloana subsol"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:625
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:18
+msgid "Pattern"
+msgstr "model"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:625
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:18
+msgid "Custom Background"
+msgstr "fundal particularizate"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:627
+msgid "Background Type"
+msgstr "Tipul de fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:764
+msgid "Search results for"
+msgstr "Rezultatele cautarii pentru"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:777
+msgid "Page not found"
+msgstr "Pagina nu a fost găsită"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/utils.php:1247
+msgid " Avatar"
+msgstr "avatar"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content-single-portfolio.php:69
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:4
+msgid "Project Details"
+msgstr "Detalii proiect"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content-single-portfolio.php:72
+msgid "Client Name : "
+msgstr "Nume client:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content-single-portfolio.php:77
+msgid "Location : "
+msgstr "Locație:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content-single-portfolio.php:81
+msgid "Website : "
+msgstr "website:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content-single-portfolio.php:94
+msgid "Prev Entry"
+msgstr "Anterior intrare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/loops/content-single-portfolio.php:95
+msgid "Next Entry"
+msgstr "Intrarea următor"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:4
+msgid "Portfolios"
+msgstr "portofoliile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:5
+msgid "All Portfolios"
+msgstr "toate portofoliile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:6
+msgid "Portfolio Entry"
+msgstr "portofoliul de intrare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:7
+msgid "Add New"
+msgstr "Adăugați noi"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:8
+msgid "Add New Portfolio Entry"
+msgstr "Adauga o noua intrare Portofoliu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:9
+msgid "Edit Portfolio Entry"
+msgstr "Editare portofoliu de intrare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:10
+msgid "New Portfolio Entry"
+msgstr "New Entry Portofoliu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:11
+msgid "View Portfolio Entry"
+msgstr "Vezi portofoliu de intrare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:12
+msgid "Search Portfolio Entries"
+msgstr "Intrările de portofoliu de căutare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:13
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/portfolio_widgets.php:117
+msgid "No Portfolio Entries found"
+msgstr "Nu intrările de portofoliu gasit"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:14
+msgid "No Portfolio Entries found in Trash"
+msgstr "Nu intrările de portofoliu găsite în Coșul de gunoi"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_customposts/register_portfolio_post.php:84
+msgid "No Featured Image"
+msgstr "Nici o imagine Featured"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:3
+msgid "Slider Options"
+msgstr "Opțiuni Cursor"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:4
+msgid "Default page Options"
+msgstr "Opțiuni Page implicite"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:18
+msgid "Show Slider"
+msgstr "arata Slider"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:25
+msgid "YES! to show slider on this page."
+msgstr "DA! pentru a afișa cursorul pe aceasta pagina."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:32
+msgid "Choose Slider"
+msgstr "Alegeți Slider"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:36
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:63
+msgid "Layer Slider"
+msgstr "Slider strat"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:37
+msgid "Revolution Responsive"
+msgstr "Revoluția Responsive"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:47
+msgid "Choose which slider you wish to use ( eg: Layer or Revolution )"
+msgstr ""
+"Alegeți care cursorul doriți să folosiți (de exemplu: Layer sau Revoluția)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:76
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:108
+msgid "Select LayerSlider"
+msgstr "Selectați LayerSlider"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:80
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:112
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:140
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:144
+msgid "Select Slider"
+msgstr "Selectați Slider"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:90
+msgid "Choose Which LayerSlider you would like to use.."
+msgstr "Alegeți Ceea ce LayerSlider vă-ar dori să folosi .."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:96
+msgid "Please add atleat one layer slider"
+msgstr "Vă rugăm să adăugați atleat un slider strat"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:120
+msgid "Choose which LayerSlider would you like to use!"
+msgstr "Alegeți care LayerSlider doriți să utilizați!"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:127
+msgid "Please activate Layered Slider"
+msgstr "Vă rugăm să activați Slider Layered"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:134
+msgid "Revolution Slider"
+msgstr "Revoluția Slider"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:152
+msgid "Choose which Revolution slider would you like to use!"
+msgstr "Alegeți care slider Revoluția doriți să utilizați!"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:158
+msgid "Please activate Revolution Slider , and add at least one slider."
+msgstr ""
+"Vă rugăm să activați Slider Revoluției, și se adaugă cel puțin un slider."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:182
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:30
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:15
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:305
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:150
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:310
+msgid "Layout"
+msgstr "schemă"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:195
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:28
+msgid "You can choose between a left, right or no sidebar layout."
+msgstr "Puteți alege între o la stânga, dreapta sau nu aspectul bara laterală."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:202
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:63
+msgid "Disable Every Where Sidebar"
+msgstr "Dezactivați cazul în care fiecare Sidebar"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:209
+msgid "Yes! to hide \"Every Where Sidear\" on this page."
+msgstr ""
+"Da! pentru a ascunde \"Fiecare cazul în care Sidear \" de pe această pagină."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:217
+msgid "Menu Icon Class"
+msgstr "Meniu Icon Clasa"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:222
+msgid "Icon class for this page(eg: icon-home )"
+msgstr "Icon clasa pentru această pagină (de exemplu: icon-home)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:233
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:76
+msgid "Allow Comments"
+msgstr "Permiteți Comentarii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:240
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:83
+msgid "YES! to allow comments on this page."
+msgstr "DA! pentru a permite comentarii pe aceasta pagina."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:249
+msgid "Full Width Section"
+msgstr "Lățimea secțiunii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:254
+msgid "This content will appear in full width"
+msgstr "Acest conținut va apărea în întreaga lățime"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:266
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:406
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:20
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:36
+msgid "Posts Layout"
+msgstr "mesaje Aspect"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:270
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:410
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:92
+msgid "Single post per row."
+msgstr "Singur post pe rând."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:271
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:411
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:92
+msgid "Two posts per row."
+msgstr "Două posturi pe rand."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:272
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:412
+msgid "Three posts per row."
+msgstr "Trei mesaje pe rând."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:273
+msgid "Thumb View of posts"
+msgstr "Thumb Vezi de mesaje"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:281
+msgid "Choose layout style for your Blog"
+msgstr "Alege stilul aspectul de blog-ul dvs."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:288
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:429
+msgid "Post per page"
+msgstr "By Post page"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:298
+msgid "Your blog pages show at most selected number of posts per page."
+msgstr ""
+"Paginile blog-ul dvs. arată la numărul cel selectat de mesaje pe pagină."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:305
+msgid "Allow Excerpt"
+msgstr "Permiteți Extras"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:312
+msgid "Enable Excerpt"
+msgstr "Activați Extras"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:319
+msgid "Excerpt Length"
+msgstr "extras Lungime"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:324
+msgid ""
+"Limit! Number of charectors from the content to appear on each blog post "
+"(Number Only)"
+msgstr ""
+"Limita! Numărul de charectors de conținut pentru a apărea pe fiecare post de "
+"blog (singura cifra)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:330
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:76
+msgid "Post Meta Options"
+msgstr "Mesaj Opțiuni Meta"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:333
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:79
+msgid "Disable the Author info."
+msgstr "Dezactivați info Autor."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:334
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:80
+msgid ""
+"By default the author info will display when viewing your posts. You can "
+"choose to disable it here."
+msgstr ""
+"În mod implicit informatii autorul va afișa când vizualizați mesajele "
+"dumneavoastră. Puteți alege să-l dezactivați aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:337
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:83
+msgid "Disable the date info."
+msgstr "Dezactivați info data."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:338
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:84
+msgid ""
+"By default the date info will display when viewing your posts. You can "
+"choose to disable it here."
+msgstr ""
+"În mod implicit info data va fi afișată când vizualizați mesajele "
+"dumneavoastră. Puteți alege să-l dezactivați aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:342
+msgid "Disable the comment"
+msgstr "Dezactivați comentariu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:343
+msgid ""
+"By default the comment will display when viewing your posts. You can choose "
+"to disable it here."
+msgstr ""
+"În mod implicit comentariu se va afișa când vizualizați mesajele "
+"dumneavoastră. Puteți alege să dezactivați-l aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:347
+msgid "Disable the category"
+msgstr "Dezactivați categorie"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:348
+msgid ""
+"By default the category will display when viewing your posts. You can choose "
+"to disable it here."
+msgstr ""
+"În mod implicit, categoria va afișa când vizualizați mesajele dumneavoastră. "
+"Puteți alege să dezactivați-l aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:352
+msgid "Disable the tag"
+msgstr "Dezactivați tag-ul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:353
+msgid ""
+"By default the tag will display when viewing your posts. You can choose to "
+"disable it here."
+msgstr ""
+"În mod implicit tag-ul va afișa când vizualizați mesajele dumneavoastră. "
+"Puteți alege să dezactivați-l aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:382
+msgid "Exclude Categories"
+msgstr "exclude categorii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:397
+msgid "You can choose certain categories to exclude from your blog page."
+msgstr "Puteți alege anumite categorii pentru a exclude de pe pagina de blog."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:413
+msgid "Four Posts per row"
+msgstr "Patru posturi pe rand"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:421
+msgid "Choose layout style for your Portfolio"
+msgstr "Alege stilul aspectul pentru portofoliul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:439
+msgid "Your portfolio pages show at most selected number of posts per page."
+msgstr ""
+"Paginile dvs. de portofoliu arată la numărul cel selectat de mesaje pe "
+"pagină."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:445
+msgid "Allow Filters"
+msgstr "Permiteți Filtre"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:452
+msgid "Allow filter options for portfolio items"
+msgstr "Permite opțiuni de filtrare pentru articolele din portofoliu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:458
+msgid "Choose Categories"
+msgstr "Alegeți Categorii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/page_metabox.php:473
+msgid "You can choose only certain categories to show in portfolio items. "
+msgstr ""
+"Puteți alege doar anumite categorii pentru a afișa în elemente de portofoliu."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:3
+msgid "Default Options"
+msgstr "Opțiuni implicite"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:5
+msgid "Featured Video"
+msgstr "Video recomandate"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:6
+msgid "Media Settings"
+msgstr "Setări mass-media"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:18
+msgid "Sub Title"
+msgstr "Titlul sub"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:23
+msgid "If you wish! You can add sub title."
+msgstr "Dacă doriți! Puteți adăuga sub titlu."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:43
+msgid "You can choose between a left, right or full width."
+msgstr "Puteți alege între o lățime la stânga, dreapta sau complet."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:49
+msgid "Show Related Projects"
+msgstr "Arata Proiecte"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:56
+msgid "Would you like to show the related projects at the bottom"
+msgstr "Doriți să arate proiectele legate în partea de jos"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:63
+msgid "Show Social Share"
+msgstr "Arata Social Ponderea"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:70
+msgid "Would you like to show the social share at the bottom"
+msgstr "Doriți să arate capitalului social în partea de jos"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:98
+msgid "Client Name"
+msgstr "Nume client"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:103
+msgid "Enter the Client Name"
+msgstr "Introduceți numele Clientului"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:109
+msgid "Location"
+msgstr "locație"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:114
+msgid "Enter the Client Location"
+msgstr "Introduceți Client Locație"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:120
+msgid "Project Url"
+msgstr "Url-ul proiectului"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:125
+msgid "Enter the Client Project URL"
+msgstr "Introduceți URL-ul proiect Client"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:139
+msgid "Video Url"
+msgstr "Url Video"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:145
+msgid "Enter a Video URL you wish to show."
+msgstr "Introduceți o adresă URL video pe care doriți să arate."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:164
+msgid "Used Images / Videos"
+msgstr "Imagini / Video folosite"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:170
+msgid "Please, add some image"
+msgstr "Te rog, adăuga unele imagini"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:194
+msgid "Add Videos"
+msgstr "Adauga Video"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/portfolio_metabox.php:196
+msgid "Available Images"
+msgstr "Imagini disponibile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:3
+msgid "Post Options"
+msgstr "Mesaj Opțiuni"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:35
+msgid "Disable Comments"
+msgstr "Dezactivați Comentarii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:42
+msgid "YES! to disable Comments."
+msgstr "DA! pentru a dezactiva comentarii."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:49
+msgid "Disable Featured Image"
+msgstr "Dezactivați Image recomandate"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:56
+msgid "YES! to disable featured image"
+msgstr "DA! pentru a dezactiva imaginea recomandate"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:70
+msgid "YES! to disable Every Where Sidebar"
+msgstr "DA! pentru a dezactiva cazul în care fiecare Sidebar"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:88
+msgid "Disable the comment info."
+msgstr "Dezactivați comentariu info."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:89
+msgid ""
+"By default the comment info will display when viewing your posts. You can "
+"choose to disable it here."
+msgstr ""
+"În mod implicit comentariul informații va fi afișată când vizualizați "
+"mesajele dumneavoastră. Puteți alege să-l dezactivați aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:93
+msgid "Disable the category info."
+msgstr "Dezactivați info categorie."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:94
+msgid ""
+"By default the category info will display when viewing your posts. You can "
+"choose to disable it here."
+msgstr ""
+"În mod implicit informații categorie vor afișa când vizualizați mesajele "
+"dumneavoastră. Puteți alege să-l dezactivați aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:98
+msgid "Disable the tag info."
+msgstr "Dezactivați info tag-ul."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/post_metabox.php:99
+msgid ""
+"By default the tag info will display when viewing your posts. You can choose "
+"to disable it here."
+msgstr ""
+"De către mod implicit informatiile de tag-ul va afișa când vizualizați "
+"mesajele dumneavoastră. Puteți alege să-l dezactivați aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/seo_metabox.php:6
+msgid "SEO Options"
+msgstr "Opțiuni SEO"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/seo_metabox.php:15
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:6
+msgid "Title"
+msgstr "titlu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/seo_metabox.php:19
+msgid ""
+"The title display in search engines is limited to 70 chars. If the SEO title "
+"is empty the title will be generated based on your title template in your "
+"SEO settings."
+msgstr ""
+"Afișajul titlu în motoarele de căutare este limitat la 70 de caractere. În "
+"cazul în care titlul de SEO este gol titlul va fi generat bazat pe șablonul "
+"dvs. titlul în setările de SEO."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/seo_metabox.php:24
+msgid "Description"
+msgstr "descriere"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/seo_metabox.php:28
+msgid ""
+"The meta description will be limited to 140 chars. If the meta description "
+"is empty the description <br> will be generated based on your meta "
+"description options in your SEO settings."
+msgstr ""
+"Descrierea meta va fi limitată la 140 caractere. În cazul în descrierea meta "
+"este gol descrierea <br> va fi generat pe baza pe dvs. de Opțiuni Descriere "
+"meta în setările de dvs. de SEO."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/seo_metabox.php:33
+msgid "Keywords"
+msgstr "Cuvinte cheie"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_metaboxes/seo_metabox.php:37
+msgid "Add any additional comma separated keywords here."
+msgstr "Adăuga orice alte cuvinte cheie separate prin virgula aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:7
+msgid "Menu"
+msgstr "meniu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:8
+msgid "Body"
+msgstr "corp"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:9
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/footer.php:7
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/footer.php:16
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:47
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:61
+msgid "Footer"
+msgstr "subsol"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:10
+msgid "Typography"
+msgstr "tipografie"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:11
+msgid "Layout & BG"
+msgstr "Layout & BG"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:25
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:38
+msgid "Menu Font"
+msgstr "menu Source"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:29
+msgid "Disable Menu Settings"
+msgstr "Dezactiva setările de meniu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:31
+msgid "Enable or Disable Menu section apperance settings."
+msgstr "Activa sau dezactiva setările Aspect secțiunea de meniu."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:39
+msgid "Choose the menu font"
+msgstr "Alegeți fontul meniul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:41
+msgid "Menu Font Size"
+msgstr "Menu Font Size"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:48
+msgid "Primary / Default Color"
+msgstr "Primary Color / Default"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:51
+msgid "Pick a custom primary color for the menu e.g. #564912"
+msgstr ""
+"Alege o culoare primara personalizat pentru meniul de exemplu, # 564912"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:58
+msgid "Hover Color"
+msgstr "hover Culoare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:61
+msgid "Pick a custom hover state color for the menu e.g. #564912"
+msgstr ""
+"Alege o culoare personalizată stat Hover pentru meniul de exemplu # 564912"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:75
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:88
+msgid "Body Font"
+msgstr "Font corp"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:79
+msgid "Disable Body Settings"
+msgstr "Dezactiva setările de corp"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:81
+msgid "Enable or Disable Body apperance settings."
+msgstr "Activa sau dezactiva setările Aspect corp."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:91
+msgid "Choose the body font"
+msgstr "Alegeți fontul corpului"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:96
+msgid "Body Font Color"
+msgstr "Font corp de culoare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:99
+msgid "Pick a custom font color for body/content e.g. #a314a3"
+msgstr ""
+"Alege o culoare font personalizat pentru corp / conținut de exemplu, # a314a3"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:105
+msgid "Body Font Size"
+msgstr "Corp Dimensiune font"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:111
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:202
+msgid "Primary / Default Color for Links"
+msgstr "Primar de culoare / Default pentru Link-uri"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:114
+msgid ""
+"Pick a custom primary color to links and buttons for body/content e.g. "
+"#551256"
+msgstr ""
+"Alege o culoare primara obiceiul de a link-uri și butoane de corp / conținut "
+"de exemplu, # 551256"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:121
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:212
+msgid "Hover Color for Links"
+msgstr "Hover culoare pentru legãturile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:124
+msgid ""
+"Pick a custom hover state color to links and buttons for body/content e.g. "
+"#564912"
+msgstr ""
+"Alege o culoare personalizată stat Hover de link-uri și butoane de corp / "
+"conținut de exemplu, # 564912"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:140
+msgid "Footer Font"
+msgstr "Font subsol"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:144
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:145
+msgid "Disable Footer Settings"
+msgstr "Dezactiva setările de subsol"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:146
+msgid "Enable or Disable Footer apperance settings."
+msgstr "Activa sau dezactiva setările Aspect subsol."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:152
+msgid "Footer Title Font"
+msgstr "Titlul Font subsol"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:155
+msgid "Choose the footer font"
+msgstr "Alegeți fontul subsol"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:159
+msgid "Footer Title Font Color"
+msgstr "Font titlu subsol Culoare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:162
+msgid "Pick a custom footer title font color to the theme e.g. #a314a3"
+msgstr ""
+"Alege un subsol culoare font personalizat titlu pentru tema de exemplu, # "
+"a314a3"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:169
+msgid "Footer Font Size"
+msgstr "Subsol Dimensiune font"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:176
+msgid "Footer Content Font"
+msgstr "Subsol Font conținut"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:179
+msgid "Choose the footer content font"
+msgstr "Alegeți fontul conținutul subsol"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:185
+msgid "Footer Content Font Color"
+msgstr "Subsol conținut Culoare font"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:188
+msgid "Pick a custom font color for footer content e.g. #a314a3"
+msgstr ""
+"Alege o culoare font personalizat pentru conținutul subsol de exemplu, # "
+"a314a3"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:195
+msgid "Footer Content Font Size"
+msgstr "Conținut Subsol Dimensiune font"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:205
+msgid "Pick a custom primary color for links in footer e.g. #551256"
+msgstr ""
+"Alege o culoare primara personalizat pentru link-uri în subsol de exemplu, # "
+"551256"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:215
+msgid "Pick a custom color for footer links hover state e.g. #564912"
+msgstr ""
+"Alege o culoare personalizată pentru link-uri subsol treceți de stat de "
+"exemplu, # 564912"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:224
+msgid "Footer BG Color"
+msgstr "Subsol Culoare BG"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:227
+msgid ""
+"Pick a custom background color of the theme's footer section.(e.g. #a314a3)"
+msgstr ""
+"Alege o culoare de fundal personalizată din secțiunea subsol temei. (De "
+"exemplu, # a314a3)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:233
+msgid "Copyright Section BG Color"
+msgstr "Copyright Secțiunea BG Culoare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:236
+msgid ""
+"Pick a custom background color of the theme's copyright section.(e.g. "
+"#a314a3)"
+msgstr ""
+"Alege o culoare de fundal personalizată a secțiunii drepturilor de autor "
+"temei. (De exemplu, # a314a3)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:255
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:259
+msgid "Disable Typography Settings"
+msgstr "Dezactiva setările Tipografia"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:261
+msgid "Enable or Disable the typography settings"
+msgstr "Activați sau dezactivați setările de tipografie"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:267
+msgid "Font Family, Size and Color"
+msgstr "Familie de fonturi, mărime și culoare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:271
+msgid "Choose Font Family, Size and Color for"
+msgstr "Alege familia de fonturi, dimensiunea și culoarea pentru"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:274
+msgid "Font"
+msgstr "Font"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:279
+msgid "Font Color"
+msgstr "Font Color"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:286
+msgid "Font Size"
+msgstr "font Size"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:301
+msgid "Choose Layout"
+msgstr "Alegeți Layout"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:306
+msgid "Choose the Layout Style(Boxed / Fullwidth)"
+msgstr "Alegeți stil de aspect (cutie / Fullwidth)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:327
+msgid "Boxed Layout BG Background"
+msgstr "Cutie Aspect BG fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:338
+msgid "Choose Patterns"
+msgstr "Alegeți Modele"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:352
+msgid ""
+"Choose background pattern, you can add patterns by placing the png files in "
+"the folder "
+msgstr ""
+"Alege modelul de fundal, puteți adăuga modele de plasarea PNG fișiere în "
+"folderul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:359
+msgid "Boxed Layout Background Pattern repeat"
+msgstr "Cutie Aspect fundal model repeta"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:369
+msgid "Select how would you like to repeat the pattern image"
+msgstr "Selectați modul în care doriți să repetați imaginea modelului"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:377
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:456
+msgid "Disable Background Color"
+msgstr "Dezactivați Culoare fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:384
+msgid "Choose Background Color"
+msgstr "Alege culoarea de fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:387
+msgid "Pick a custom background color of the theme.(e.g. #a314a3)"
+msgstr ""
+"Alege o culoare de fundal personalizat de temei. (De exemplu, # a314a3)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:397
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:474
+msgid "Background opacity"
+msgstr "opacitate de fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:407
+msgid "Boxed Layout Background Image"
+msgstr "Cutie Aspect Imagine de fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:412
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:32
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:57
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:86
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:55
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:81
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:331
+msgid "Upload"
+msgstr "Încarcă"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:413
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:33
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:58
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:87
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:56
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:82
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:287
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:309
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:332
+msgid "Remove"
+msgstr "îndepărta"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:416
+msgid "Upload an image for the theme's background"
+msgstr "Încărcați o imagine de fundal temei"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:424
+msgid "Background Image Repeat"
+msgstr "Imagine de fundal Repetare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:425
+msgid "Select how would you like to repeat the background image"
+msgstr "Selectați modul în care doriți să repetați imaginea de fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:431
+msgid "Background Image Position"
+msgstr "Imagine de fundal Poziție"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:432
+msgid "Select how would you like to position the background"
+msgstr "Selectați modul în care doriți să poziționați fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:464
+msgid "Background Color"
+msgstr "Culoare fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/appearance.php:467
+msgid "Pick a background color of the theme.(e.g. #a314a3)"
+msgstr "Alege o culoare de fundal a temei. (De exemplu, # a314a3)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/backup.php:6
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:52
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:66
+msgid "Backup"
+msgstr "Backup"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/backup.php:13
+msgid "Backup and Restore Options"
+msgstr "Backup și restaurare Opțiuni"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/backup.php:15
+msgid ""
+"You can use the two buttons below to backup your current options, and then "
+"restore it back at a later time. This is useful if you want to experiment on "
+"the options but would like to keep the old settings in case you need it back."
+msgstr ""
+"Puteti folosi cele două butoane de mai jos pentru a backup-opțiunile "
+"actuale, și apoi restaura înapoi la o dată ulterioară. Acest lucru este util "
+"dacă doriți să experimentați cu privire la opțiunile, dar ar dori să "
+"păstreze vechile setări în cazul în care aveți nevoie de ea înapoi."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/backup.php:17
+msgid "No backups yet"
+msgstr "Încă nu backup"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/backup.php:18
+msgid "Last Backup : "
+msgstr "Ultima Backup:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/backup.php:22
+msgid "Backup Options"
+msgstr "Opțiuni de backup"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/backup.php:23
+msgid "Restore Options"
+msgstr "Restaurare Opțiuni"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/backup.php:27
+msgid "Transfer Theme Options Data"
+msgstr "Transferul Opțiuni temă de date"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/backup.php:29
+msgid ""
+"You can tranfer the saved options data between different installs by copying "
+"the text inside the text box. To import data from another install, replace "
+"the data in the text box with the one from another install and click 'Import "
+"Options'"
+msgstr ""
+"Puteți transfera cu datele salvate opțiuni între diferite instalează prin "
+"copierea textului în interiorul casetei de text. Pentru a importa date din "
+"altă instalare, înlocui datele în caseta de text cu cel de la un alt "
+"instalare și \"import Opțiuni\", faceți clic pe"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/backup.php:45
+msgid "Import Options"
+msgstr "Opțiuni de import"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:6
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:14
+msgid "Bar Settings"
+msgstr "Setări Bar"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:18
+msgid "Enable Bar"
+msgstr "Activați Bar"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:23
+msgid "Hide Bar by default"
+msgstr "Ascunde Bar implicit"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:31
+msgid "Bar BG Color"
+msgstr "Bar BG Culoare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:34
+msgid "Pick a custom buddha bar background color e.g. #a314a3"
+msgstr "Alege un obicei Buddha Bar culoare de fundal de exemplu, # a314a3"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:38
+msgid "Show BG Color"
+msgstr "Arată BG Culoare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:43
+msgid "Shadow Color"
+msgstr "Culoare umbră"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:46
+msgid "Pick a custom buddha bar shadow color e.g. #a314a3"
+msgstr "Alege un obicei Buddha Bar umbra de culoare de exemplu, # a314a3"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:50
+msgid "Show Shadow Color"
+msgstr "Arată culoarea umbrei"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:60
+msgid "Message Settings"
+msgstr "Setări mesaj"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:64
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/contactform.php:14
+msgid "Message"
+msgstr "mesaj"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:66
+msgid "You can add your custom buddha bar message."
+msgstr "Puteți adăuga personalizat mesajul Buddha Bar."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:73
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:132
+msgid "Message Font"
+msgstr "Message Font"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:75
+msgid "Choose Message Font"
+msgstr "Choose Message Font"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:82
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:139
+msgid "Message Font Color"
+msgstr "Message Font Color"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:85
+msgid "Pick a custom font color for the message e.g. #a314a3"
+msgstr "Alege o culoare font personalizat pentru mesajul de exemplu, # a314a3"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:91
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:148
+msgid "Message Font Size"
+msgstr "Message Font Size"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:98
+msgid "Disable Font Color"
+msgstr "Disable Font Color"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:103
+msgid "Link Color"
+msgstr "link-ul de culoare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:106
+msgid "Pick a custom primary color for the links in buddha bar e.g. #564912 "
+msgstr ""
+"Alege o culoare primara personalizat pentru link-urile din Buddha Bar de "
+"exemplu, # 564912"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:113
+msgid "Link hover Color"
+msgstr "Link-ul Hover Culoare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/bbar.php:116
+msgid ""
+"Pick a custom hover state color for the links in buddha bar e.g. #564912 "
+msgstr ""
+"Alege o culoare personalizată stat Hover pentru link-urile din Buddha Bar de "
+"exemplu, # 564912"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:6
+msgid "Admin"
+msgstr "admin"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:16
+msgid "Custom Admin Login Logo"
+msgstr "Logo personalizat Admin Login"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:20
+msgid "Show Custom Admin Login Logo"
+msgstr "Arata logo personalizat Admin Login"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:35
+msgid ""
+"Upload an image to replace the default wordpress admin panel login logo "
+"(274px*63px)."
+msgstr ""
+"Încărcați o imagine pentru a înlocui implicit WordPress admin autentificare "
+"logo panou (274px * 63px)."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:40
+msgid "Custom Admin Logo"
+msgstr "Logo Admin personalizat"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:45
+msgid "Show Custom Admin Logo"
+msgstr "Arată logo-ul Admin personalizate"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:61
+msgid ""
+"Upload an image to replace the default wordpress admin panel logo "
+"(20px*20px).<b><i>The image will be shown at the top left corner</i></b>. "
+msgstr ""
+"Încărcați o imagine pentru a înlocui implicit WordPress panoul de "
+"administrare logo-ul (* 20px 20px). <b><i> Imaginea va fi afișat în colțul "
+"din stânga sus</i></b>. "
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:68
+msgid "Buddha Panel Logo"
+msgstr "Buddha Panel Logo"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:72
+msgid "Replace Buddha Panel Logo"
+msgstr "Înlocuiți Buddha Panel Logo"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/branding.php:91
+msgid ""
+"Upload an image to replace the default buddha panel logo.<b><i>You can set "
+"your own brnad</i></b>. "
+msgstr ""
+"Încărcați o imagine pentru a înlocui implicit Buddha panoul logo-ul. "
+"<b><i>Puteți seta propriul brnad </i></b>. "
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/footer.php:23
+msgid "Show Footer"
+msgstr "Afișare subsol"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/footer.php:30
+msgid "Footer Column Layout"
+msgstr "Aspect Coloana subsol"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/footer.php:31
+msgid "Select a perfect column layout style for your theme's footer."
+msgstr ""
+"Selectați un stil perfect aspect coloana pentru footer tema dumneavoastră."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/footer.php:52
+msgid "Show Copyright Text"
+msgstr "Arată Copyright Text"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/footer.php:59
+msgid "Copyright Text"
+msgstr "Copyright Text"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/footer.php:62
+msgid ""
+"You can paste your copyright text in this box. This will be automatically "
+"added to the footer."
+msgstr ""
+"Aveți posibilitatea să lipiți textul drepturilor de autor în această casetă. "
+"Acesta va fi adăugat automat la subsol."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:7
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:6
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:41
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:56
+msgid "General"
+msgstr "general"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:8
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:244
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:301
+msgid "Sociable"
+msgstr "sociabil"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:17
+msgid "Logo"
+msgstr "logo"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:26
+msgid "Custom Image Logo"
+msgstr "Personalizat Imaginea siglei"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:27
+msgid ""
+"Display Site Title <small><a href=\"options-general.php\">(click here to "
+"edit site title)</a></small>"
+msgstr ""
+"Afișarea Site Title <small> <a href=\"options-general.php\"> (click aici "
+"pentru a edita titlul site-ului) </ a> </ small>"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:47
+msgid ""
+"You can choose whether you wish to display a custom logo or your site title."
+msgstr ""
+"Puteți alege dacă doriți să afișați un logo personalizat sau titlul site-ul "
+"tău."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:60
+msgid ""
+"Upload a logo for your theme, or specify the image address of your online "
+"logo."
+msgstr ""
+"Încărcați o emblemă pentru tema dvs., sau specifica adresa imaginii de logo-"
+"ul on-line."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:66
+msgid "Favicon"
+msgstr "favicon"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:69
+msgid "Enable Favicon"
+msgstr "Activați Favicon"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:84
+msgid "Upload a favicon for your theme, or specify the oneline URL for favicon"
+msgstr ""
+"Încarcă un favicon pentru tema dvs., sau specifica URL-ul oneline pentru "
+"favicon"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:88
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:194
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:294
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:488
+msgid "Others"
+msgstr "alții"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:91
+msgid "Enable Sticky Navigation"
+msgstr "Activați Sticky navigare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:102
+msgid "YES! to enable sticky navigation."
+msgstr "DA! pentru a permite navigare lipicios."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:109
+msgid "Globally Disable Comments on Pages"
+msgstr "Dezactivați nivel global Comentarii la Pagini"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:120
+msgid ""
+"YES! to disable comments on all the pages. This will globally override your "
+"\"Allow comments\" option under your page \"Discussion\" settings. "
+msgstr ""
+"DA! pentru a dezactiva comentarii pe toate paginile. Acest lucru va înlocui "
+"la nivel global opțiune în pagina dvs. de \"Discuție \" Setări \"comentarii "
+"Allow\"."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:125
+msgid "Globally Disable Comments on Posts"
+msgstr "Dezactivați nivel global Comentarii la mesaje"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:135
+msgid ""
+"YES! to disable comments on all the posts. This will globally override your "
+"\"Allow comments\" option under your post \"Discussion\" settings. "
+msgstr ""
+"DA! pentru a dezactiva comentarii pe toate posturile. Acest lucru va înlocui "
+"la nivel global opțiune în postul dvs. \"discutii \" Setări \"comentarii "
+"Allow\"."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:139
+msgid "Globally Disable Comments on Portfolios"
+msgstr "Dezactivați nivel global Comentarii la portofoliile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:149
+msgid "Enable/ Disable comments on portfolio pages."
+msgstr "Activa / dezactiva comentarii pe paginile de portofoliu."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:153
+msgid "Globally Disable Breadcrumbs"
+msgstr "Dezactivați nivel global Breadcrumbs"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:161
+msgid "show / Hide Breacrumbs globally on sitewide"
+msgstr "Show / Hide Breacrumbs la nivel global pe sitewide"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:166
+msgid "Breadcrumb Delimiter"
+msgstr "breadcrumb Delimitator"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:175
+msgid "This is the symbol that will appear in between your breadcrumbs"
+msgstr "Acesta este simbolul care va apărea în între pesmet dvs."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:179
+msgid "Disable Style Picker"
+msgstr "Dezactivați Picker Stil"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:187
+msgid "YES! to hide the front end style picker"
+msgstr "DA! pentru a ascunde fata selectorul de stil final"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:192
+msgid "Disable import dummy content"
+msgstr "Dezactivați conținut fals import"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:200
+msgid "YES! to hide Import Dummy Data button from the Adminpanel"
+msgstr "DA! pentru a ascunde butonul Date Dummy Import de adminpanel"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:204
+msgid "Google Font Subset"
+msgstr "Subset Font Google"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:210
+msgid ""
+"Specify which subsets should be downloaded. Multiple subsets should be "
+"separated with coma"
+msgstr ""
+"Specifica care trebuie descărcate subseturi. Subseturi mai multe ar trebui "
+"să fie separate cu comă"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:216
+msgid ""
+"Some of the fonts in the Google Font Directory supports multiple scripts "
+"(like Latin and Cyrillic for example). In order to specify which subsets "
+"should be downloaded the subset parameter should be appended to the URL. For "
+"a complete list of available fonts and font subsets please see"
+msgstr ""
+"Unele dintre fonturile din directorul de fonturi Google acceptă script-uri "
+"multiple (cum ar fi latin și chirilic, de exemplu). În scopul de a preciza "
+"care subseturi ar trebui să fie descărcate parametrul subset ar trebui să "
+"fie adăugat la adresa URL. Pentru o listă completă de fonturi disponibile și "
+"subseturi de fonturi vă rugăm să consultați"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:222
+msgid "Mailchimp API KEY"
+msgstr "MailChimp API CHEIE"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:228
+msgid "Paste your mailchimp api key that will be used by the mailchimp widget."
+msgstr ""
+"Lipiți cheia API MailChimp, care va fi utilizat de către widget-ul MailChimp."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:249
+msgid "Show Sociable"
+msgstr "arata Sociabil"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:258
+msgid "Add New Sociable"
+msgstr "Adăugați noi Sociabil"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:261
+msgid "Manage Social Network icons list to display"
+msgstr "Gestionați Social lista de pictograme de rețea pentru a afișa"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:280
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:306
+msgid "Sociable Icon"
+msgstr "sociabil Icon"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:282
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/general.php:307
+msgid "Sociable Link"
+msgstr "Link sociabil"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:7
+msgid "Post"
+msgstr "post"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:8
+msgid "Page"
+msgstr "pagină"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:9
+msgid "Portfolio"
+msgstr "portofoliul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:16
+msgid "Add Code Inside the &lt;head&gt"
+msgstr "Adăuga cod interiorul  &lt;head&gt"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:17
+msgid ""
+"Any code you place here will appear in the head section of every page of "
+"your site. This is useful when you need to add javascript or css to all "
+"pages."
+msgstr ""
+"Orice cod plasați aici vor apărea în secțiunea capul fiecare pagină a site-"
+"ului. Acest lucru este util atunci când aveți nevoie să adăugați JavaScript "
+"sau CSS pentru toate paginile."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:20
+msgid "Enable Header Code"
+msgstr "Activați Cod Antet"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:23
+msgid "Add Code above &lt;/body&gt;"
+msgstr "Adauga Cod de mai sus &lt;/body&gt;"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:24
+msgid ""
+"You can paste your Google Analytics or other website tracking codes in this "
+"box. This will be automatically added above the &lt;/body&gt; tag."
+msgstr ""
+"Aveți posibilitatea să lipiți Analytics Google sau alte coduri urmărire site-"
+"ul în această casetă. Acest lucru va fi adăugat automat deasupra &lt;/"
+"body&gt; tag."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:27
+msgid "Enable Body Code"
+msgstr "Activați Cod Corp"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:30
+msgid "Custom CSS"
+msgstr "CSS personalizat"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:31
+msgid "Paste your custom CSS code here."
+msgstr "Inserați codul CSS personalizat aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:34
+msgid "Enable Custom CSS"
+msgstr "Activați personalizat CSS"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:71
+msgid "Add code to the top of your posts"
+msgstr "Adauga codul de la partea de sus a mesajele dumneavoastră"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:72
+msgid ""
+"Place any codes to show on top of all single post. This is useful if you are "
+"looking to integrate things such as social bookmarking links, AD etc.,."
+msgstr ""
+"Puneți coduri pentru a afișa în partea de sus a tuturor singur post. Acest "
+"lucru este util dacă sunteți în căutarea de a integra lucruri, cum ar fi "
+"link-uri de marcare socială, AD, etc,."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:75
+msgid "Enable single post top code"
+msgstr "Activați codul singur post de top"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:78
+msgid "Add code to the bottom of your posts, before the comments"
+msgstr ""
+"Adauga codul de la partea de jos a mesajele dumneavoastră, înainte de "
+"observațiile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:79
+msgid ""
+"Place any codes to show on bottom of all single post. This is useful if you "
+"are looking to integrate things such as social bookmarking links, AD etc.,."
+msgstr ""
+"Puneți toate codurile afișate pe partea de jos a tuturor singur post. Acest "
+"lucru este util dacă sunteți în căutarea de a integra lucruri, cum ar fi "
+"link-uri de marcare socială, AD, etc,."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:82
+msgid "Enable single post bottom code"
+msgstr "Activați codul unic mesaj de jos"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:117
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:277
+msgid "Social Shares"
+msgstr "Acțiuni sociale"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:121
+msgid "Manage social share options and its layout to show in the blog post."
+msgstr ""
+"Gestiona opțiunilor pe acțiuni sociale și în configurația acestuia pentru a "
+"arăta în post pe blog."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:140
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:301
+msgid "Username"
+msgstr "Utilizator"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:161
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:321
+msgid "Color Scheme"
+msgstr "Schema de culoare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:172
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:332
+msgid "Language"
+msgstr "limbă"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:183
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:343
+msgid "Default Text"
+msgstr "implicit Text"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:202
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:363
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:392
+msgid "Social Bookmark"
+msgstr "Social Bookmark"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:205
+msgid ""
+"Manage social media bookmark options and its layout to show in the blog post"
+msgstr ""
+"Gestionați social media opțiuni de marcare și în configurația acestuia să "
+"arate în blog"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:233
+msgid "Add code to the top of your pages"
+msgstr "Adauga codul de la partea de sus a paginilor dvs."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:234
+msgid ""
+"Place any codes to show on top of all single page. This is useful if you are "
+"looking to integrate things such as social bookmarking links, AD etc.,."
+msgstr ""
+"Puneți coduri pentru a afișa în partea de sus a tuturor singură pagină. "
+"Acest lucru este util dacă sunteți în căutarea de a integra lucruri, cum ar "
+"fi link-uri de marcare socială, AD, etc,."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:237
+msgid "Enable single page top code"
+msgstr "Activare cod unic de sus a paginii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:240
+msgid "Add code to the bottom of your pages, before the comments"
+msgstr ""
+"Adauga codul de la partea de jos a paginilor dvs., înainte de observațiile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:241
+msgid ""
+"Place any codes to show on bottom of all single page. This is useful if you "
+"are looking to integrate things such as social bookmarking links, AD etc.,."
+msgstr ""
+"Puneți toate codurile afișate pe partea de jos a tuturor singură pagină. "
+"Acest lucru este util dacă sunteți în căutarea de a integra lucruri, cum ar "
+"fi link-uri de marcare socială, AD, etc,."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:244
+msgid "Enable single page bottom code"
+msgstr "Activați singur cod de jos paginii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:282
+msgid "Manage social share options and its layout to show in the page."
+msgstr ""
+"Gestiona opțiunilor pe acțiuni sociale și în configurația acestuia pentru a "
+"arăta în pagina."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:365
+msgid ""
+"Manage social media bookmark options and its layout to show in the page."
+msgstr ""
+"Gestionați social media opțiuni de marcare și în configurația acestuia să "
+"arate în pagina."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/integration.php:395
+msgid ""
+"Manage social media bookmark options and its layout to show in the portfolio."
+msgstr ""
+"Gestionați social media opțiuni de marcare și în configurația acestuia să "
+"arate în portofoliul."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/menu.php:12
+msgid "settings"
+msgstr "setările"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/menu.php:15
+msgid "options"
+msgstr "Opțiuni"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/menu.php:15
+msgid "Options"
+msgstr "Opțiuni"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/responsive.php:6
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/responsive.php:13
+msgid "Responsive"
+msgstr "sensibil"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/responsive.php:18
+msgid "Make My Site Responsive"
+msgstr "Face site-ul meu Responsive"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/responsive.php:23
+msgid "Choose whether you need responsive version for your website"
+msgstr "Alegeți dacă aveți nevoie de versiunea de receptiv pentru site-ul dvs."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/responsive.php:29
+msgid "Disable Slider for Mobile Devices"
+msgstr "Dezactivați Slider pentru dispozitive mobile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/responsive.php:34
+msgid ""
+"Choose whether you wish to hide / display the slider area of your website on "
+"mobile devices"
+msgstr ""
+"Alegeți dacă doriți să ascundeți / afișați zona cursorul de site-ul dvs. pe "
+"dispozitive mobile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:7
+msgid "Meta"
+msgstr "goal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:14
+msgid "Title Formats"
+msgstr "Formate Titlu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:19
+msgid "Title Delimiter"
+msgstr "Titlul Delimitator"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:27
+msgid ""
+"This is the symbol that will appear on the browser and Search engine title. "
+"Some common examples would be : | /  - , ::"
+msgstr ""
+"Acesta este simbolul care va apărea pe browser-ul și titlul motorului de "
+"căutare. Câteva exemple comune ar fi : | /  - , ::"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:35
+msgid "Post Title Format"
+msgstr "Mesaj Titlul Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:38
+msgid "Choose Post Title Format"
+msgstr "Alege titlu Format Mesaj"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:39
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:51
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:62
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:70
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:79
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:88
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:97
+msgid "Blog Title"
+msgstr "Blog Titlu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:39
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:51
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:62
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:71
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:80
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:89
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:97
+msgid "Blog Description"
+msgstr "Blog Descriere"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:40
+msgid "Post Title"
+msgstr "Mesaj Titlul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:40
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:63
+msgid "Category Title"
+msgstr "Categorie Titlu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:41
+msgid "Tag Title"
+msgstr "Title tag"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:42
+msgid "Post's Author Nicename"
+msgstr "Post's Author Nicename"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:43
+msgid "Post's Author First Name"
+msgstr "Post Autor Prenume"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:44
+msgid "Post's Author Last Name"
+msgstr "Post Autor Nume"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:47
+msgid "Page Title Format"
+msgstr "Titlul paginii Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:50
+msgid "Choose Page Title Format"
+msgstr "Alegeți Titlul paginii Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:52
+msgid "Page Title"
+msgstr "Titlul paginii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:53
+msgid "Page's Author Nicename"
+msgstr "Page autorul Nicename"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:54
+msgid "Page's Author First Name"
+msgstr "Page autorul Prenume"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:55
+msgid "Page's Author Last Name"
+msgstr "Page autorul Nume"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:58
+msgid "Category Title Format"
+msgstr "Categorie Titlu Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:61
+msgid "Choose Category Page Title Format"
+msgstr "Alege Categorie Titlu Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:63
+msgid "Category Description"
+msgstr "Categorie Descriere"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:66
+msgid "Archive Title Format"
+msgstr "Arhiva Titlu Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:69
+msgid "Choose Archieve Page Title Format"
+msgstr "Alegeți din următoarele pagini Arhiva Titlu Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:72
+msgid "Default Date"
+msgstr "implicit Data"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:75
+msgid "Tag Title Format"
+msgstr "Titlul tag-ul Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:78
+msgid "Choose Tag Page Title Format"
+msgstr "Alegeți din următoarele pagini Tag Titlu Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:81
+msgid "The name of the tag"
+msgstr "Numele de tag-ul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:84
+msgid "Search Title Format"
+msgstr "Căutare titlu Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:87
+msgid "Choose Search Page Title Format"
+msgstr "Alegeți Cautare Titlul paginii Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:90
+msgid "What was searched for"
+msgstr "Ceea ce a fost căutat"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:93
+msgid "404 Title Format"
+msgstr "404 Titlu Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:96
+msgid "Choose 404 Page Title Format"
+msgstr "Alegeți 404 Pagina Titlu Format"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:142
+msgid "Metadata and others"
+msgstr "Metadata și altele"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:145
+msgid "Canonical URLs"
+msgstr "URL-uri canonice"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:145
+msgid ""
+"This option will automatically generate Canonical URLS for your entire "
+"WordPress installation. This will help to prevent duplicate content "
+"penalties by Google."
+msgstr ""
+"Această opțiune va genera în mod automat URL-uri canonice pentru întregul "
+"instalare WordPress. Acest lucru va ajuta pentru a preveni sancțiuni "
+"duplicat de conținut de către Google."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:146
+msgid "Use noindex for Categories"
+msgstr "Utilizați noindex pentru categoriile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:146
+msgid ""
+"Check this for excluding category pages from being crawled. Useful for "
+"avoiding duplicate content."
+msgstr ""
+"Verifica acest lucru pentru a exclude categorii de pagini cu crawlere. Util "
+"pentru a evita conținutul duplicat."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:147
+msgid "Use noindex for Archives"
+msgstr "Utilizați noindex pentru arhive"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:147
+msgid ""
+"Check this for excluding archive pages from being crawled. Useful for "
+"avoiding duplicate content."
+msgstr ""
+"Verifica acest lucru pentru a exclude pagini de arhivă cu crawlere. Util "
+"pentru a evita conținutul duplicat."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:148
+msgid "Use noindex for Tag Archives"
+msgstr "Utilizați noindex pentru Tag Archives"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:148
+msgid ""
+"Check this for excluding tag pages from being crawled. Useful for avoiding "
+"duplicate content."
+msgstr ""
+"Verifica acest lucru pentru a exclude pagini tag-ul cu crawlere. Util pentru "
+"a evita conținutul duplicat."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:149
+msgid "Use Tags for META keywords"
+msgstr "Utiliza tag-uri de cuvinte cheie META"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:149
+msgid ""
+"Check this if you want your tags for a given post used as the META keywords "
+"(in addition to any keywords you specify on the post edit page)."
+msgstr ""
+"Verifica acest lucru dacă doriți etichetele pentru un anumit mesaj folosit "
+"ca cuvintele cheie META (în plus față de orice cuvinte cheie pe care le "
+"specificați pe pagina postul de editare)."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:151
+msgid "Autogenerate Descriptions"
+msgstr "genera automat Descrieri"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:151
+msgid ""
+"Check this and your META descriptions will get autogenerated for post and "
+"page."
+msgstr ""
+"Verificați acest lucru și metadescrierile vor fi generată automat de poștă "
+"și pagina."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:153
+msgid "Use Categories for META keywords"
+msgstr "Folositi Categorii pentru cuvinte cheie META"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/seo.php:153
+msgid ""
+"Check this if you want your categories for a given post used as the META "
+"keywords (in addition to any keywords and tags you specify on the post edit "
+"page)."
+msgstr ""
+"Verifica acest lucru dacă doriți categorii dumneavoastră pentru un anumit "
+"mesaj folosit ca cuvintele cheie META (în plus față de orice cuvinte cheie "
+"si tag-uri pe care le specificați pe pagina postul de editare)."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:42
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:57
+msgid "Appearance"
+msgstr "apariție"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:43
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:58
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/skins.php:6
+msgid "Skins"
+msgstr "Skins"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:44
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:59
+msgid "Integration"
+msgstr "integrare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:45
+msgid "SEO"
+msgstr "SEO"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:46
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:60
+msgid "Speciality Pages"
+msgstr "Pagini de specialitate"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:48
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:62
+msgid "Widget Area"
+msgstr "Zona Widget"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:49
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:63
+msgid "Responsive &amp; Mobile"
+msgstr "sensibil &amp; mobil"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:50
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:64
+msgid "Branding"
+msgstr "branding"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:51
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:65
+msgid "Buddha Bar"
+msgstr "Buddha Bar"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:84
+msgid "Import Dummy Data"
+msgstr "Import date Dummy"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:104
+msgid "Reset All"
+msgstr "Reset All"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/settings.php:105
+msgid "Save All"
+msgstr "Save All"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/skins.php:16
+msgid "Current Skin"
+msgstr "Skin curent"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/skins.php:28
+msgid "Available Skins"
+msgstr "skin-uri disponibile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:6
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:17
+msgid "Sliders"
+msgstr "Sliders"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:7
+msgid "Cycle Slider"
+msgstr "Slider ciclu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:8
+msgid "Nivo Slider"
+msgstr "Nivo Slider"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:9
+msgid "Touch Slider"
+msgstr "Slider Touch"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:18
+msgid ""
+"You can select any number of silders. And you can re-arrange by drag - drop"
+msgstr ""
+"Puteți alege orice număr de silders. Și vă puteți re-aranja de tragere - "
+"picătură"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:22
+msgid "Used Sliders"
+msgstr "Sliders folosite"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:23
+msgid "Please, add some sliders"
+msgstr "Te rog, adăugați niște slidere"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:46
+msgid "Available Sliders"
+msgstr "cursoare disponibile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:86
+msgid "Cycle Slider Settings"
+msgstr "Setări Slider ciclu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:90
+msgid "Transition effects"
+msgstr "efecte de tranziție"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:100
+msgid "You can choose Transition effects here."
+msgstr "Puteți alege efecte de tranziție aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:107
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:243
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:532
+msgid "Slider Width x Height (in px)"
+msgstr "Slider Lățime x Înălțime (în px)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:111
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:247
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:536
+msgid ""
+"For better view,<ol><li>Please re-upload all the slider images with the "
+"correct dimensions.</li><li>The slider height should be above 300px.</li></"
+"ol>"
+msgstr ""
+"Pentru vizualizare mai bună, <ol><li> Vă rugăm să re-incarcati toate "
+"imaginile slider cu dimensiuni corecte. </li><li> Înălțimea slider ar trebui "
+"să fie mai sus 300px. </li></ol>"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:121
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:125
+msgid "Easing"
+msgstr "facilitarea"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:126
+msgid "Easing method for both in and out transitions"
+msgstr "Metoda relaxarea atât în și în afara tranziții"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:127
+msgid "EaseIn"
+msgstr "EaseIn"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:128
+msgid "easing for 'in' transition"
+msgstr "relaxarea pentru \"în\" tranziție"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:129
+msgid "EaseOut"
+msgstr "EaseOut"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:130
+msgid "easing for 'out' transition"
+msgstr "relaxarea pentru \"out\" de tranziție"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:151
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:156
+msgid "Speed"
+msgstr "viteză"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:157
+msgid "speed of the transition (any valid fx speed value ,eg:1000)"
+msgstr "viteza de tranziție (orice valoare validă fx viteză, de exemplu: 1000)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:161
+msgid "Speed In"
+msgstr "viteza in"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:162
+msgid "speed of the 'in' transition (eg:2500)"
+msgstr "Viteza de \"în\" tranziție (de exemplu: 2500)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:166
+msgid "Speed Out"
+msgstr "viteza out"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:167
+msgid "speed of the 'out' transition (eg : 500)"
+msgstr "Viteza de \"out\" de tranziție (de exemplu: 500)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:171
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:522
+msgid "Delay Time"
+msgstr "Timpul de intarziere"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:172
+msgid "additional delay (in ms) for first transition (hint: can be negative)"
+msgstr ""
+"întârziere suplimentară (în ms) pentru prima tranziție (indiciu: poate fi "
+"negativ)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:197
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:297
+msgid "Would you like to pasue the slider on hover?"
+msgstr "Doriți să pasue cursorul pe hover?"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:198
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:298
+msgid "Would you like to use random slider?"
+msgstr "Doriți să utilizați cursorul întâmplare?"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:199
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:299
+msgid "Would you like to show slider navigation?"
+msgstr "Doriți să arate navigare slider?"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:200
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:300
+msgid "Would you like to show control navigation on bottom of slider?"
+msgstr "Doriți să arate navigare controlul pe jos de slider?"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:201
+msgid "Would you like to pause the slider on control navigation hover?"
+msgstr "Vrei pentru a opri cursorul pe de navigare de control Hover?"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:202
+msgid "Disable (It cause transitions should not occur simultaneously)."
+msgstr "Dezactiva (Aceasta produce tranziții nu ar trebui să apară simultan)."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:222
+msgid "Nivo Slider Settings"
+msgstr "Nivo Slider Setări"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:227
+msgid "Choose effects"
+msgstr "alege efecte"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:237
+msgid "You can choose animation effects here."
+msgstr "Puteți alege efecte de animație aici."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:253
+msgid "Animation Speed"
+msgstr "animație viteză"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:254
+msgid "Please enter slider transition(eg: 500) in ms"
+msgstr "Vă rugăm să introduceți tranziție slider (de exemplu: 500) în ms"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:258
+msgid "Pause Time"
+msgstr "Timp de pauză"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:259
+msgid "Please enter slider pause time(eg: 3000) in ms"
+msgstr "Vă rugăm să introduceți slider pauză (de exemplu: 3000), în ms"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:263
+msgid "Box Animation Columns"
+msgstr "Coloane Animation Box"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:264
+msgid ""
+"For box animation( boxRain, boxRainGrow, boxRainGrowReverse, boxRainReverse "
+"and boxRandom ), you can give number of columns(eg: 5)"
+msgstr ""
+"Pentru animație box (boxRain, boxRainGrow, boxRainGrowReverse, "
+"boxRainReverse și boxRandom), vă pot da numărul de coloane (de exemplu: 5)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:268
+msgid "Box Animation Rows"
+msgstr "Rânduri Animation Box"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:269
+msgid ""
+"For box animation( boxRain, boxRainGrow, boxRainGrowReverse, boxRainReverse "
+"and boxRandom ), you can give number of rows(eg: 8)"
+msgstr ""
+"Pentru animație box (boxRain, boxRainGrow, boxRainGrowReverse, "
+"boxRainReverse și boxRandom), vă pot da numărul de rânduri (de exemplu: 8)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:273
+msgid "Slices"
+msgstr "felii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:274
+msgid ""
+"For slice animation( SliceDown, SliceDownLeft, SliceUp, SliceUpDown, "
+"sliceUpDownLeft and sliceUpLeft ), you can give number of slices here. For "
+"eg: 15"
+msgstr ""
+"Pentru animație felie (SliceDown, SliceDownLeft, SliceUp, SliceUpDown, "
+"sliceUpDownLeft și sliceUpLeft), vă pot da numărul de felii aici. De "
+"exemplu: 15"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:322
+msgid "Background Settings"
+msgstr "Setări fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:326
+msgid "Background Image"
+msgstr "Imagine de fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:335
+msgid "Upload an image for slider background."
+msgstr "Încărcați o imagine de fundal slider."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:344
+msgid "Enable fullscreen background animation."
+msgstr "Activați animație de fundal pe tot ecranul."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:347
+msgid ""
+"Check if you want to enable the fullscreen background animation for touch "
+"slider."
+msgstr ""
+"Verificați dacă doriți să activați animație de fundal pe tot ecranul pentru "
+"Slider Touch."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:356
+msgid "Enable background move animation."
+msgstr "Activați animație mișcare fundal."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:358
+msgid ""
+"Check if you want to enable the fullscreen background moving animation for "
+"touch slider."
+msgstr ""
+"Verificați dacă doriți să activați fundal fullscreen mișcare animație pentru "
+"Slider Touch."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:365
+msgid "Pagination Settings"
+msgstr "Setări paginare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:372
+msgid "Auto hide."
+msgstr "Ascunde auto."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:374
+msgid ""
+"Check if you want to enable the auto hide option for the pagination in touch "
+"slider."
+msgstr ""
+"Verificați dacă doriți să activați ascunde opțiunea Auto pentru paginația în "
+"Slider Touch."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:381
+msgid "Alignment"
+msgstr "aliniere"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:384
+msgid "Bottom Center"
+msgstr "partea de jos Center"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:385
+msgid "Top Left"
+msgstr "din stânga sus"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:386
+msgid "Top Center"
+msgstr "partea de sus Centrul de"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:387
+msgid "Top Right"
+msgstr "din dreapta-sus"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:388
+msgid "Bottom Left"
+msgstr "stânga jos"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:389
+msgid "Bottom Right"
+msgstr "dreapta jos"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:390
+msgid "Left Center"
+msgstr "Centrul de stânga"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:391
+msgid "Right Center"
+msgstr "Centrul de drept"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:392
+msgid "Center"
+msgstr "centru"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:400
+msgid "Choose pagination alignment for touch slider."
+msgstr "Alegeți aliniere paginare pentru Slider Touch."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:406
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:444
+msgid "Type"
+msgstr "tip"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:408
+msgid "Bullets"
+msgstr "Marcatori"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:409
+msgid "Bullets with BG"
+msgstr "Marcatori cu BG"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:409
+msgid "Decimal"
+msgstr "zecimal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:416
+msgid "Choose pagination type for touch slider."
+msgstr "Alege tipul de paginare pentru Slider Touch."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:425
+msgid "Navigation Settings"
+msgstr "Setările de navigare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:434
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:436
+msgid "Disable auto-hide navigation."
+msgstr "Dezactivați Auto-ascunde de navigare."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:445
+msgid "Choose previous, next navigation type."
+msgstr "Alege, de tip anterior de navigare următor."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:448
+msgid "Arrow"
+msgstr "săgeată"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:449
+msgid "Circle Arrow"
+msgstr "cercul Arrow"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:450
+msgid "Square Arrow"
+msgstr "Piața Arrow"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:454
+msgid "Left Alignment"
+msgstr "Aliniere la stânga"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:456
+msgid "Choose the alignment / position for the 'left' navigation icon"
+msgstr "Alegeți alinierea / poziția de \"stânga\", pictograma de navigare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:460
+msgid "Right Alignment"
+msgstr "aliniere la dreapta"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:462
+msgid "Choose the alignment / position for the 'right' navigation icon"
+msgstr "Alegeți alinierea / poziția de \"dreapta\" pictograma de navigare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:493
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:494
+msgid "Disable desktop drag"
+msgstr "Dezactivați trageți desktop"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:498
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:499
+msgid "Disable slideshow animation."
+msgstr "Dezactiva animație slideshow."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/slideshow.php:525
+msgid "Additional delay time of slideshow animation in seconds. (eg:) 2"
+msgstr ""
+"Timp suplimentar întârziere de animație prezentarea în câteva secunde. (de "
+"exemplu :) 2"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:7
+msgid "Archives"
+msgstr "arhive"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:9
+msgid "404"
+msgstr "404"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:17
+msgid "Archives Layout"
+msgstr "arhivele Aspect"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:18
+msgid ""
+"You can choose between a left, right or no sidebar layout for the Archive "
+"page."
+msgstr ""
+"Puteți alege între un aspect la stânga, dreapta sau nu bara laterală pentru "
+"pagina de arhiva."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:21
+msgid "Your archive results will use the layout you select below."
+msgstr "Rezultatele dvs. arhiva va folosi aspectul selectați de mai jos."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:24
+msgid "Archives Background"
+msgstr "arhivele Context"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:25
+msgid "Archives background image"
+msgstr "Imaginea de fundal arhive"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:26
+msgid "Upload an image for the theme's Archives page background"
+msgstr "Încărcați o imagine pentru tema de Arhivele fundalul paginii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:29
+msgid "Archives Background Color"
+msgstr "Arhivele Culoare fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:30
+msgid ""
+"Pick a custom color for background color of the theme's archive page.(e.g. "
+"#a314a3)"
+msgstr ""
+"Alege o culoare personalizată pentru culoarea de fundal a paginii arhiva "
+"temei. (De exemplu, # a314a3)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:33
+msgid "Search Layout"
+msgstr "Aspect căutare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:34
+msgid ""
+"You can choose between a left, right or no sidebar layout for your Search "
+"page."
+msgstr ""
+"Puteți alege între o la stânga, dreapta sau nu aspectul bara laterală pentru "
+"pagina de căutare."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:37
+msgid "Your Search results will use the layout you select below."
+msgstr "Rezultatele căutării va folosi aspectul selectați de mai jos."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:39
+msgid "Search Background"
+msgstr "căutare de fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:40
+msgid "Search background image"
+msgstr "Imaginea de fundal căutare"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:41
+msgid "Upload an image for the theme's Search page background"
+msgstr "Încărcați o imagine pentru tema de cautare pagina de fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:44
+msgid "Search Background Color"
+msgstr "Cauta Culoare fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:45
+msgid ""
+"Pick a custom color for background color of the theme's search page.(e.g. "
+"#a314a3)"
+msgstr ""
+"Alege o culoare personalizată pentru culoarea de fundal a paginii de căutare "
+"temei. (De exemplu, # a314a3)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:49
+msgid "404 Layout"
+msgstr "404 Aspect"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:50
+msgid ""
+"You can choose between a left, right or no sidebar layout for your 404 page."
+msgstr ""
+"Puteți alege între un aspect la stânga, dreapta sau nu bara laterală pentru "
+"pagina 404."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:52
+msgid "404 Background"
+msgstr "404 Context"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:53
+msgid "404 background image"
+msgstr "404 imagine de fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:54
+msgid "Upload an image for the theme's 404 page background"
+msgstr "Încărcați o imagine pentru tema de 404 fundalul paginii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:57
+msgid "404 Background Color"
+msgstr "404 Culoare fundal"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:58
+msgid ""
+"Pick a custom color for background color of the theme's 404 page.(e.g. "
+"#a314a3)"
+msgstr ""
+"Alege o culoare personalizată pentru culoarea de fundal a paginii 404 temei. "
+"(De exemplu, # a314a3)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:60
+msgid "404 Message"
+msgstr "404 Mesaj"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:61
+msgid "You can give custom 404 page message"
+msgstr "Puteți da personalizat mesaj pagina 404"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:93
+msgid "Three post per row."
+msgstr "Trei mesaj pe rând."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:116
+msgid "404 Custom Message"
+msgstr "404 Mesaj personalizat"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:122
+msgid "Disable Font Settings"
+msgstr "Dezactiva setările de fonturi"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:126
+msgid "Enable / Disable 404 Font settings"
+msgstr "Activarea / Dezactivarea 404 setările Font"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/specialty-pages.php:142
+msgid ""
+"Pick a custom color for 404 message font color of the theme e.g. #a314a3"
+msgstr ""
+"Alege o culoare personalizată pentru 404 mesaj culoarea fontului a temei de "
+"exemplu, # a314a3"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/widgetarea.php:6
+msgid "For Pages"
+msgstr "pentru Pagini"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/widgetarea.php:7
+msgid "For Posts"
+msgstr "pentru mesajele"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/widgetarea.php:8
+msgid "For Categories"
+msgstr "pentru categoriile"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/widgetarea.php:16
+msgid "Add new widget areas for pages"
+msgstr "Adăuga noi domenii Widget pentru pagini"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/widgetarea.php:20
+msgid "Select a PAGE that should receive a new widget area:"
+msgstr "Selectați o pagină care ar trebui să primească o nouă zonă de widget:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/widgetarea.php:45
+msgid "Add new widget areas for posts"
+msgstr "Adăuga noi domenii Widget pentru mesaje"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/widgetarea.php:49
+msgid "Select a POST that should receive a new widget area:"
+msgstr "Selectați un post ar trebui să primească o nouă zonă de widget:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/widgetarea.php:73
+msgid "Add new widget areas for categories"
+msgstr "Adăuga noi domenii Widget pentru categorii"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_options/widgetarea.php:77
+msgid "Select a CATEGORY that should receive a new widget area:"
+msgstr ""
+"Selectați o categorie care ar trebui să primească o nouă zonă de widget:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/contactform.php:4
+msgid "Send us a message"
+msgstr "Trimite-ne un mesaj"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/contactform.php:13
+msgid "E-mail"
+msgstr "E-mail"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/contactform.php:15
+msgid "Send Email"
+msgstr "Trimite e-mail"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/others.php:99
+msgid "top"
+msgstr "de sus"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/others.php:301
+msgid "Phone:"
+msgstr "telefon:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/others.php:302
+msgid "Fax:"
+msgstr "Fax:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/others.php:303
+msgid "Email:"
+msgstr "E-mail:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/others.php:304
+msgid "Web:"
+msgstr "web:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/others.php:344
+msgid "Heading"
+msgstr "rubrică"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/others.php:345
+msgid "Buy Now"
+msgstr "Cumpara acum"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/social.php:60
+msgid "Tweet"
+msgstr "Tweet"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/social.php:98
+msgid "Delicious"
+msgstr "delicios"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/social.php:113
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/social.php:117
+msgid "Pin It"
+msgstr "Pin Este"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/social.php:117
+msgid "Pin It on Pinterest"
+msgstr "Pin Este pe Pinterest"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/theme.php:104
+msgid "Please add few portfolio items before using this shortcode"
+msgstr ""
+"Vă rugăm să adăugați câteva elemente de portofoliu înainte de a utiliza "
+"această scurtătură"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/theme.php:162
+#, php-format
+msgid "View all posts in %s"
+msgstr "Vezi toate posturile de la% s"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/theme.php:221
+msgid "Phone"
+msgstr "telefon"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/theme.php:232
+msgid "Email"
+msgstr "E-mail"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_shortcodes/widgets.php:34
+#, php-format
+msgid ""
+"%s: Widget class not found. Make sure this widget exists and the class name "
+"is correct"
+msgstr ""
+"%s: Clasa widget nu a fost găsit. Asigurați-vă că există acest widget și "
+"numele clasei este corect"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:6
+msgid " Flickr Widget"
+msgstr "flickr Widget"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:19
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/mailchimp.php:27
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/portfolio_widgets.php:23
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_pages.php:21
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_posts.php:23
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/twitter.php:25
+msgid "Title:"
+msgstr "titlu:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:23
+msgid "Flickr ID:"
+msgstr "Flickr ID:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:27
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/twitter.php:33
+msgid "How many entries do you want to show:"
+msgstr "Cate intrari vrei să arate:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:35
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:45
+msgid "What pictures to display"
+msgstr "Ce poza pentru a afișa"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:37
+msgid "Latest"
+msgstr "Ultimele"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:37
+msgid "Random"
+msgstr "întâmplător"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:47
+msgid "square"
+msgstr "pătrat"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:47
+msgid "thumbnail"
+msgstr "pictograme"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/flickr.php:47
+msgid "medium"
+msgstr "mediu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/mailchimp.php:11
+msgid " Mailchimp Newsletter Widget"
+msgstr "MailChimp Newsletter Widget"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/mailchimp.php:31
+msgid "Select List:"
+msgstr "Selectați lista:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/mailchimp.php:41
+msgid "Paste your mailchimp api key in BPanel at General Settings tab"
+msgstr "Lipiți cheia API MailChimp în BPanel la fila Setări generale"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/mailchimp.php:72
+msgid ""
+"Success!&nbsp; Check your inbox or spam folder for a message containing a "
+"confirmation link."
+msgstr ""
+"Succes!&nbsp; Verifica inbox-ul sau folderul de spam pentru un mesaj care "
+"conține un link de confirmare."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/mailchimp.php:75
+msgid "Error:"
+msgstr "eroare:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/portfolio_widgets.php:10
+msgid " Portfolio"
+msgstr "portofoliul"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/portfolio_widgets.php:28
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_posts.php:28
+msgid "Choose the categories you want to display (multiple selection possible)"
+msgstr ""
+"Alegeți categoriile pe care doriți să afișați (selecție multiplă posibilă)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/portfolio_widgets.php:41
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_pages.php:39
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_posts.php:41
+msgid "Display title only or title &amp; excerpt"
+msgstr "Afișa numai sau titlu titlu &amp; extras"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/portfolio_widgets.php:51
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_pages.php:49
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_posts.php:51
+msgid "Show Image"
+msgstr "Vezi imaginea"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/portfolio_widgets.php:53
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_posts.php:53
+msgid "No.of posts to show:"
+msgstr "Mesaje Nr pentru a arăta:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_pages.php:10
+msgid " Pages"
+msgstr "pagini"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_pages.php:26
+msgid "Choose the pages you want to display (multiple selection possible)"
+msgstr ""
+"Alegeți paginile pe care doriți să afișați (selecție multiplă posibilă)"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_pages.php:106
+msgid "No Pages found"
+msgstr "Nici o pagină găsit"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_posts.php:10
+msgid " Posts"
+msgstr "mesaje"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/recent_posts.php:109
+msgid "No Posts found"
+msgstr "Nici o postare găsită"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/twitter.php:10
+msgid " Twitter Widget"
+msgstr "Twitter Widget"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/twitter.php:15
+msgid "Latest Tweets"
+msgstr "Ultimele Tweets"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/twitter.php:29
+msgid "Enter your twitter username:"
+msgstr "Introduceți numele de utilizator Twitter:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/twitter.php:42
+msgid "Exclude @replies"
+msgstr "Excludeți @ raspunsuri"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/twitter.php:45
+msgid "Show time of tweet"
+msgstr "Afișare timp de tweet"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/theme_widgets/twitter.php:48
+msgid "Show user avatar"
+msgstr "Arata Avatar utilizator"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/parsers.php:42
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/parsers.php:63
+msgid "There was an error when reading this WXR file"
+msgstr "Nu a fost o eroare atunci când citesc acest fișier WXR"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+"Detaliile sunt prezentate mai sus. Importatorul va încerca acum din nou cu o "
+"parser diferit ..."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/parsers.php:67
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/parsers.php:72
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/parsers.php:262
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/parsers.php:451
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+"Acest lucru nu pare să fie un fișier WXR, lipsă / număr incorect versiune WXR"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:134
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:143
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:194
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:198
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr "Ne pare rău, nu a fost o eroare."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:135
+msgid "The file does not exist, please try again."
+msgstr "Fișierul nu există, vă rugăm să încercați din nou."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:178
+msgid "All done."
+msgstr "Toate făcut."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:178
+msgid "Have fun!"
+msgstr "Distreaza-te!"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+"Amintiți-vă pentru a actualiza parolele și rolurile de utilizatori importate."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:199
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+"Fișierul de export nu a putut fi găsit la <code>%s</code>. Este probabil ca "
+"aceasta a fost cauzată de o problemă permisiuni."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:215
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+"Acest fișier WXR (versiunea %s) nu poate fi acceptat de această versiune a "
+"importatorului. Vă rugăm să ia în considerare actualizarea."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:240
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+"Nu a reușit să importe autorului %s. Posturile lor vor fi atribuite pentru "
+"utilizatorul curent."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:266
+msgid "Assign Authors"
+msgstr "Atribuirea Autori"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:267
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+"Pentru a face mai ușor pentru tine de a edita și salva conținutul importat, "
+"poate doriți să realocați autorului elementului importat la un utilizator "
+"existent de pe acest site. De exemplu, poate doriți să importați toate "
+"înregistrările ca <code> admin </ code> intrărilor s."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:269
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+"În cazul în care un nou utilizator este creat de WordPress, o noua parola va "
+"fi generata aleator, iar noul utilizator &#8217;s Rolul va fi setat ca %s. "
+"Schimbarea manual detaliile noului utilizator va fi necesar."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:279
+msgid "Import Attachments"
+msgstr "Accesorii de import"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:282
+msgid "Download and import file attachments"
+msgstr "Descărca și de import fișierele atașate"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:299
+msgid "Import author:"
+msgstr "Import autor:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:310
+msgid "or create new user with login name:"
+msgstr "sau de a crea un nou utilizator cu numele de utilizator:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:313
+msgid "as a new user:"
+msgstr "ca un nou utilizator:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:321
+msgid "assign posts to an existing user:"
+msgstr "atribui mesaje pentru un utilizator existent:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:323
+msgid "or assign posts to an existing user:"
+msgstr "sau atribui mesajele unui utilizator existent:"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:324
+msgid "- Select -"
+msgstr "- Selectați -"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:374
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+"Nu pentru a crea un nou utilizator pentru %s. Posturile lor vor fi atribuite "
+"pentru utilizatorul curent."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:423
+#, php-format
+msgid "Failed to import category %s"
+msgstr "Nu a reușit să importe categorie  %s"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:461
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr "Nu a reușit să importe tag mesaj  %s"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:505
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:631
+#, php-format
+msgid "Failed to import %s %s"
+msgstr "Nu a reușit să importe %s %s"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:527
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr "Nu a reușit să importe &#8220;%s&#8221;: Invalid tip de mesaj% s"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:548
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr "%s &#8220;%s&#8221; există deja."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:603
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr "Nu a reușit să importe %s &#8220;%s&#8221;"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:749
+msgid "Menu item skipped due to missing menu slug"
+msgstr "Elementul de meniu sarit din cauza lipsei Slug meniu"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:756
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr "Elementul de meniu sarit din cauza Slug meniu invalid:  %s"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:819
+msgid "Fetching attachments is not enabled"
+msgstr "Preluarea atașamente nu este activată"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:832
+msgid "Invalid file type"
+msgstr "Tip de fișier nevalid"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:876
+msgid "Remote server did not respond"
+msgstr "Server de la distanță nu au răspuns"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:882
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr "Server de la distanță a returnat un răspuns de eroare  %1$d %2$s"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:889
+msgid "Remote file is incorrect size"
+msgstr "Fișier de la distanță este dimensiunea incorectă"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:894
+msgid "Zero size file downloaded"
+msgstr "Zero dimensiunea fișierului descărcat"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:900
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr "Fișier de la distanță este prea mare, limita este  %s"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:999
+msgid "Import WordPress"
+msgstr "import WordPress"
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:1006
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+"O nouă versiune a acestui importator este disponibilă. Vă rugăm să "
+"actualizați la versiunea %s pentru a asigura compatibilitatea cu fișiere de "
+"export noi."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:1021
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+"Howdy! Încărcați WordPress eXtended RSS (WXR) fișierul și noi &#8217; vom "
+"importa posturi, pagini, comentarii, câmpuri personalizate, categorii și tag-"
+"uri în acest site."
+
+#: D:\Program
+#: Files\wamp\www\designthemes\delicate\wp-content\themes\dt_delicate/framework/wordpress-importer/wordpress-importer.php:1022
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+"Alegeți un (. Xml) fișier WXR pentru a încărca, apoi faceți clic pe "
+"Încărcare fișier și de import."
+
+#~ msgid "Enable Slider for this page"
+#~ msgstr "Activați Slider pentru această pagină"
+
+#~ msgid ""
+#~ "You can choose between a left, right, or no sidebar layout for the page."
+#~ msgstr ""
+#~ "Puteți alege între o la stânga, dreapta, sau nu aspectul bara laterală a "
+#~ "paginii."
+
+#~ msgid "Disable Every Where Sidebar for this particular post."
+#~ msgstr ""
+#~ "Dezactivați cazul în care fiecare Sidebar pentru acest post special."
+
+#~ msgid "Your blog posts will use the layout you select here."
+#~ msgstr "Mesajele dumneavoastră blog-ul va folosi aspectul selectat aici."
+
+#~ msgid "Your portfolio posts will use the layout you select here."
+#~ msgstr "Mesaje de portofoliu vor folosi aspectul selectat aici."
+
+#~ msgid "Allow portfolio items filter options"
+#~ msgstr "Permiteți elemente de portofoliu opțiunile de filtrare"
+
+#~ msgid "Meta Options"
+#~ msgstr "Opțiuni meta"
+
+#~ msgid "You can given your client name"
+#~ msgstr "Puteți dat numele de client"
+
+#~ msgid "You can given your client location"
+#~ msgstr "Puteți dat locația clientului"
+
+#~ msgid "You can given your client's project url"
+#~ msgstr "Puteți dat URL proiectul clientului dvs."
+
+#~ msgid "Working examples:"
+#~ msgstr "Exemple de lucru:"
+
+#~ msgid "Enter the URL to the Video url"
+#~ msgstr "Introduceți URL-ul pentru URL-ul video"
+
+#~ msgid "Disable Comments for this particular post."
+#~ msgstr "Dezactiva Comentarii pentru acest post special."
+
+#~ msgid "Disable featured image for this particular post."
+#~ msgstr "Dezactivați imagine recomandate pentru acest post special."
+
+#~ msgid "Sample Font"
+#~ msgstr "Font eșantion"
+
+#~ msgid "Disable featured image for this particular page."
+#~ msgstr "Dezactivați imagine recomandate pentru această pagină special."
+
+#~ msgid "This is disables the menu settings"
+#~ msgstr "Acest lucru se dezactivează setările din meniu"
+
+#~ msgid "Secondary Color"
+#~ msgstr "Culoare secundară"
+
+#~ msgid ""
+#~ "Pick a custom secondary color for hover state in menu are of the theme e."
+#~ "g. #564912"
+#~ msgstr ""
+#~ "Alege o culoare secundară personalizat pentru hover stat în meniu sunt de "
+#~ "temei de exemplu, # 564912"
+
+#~ msgid "This is disables the body settings"
+#~ msgstr "Acest lucru se dezactivează setările de corp"
+
+#~ msgid "Primary Color (default color for links, buttons)"
+#~ msgstr "Primar de culoare (culoare implicit pentru link-uri, butoane)"
+
+#~ msgid "Secondary Color (hover color for links, buttons)"
+#~ msgstr "Culoare secundar (treceți culoare pentru link-uri, butoane)"
+
+#~ msgid ""
+#~ "Pick a custom secondary color for links and buttons hover state in body/"
+#~ "content are of the theme e.g. #564912"
+#~ msgstr ""
+#~ "Alege o culoare secundară personalizat pentru link-uri și butoanele de "
+#~ "acoperire de stat în organism / conținut sunt tema de exemplu, # 564912"
+
+#~ msgid "This is disables the footer settings"
+#~ msgstr "Acest lucru se dezactivează setările de subsol"
+
+#~ msgid ""
+#~ "Pick a custom primary color for links and buttons in footer are of the "
+#~ "theme e.g. #551256"
+#~ msgstr ""
+#~ "Alege o culoare primara personalizat pentru link-uri și butoane din "
+#~ "subsol sunt de temei de exemplu, # 551256"
+
+#~ msgid ""
+#~ "Pick a custom secondary color for links and buttons hover state in footer "
+#~ "are of the theme e.g. #564912"
+#~ msgstr ""
+#~ "Alege o culoare secundară personalizat pentru link-uri și butoanele de "
+#~ "acoperire de stat în subsol sunt de temei de exemplu, # 564912"
+
+#~ msgid "Font and Color"
+#~ msgstr "Fontul și culoarea"
+
+#~ msgid "Change Font and Color for"
+#~ msgstr "Modifica fontul și culoarea pentru"
+
+#~ msgid "Boxed Layout Background Color"
+#~ msgstr "Cutie Aspect Culoare fundal"
+
+#~ msgid "Upload an image for the theme's boxed layout background"
+#~ msgstr "Încărcați o imagine de cutie de fundal aspectul temei"
+
+#~ msgid "Boxed Layout Background image repeat"
+#~ msgstr "Cutie Aspect imagine de fundal repetate"
+
+#~ msgid ""
+#~ "Pick a custom secondary color for links hover state in buddha bar of the "
+#~ "theme e.g. #564912 "
+#~ msgstr ""
+#~ "Alege o culoare secundară personalizat pentru link-uri de stat Hover în "
+#~ "Buddha Bar, a temei de exemplu, # 564912"
+
+#~ msgid "Blog"
+#~ msgstr "Blog"
+
+#~ msgid "Blog Single"
+#~ msgstr "Blog single"
+
+#~ msgid "Choose Blog page"
+#~ msgstr "Alegeți pagina de blog"
+
+#~ msgid ""
+#~ "Select which page to display as your Blog Page. If left blank no blog "
+#~ "will be displayed"
+#~ msgstr ""
+#~ "Selectați care pagina pentru a afișa ca blog-ul dvs. Page. Dacă lăsat "
+#~ "necompletat nu blog va fi afișat"
+
+#~ msgid "Blogpage Layout"
+#~ msgstr "Aspect Blogpage"
+
+#~ msgid ""
+#~ "You can choose between a left, right, or no sidebar layout for your "
+#~ "blogpage."
+#~ msgstr ""
+#~ "Puteți alege între o la stânga, dreapta, sau nu aspectul bara laterală "
+#~ "pentru blogpage dumneavoastră."
+
+#~ msgid "Post Layout"
+#~ msgstr "Mesaj Aspect"
+
+#~ msgid "Posts per page"
+#~ msgstr "Posts per page"
+
+#~ msgid "Single Post Layout"
+#~ msgstr "Aspect singur post"
+
+#~ msgid ""
+#~ "You can choose between a left, right, or no sidebar layout for your "
+#~ "single post."
+#~ msgstr ""
+#~ "Puteți alege între o la stânga, dreapta, sau nu aspectul bara laterală "
+#~ "pentru un singur mesaj dumneavoastră."
+
+#~ msgid "Social Bookmarks"
+#~ msgstr "Social Bookmarks"
+
+#~ msgid "Select Layout"
+#~ msgstr "Selectați Layout"
+
+#~ msgid "Enable Admin Login Logo"
+#~ msgstr "Activați Logo Admin Login"
+
+#~ msgid "Enable Admin Logo"
+#~ msgstr "Activați Logo Admin"
+
+#~ msgid ""
+#~ "Check if you want to disable comments on pages.<br/> This will globally "
+#~ "override your \"Allow comments.\" option under your pages \"Discussion\" "
+#~ "settings. "
+#~ msgstr ""
+#~ "Verificați dacă doriți să dezactivați comentariile pentru paginile."
+#~ "Verificați dacă doriți să dezactivați comentariile pentru paginile. Acest "
+#~ "lucru va înlocui la nivel global \" Permiteți comentarii.\" Opțiune în "
+#~ "paginile dvs. de \"Discuție \" Settings ta."
+
+#~ msgid ""
+#~ "Check if you want to disable comments on posts.<br/> This will globally "
+#~ "override your \"Allow comments.\" option under your posts \"Discussion\" "
+#~ "settings. "
+#~ msgstr ""
+#~ "Verificați dacă doriți să dezactivați comentarii pe posturi. <br/> Acest "
+#~ "lucru va înlocui la nivel global  ta \" Permiteți comentarii.\" Opțiune "
+#~ "în mesajele dumneavoastră \"Discuție \" setări."
+
+#~ msgid "Check if you want to disable comments on portfolios."
+#~ msgstr "Verificați dacă doriți să dezactivați comentarii pe portofolii."
+
+#~ msgid ""
+#~ "Check if you do not want breadcrumbs to display anywhere in your site."
+#~ msgstr "Verificați dacă nu doriți pesmet să afișeze oriunde pe site-ul tău."
+
+#~ msgid "Check if you do not want disable the import option at the top :)"
+#~ msgstr ""
+#~ "Verificați dacă nu doriți să dezactivați opțiunea de import în partea de "
+#~ "sus :)"
+
+#~ msgid "You can add List of Social icons here."
+#~ msgstr "Puteți adăuga Lista de icoane sociale aici."
+
+#~ msgid "Custom Icon"
+#~ msgstr "Icon Custom"
+
+#~ msgid "Add code to the &lt;head&gt of your blog"
+#~ msgstr "Adăugați cod la&lt;head&gt a blog-ul dvs."
+
+#~ msgid ""
+#~ "Please choose appropriate social media bookmark options and its layout to "
+#~ "show in post."
+#~ msgstr ""
+#~ "Vă rugăm să selectați opțiunile corespunzătoare de social media marcaj și "
+#~ "în configurația acestuia pentru a arăta în mesaj."
+
+#~ msgid ""
+#~ "This is the symbol that will appear in the title of the page.<br /><br /"
+#~ ">Some common examples would be:<br /><br /><pre>| / > - , :: >></pre>"
+#~ msgstr ""
+#~ "Acesta este simbolul care va apărea în titlul paginii. <br /><br />Câteva "
+#~ "exemple comune ar fi:<br /><br /><pre>| / > - , :: >></pre>"
+
+#~ msgid "Single Page Title Format"
+#~ msgstr "Page singur titlu Format"
+
+#~ msgid "Choose Single Page Title Format"
+#~ msgstr "Alegeți din următoarele pagini singur titlu Format"
+
+#~ msgid "This is disables the 404 Font settings"
+#~ msgstr "Acest lucru se dezactivează setările de font 404"
+
+#~ msgid "Select a Category that should receive a new widget area:"
+#~ msgstr ""
+#~ "Selectați o categorie care ar trebui să primească o nouă zonă de widget:"
+
+#~ msgid ""
+#~ "Pick a custom color for footer content font color of the theme e.g. "
+#~ "#a314a3"
+#~ msgstr ""
+#~ "Alege o culoare personalizată pentru conținutul subsol culoarea fontului "
+#~ "a temei de exemplu, # a314a3"
+
+#~ msgid ""
+#~ "Pick a custom secondary color for links hover state in footer are of the "
+#~ "theme e.g. #564912"
+#~ msgstr ""
+#~ "Alege o culoare secundară personalizat pentru link-uri de stat Hover în "
+#~ "subsol sunt de temei de exemplu, # 564912"
