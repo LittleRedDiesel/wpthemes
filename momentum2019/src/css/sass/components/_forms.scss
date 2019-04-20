@@ -1,0 +1,167 @@
+input {
+	font-family: 'din_mittel_bold', sans-serif;
+	font-size: 16px;
+
+	@include media-above($break-large) {
+		font-size: 30px;
+		line-height: 48px;
+	}
+
+
+	&[type='text'] {
+		border: 0;
+
+	}
+
+	&[type='submit'] {
+		text-transform: uppercase;
+		background-color: transparent;
+		border: 0;
+		font-size: 16px;
+		color: color(blue);
+		transition: all .4s ease-out;
+
+		@include media-above($break-large) {
+			font-size: 24px;
+		}
+
+		&:hover {
+			color:color(black);
+		}
+	}
+}
+
+#cc_form_1 input.t {
+	font-family: din_mittel_bold,sans-serif!important;
+}
+
+.input-wrapper,
+.kws_input_fields.gform_fields {
+	border-bottom: 1px solid color(black);
+	display: inline-block;
+	
+	padding: 0;
+	float: none;
+	margin: 0 auto;
+
+	@include media-above($break-large) {
+		
+		padding: 0;
+		float: none;
+	}
+
+	.kws_input_container {
+		padding-top: 0;
+	}
+
+	.cc_success {
+		color: color(blue);
+		width: 45%;
+		margin: 0 auto;
+	}
+
+	input {
+		font-family: din_mittel_bold,sans-serif;
+
+		&[type='text'] {
+			color: color(darkborder);
+			font-family: din_mittel_bold,sans-serif;
+			
+			padding: 0;
+
+			@include media-above($break-large) {
+				
+				padding: 0;
+			}
+		}
+
+		&[type='submit'] {
+			
+			padding: 0;
+			text-align: right;
+
+			@include media-above($break-large) {
+				
+			}
+
+			&:hover {
+				background-color: initial;
+				color: initial;
+			}
+		}
+	}
+
+}
+
+.mailchimp-form {
+	width: 80%;
+
+	input[type=email] {
+		border: none;
+		width: 80%;
+		text-align: left;
+		float: left;
+	}
+
+	input[type=submit]{
+		position: absolute;
+		right: 0;
+		line-height: 1;
+		background-color: white;
+		top: 2px;
+		width: 20%;
+
+		@include media-above($break-large) {
+			top: 15px;
+		}
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.featured-list.team-list .list-item {
+		width: 50%;
+	}
+
+	.mailchimp-form {
+		width: 80%;
+	}
+
+	.featured-list.team-further > .list-item {
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.page-template-page-home .team-list {
+		width: 100%;
+	}
+
+	.page-template-page-home .featured-list.team-list>div {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.page-template-page-home .team-list {
+		width: 75%;
+	}
+
+	.page-template-page-home .featured-list.team-list>div {
+		width: 50%;
+	}
+
+	.mailchimp-form {
+		width: 50%;
+	}
+}
+
+table tr td a {
+	font-size: inherit;
+	font-family: inherit;
+	color: #222;
+	text-decoration: underline;
+}
+
+table tr td a:hover {
+	text-decoration: none;
+}

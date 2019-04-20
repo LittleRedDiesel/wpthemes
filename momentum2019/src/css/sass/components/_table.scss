@@ -1,0 +1,279 @@
+table {
+	width: 100%;
+	margin-top: 55px;
+
+	tr {
+
+		td,
+		th {
+			font-size: 16px;
+			font-family: 'DINPro-Medium', sans-serif;
+			padding: 0 3px;
+
+			h1,h2,h3,h4,h5,a {
+				font-size: 16px;
+				font-family: 'DINPro-Medium', sans-serif;
+			}
+		}
+	}
+
+	&.membership-table {
+		display: none;
+		width: 100%;
+		padding: 0 20px;
+		margin-top: 55px;
+
+		@include media-above($break-large) {
+			display: table;
+			padding: 0 30px;
+			margin-top: 80px;
+		}
+
+		tr {
+
+			&.border {
+
+				td, th {
+					border-bottom: 1px solid color(eggshell);
+					height: 30px;
+
+					&:first-child {
+						border-bottom: 0;
+					}
+				}
+			}
+
+			&.row-border {
+				td, th {
+					border-bottom: 1px solid color(eggshell);
+				}
+
+				&.padding-bottom {
+					td, th {
+						padding-bottom: 18px;
+					}
+				}
+
+			}
+
+			&.topspace {
+				td, th {
+					padding-top: 35px;
+
+					&:nth-child(2){
+						color: color(black);
+					}
+				}
+
+				&.med {
+					td, th {
+						padding-top: 25px;
+					}
+				}
+			}
+
+			td,
+			th {
+				color: color(white);
+				font-size: 18px;
+				font-family: 'DINPro-Medium', sans-serif;
+
+				&:first-child {
+					text-align: left;
+					text-transform: uppercase;
+					font-size: 18px;
+					font-family: 'din_blackregular', sans-serif;
+				}
+
+				&:nth-child(2){
+					font-size: 20px;
+					text-align: left;
+				}
+
+				&.sum {
+					font-size: 36px;
+					color: color(black);
+					font-family: 'din_mittel_bold', sans-serif;
+				}
+
+				&.leftalign {
+					text-align: left;
+				}
+
+			}
+
+			th {
+				padding-bottom: 15px;
+				text-transform: uppercase;
+				font-family: 'din_mittel_bold', sans-serif;
+			}
+
+			&.terms {
+				td, th,
+				td:nth-child(2) {
+					font-size: 16px;
+					color: color(white);
+					padding-bottom: 20px;
+				}
+			}
+		}
+
+	}
+
+		&.mobile-price-table {
+			display: table;
+			width: 100%!important;
+			padding: 0 15px;
+
+			@include media-above($break-large) {
+				display: none;
+			}
+
+			tr {
+				th {
+					font-size: 14px;
+					font-family: 'DINPro-Medium';
+					text-align: center;
+				}
+
+				td {
+					&.title-row {
+						padding: 18px 0;
+						font-family: 'DINPro-Medium';
+						text-transform: uppercase;
+						border-bottom: 1px solid color(eggshell);
+					}
+
+					&.black-title-row {
+						color: color(black);
+						text-transform: uppercase;
+						padding-top: 18px;
+						font-size: 16px;
+					}
+
+					&.duration-row {
+						text-transform: initial;
+						padding-bottom: 18px;
+						font-family: 'DINPro-Medium';
+						font-size: 16px;
+						border-bottom: 1px solid color(eggshell);
+
+						&.terms {
+							border-bottom: 0;
+							font-family: 'DINPro-Light';
+
+							&.padding-top {
+								padding-top: 18px;
+							}
+						}
+					}
+				}
+
+				&.thirds-divided-row {
+					td {
+						padding: 20px;
+						text-align: center;
+						border-right: 1px solid color(eggshell);
+						border-bottom: 1px solid color(eggshell);
+
+						&:last-child {
+							border-right: 0;
+						}
+
+						&.sum {
+							font-size: 24px;
+
+							> i {
+								display: block;
+								font-style: normal;
+								text-transform: initial;
+								font-family: 'DINPro-Light';
+								font-size: 14px;
+								color: color(white);
+							}
+						}
+
+						> span {
+							display: block;
+							text-transform: initial;
+							font-family: 'DINPro-Light';
+							font-size: 14px;
+							color: color(white);
+						}
+					}
+				}
+			}
+
+	}
+}
+
+// Timetable styles
+.mptt-shortcode-wrapper {
+	margin-bottom: 40px;
+
+	.mptt-shortcode-table.mptt-theme-mode {
+		thead, tbody {
+			tr {
+				td, th, td.event {
+	    			height: 45px;
+	    			background-color: #e8e7e5;
+	    			text-transform: uppercase;
+	    			font-size: 0.8em;
+	    			cursor: pointer;
+
+	    			span {
+		    			&:hover {
+		    				text-decoration: none!important;
+		    			}
+		    		}
+				}
+
+				td {
+					width: 8%;
+				}
+
+				&:nth-child(2n+2) {
+					td.event {
+						background-color: #e8e7e5!important;
+					}
+				}
+			}
+
+		}
+
+		tbody {
+			.mptt-shortcode-hours {
+				color: color(black);
+			}
+			.mptt-event-container .timeslot {
+				line-height: 1;
+				margin: 0 5px 10px!important;
+				padding: 0;
+				max-width: 100%;
+			}
+			.mptt-shortcode-event.event {
+				vertical-align: top;
+
+				> div {
+					width: 50%;
+					float: left;
+					padding: 0;
+					box-sizing: border-box;
+					height: 100%!important;
+					position: initial;
+
+					.event-title {
+						margin: 10px 5px;
+						font-size: 0.85em;
+					}
+				}
+
+				&:hover {
+					span {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
