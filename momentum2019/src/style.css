@@ -2424,6 +2424,21 @@ input[type="search"] {
     @media screen and (min-width: 620px) {
       .panel-container .panel--border {
         border-top: 1px solid #010101; } }
+    .panel-container .panel--title-text {
+      padding-right: 0;
+      padding-left: 0; }
+      .panel-container .panel--title-text h3 {
+        border-top: 2px solid #8d8d8c;
+        margin-right: 1.2rem;
+        padding-left: 1.5rem;
+        padding-top: 0.25rem; }
+      .panel-container .panel--title-text .lined-text {
+        margin-top: 0;
+        margin-bottom: 6.25rem;
+        padding-left: 7.5rem; }
+        @media screen and (min-width: 620px) {
+          .panel-container .panel--title-text .lined-text {
+            margin-bottom: 8.75rem; } }
     .panel-container .panel .panel-text {
       margin-top: 0; }
 
@@ -2435,14 +2450,17 @@ input[type="search"] {
     position: absolute;
     top: 0; }
 
-.map-text h2, .map-text p {
-  font-size: 5.6rem; }
-
-.map-text h2 {
-  margin-bottom: 4.3rem; }
-
-.map-text p {
-  margin: 0; }
+.map-text {
+  padding-left: 0;
+  min-height: 44rem; }
+  .map-text h2, .map-text p {
+    font-size: 5.6rem; }
+  .map-text h2 {
+    margin-bottom: 4.3rem; }
+  .map-text p {
+    font-family: "zbysek-4.6-black", Helvetica, Arial, "Open Sans", sans-serif;
+    text-transform: uppercase;
+    margin: 0; }
 
 .button {
   font-size: 2rem;

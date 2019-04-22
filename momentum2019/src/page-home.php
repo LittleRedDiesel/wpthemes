@@ -113,21 +113,21 @@ Template Name: Home
 		</section>
 		<section class="row-full bg-black">
 			<div class="section-content">
-				<div class="panel-container col-sm-12">
-					<div class="panel col-md-6 col-sm-12">
+				<div class="panel-container">
+					<div class="panel panel--title-text col-md-6 col-sm-12">
 						<h3><?php the_field('copy-section-title'); ?></h3>
 					</div>
-					<div class="panel col-md-6 col-sm-12">
+					<div class="panel panel--title-text col-md-6 col-sm-12">
 						<div class="lined-text"><?php the_field('copy-section-wysiwyg'); ?></div>
 					</div>
 				</div>
 			</div>
 			<div class="section-content">
-				<div class="panel-container col-sm-12">
-					<div class="panel col-md-6 col-sm-12">
+				<div class="panel-container">
+					<div class="panel panel--title-text col-md-6 col-sm-12">
 						<h3><?php the_field('copy-section-title-2'); ?></h3>
 					</div>
-					<div class="panel col-md-6 col-sm-12">
+					<div class="panel panel--title-text col-md-6 col-sm-12">
 						<div class="lined-text"><?php the_field('copy-section-wysiwyg-2'); ?></div>
 					</div>
 				</div>

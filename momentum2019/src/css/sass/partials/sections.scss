@@ -25,6 +25,28 @@
       }
     }
 
+    &--title-text {
+      padding-right: 0;
+      padding-left: 0;
+
+      h3 {
+        border-top: 2px solid $grey;
+        margin-right: 1.2rem;
+        padding-left: 1.5rem;
+        padding-top: 0.25rem;
+      }
+
+      .lined-text {
+        margin-top: 0;
+        margin-bottom: 6.25rem;
+        padding-left: 7.5rem;
+
+        @include media-above($break-medium) {
+          margin-bottom: 8.75rem;
+        }
+      }
+    }
+
     .panel-text {
       margin-top: 0;
     }
@@ -48,6 +70,9 @@
 
 // Map sections
 .map-text {
+  padding-left: 0;
+  min-height: 44rem;
+
   h2, p {
     font-size: 5.6rem;
   }
@@ -57,6 +82,8 @@
   }
 
   p {
+    font-family: $font-family-headings;
+    text-transform: uppercase;
     margin: 0;
   }
 }
