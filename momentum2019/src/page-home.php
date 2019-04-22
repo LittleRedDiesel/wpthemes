@@ -55,51 +55,65 @@ Template Name: Home
 				</div>
 			</div>
 		</section>
-		<section class="row">
+		<section class="row-full" style="background-image: url(<?php the_field('map_section_bg_1'); ?>);">
 			<div class="section-content">
-				<h2><?php the_field('map_section_title'); ?></h2>
-				<p><?php the_field('map_section_address1'); ?><br/>
-					<?php the_field('map_section_address2'); ?><br/>
-					<a class="med-link blue" href="mailto:<?php the_field('map_section_contact'); ?>"><?php the_field('map_section_contact'); ?></a>
-				</p>
+				<div class="panel-container panel-container--border col-sm-12">
+					<div class="map-text panel panel--border col-md-6 col-sm-12">
+						<h2><?php the_field('map_section_title'); ?></h2>
+						<p><?php the_field('map_section_address1'); ?></p>
+					</div>
+					<div class="map panel panel--border col-md-6 col-sm-12">
+						<?php
 
-				<?php
+							$args = array(
+									'post_type'      => 'locations',
+									'posts_per_page' => -1,
+							);
 
-					$args = array(
-					    'post_type'      => 'locations',
-					    'posts_per_page' => -1,
-					);
+							$the_query = new WP_Query($args);
 
-					$the_query = new WP_Query($args);
+							echo "<div class='map-wrapper'><div class='acf-map'>";
 
-					echo "<div class='map-wrapper'><div class='acf-map'>";
+							while ( $the_query->have_posts() ) : $the_query->the_post();
+							$location = get_field('location_lat');
 
-					while ( $the_query->have_posts() ) : $the_query->the_post();
-					$location = get_field('location_lat');
+							if( !empty($location) ) {
 
-					if( !empty($location) ) {
+						?>
 
-				?>
+							<div class="marker" data-lat="<?php the_field('location_lat'); ?>" data-lng="<?php the_field('location_long'); ?>"></div>
 
-					<div class="marker" data-lat="<?php the_field('location_lat'); ?>" data-lng="<?php the_field('location_long'); ?>"></div>
+						<?php
 
-				<?php
+						}
+						endwhile;
+						echo '</div></div>';
+						wp_reset_postdata();
 
-				}
-				endwhile;
-				echo '</div></div>';
-				wp_reset_postdata();
-
-				?>
+						?>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="row bg-black">
+		<section class="row-full" style="background-image: url(<?php the_field('map_section_bg_2'); ?>);">
+			<div class="section-content">
+				<div class="panel-container panel-container--border col-sm-12">
+					<div class="map-text panel panel--border col-md-6 col-sm-12">
+						<p><?php the_field('map_section_address2'); ?></p>
+					</div>
+					<div class="map panel panel--border col-md-6 col-sm-12">
+							<div class="map-wrapper"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="row-full bg-black">
 			<div class="section-content">
 				<h2 class="ellipsis-pre"><?php the_field('copy-section-title'); ?></h2>
 				<div><?php the_field('copy-section-wysiwyg'); ?></div>
 			</div>
 		</section>
-		<section class="row">
+		<section class="row-full">
 			<div class="section-content">
 				<h2><?php the_field('team_section_title'); ?></h2>
 				<?php
@@ -131,7 +145,7 @@ Template Name: Home
 				<a href="<?php the_field('team_section_homepage_button_link'); ?>" class="button"><?php the_field('team_section_button'); ?></a>
 			</div>
 		</section>
-		<section class="row bg-black">
+		<section class="row-full bg-black">
 			<div class="section-content">
 				<h2><?php the_field('testimonial_section_title'); ?></h2>
 				<?php
@@ -151,7 +165,7 @@ Template Name: Home
 				<?php endif; ?>
 			</div>
 		</section>
-		<section class="row">
+		<section class="row-full">
 			<div class="section-content">
 				<h2><?php the_field('button_section_title'); ?></h2>
 				<?php the_field('button_section_wysiwyg'); ?>

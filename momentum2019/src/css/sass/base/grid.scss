@@ -5,9 +5,9 @@
 // Set the number of columns you want to use on your layout.
 $flexboxgrid-grid-columns: 12 !default;
 // Set the gutter between columns.
-$flexboxgrid-gutter-width: 1rem !default;
+$flexboxgrid-gutter-width: 2.3rem !default;
 // Set a margin for the container sides.
-$flexboxgrid-outer-margin: 1rem !default;
+$flexboxgrid-outer-margin: 2.3rem !default;
 // Create or remove breakpoints for your project
 // Syntax:
 // name SIZErem
@@ -24,6 +24,7 @@ $flexboxgrid-max-width: 1440px !default;
 //
 
 $gutter-compensation: $flexboxgrid-gutter-width * .5 * -1;
+$gutter-compensation-full: $flexboxgrid-gutter-width * -1;
 $half-gutter-width: $flexboxgrid-gutter-width * .5;
 
 .wrapper {
@@ -47,6 +48,16 @@ $half-gutter-width: $flexboxgrid-gutter-width * .5;
   @include flex-wrap(wrap);
   margin-right: $gutter-compensation;
   margin-left: $gutter-compensation;
+}
+
+.row-full {
+  box-sizing: border-box;
+  @include flexbox();
+  @include flex(0, 1, auto);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  margin-right: $gutter-compensation-full;
+  margin-left: $gutter-compensation-full;
 }
 
 .row.reverse {

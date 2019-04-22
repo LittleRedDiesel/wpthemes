@@ -5,9 +5,22 @@
   display: flex;
   background-color: $black;
   color: $white;
+  padding: 2rem;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+    background-color: $white;
+    color: $black;
+  }
 
   .bg-black & {
     background-color: $white;
     color: $black;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
   }
 }
