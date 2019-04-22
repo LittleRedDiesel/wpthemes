@@ -17,3 +17,21 @@
   font-style: normal;
 }
 */
+
+@font-face {
+    font-family: 'zbysek-4.6-black';
+    src: url('fonts/zbysek4.6lghtmedblk-black-webfont.woff2') format('woff2'),
+         url('fonts/zbysek4.6lghtmedblk-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'zbysek-4.6-medium';
+    src: url('fonts/zbysek4.6lghtmedblk-medium-webfont.woff2') format('woff2'),
+         url('fonts/zbysek4.6lghtmedblk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

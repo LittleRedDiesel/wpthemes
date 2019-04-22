@@ -2144,6 +2144,18 @@
 }
 */
 @font-face {
+  font-family: 'zbysek-4.6-black';
+  src: url("fonts/zbysek4.6lghtmedblk-black-webfont.woff2") format("woff2"), url("fonts/zbysek4.6lghtmedblk-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'zbysek-4.6-medium';
+  src: url("fonts/zbysek4.6lghtmedblk-medium-webfont.woff2") format("woff2"), url("fonts/zbysek4.6lghtmedblk-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot?esat49");
   src: url("fonts/icomoon.eot?esat49#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?esat49") format("truetype"), url("fonts/icomoon.woff?esat49") format("woff"), url("fonts/icomoon.svg?esat49#icomoon") format("svg");
@@ -2212,7 +2224,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
+  font-family: "zbysek-4.6-medium", Helvetica, Arial, "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #010101;
@@ -2450,6 +2462,9 @@ input[type="search"] {
       background-color: #010101;
       color: #fff; }
 
+.sister-buttons {
+  margin-top: auto; }
+
 h1 {
   font-size: 3rem; }
   @media screen and (min-width: 800px) {
@@ -2458,3 +2473,10 @@ h1 {
 
 h2 {
   font-size: 5rem; }
+
+h3 {
+  font-size: 3.12rem; }
+
+.lined-text {
+  background: linear-gradient(transparent, transparent 28px, #8d8d8c 28px);
+  background-size: 30px 30px; }

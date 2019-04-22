@@ -1,5 +1,5 @@
 h1 {
-  font-size: 3rem;  
+  font-size: 3rem;
 
   @include media-above($break-large) {
     font-size: 8.75rem;
@@ -8,4 +8,8 @@ h1 {
 
 h2 {
   font-size: 5rem;
+}
+
+h3 {
+  font-size: 3.12rem;
 }
