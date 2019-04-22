@@ -7,10 +7,10 @@ $flexboxgrid-grid-columns: 12 !default;
 // Set the gutter between columns.
 $flexboxgrid-gutter-width: 1rem !default;
 // Set a margin for the container sides.
-$flexboxgrid-outer-margin: 2rem !default;
+$flexboxgrid-outer-margin: 1rem !default;
 // Create or remove breakpoints for your project
 // Syntax:
-// name SIZErem,
+// name SIZErem
 $flexboxgrid-breakpoints:
   sm 48em 48rem,
   md 64em 64rem,
@@ -67,7 +67,6 @@ $half-gutter-width: $flexboxgrid-gutter-width * .5;
   // we leave @include flex-basis(auto) out of common because
   // in some spots we need it and some we dont
   // more why here: https://github.com/kristoferjoseph/flexboxgrid/issues/126
-
   padding-right: $half-gutter-width;
   padding-left: $half-gutter-width;
 }

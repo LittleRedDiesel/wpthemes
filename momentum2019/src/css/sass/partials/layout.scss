@@ -1,0 +1,10 @@
+// Generic layout styles
+
+.bg-black {
+  background-color: $black;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}

@@ -1,0 +1,24 @@
+.section-content {
+  width: 100%;
+}
+
+.panel-container {
+  .panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hero {
+  .image-mask {
+    position: relative;
+    max-height: 43rem;
+    overflow: hidden;
+
+    h1 {
+      position: absolute;
+      top: 0;
+    }
+  }
+}

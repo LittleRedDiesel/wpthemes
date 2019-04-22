@@ -1,0 +1,11 @@
+h1 {
+  font-size: 3rem;  
+
+  @include media-above($break-large) {
+    font-size: 8.75rem;
+  }
+}
+
+h2 {
+  font-size: 5rem;
+}

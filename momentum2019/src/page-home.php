@@ -9,9 +9,9 @@ Template Name: Home
 	<h1 class="loader">Momentum</h1>
 </div> -->
 <main id="main" class="site-main" role="main">
-	<div class="wrap-content">
-		<section class="bg-img-section panel-section">
-			<div class="image-mask col-lg-4 col-md-6 col-sm-12">
+	<div class="wrap-content container-fluid">
+		<section class="row hero">
+			<div class="image-mask row">
 				<?php
 
 				$image1 = get_field('image_background');
@@ -22,12 +22,12 @@ Template Name: Home
 
 				<?php endif; ?>
 
-			</div>
-			<div class="section-content hero-content">
 				<h1><?php the_field('section_title'); ?></h1>
-				<div class="panel-container">
-					<div class="panel panel-clipped panel-1">
-						<h3 class="ellipsis-post"><?php the_field('incentive_title'); ?></h3>
+			</div>
+			<div class="section-content">
+				<div class="panel-container row">
+					<div class="panel col-md-6 col-sm-12">
+						<h2><?php the_field('incentive_title'); ?></h2>
 						<?php the_field('incentive_desc'); ?>
 						<div class="sister-buttons">
 							<a href="<?php the_field('incentive_button_link'); ?>" class="button"><?php the_field('incentive_button_text'); ?></a>
@@ -39,8 +39,8 @@ Template Name: Home
 
 						</div>
 					</div>
-					<div class="panel panel-2 panel-clipped right-panel">
-						<h3 class="ellipsis-post"><?php the_field('incentive_title_2'); ?></h3>
+					<div class="panel bg-black col-md-6 col-sm-12">
+						<h2><?php the_field('incentive_title_2'); ?></h2>
 						<?php the_field('incentive_description_2'); ?>
 						<div class="sister-buttons">
 							<a href="<?php the_field('incentive_button_link_2'); ?>" class="button"><?php the_field('incentive_button_text_2'); ?></a>
@@ -55,7 +55,7 @@ Template Name: Home
 				</div>
 			</div>
 		</section>
-		<section class="bg-black-section">
+		<section class="row">
 			<div class="section-content">
 				<h2><?php the_field('map_section_title'); ?></h2>
 				<p><?php the_field('map_section_address1'); ?><br/>
@@ -93,13 +93,13 @@ Template Name: Home
 				?>
 			</div>
 		</section>
-		<section>
+		<section class="row bg-black">
 			<div class="section-content">
 				<h2 class="ellipsis-pre"><?php the_field('copy-section-title'); ?></h2>
 				<div><?php the_field('copy-section-wysiwyg'); ?></div>
 			</div>
 		</section>
-		<section>
+		<section class="row">
 			<div class="section-content">
 				<h2><?php the_field('team_section_title'); ?></h2>
 				<?php
@@ -131,7 +131,7 @@ Template Name: Home
 				<a href="<?php the_field('team_section_homepage_button_link'); ?>" class="button"><?php the_field('team_section_button'); ?></a>
 			</div>
 		</section>
-		<section class="bg-grey-section">
+		<section class="row bg-black">
 			<div class="section-content">
 				<h2><?php the_field('testimonial_section_title'); ?></h2>
 				<?php
@@ -151,14 +151,14 @@ Template Name: Home
 				<?php endif; ?>
 			</div>
 		</section>
-		<section class="bg-blue-section">
-			<div class="section-content narrow-para">
+		<section class="row">
+			<div class="section-content">
 				<h2><?php the_field('button_section_title'); ?></h2>
 				<?php the_field('button_section_wysiwyg'); ?>
 				<a href="<?php the_field('button_section_link'); ?>" class="button"><?php the_field('button_section_button'); ?></a>
 			</div>
 		</section>
-		<section>
+		<section class="row">
 			<div class="section-content">
 				<h2><?php the_field('contact_section_title'); ?></h2>
 				<?php the_field('contact_section_content'); ?>

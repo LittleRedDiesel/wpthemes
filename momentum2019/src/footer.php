@@ -1,5 +1,5 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+			<footer class="footer bg-black" role="contentinfo">
 				<ul>
 					<li><a href="https://www.crossfit.com/" target="_blank"><img src="<?php bloginfo('template_directory');  ?>/img/crossfit-logo.png" alt="CrossFit Logo" title="" /></a></li>
 					<li><a href="http://journal.crossfit.com/" target="_blank"><img src="<?php bloginfo('template_directory');  ?>/img/crossfit-journal-logo.png" alt="CrossFit Journal Logo" title="" /></a></li>

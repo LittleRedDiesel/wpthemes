@@ -11,8 +11,8 @@
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem; }
+  padding-right: 1rem;
+  padding-left: 1rem; }
 
 .row {
   box-sizing: border-box;
@@ -2612,11 +2612,16 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #010101;
-  background-color: #fff; }
+  background-color: #fff;
+  line-height: 1; }
 
 img {
   max-width: 100%;
   vertical-align: middle; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  text-transform: uppercase; }
 
 a {
   color: #010101;
@@ -2697,6 +2702,12 @@ input[type="search"] {
   padding: 0;
   margin: 0; }
 
+.bg-black {
+  background-color: #010101;
+  color: #fff; }
+  .bg-black a {
+    color: #fff; }
+
 /**
  * partials/header
  * ---
@@ -2714,6 +2725,9 @@ input[type="search"] {
  * partials/footer
  * ---
  */
+.footer ul {
+  list-style-type: none; }
+
 /**
  * partials/print
  * ---
@@ -2763,5 +2777,41 @@ input[type="search"] {
   h2,
   h3 {
     page-break-after: avoid; } }
+
+.section-content {
+  width: 100%; }
+
+.panel-container .panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.hero .image-mask {
+  position: relative;
+  max-height: 43rem;
+  overflow: hidden; }
+  .hero .image-mask h1 {
+    position: absolute;
+    top: 0; }
+
+.button {
+  font-size: 2rem;
+  width: 100%;
+  max-height: 100px;
+  display: flex;
+  background-color: #010101;
+  color: #fff; }
+  .bg-black .button {
+    background-color: #fff;
+    color: #010101; }
+
+h1 {
+  font-size: 3rem; }
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 8.75rem; } }
+
+h2 {
+  font-size: 5rem; }
 
 /*# sourceMappingURL=style.css.map */
