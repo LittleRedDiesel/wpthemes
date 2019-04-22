@@ -15,10 +15,18 @@
     flex-direction: column;
     padding-top: 2.2rem;
 
+    &--button {
+        min-height: 37rem;
+    }
+
     &--border {
       @include media-above($break-medium) {
         border-top: 1px solid $black;
       }
+    }
+
+    .panel-text {
+      margin-top: 0;
     }
   }
 }

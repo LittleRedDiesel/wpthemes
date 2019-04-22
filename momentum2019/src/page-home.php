@@ -22,13 +22,15 @@ Template Name: Home
 
 				<?php endif; ?>
 
-				<h1><?php the_field('section_title'); ?></h1>
+				<h1 class="col-sm-8"><?php the_field('section_title'); ?></h1>
 			</div>
 			<div class="section-content">
 				<div class="panel-container row">
-					<div class="panel col-md-6 col-sm-12">
-						<h2><?php the_field('incentive_title'); ?></h2>
-						<?php the_field('incentive_desc'); ?>
+					<div class="panel panel--button col-md-6 col-sm-12">
+						<h2 class="panel-title"><?php the_field('incentive_title'); ?></h2>
+						<div class="lined-text">
+							<p class="panel-text"><?php the_field('incentive_description', false, false); ?></p>
+						</div>
 						<div class="sister-buttons">
 							<a href="<?php the_field('incentive_button_link'); ?>" class="button"><?php the_field('incentive_button_text'); ?></a>
 
@@ -39,9 +41,11 @@ Template Name: Home
 
 						</div>
 					</div>
-					<div class="panel bg-black col-md-6 col-sm-12">
-						<h2><?php the_field('incentive_title_2'); ?></h2>
-						<?php the_field('incentive_description_2'); ?>
+					<div class="panel panel--button bg-black col-md-6 col-sm-12">
+						<h2 class="panel-title"><?php the_field('incentive_title_2'); ?></h2>
+						<div class="lined-text">
+							<p class="panel-text"><?php the_field('incentive_description_2'); ?></p>
+						</div>
 						<div class="sister-buttons">
 							<a href="<?php the_field('incentive_button_link_2'); ?>" class="button"><?php the_field('incentive_button_text_2'); ?></a>
 

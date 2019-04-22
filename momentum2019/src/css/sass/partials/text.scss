@@ -1,4 +1,27 @@
 .lined-text {
-    background: linear-gradient(transparent, transparent 28px, $grey 28px);
-    background-size: 30px 30px;
+    background: linear-gradient(transparent, transparent 58px, $grey 58px);
+    background-size: 60px 60px;
+    border-top: 2px solid $grey;
+    border-bottom: 1px solid $grey;
+    margin: 1rem 0;
+
+    @include media-above($break-medium) {
+      background: linear-gradient(transparent, transparent 36px, $grey 36px);
+      background-size: 38px 38px;
+    }
+
+    p {
+      line-height: 3.75rem;
+      margin: 0;
+
+
+      @include media-above($break-medium) {
+        line-height: 2.4rem;
+        max-width: 80%;
+      }
+    }
+
+    .panel-button & {
+      margin-bottom: 4rem;
+    }
 }

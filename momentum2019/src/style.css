@@ -2419,9 +2419,13 @@ input[type="search"] {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 2.2rem; }
+    .panel-container .panel--button {
+      min-height: 37rem; }
     @media screen and (min-width: 620px) {
       .panel-container .panel--border {
         border-top: 1px solid #010101; } }
+    .panel-container .panel .panel-text {
+      margin-top: 0; }
 
 .hero .image-mask {
   position: relative;
@@ -2443,7 +2447,6 @@ input[type="search"] {
 .button {
   font-size: 2rem;
   width: 100%;
-  max-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2451,6 +2454,9 @@ input[type="search"] {
   color: #fff;
   padding: 2rem;
   text-transform: uppercase; }
+  @media screen and (min-width: 620px) {
+    .button {
+      max-height: 100px; } }
   .button:hover {
     text-decoration: none;
     background-color: #fff;
@@ -2465,6 +2471,10 @@ input[type="search"] {
 .sister-buttons {
   margin-top: auto; }
 
+h1, h2, h3 {
+  font-family: "zbysek-4.6-black", Helvetica, Arial, "Open Sans", sans-serif;
+  word-wrap: break-word; }
+
 h1 {
   font-size: 3rem; }
   @media screen and (min-width: 800px) {
@@ -2473,10 +2483,33 @@ h1 {
 
 h2 {
   font-size: 5rem; }
+  h2.panel-title {
+    margin-bottom: 3.5rem; }
 
 h3 {
   font-size: 3.12rem; }
 
+p {
+  font-size: 1.5rem; }
+  p.no-margin {
+    margin: 0; }
+
 .lined-text {
-  background: linear-gradient(transparent, transparent 28px, #8d8d8c 28px);
-  background-size: 30px 30px; }
+  background: linear-gradient(transparent, transparent 58px, #8d8d8c 58px);
+  background-size: 60px 60px;
+  border-top: 2px solid #8d8d8c;
+  border-bottom: 1px solid #8d8d8c;
+  margin: 1rem 0; }
+  @media screen and (min-width: 620px) {
+    .lined-text {
+      background: linear-gradient(transparent, transparent 36px, #8d8d8c 36px);
+      background-size: 38px 38px; } }
+  .lined-text p {
+    line-height: 3.75rem;
+    margin: 0; }
+    @media screen and (min-width: 620px) {
+      .lined-text p {
+        line-height: 2.4rem;
+        max-width: 80%; } }
+  .panel-button .lined-text {
+    margin-bottom: 4rem; }

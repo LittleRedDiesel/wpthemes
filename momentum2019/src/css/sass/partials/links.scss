@@ -1,12 +1,15 @@
 .button {
   font-size: 2rem;
   width: 100%;
-  max-height: 100px;
   display: flex;
   background-color: $black;
   color: $white;
   padding: 2rem;
   text-transform: uppercase;
+
+  @include media-above($break-medium) {
+    max-height: 100px;
+  }
 
   &:hover {
     text-decoration: none;
