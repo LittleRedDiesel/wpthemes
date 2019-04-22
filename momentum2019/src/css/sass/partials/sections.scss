@@ -2,57 +2,6 @@
   width: 100%;
 }
 
-.panel-container {
-  display: flex;
-
-  &--border {
-    margin-top: 1.2rem;
-  }
-
-  .panel {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 2.2rem;
-
-    &--button {
-        min-height: 37rem;
-    }
-
-    &--border {
-      @include media-above($break-medium) {
-        border-top: 1px solid $black;
-      }
-    }
-
-    &--title-text {
-      padding-right: 0;
-      padding-left: 0;
-
-      h3 {
-        border-top: 2px solid $grey;
-        margin-right: 1.2rem;
-        padding-left: 1.5rem;
-        padding-top: 0.25rem;
-      }
-
-      .lined-text {
-        margin-top: 0;
-        margin-bottom: 6.25rem;
-        padding-left: 7.5rem;
-
-        @include media-above($break-medium) {
-          margin-bottom: 8.75rem;
-        }
-      }
-    }
-
-    .panel-text {
-      margin-top: 0;
-    }
-  }
-}
-
 // Hero banner
 .hero {
   .image-mask {

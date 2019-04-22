@@ -22,7 +22,7 @@ Template Name: Home
 
 				<?php endif; ?>
 
-				<h1 class="col-sm-8"><?php the_field('section_title'); ?></h1>
+				<h1 class="col-sm-8 col-md-12"><?php the_field('section_title'); ?></h1>
 			</div>
 			<div class="section-content">
 				<div class="panel-container row">
@@ -114,75 +114,79 @@ Template Name: Home
 		<section class="row-full bg-black">
 			<div class="section-content">
 				<div class="panel-container">
-					<div class="panel panel--title-text col-md-6 col-sm-12">
-						<h3><?php the_field('copy-section-title'); ?></h3>
+					<div class="panel panel--full-width col-md-6 col-sm-12">
+						<div class="panel--fw-inner">
+							<h3><?php the_field('copy-section-title'); ?></h3>
+						</div>
 					</div>
-					<div class="panel panel--title-text col-md-6 col-sm-12">
-						<div class="lined-text"><?php the_field('copy-section-wysiwyg'); ?></div>
+					<div class="panel panel--full-width col-md-6 col-sm-12">
+						<div class="panel--fw-inner">
+							<div class="lined-text"><?php the_field('copy-section-wysiwyg'); ?></div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="section-content">
 				<div class="panel-container">
-					<div class="panel panel--title-text col-md-6 col-sm-12">
-						<h3><?php the_field('copy-section-title-2'); ?></h3>
+					<div class="panel panel--full-width col-md-6 col-sm-12">
+						<div class="panel--fw-inner">
+							<h3><?php the_field('copy-section-title-2'); ?></h3>
+						</div>
 					</div>
-					<div class="panel panel--title-text col-md-6 col-sm-12">
-						<div class="lined-text"><?php the_field('copy-section-wysiwyg-2'); ?></div>
+					<div class="panel panel--full-width col-md-6 col-sm-12">
+						<div class="panel--fw-inner">
+							<div class="lined-text"><?php the_field('copy-section-wysiwyg-2'); ?></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="row-full">
+		<section class="row-full" style="background-image: url(<?php the_field('team_section_bg'); ?>);">
 			<div class="section-content">
-				<h2><?php the_field('team_section_title'); ?></h2>
-				<?php
-				$post_objects = get_field('team_members_to_display');
+				<div class="panel-container panel-container--border col-sm-12">
+					<h2><?php the_field('team_section_title'); ?></h2>
+						<?php $post_objects = get_field('team_members_to_display');
 
-				if( $post_objects ): ?>
-				    <div class="featured-list team-list mobile-carousel">
-				    <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
+						if( $post_objects ): ?>
+				    	<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
 				        <?php setup_postdata($post); ?>
-				        <div>
-							<div class="circular-clip">
-								<?php
-
-									$teamimage = get_field('team_photo');
-
-									if( !empty($teamimage) ): ?>
-
-										<img src="<?php echo $teamimage['url']; ?>" alt="<?php echo $teamimage['alt']; ?>" />
-
-								<?php endif; ?>
-							</div>
-							<span class="title"><?php the_title(); ?></span>
-							<?php the_excerpt(); ?>
-				        </div>
-				    <?php endforeach; ?>
-				    </div>
-				    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-				<?php endif; ?>
-				<a href="<?php the_field('team_section_homepage_button_link'); ?>" class="button"><?php the_field('team_section_button'); ?></a>
+				        <div class="panel panel--full-width panel--no-margin col-md-6 col-sm-12">
+									<div class="panel--fw-inner">
+										<p class="quote">&ldquo;<?php the_excerpt(); ?>&rdquo;</p>
+										<p class="title"><?php the_title(); ?></p>
+											<?php $teamimage = get_field('team_photo');
+												if( !empty($teamimage) ): ?>
+													<img src="<?php echo $teamimage['url']; ?>" alt="<?php echo $teamimage['alt']; ?>" />
+												<?php endif; ?>
+				        	</div>
+								</div>
+				    	<?php endforeach; ?>
+							<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+						<?php endif; ?>
+					<a href="<?php the_field('team_section_homepage_button_link'); ?>" class="button button--white button--center"><?php the_field('team_section_button'); ?></a>
+				</div>
 			</div>
 		</section>
 		<section class="row-full bg-black">
 			<div class="section-content">
-				<h2><?php the_field('testimonial_section_title'); ?></h2>
-				<?php
-				$post_objects = get_field('featured_testimonials');
+				<div class="panel-container panel-container--border col-sm-12">
+					<h2><?php the_field('testimonial_section_title'); ?></h2>
+					<?php $post_objects = get_field('featured_testimonials');
 
-				if( $post_objects ): ?>
-				    <div class="featured-list testimonial-list mobile-carousel">
+					if( $post_objects ): ?>
 				    <?php foreach( $post_objects as $post): ?>
 				        <?php setup_postdata($post); ?>
-				        <div class="ellipsis">
-				            <?php the_excerpt(); ?>
-				            <span class="title"><?php the_title(); ?></span>
-				        </div>
+								<div class="panel panel--full-width panel--no-margin col-md-6 col-sm-12">
+									<div class="panel--fw-inner">
+				        		<p class="testimonial ellipsis">&ldquo;<?php the_excerpt(); ?>&rdquo;</p>
+				            <p class="title title--member"><?php the_title(); ?></p>
+									</div>
+								</div>
 				    <?php endforeach; ?>
-				    </div>
-				    <?php wp_reset_postdata(); ?>
-				<?php endif; ?>
+				 <?php wp_reset_postdata(); ?>
+			 	<?php endif; ?>
+				<a href="<?php the_field('testimonial_section_button_link'); ?>" class="button button--white button--center"><?php the_field('testimonial_section_button'); ?></a>
+			</div>
 			</div>
 		</section>
 		<section class="row-full">

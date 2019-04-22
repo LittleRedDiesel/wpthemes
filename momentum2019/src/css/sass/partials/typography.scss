@@ -29,4 +29,35 @@ p {
   &.no-margin {
     margin: 0;
   }
+
+  &.quote {
+    font-size: 3.1rem;
+    text-transform: uppercase;
+    margin-top: 9.3rem;
+    margin-bottom: 0;
+  }
+
+  &.title {
+    font-size: 3.1rem;
+    font-family: $font-family-headings;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+
+    &--member {
+      margin-top: 0;
+      font-size: 2.5rem;
+      border-top: 1px solid $grey;
+      border-bottom: 1px solid $grey;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  &.testimonial {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    margin-bottom: 3rem;
+    padding-right: 3rem;
+  }
 }

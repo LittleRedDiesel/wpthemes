@@ -2746,6 +2746,55 @@ input[type="search"] {
   .bg-black a {
     color: #fff; }
 
+.panel-container {
+  display: flex;
+  flex-wrap: wrap; }
+  .panel-container--border {
+    margin-top: 1.2rem; }
+    .panel-container--border > h2 {
+      border-top: 2px solid #8d8d8c;
+      display: flex;
+      flex: 1 1 100%; }
+  .panel-container .panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.2rem; }
+    .panel-container .panel--no-margin {
+      margin-top: 0;
+      padding-top: 0; }
+    .panel-container .panel--button {
+      min-height: 37rem; }
+    @media screen and (min-width: 620px) {
+      .panel-container .panel--border {
+        border-top: 1px solid #010101; } }
+    .panel-container .panel--full-width {
+      padding-right: 0;
+      padding-left: 0; }
+      .panel-container .panel--full-width:first-of-type .panel--fw-inner {
+        margin-right: 0.6rem; }
+      .panel-container .panel--full-width:nth-of-type(2) .panel--fw-inner {
+        margin-left: 0.6rem; }
+      .panel-container .panel--full-width .panel--fw-inner {
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid #8d8d8c; }
+        .panel-container .panel--full-width .panel--fw-inner > img {
+          width: 50%; }
+      .panel-container .panel--full-width h3 {
+        border-top: 1px solid #8d8d8c;
+        padding-left: 1.5rem;
+        padding-top: 0.25rem; }
+      .panel-container .panel--full-width .lined-text {
+        margin-top: 0;
+        margin-bottom: 6.25rem;
+        padding-left: 7.5rem; }
+        @media screen and (min-width: 620px) {
+          .panel-container .panel--full-width .lined-text {
+            margin-bottom: 8.75rem; } }
+    .panel-container .panel .panel-text {
+      margin-top: 0; }
+
 /**
  * partials/header
  * ---
@@ -2819,38 +2868,6 @@ input[type="search"] {
 .section-content {
   width: 100%; }
 
-.panel-container {
-  display: flex; }
-  .panel-container--border {
-    margin-top: 1.2rem; }
-  .panel-container .panel {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 2.2rem; }
-    .panel-container .panel--button {
-      min-height: 37rem; }
-    @media screen and (min-width: 620px) {
-      .panel-container .panel--border {
-        border-top: 1px solid #010101; } }
-    .panel-container .panel--title-text {
-      padding-right: 0;
-      padding-left: 0; }
-      .panel-container .panel--title-text h3 {
-        border-top: 2px solid #8d8d8c;
-        margin-right: 1.2rem;
-        padding-left: 1.5rem;
-        padding-top: 0.25rem; }
-      .panel-container .panel--title-text .lined-text {
-        margin-top: 0;
-        margin-bottom: 6.25rem;
-        padding-left: 7.5rem; }
-        @media screen and (min-width: 620px) {
-          .panel-container .panel--title-text .lined-text {
-            margin-bottom: 8.75rem; } }
-    .panel-container .panel .panel-text {
-      margin-top: 0; }
-
 .hero .image-mask {
   position: relative;
   max-height: 43rem;
@@ -2886,12 +2903,17 @@ input[type="search"] {
     text-decoration: none;
     background-color: #fff;
     color: #010101; }
+  .button--white,
   .bg-black .button {
     background-color: #fff;
     color: #010101; }
+    .button--white:hover,
     .bg-black .button:hover {
       background-color: #010101;
       color: #fff; }
+  .button--center {
+    width: initial;
+    margin: 10rem auto 1rem; }
 
 .sister-buttons {
   margin-top: auto; }
@@ -2918,6 +2940,29 @@ p {
   font-size: 1.5rem; }
   p.no-margin {
     margin: 0; }
+  p.quote {
+    font-size: 3.1rem;
+    text-transform: uppercase;
+    margin-top: 9.3rem;
+    margin-bottom: 0; }
+  p.title {
+    font-size: 3.1rem;
+    font-family: "zbysek-4.6-black", Helvetica, Arial, "Open Sans", sans-serif;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 5rem; }
+    p.title--member {
+      margin-top: 0;
+      font-size: 2.5rem;
+      border-top: 1px solid #8d8d8c;
+      border-bottom: 1px solid #8d8d8c;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem; }
+  p.testimonial {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    margin-bottom: 3rem;
+    padding-right: 3rem; }
 
 .lined-text {
   background: linear-gradient(transparent, transparent 58px, #8d8d8c 58px);

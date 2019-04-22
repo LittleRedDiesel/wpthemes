@@ -3,30 +3,6 @@
 
 	$(function () {
 
-			// Carousel behaviour
-
-			$(".mt-carousel").slick({
-				dots: true,
-				infinite: true,
-				slidesToShow: 1,
-				slidesToScroll: 1
-			});
-
-			if($(window).width() < 801) {
-				$(".mobile-carousel").slick({
-					dots: true,
-					infinite: true,
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					prevArrow: null,
-					nextArrow: null
-				});
-			}
-
-			setTimeout(function() {
-		        $(".slick-initialized").hide().css("visibility","visible").fadeIn("700");
-		    }, 200);
-
 			/* jshint ignore:start */
 			/*
 			*  new_map
@@ -433,11 +409,11 @@
 
 	    // Ellipsis crop
 
-	    var ellipsis = $(".ellipsis > p");
+	    var ellipsis = $(".ellipsis");
 
 	    $(ellipsis).each(function(){
 
-	        if ($(this).height() > 300) {
+	        if ($(this).height() > 700) {
 
 	            var words = $(this).html().split(/\s+/);
 	            words.push("...");
@@ -445,7 +421,7 @@
 	            do {
 	                words.splice(-2, 1);
 	                $(this).html( words.join(" ") );
-	            } while($(this).height() > 300);
+	            } while($(this).height() > 700);
 
 	        }
 	    });

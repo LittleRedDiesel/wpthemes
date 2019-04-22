@@ -14,6 +14,7 @@
 		<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 
 		<?php wp_head(); ?>
+		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/scripts.js"></script>
 		<script>
 		// conditionizr.com
 		// configure environment tests
