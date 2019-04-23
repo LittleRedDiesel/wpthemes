@@ -189,18 +189,22 @@ Template Name: Home
 			</div>
 			</div>
 		</section>
-		<section class="row-full">
+		<section class="row-full" style="background-image: url(<?php the_field('button_section_bg'); ?>);">
 			<div class="section-content">
-				<h2><?php the_field('button_section_title'); ?></h2>
-				<?php the_field('button_section_wysiwyg'); ?>
-				<a href="<?php the_field('button_section_link'); ?>" class="button"><?php the_field('button_section_button'); ?></a>
+				<div class="panel-container panel-container--border col-sm-12">
+					<h2><?php the_field('button_section_title'); ?></h2>
+					<p class="text-large"><?php the_field('button_section_wysiwyg', false, false); ?></p>
+					<a href="<?php the_field('button_section_link'); ?>" class="button button--white button--center"><?php the_field('button_section_button'); ?></a>
+				</div>
 			</div>
 		</section>
 		<section class="row">
 			<div class="section-content">
-				<h2><?php the_field('contact_section_title'); ?></h2>
-				<?php the_field('contact_section_content'); ?>
-				<?php the_field('email_form'); ?>
+				<div class="panel-container panel-container--border col-sm-12">
+					<h2><?php the_field('contact_section_title'); ?></h2>
+					<p class="text-large border-top"><?php the_field('contact_section_content', false, false); ?></p>
+					<?php the_field('email_form'); ?>
+				</div>
 			</div>
 		</section>
 	</div>

@@ -2963,6 +2963,15 @@ p {
     line-height: 3.75rem;
     margin-bottom: 3rem;
     padding-right: 3rem; }
+  p.text-large {
+    font-size: 5.6rem;
+    margin: 0;
+    padding-right: 15%; }
+  p.border-top {
+    border-top: 1px solid #8d8d8c;
+    margin-top: 8.75rem;
+    margin-bottom: 6.2rem;
+    padding-right: 0; }
 
 .lined-text {
   background: linear-gradient(transparent, transparent 58px, #8d8d8c 58px);
@@ -2983,5 +2992,30 @@ p {
         max-width: 80%; } }
   .panel-button .lined-text {
     margin-bottom: 4rem; }
+
+form {
+  width: 100%; }
+  form input {
+    font-family: "zbysek-4.6-medium", Helvetica, Arial, "Open Sans", sans-serif; }
+  form .mc4wp-form-fields,
+  form .mailchimp-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7.25rem; }
+    form .mc4wp-form-fields > input,
+    form .mailchimp-form > input {
+      flex: 1 1 auto;
+      height: 6.25rem; }
+      form .mc4wp-form-fields > input[type="email"],
+      form .mailchimp-form > input[type="email"] {
+        flex: 1 1 75%;
+        font-size: 2.5rem;
+        padding: 0 2rem; }
+      form .mc4wp-form-fields > input[type="submit"],
+      form .mailchimp-form > input[type="submit"] {
+        width: initial;
+        align-items: center;
+        flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */

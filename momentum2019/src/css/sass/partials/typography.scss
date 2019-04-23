@@ -60,4 +60,17 @@ p {
     margin-bottom: 3rem;
     padding-right: 3rem;
   }
+
+  &.text-large {
+      font-size: 5.6rem;
+      margin: 0;
+      padding-right: 15%;
+  }
+
+  &.border-top {
+    border-top: 1px solid $grey;
+    margin-top: 8.75rem;
+    margin-bottom: 6.2rem;
+    padding-right: 0;
+  }
 }
