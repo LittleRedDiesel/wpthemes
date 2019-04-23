@@ -5,9 +5,21 @@
 
 
 // Header container
-.header {}
+.header {
+  display: flex;
 
-// Logo
-.logo {}
+  h1 {
+    position: relative;
 
-.logo-img {}
+    span {
+      position: absolute;
+      left: -999px;
+    }
+  }
+}
+
+.icon-menu {
+  @include media-above($break-large) {
+    display: none;
+  }
+}

@@ -4,11 +4,96 @@
  * Menus
  */
 
+.nav {
+  display: none;
+  background-color: $black;
+  color: $white;
+  padding-top: 3.5rem;
 
-.nav {}
+  @include media-above($break-large) {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
 
-.menu {}
+  > div {
+    @include media-above($break-large) {
+      display: flex;
+      flex: 1 1 auto;
+    }
+  }
 
-.sub-menu {}
+  a {
+    color: $grey;
+    font-size: 2.5rem;
 
-.menu-item {}
+    @include media-above($break-large) {
+      color: $white;
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      @include media-above($break-large) {
+        color: $grey;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-top: 1px solid $grey;
+
+    @include media-above($break-large) {
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 auto;
+      border: none;
+    }
+
+    li {
+      border-bottom: 1px solid $grey;
+      padding: 1rem;
+
+      @include media-above($break-large) {
+        padding: 1rem 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 0;
+      }
+
+      &.current-menu-item {
+        a {
+          color: $grey;
+        }
+      }
+    }
+  }
+
+  .button {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: $white;
+    color: $black;
+    font-size: 2rem;
+
+    @include media-above($break-large) {
+      padding: 1rem 1.6rem;
+      color: $white;
+      background-color: rgba($white, 0.6);
+      font-size: 1.1rem;
+      margin: 0;
+      align-items: center;
+    }
+  }
+}

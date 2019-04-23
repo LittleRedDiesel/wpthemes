@@ -14,6 +14,7 @@
 		<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 
 		<?php wp_head(); ?>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/conditionizr.js/4.1.0/conditionizr.js"></script>
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/scripts.js"></script>
 		<script>
 		// conditionizr.com
@@ -35,16 +36,16 @@
 				<a id="responsive-menu-toggle" class="icon icon-menu"><span><?php _e( 'Menu', 'voidx' ); ?></span></a>
 
 				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></h1>
 				</div>
 					<!-- /logo -->
 
 					<!-- nav -->
 					<nav class="nav" id="site-navigation" role="navigation">
-						<a href="/join-us/" class="button join-cta <?php if ( is_page( 'join-us' )) { echo 'page-active'; } ?>">Join us</a>
 						<div id="responsive-menu">
 							<?php html5blank_nav(); ?>
 						</div>
+						<a href="/join-us/" class="button join-cta <?php if ( is_page( 'join-us' )) { echo 'page-active'; } ?>">Join us</a>
 					</nav>
 					<!-- /nav -->
 
