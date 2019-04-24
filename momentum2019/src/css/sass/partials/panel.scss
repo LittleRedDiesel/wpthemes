@@ -6,7 +6,7 @@
     margin-top: 1.2rem;
 
     > h2 {
-      border-top: 2px solid $grey;
+      border-top: 1px solid $grey;
       display: flex;
       flex: 1 1 100%;
     }
@@ -24,13 +24,19 @@
     }
 
     &--button {
-        min-height: 37rem;
+        min-height: 30rem;
+
+        @include media-above($break-large) {
+          min-height: 37rem;
+        }
     }
 
     &--border {
-      @include media-above($break-medium) {
         border-top: 1px solid $black;
-      }
+
+        &:nth-of-type(2){
+          border-top: 0;
+        }
     }
 
     &--full-width {
@@ -39,39 +45,61 @@
 
       &:first-of-type {
         .panel--fw-inner {
-          margin-right: 0.6rem;
+          margin-right: 0;
+          margin-left: 0;
+
+          @include media-above($break-large) {
+            margin-right: 0.6rem;
+          }
         }
       }
 
       &:nth-of-type(2) {
         .panel--fw-inner {
-          margin-left: 0.6rem;
+          margin-left: 0;
+          margin-right: 0;
+
+          @include media-above($break-large) {
+            margin-left: 0.6rem;
+          }
         }
       }
 
       .panel--fw-inner {
         display: flex;
         flex-direction: column;
-        border-top: 2px solid $grey;
+
+        @include media-above($break-large) {
+          border-top: 2px solid $grey;
+        }
 
         > img {
           width: 50%;
+          margin: 0 auto;
+
+          @include media-above($break-large) {
+            margin: 0;
+          }
         }
       }
 
       h3 {
         border-top: 1px solid $grey;
-        padding-left: 1.5rem;
+        padding-left: 0;
         padding-top: 0.25rem;
+
+        @include media-above($break-large) {
+          padding-left: 1.5rem;
+        }
       }
 
       .lined-text {
         margin-top: 0;
         margin-bottom: 6.25rem;
-        padding-left: 7.5rem;
 
         @include media-above($break-medium) {
           margin-bottom: 8.75rem;
+          padding-left: 7.5rem;
         }
       }
     }

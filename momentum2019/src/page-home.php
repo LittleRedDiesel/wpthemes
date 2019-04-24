@@ -26,7 +26,7 @@ Template Name: Home
 			</div>
 			<div class="section-content">
 				<div class="panel-container row">
-					<div class="panel panel--button col-md-6 col-sm-12">
+					<div class="panel panel--button col-md-6 col-xs-12">
 						<h2 class="panel-title"><?php the_field('incentive_title'); ?></h2>
 						<div class="lined-text">
 							<p class="panel-text"><?php the_field('incentive_description', false, false); ?></p>
@@ -41,7 +41,7 @@ Template Name: Home
 
 						</div>
 					</div>
-					<div class="panel panel--button bg-black col-md-6 col-sm-12">
+					<div class="panel panel--button bg-black col-md-6 col-xs-12">
 						<h2 class="panel-title"><?php the_field('incentive_title_2'); ?></h2>
 						<div class="lined-text">
 							<p class="panel-text"><?php the_field('incentive_description_2'); ?></p>
@@ -144,13 +144,13 @@ Template Name: Home
 		<section class="row-full" style="background-image: url(<?php the_field('team_section_bg'); ?>);">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<h2><?php the_field('team_section_title'); ?></h2>
+					<h2 class="team-title"><?php the_field('team_section_title'); ?></h2>
 						<?php $post_objects = get_field('team_members_to_display');
 
 						if( $post_objects ): ?>
 				    	<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
 				        <?php setup_postdata($post); ?>
-				        <div class="panel panel--full-width panel--no-margin col-md-6 col-sm-12">
+				        <div class="panel panel--full-width panel--no-margin col-md-6 col-xs-12">
 									<div class="panel--fw-inner">
 										<p class="quote">&ldquo;<?php the_excerpt(); ?>&rdquo;</p>
 										<p class="title"><?php the_title(); ?></p>

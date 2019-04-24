@@ -9,23 +9,47 @@ form {
   .mailchimp-form {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 7.25rem;
+    flex-flow: row wrap;
+    margin-bottom: 3rem;
+
+    @include media-above($break-large) {
+      margin-bottom: 7.25rem;
+    }
 
     > input {
       flex: 1 1 auto;
-      height: 6.25rem;
+      height: 4rem;
+      font-size: 1.2rem;
+
+      @include media-above($break-large) {
+        height: 6.25rem;
+        font-size: 2.5rem;
+      }
 
       &[type="email"] {
-        flex: 1 1 75%;
-        font-size: 2.5rem;
-        padding: 0 2rem;
+        padding: 0;
+
+        @include media-above($break-large) {
+          padding: 0 2rem;
+          flex: 1 1 75%;
+        }
       }
       &[type="submit"] {
         width: initial;
-        align-items: center;
-        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        display: block;
+
+        @include media-above($break-large) {
+          width: initial;
+          align-items: center;
+          flex-direction: column;
+        }
       }
     }
+  }
+
+  .mailchimp-form {
+    margin-bottom: 0;
   }
 }

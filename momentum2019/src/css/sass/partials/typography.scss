@@ -12,10 +12,19 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 3.1rem;
+
+  @include media-above($break-large) {
+    font-size: 5rem;
+  }
 
   &.panel-title {
     margin-bottom: 3.5rem;
+  }
+
+  &.team-title {
+      font-size: 5rem;
+      padding-top: 2rem;
   }
 }
 
@@ -31,10 +40,17 @@ p {
   }
 
   &.quote {
+    border-top: 1px solid $grey;
     font-size: 3.1rem;
     text-transform: uppercase;
-    margin-top: 9.3rem;
     margin-bottom: 0;
+    margin-top: 2rem;
+    padding-top: 2rem;
+
+    @include media-above($break-large) {
+      border-top: 0;
+      margin-top: 9.3rem;
+    }
   }
 
   &.title {
@@ -42,7 +58,11 @@ p {
     font-family: $font-family-headings;
     text-transform: uppercase;
     margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+
+    @include media-above($break-large) {
+      margin-bottom: 5rem;
+    }
 
     &--member {
       margin-top: 0;
@@ -51,20 +71,33 @@ p {
       border-bottom: 1px solid $grey;
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
+
+      @include media-above($break-large) {
+        padding-bottom: 1rem;
+      }
     }
   }
 
   &.testimonial {
-    font-size: 2.5rem;
-    line-height: 3.75rem;
+    font-size: 2rem;
+    line-height: 3rem;
     margin-bottom: 3rem;
-    padding-right: 3rem;
+
+    @include media-above($break-large) {
+      font-size: 2.5rem;
+      line-height: 3.75rem;
+      padding-right: 3rem;
+    }
   }
 
   &.text-large {
+    font-size: 3rem;
+    margin: 0;
+    padding-right: 15%;
+
+    @include media-above($break-large) {
       font-size: 5.6rem;
-      margin: 0;
-      padding-right: 15%;
+    }
   }
 
   &.border-top {

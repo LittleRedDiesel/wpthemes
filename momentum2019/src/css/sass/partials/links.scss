@@ -30,7 +30,11 @@
 
   &--center {
     width: initial;
-    margin: 10rem auto 1rem;
+    margin: 5rem auto 1rem;
+
+    @include media-above($break-large) {
+      margin: 10rem auto 1rem;
+    }
   }
 }
 
