@@ -7,6 +7,14 @@
 // Header container
 .header {
   display: flex;
+  position: absolute;
+  z-index: 9;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-above($break-large) {
+    position: static;
+  }
 
   h1 {
     position: relative;

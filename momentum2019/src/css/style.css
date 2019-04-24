@@ -2778,6 +2778,9 @@ input[type="search"] {
       border-top: 1px solid #010101; }
       .panel-container .panel--border:nth-of-type(2) {
         border-top: 0; }
+        @media screen and (min-width: 800px) {
+          .panel-container .panel--border:nth-of-type(2) {
+            border-top: 1px solid #010101; } }
     .panel-container .panel--full-width {
       padding-right: 0;
       padding-left: 0; }
@@ -2827,7 +2830,14 @@ input[type="search"] {
  * ---
  */
 .header {
-  display: flex; }
+  display: flex;
+  position: absolute;
+  z-index: 9;
+  flex-direction: column;
+  width: 100%; }
+  @media screen and (min-width: 800px) {
+    .header {
+      position: static; } }
   .header h1 {
     position: relative; }
     .header h1 span {
