@@ -5,7 +5,7 @@ Template Name: Blog
 ?>
 <?php get_header(); ?>
 <main id="main" class="site-main" role="main">
-    <section id="content" class="site-content">
+    <section id="content" class="site-content col-xs-12">
     <?php if ( have_posts() ) {
     while ( have_posts() ) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">

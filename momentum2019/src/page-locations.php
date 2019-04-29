@@ -7,7 +7,7 @@ Template Name: Locations
 
 <?php get_header(); ?>
 <main id="main" class="site-main horizontal-divide-container" role="main">
-  <section id="content" class="site-content">
+  <section id="content" class="site-content col-xs-12">
     <h1 class="page-title title-small black"><?php the_field('map_section_address1'); ?></h1>
     <h1 class="page-title title-small black"><?php the_field('map_section_address2'); ?></h1>
     <a href="mailto:<?php the_field('map_section_contact'); ?>" class="med-link"><?php the_field('map_section_contact'); ?></a>

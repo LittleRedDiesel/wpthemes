@@ -2752,6 +2752,14 @@ input[type="search"] {
   .bg-black a {
     color: #fff; }
 
+.banner-image {
+  position: absolute;
+  top: 0;
+  height: 47rem; }
+
+.site-content {
+  padding-top: 47rem; }
+
 .panel-container {
   display: flex;
   flex-wrap: wrap; }
@@ -2860,6 +2868,7 @@ input[type="search"] {
   padding-top: 3.5rem; }
   @media screen and (min-width: 800px) {
     .nav {
+      background-color: transparent;
       display: flex;
       flex-direction: row;
       flex: 1 1 auto;
@@ -2886,6 +2895,7 @@ input[type="search"] {
         .nav a:hover {
           color: #8d8d8c; } }
   .nav ul {
+    background-color: #010101;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -2918,10 +2928,13 @@ input[type="search"] {
       .nav .button {
         padding: 1rem 1.6rem;
         color: #fff;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(1, 1, 1, 0.3);
         font-size: 1.1rem;
         margin: 0;
-        align-items: center; } }
+        align-items: center; }
+        .nav .button:hover {
+          color: #010101;
+          background-color: #fff; } }
 
 /**
  * partials/sidebar
@@ -3056,6 +3069,11 @@ input[type="search"] {
     @media screen and (min-width: 800px) {
       .hero .image-mask h1 {
         top: 8rem; } }
+  .hero .image-mask img {
+    max-width: initial; }
+    @media screen and (min-width: 800px) {
+      .hero .image-mask img {
+        max-width: 100%; } }
 
 .map-text {
   padding-left: 0;
@@ -3074,6 +3092,31 @@ input[type="search"] {
     font-family: "zbysek-4.6-black", Helvetica, Arial, "Open Sans", sans-serif;
     text-transform: uppercase;
     margin: 0; }
+
+.bw-list-item {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 2rem;
+  padding-bottom: 4rem; }
+  .bw-list-item:nth-child(odd) {
+    background-color: #010101;
+    color: #fff; }
+  .bw-list-item .bw-list-primary {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+    align-items: center;
+    padding-top: 1.3rem; }
+  .bw-list-item .bw-list-secondary {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 66%; }
+    .bw-list-item .bw-list-secondary h3 {
+      margin-bottom: 3.12rem; }
+    .bw-list-item .bw-list-secondary .lined-text {
+      margin: 0; }
+      .bw-list-item .bw-list-secondary .lined-text p {
+        font-size: 1.3rem; }
 
 .button {
   font-size: 2rem;
@@ -3117,6 +3160,9 @@ h1 {
   @media screen and (min-width: 800px) {
     h1 {
       font-size: 8.75rem; } }
+  h1.page-title {
+    margin-top: 8.25rem;
+    margin-bottom: 14rem; }
 
 h2 {
   font-size: 3.1rem; }
@@ -3200,6 +3246,12 @@ p {
     @media screen and (min-width: 620px) {
       .lined-text p {
         max-width: 80%; } }
+  .lined-text.full-width p {
+    max-width: 100%;
+    font-size: 2rem;
+    line-height: 3.75rem; }
+  .lined-text.spacer-bottom {
+    margin-bottom: 13.5rem; }
   .panel-button .lined-text {
     margin-bottom: 4rem; }
 

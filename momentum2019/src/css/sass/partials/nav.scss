@@ -11,6 +11,7 @@
   padding-top: 3.5rem;
 
   @include media-above($break-large) {
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
@@ -48,6 +49,7 @@
   }
 
   ul {
+    background-color: $black;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -90,10 +92,15 @@
     @include media-above($break-large) {
       padding: 1rem 1.6rem;
       color: $white;
-      background-color: rgba($white, 0.6);
+      background-color: rgba($black, 0.3);
       font-size: 1.1rem;
       margin: 0;
       align-items: center;
+
+      &:hover {
+        color: $black;
+        background-color: $white;
+      }
     }
   }
 }

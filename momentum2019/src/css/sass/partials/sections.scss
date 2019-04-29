@@ -22,6 +22,14 @@
         top: 8rem;
       }
     }
+
+    img {
+      max-width: initial;
+
+      @include media-above($break-large) {
+        max-width: 100%;
+      }
+    }
   }
 }
 
@@ -52,4 +60,44 @@
     text-transform: uppercase;
     margin: 0;
   }
+}
+
+// Alternate black and white panels
+.bw-list-item {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  &:nth-child(odd){
+    background-color: $black;
+    color: $white;
+  }
+
+  .bw-list-primary {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+    align-items: center;
+    padding-top: 1.3rem;
+  }
+
+  .bw-list-secondary {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 66%;
+
+    h3 {
+      margin-bottom: 3.12rem;
+    }
+
+    .lined-text {
+      margin: 0;
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
 }
