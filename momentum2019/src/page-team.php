@@ -5,7 +5,7 @@ Template Name: Team
 ?>
 <?php get_header(); ?>
 <main id="main" class="site-main" role="main">
-	<section id="content" class="site-content col-xs-12">
+	<section id="content" class="col-xs-12">
 		<h1 class="page-title"><?php the_field('team_section_title'); ?></h1>
 		<p class="intro-para"><?php the_field('team_section_subtitle'); ?></p>
 

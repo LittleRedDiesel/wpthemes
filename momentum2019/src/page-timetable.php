@@ -5,7 +5,7 @@ Template Name: Timetable
 ?>
 <?php get_header(); ?>
 <main id="main" class="site-main" role="main">
-	<section id="content" class="site-content col-xs-12">
+	<section id="content" class="col-xs-12">
 		<h1 class="page-title title-wide"><?php the_field('timetable_section_heading'); ?></h1>
 		<section class="bg-grey-section panel-section click-panels">
 			<div class="section-content">
