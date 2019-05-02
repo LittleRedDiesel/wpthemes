@@ -132,3 +132,37 @@
   }
 
 }
+
+.section-footer {
+  padding-bottom: 9rem;
+}
+
+.prices-section {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 6.25rem;
+
+  .price-slide {
+    margin-bottom: 1rem;
+    display: flex;
+
+    .price-slide-inner {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      background: $black;
+      color: $white;
+      padding-top: 1rem;
+      padding-left: 1rem;
+
+      .sister-buttons {
+        padding-right: 1rem;
+      }
+
+      .button {
+        background: $white;
+        color: $black;
+      }
+    }
+  }
+}

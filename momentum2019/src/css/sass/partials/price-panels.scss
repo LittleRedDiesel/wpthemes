@@ -1,0 +1,42 @@
+// Price panels styling
+
+.price-panels {
+  padding-right: 0;
+}
+
+.price-slide-inner {
+  .caps {
+    text-transform: uppercase;
+  }
+
+  .classes-primary {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    padding-right: 1rem;
+    font-family: $font-family-headings;
+  }
+
+  .contract {
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    font-size: 1.5rem;
+    color: $grey;
+    margin-bottom: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .price {
+    font-size: 4.5rem;
+    margin-bottom: 6.5rem;
+  }
+
+  .classes-secondary {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .lightgrey {
+    color: $lightgrey;
+  }
+}

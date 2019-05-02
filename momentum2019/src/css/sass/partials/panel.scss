@@ -116,4 +116,86 @@
       margin-top: 0;
     }
   }
+
+  // Hide/show panels
+  .click-panels {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+
+    .primary-panels-display {
+      & > .panel {
+        display: none;
+        padding: $half-gutter-width;
+        padding-top: 1.5rem;
+
+        @include media-above($break-large) {
+          padding-top: 3.1rem;
+        }
+
+        &.js-active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &.primary-panels {
+    & > .panel {
+      display: flex;
+      width: 50%;
+      padding: $half-gutter-width;
+      border-bottom: 1px solid $black;
+      position: relative;
+      text-align: center;
+
+      @include media-above($break-large) {
+        text-align: left;
+      }
+
+      & > a {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-decoration: none;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        @include media-above($break-large) {
+          font-size: 5.6rem;
+        }
+      }
+
+      &.js-active {
+        border-top: 1px solid $white;
+        border-bottom: 0;
+        background: $black;
+        color: $white;
+
+        &:after {
+          top: 100%;
+          left: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(0, 0, 0, 0);
+          border-top-color: $black;
+          border-width: 25px;
+          margin-left: -25px;
+
+          @include media-above($break-large) {
+            border-width: 50px;
+            margin-left: -50px;
+          }
+        }
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
 }

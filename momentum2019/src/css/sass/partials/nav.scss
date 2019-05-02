@@ -9,6 +9,7 @@
   background-color: $black;
   color: $white;
   padding-top: 3.5rem;
+  border-bottom: 1px solid $lightgrey;
 
   @include media-above($break-large) {
     background-color: transparent;
@@ -92,7 +93,7 @@
     @include media-above($break-large) {
       padding: 1rem 1.6rem;
       color: $white;
-      background-color: rgba($black, 0.3);
+      background-color: rgba($white, 0.3);
       font-size: 1.1rem;
       margin: 0;
       align-items: center;
