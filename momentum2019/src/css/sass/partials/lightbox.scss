@@ -1,0 +1,133 @@
+.lightbox {
+	position:fixed; /* keeps the lightbox window in the current viewport */
+	display:none;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: rgba(0,0,0,.95);
+	text-align: center;
+	z-index: 9999;
+	padding-top: 50px;
+	color: $white;
+
+	@include media-above($break-large) {
+		padding-top: 100px;
+	}
+
+	.icon-close {
+		color: $white;
+		transition: all .4s ease-out;
+		font-size: 20px;
+		position: absolute;
+		top: 50px;
+		cursor: pointer;
+		right: 20px;
+
+		@include media-above($break-large) {
+			font-size: 30px;
+			top: 100px;
+			right: 5%;
+		}
+
+		&:hover {
+			color: $black;
+		}
+	}
+
+	.featured-list.testimonial-list {
+		margin-top: 50px;
+
+		> div {
+			float: none;
+			margin: 0 auto;
+
+			@include media-above($break-large) {
+				width: 80%;
+			}
+
+			&:before {
+				content: none;
+			}
+
+			.title {
+				color: $black;
+			}
+
+			p {
+				color: $white;
+				font-size: 18px;
+				line-height: 30px;
+				padding-top: 20px;
+				font-family: 'DINPro-Light';
+
+
+				@include media-above($break-large) {
+					font-size: 24px;
+					line-height: 36px;
+				}
+
+				&:after,
+				&:before {
+					transform: initial;
+					-ms-transform: initial;
+					-webkit-transform: initial;
+					display: inline;
+					position: static;
+					font-size: 20px;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0 20px 80px 20px;
+
+		li {
+			font-size: 16px;
+			font-family: 'DINPro-Medium', sans-serif;
+			padding: 10px;
+
+			@include media-above($break-large) {
+				font-size: 20px;
+				padding: 15px;
+			}
+		}
+	}
+
+	.icon-arrow_up {
+		padding-bottom: 100px;
+		cursor: pointer;
+
+		&:before {
+			border-radius: 50px;
+			border: 1px solid;
+			font-size: 30px;
+			border-color: #00baff;
+			padding: 24px 18px;
+			color: $white;
+			border-color: $white;
+		}
+
+		&:hover {
+
+			&:before {
+				color: $black;
+				border-color: $black;
+			}
+		}
+	}
+
+	.panel-continer {
+		background-color: transparent\9;
+	}
+
+}
+
+.qualifications {
+	display: none;
+}

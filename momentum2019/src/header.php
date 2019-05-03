@@ -27,7 +27,11 @@
 
 	</head>
 	<body <?php body_class(); ?>>
-
+		<div class="lightbox">
+		<a href="#" class="icon icon-close"><span>Click to close</span></a>
+		<div class="lightbox-content">
+		</div>
+	  </div>
 		<!-- wrapper -->
 		<div class="wrapper">
 

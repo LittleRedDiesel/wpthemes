@@ -1,0 +1,11 @@
+.featured-list {
+  display: flex;
+  flex-flow: row wrap;
+
+  .list-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 6.5rem;
+  }
+}

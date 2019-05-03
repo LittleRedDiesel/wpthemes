@@ -1,0 +1,61 @@
+.team-list {
+  .list-item {
+    margin-bottom: 0;
+    
+    .team-img {
+      margin-bottom: 3.25rem;
+      align-self: flex-start;
+      max-width: 50%;
+    }
+
+    .title,
+    .quote {
+      text-transform: uppercase;
+      font-size: 3.1rem;
+    }
+
+    .quote {
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 5rem;
+    }
+
+    .detail,
+    .detail p,
+    .contact-email,
+    .contact-tel {
+      font-size: 1.75rem;
+      margin-bottom: 0;
+    }
+
+    .detail {
+      margin-bottom: 4.3rem;
+    }
+
+    .contact-email {
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-tel {
+      margin-bottom: 2.2rem;
+    }
+
+    .qualifications-trigger {
+      font-size: 1.3rem;
+      color: $grey;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.team-further {
+    display: none;
+
+    &.visible {
+      display: flex;
+    }
+}

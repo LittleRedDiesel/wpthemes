@@ -17,7 +17,7 @@ Template Name: Training
       </section>
       <div>
         <?php $loop = new WP_Query( array( 'post_type' => 'classes', 'posts_per_page' => -1 , 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
-        <div class="featured-list class-list">
+        <div class="class-list">
           <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
           <div class="bw-list-item">

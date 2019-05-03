@@ -81,6 +81,15 @@ $half-gutter-width: $flexboxgrid-gutter-width * .5;
     }
   }
 
+  &--nopadding-right {
+    padding-right: 0;
+    padding-left: 0;
+
+    .panel {
+      padding-left: $half-gutter-width;
+    }
+  }
+
   @include media-above($break-large) {
     padding-left: 0;
     padding-right: 0;

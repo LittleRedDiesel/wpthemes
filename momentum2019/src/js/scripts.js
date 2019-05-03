@@ -3,33 +3,101 @@
 
 	$(function () {
 
+		$('.button-expand').on('click', function(e){
+			e.preventDefault();
+			$('.team-further').addClass('visible');
+			$('.button-expand').remove();
+		});
 
-			// Interactive panels
-			if($('.primary-panels .panel-1').hasClass('js-active')){
-				$('.primary-panels .panel-1').parents('.panel-container').addClass('left');
-			} else {
-				$('.left').removeClass('left');
-			}
 
-			$('.js-switch-panel').on('click', function(e){
+			$(".lightbox-trigger").click(function(e) {
+
+				//prevent default action (hyperlink)
 				e.preventDefault();
-				$(this).parents('.panel-container').find('.js-active').removeClass('js-active');
-				$(this).parent('.panel').addClass('js-active');
 
-				var panel = $(this).data('panel');
+				//Get clicked link href
+				var lbRef = $(this).data("lightbox"),
+					lbClass = "." + lbRef,
+					lbContent = $(lbClass).html();
 
-				if($(this).parents('.primary-panels').length){
-					$('.primary-panels-display > .js-active').removeClass('js-active');
-					$('.' + panel).addClass('js-active');
-				} else if($(this).parents('.secondary-panels').length){
-					$('.tertiary-panels > .js-active').removeClass('js-active');
-					$('.' + panel).addClass('js-active');
+				/*
+				If the lightbox window HTML already exists in document,
+				change the img src to to match the href of whatever link was clicked
+
+				If the lightbox window HTML doesn"t exists, create it and insert it.
+				(This will only happen the first time around)
+				*/
+
+				if ($(".lightbox").length > 0) { // #lightbox exists
+
+					//place href as img src value
+					$(".lightbox-content").html(lbContent);
+
+					//show lightbox window - you could use .show("fast") for a transition
+					$(".lightbox").show();
 				}
 
-				if($('.primary-panels .panel-1').hasClass('js-active')){
-					$('.primary-panels .panel-1').parents('.panel-container').addClass('left');
-				} else if($('.primary-panels .panel-2').hasClass('js-active')) {
-					$('.left').removeClass('left');
+				else { //#lightbox does not exist - create and insert (runs 1st time only)
+
+					//create HTML markup for lightbox window
+					var lightbox =
+					"<div class=\"lightbox\">" +
+						"<a href=\"#\" class=\"icon icon-close\"><span>Click to close</span></a>" +
+						"<div class=\"lightbox-content\">" + //insert clicked link"s href into img src
+							lbContent +
+						"</div>" +
+					"</div>";
+
+					//insert lightbox HTML into page
+					$("body").append(lightbox);
+				}
+
+			});
+
+			//Click the cross to get rid of lightbox window
+			$(".lightbox .icon-close").on("click", function(e) {
+				e.preventDefault;
+				$(".lightbox").hide();
+			});
+
+			$(".lightbox .js-back-to-top").on("click", function(event) { //must use live, as the lightbox element is inserted into the DOM
+				event.preventDefault();
+
+				$(".lightbox").animate({
+					scrollTop: 0 ,
+				 	}, 700
+				);
+			});
+
+
+
+
+			// Interactive panels
+			if($(".primary-panels .panel-1").hasClass("js-active")){
+				$(".primary-panels .panel-1").parents(".panel-container").addClass("left");
+			} else {
+				$(".left").removeClass("left");
+			}
+
+			$(".js-switch-panel").on("click", function(e){
+				e.preventDefault();
+				$(this).parents(".panel-container").find(".js-active").removeClass("js-active");
+				$(this).parent(".panel").addClass("js-active");
+
+				var panel = $(this).data("panel");
+
+				if($(this).parents(".primary-panels").length){
+					$(".primary-panels-display > .js-active").removeClass("js-active");
+					$("." + panel).addClass("js-active");
+				} else if($(this).parents(".secondary-panels").length){
+					$(".tertiary-panels > .js-active").removeClass("js-active");
+					$("." + panel).addClass("js-active");
+				}
+
+				if($(".primary-panels .panel-1").hasClass("js-active")){
+					$(".primary-panels .panel-1").parents(".panel-container").addClass("left");
+				} else if($(".primary-panels .panel-2").hasClass("js-active")) {
+					$(".left").removeClass("left");
 				}
 
 
@@ -453,7 +521,7 @@
 				menu      = document.getElementById("responsive-menu"),
 				button    = document.getElementById("responsive-menu-toggle");
 
-		// Early exit if we're missing anything essential
+		// Early exit if we"re missing anything essential
 		if (!nav || typeof button === "undefined") {
 			return;
 		}
