@@ -34,7 +34,8 @@ Template Name: Training
                 <div class="bw-list-secondary">
                   <h3><?php the_title(); ?></h3>
                   <div class="lined-text">
-                    <p><?php the_content(); ?></p>
+                    <p><?php $content = get_the_content();
+echo wp_filter_nohtml_kses( $content ); ?></p>
                   </div>
                 </div>
               </div>
