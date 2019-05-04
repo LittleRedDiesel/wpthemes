@@ -1,7 +1,7 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<!-- article -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?>>
 
 		<!-- post thumbnail -->
 		<?php if ( has_post_thumbnail() ) : // Check if thumbnail exists. ?>
@@ -12,22 +12,19 @@
 		<!-- /post thumbnail -->
 
 		<!-- post title -->
-		<h2>
+		<h2 class="post-title">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 		</h2>
 		<!-- /post title -->
 
 		<!-- post details -->
-		<span class="date">
-			<time datetime="<?php the_time( 'Y-m-d' ); ?> <?php the_time( 'H:i' ); ?>">
-				<?php the_date(); ?> <?php the_time(); ?>
-			</time>
+		<span class="meta">
+			Posted <?php the_date(); ?> by <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a>
 		</span>
-		<span class="author"><?php esc_html_e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-		<span class="comments"><?php if ( comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' ) ); ?></span>
-		<!-- /post details -->
 
-		<?php html5wp_excerpt( 'html5wp_index' ); // Build your custom callback length in functions.php. ?>
+		<div class="post-content">
+			<?php the_content(); // Build your custom callback length in functions.php. ?>
+		</div>
 
 		<?php edit_post_link(); ?>
 

@@ -3,10 +3,10 @@
 
 	$(function () {
 
-		$('.button-expand').on('click', function(e){
+		$(".button-expand").on("click", function(e){
 			e.preventDefault();
-			$('.team-further').addClass('visible');
-			$('.button-expand').remove();
+			$(".team-further").addClass("visible");
+			$(".button-expand").remove();
 		});
 
 

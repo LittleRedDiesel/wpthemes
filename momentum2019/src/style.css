@@ -4915,3 +4915,135 @@ form {
 
 .qualifications {
   display: none; }
+
+.blog-page,
+.single-post {
+  padding-top: 7.25rem; }
+  .blog-page .tags-container,
+  .single-post .tags-container {
+    display: none; }
+    @media screen and (min-width: 800px) {
+      .blog-page .tags-container,
+      .single-post .tags-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .blog-page .tags-container .tags-title,
+    .single-post .tags-container .tags-title {
+      font-size: 1.3rem;
+      font-family: "zbysek-4.6-medium", Helvetica, Arial, "Open Sans", sans-serif;
+      border-bottom: 1px solid #8d8d8c;
+      border-top: 1px solid #8d8d8c;
+      line-height: 1.8rem;
+      margin-bottom: 1.75rem; }
+  .blog-page .blog-post,
+  .blog-page .single-post-content article,
+  .single-post .blog-post,
+  .single-post .single-post-content article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    padding-bottom: 7.25rem;
+    padding-top: 2.25rem;
+    border-bottom: 1px solid #8d8d8c; }
+    .blog-page .blog-post:first-of-type,
+    .blog-page .single-post-content article:first-of-type,
+    .single-post .blog-post:first-of-type,
+    .single-post .single-post-content article:first-of-type {
+      padding-top: 0; }
+    .blog-page .blog-post:last-of-type,
+    .blog-page .single-post-content article:last-of-type,
+    .single-post .blog-post:last-of-type,
+    .single-post .single-post-content article:last-of-type {
+      border-bottom: 0; }
+  .blog-page .post-title,
+  .blog-page .post-title a,
+  .single-post .post-title,
+  .single-post .post-title a {
+    font-family: "zbysek-4.6-medium", Helvetica, Arial, "Open Sans", sans-serif;
+    font-size: 3.1rem;
+    margin-bottom: 4.3rem; }
+    @media screen and (min-width: 800px) {
+      .blog-page .post-title,
+      .blog-page .post-title a,
+      .single-post .post-title,
+      .single-post .post-title a {
+        font-size: 5.6rem; } }
+  .blog-page .meta,
+  .single-post .meta {
+    border-bottom: 1px solid #8d8d8c;
+    border-top: 1px solid #8d8d8c;
+    margin-bottom: 2.25rem;
+    text-transform: uppercase;
+    padding: 2px 0; }
+    .blog-page .meta a,
+    .single-post .meta a {
+      text-decoration: underline; }
+      .blog-page .meta a:hover,
+      .single-post .meta a:hover {
+        text-decoration: none; }
+  .blog-page .post-content,
+  .blog-page .post-content p,
+  .blog-page .post-content a,
+  .single-post .post-content,
+  .single-post .post-content p,
+  .single-post .post-content a {
+    font-size: 1.3rem;
+    line-height: 1.8rem; }
+  .blog-page .pagination,
+  .single-post .pagination {
+    margin-bottom: 5.75rem;
+    font-size: 1.8rem; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .pagination .page-numbers {
+    display: none; }
+    .pagination .page-numbers.prev, .pagination .page-numbers.next {
+      display: block; }
+
+.search {
+  margin-bottom: 2.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%; }
+  .search > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2.3rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
+  .search .search-input {
+    padding-left: 1rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
+  .search .search-submit {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    text-transform: uppercase;
+    color: #fff;
+    background: #010101;
+    border: 0;
+    font-family: "zbysek-4.6-medium", Helvetica, Arial, "Open Sans", sans-serif; }
+    .search .search-submit:hover {
+      background: #fff;
+      color: #010101;
+      border: 2px solid #010101; }

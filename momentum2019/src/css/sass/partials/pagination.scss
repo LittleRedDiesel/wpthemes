@@ -1,0 +1,13 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+
+  .page-numbers {
+    display: none;
+
+    &.prev,
+    &.next {
+      display: block;
+    }
+  }
+}
