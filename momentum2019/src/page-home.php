@@ -170,7 +170,7 @@ Template Name: Home
 		<section class="row-full bg-black">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<h2><?php the_field('testimonial_section_title'); ?></h2>
+					<h2 class="title-margin-btm"><?php the_field('testimonial_section_title'); ?></h2>
 					<?php $post_objects = get_field('featured_testimonials');
 
 					if( $post_objects ): ?>

@@ -37,8 +37,13 @@
 
 			<!-- header -->
 			<header id="masthead" class="header clear" role="banner">
-				<a id="responsive-menu-toggle" class="icon icon-menu"><span><?php _e( 'Menu', 'voidx' ); ?></span></a>
-
+				<div class="mobile-menu">
+					<a id="responsive-menu-toggle" class="menu-link">
+						<img class="menu-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/menu.png" />
+						<span><?php _e( 'Menu', 'voidx' ); ?></span>
+					</a>
+					<a class="mobile-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/MMNTM_anim.2.gif" /></a>
+				</div>
 				<div class="site-branding">
 					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></h1>
 				</div>
@@ -46,6 +51,7 @@
 
 					<!-- nav -->
 					<nav class="nav" id="site-navigation" role="navigation">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/MMNTM_anim.2.gif" /></a>
 						<div id="responsive-menu">
 							<?php html5blank_nav(); ?>
 						</div>

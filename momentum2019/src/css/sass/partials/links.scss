@@ -29,16 +29,30 @@
   }
 
   &--center {
-    width: initial;
+    width: 100%;
     margin: 5rem auto 1rem;
+    justify-content: center;
 
     @include media-above($break-large) {
+      min-width: 43rem;
       margin: 10rem auto 1rem;
     }
   }
 
   &-expand {
     margin-top: 6.5rem;
+  }
+}
+
+.menu-link {
+  position: relative;
+  padding: 1.3rem;
+  background-color: $white;
+
+  span {
+      position: absolute;
+      left: -9999px;
+      height: 2.2rem;
   }
 }
 

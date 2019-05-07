@@ -4731,6 +4731,8 @@ input[type="search"] {
     color: #fff; }
 
 .page-banner-image {
+  width: 100%;
+  max-width: 1440px;
   position: absolute;
   top: 0;
   height: 47rem; }
@@ -4886,7 +4888,7 @@ input[type="search"] {
     position: relative; }
     .header h1 span {
       position: absolute;
-      left: -999px; }
+      left: -9999px; }
 
 @media screen and (min-width: 800px) {
   .icon-menu {
@@ -4905,6 +4907,8 @@ input[type="search"] {
   border-bottom: 1px solid #A2A2A2; }
   @media screen and (min-width: 800px) {
     .nav {
+      width: 100%;
+      max-width: 1440px;
       background-color: transparent;
       display: flex;
       flex-direction: row;
@@ -4912,9 +4916,16 @@ input[type="search"] {
       position: absolute;
       padding: 0;
       top: 0;
-      left: 0;
+      left: 50%;
       right: 0;
+      transform: translateX(-50%);
       z-index: 999; } }
+  .nav .logo-img {
+    height: 62px;
+    display: none; }
+    @media screen and (min-width: 800px) {
+      .nav .logo-img {
+        display: flex; } }
   @media screen and (min-width: 800px) {
     .nav > div {
       display: flex;
@@ -4965,13 +4976,37 @@ input[type="search"] {
       .nav .button {
         padding: 1rem 1.6rem;
         color: #fff;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(1, 1, 1, 0.7);
         font-size: 1.1rem;
         margin: 0;
         align-items: center; }
         .nav .button:hover {
           color: #010101;
           background-color: #fff; } }
+
+.mobile-menu {
+  height: 4rem;
+  display: flex; }
+  @media screen and (min-width: 800px) {
+    .mobile-menu {
+      display: none; } }
+  .mobile-menu > a {
+    height: 100%; }
+    .mobile-menu > a .menu-img {
+      display: flex; }
+      @media screen and (min-width: 800px) {
+        .mobile-menu > a .menu-img {
+          display: none; } }
+  .mobile-menu .menu-link {
+    display: flex; }
+    @media screen and (min-width: 800px) {
+      .mobile-menu .menu-link {
+        display: none; } }
+  .mobile-menu .mobile-logo {
+    padding: 0.5rem 0;
+    background-color: rgba(1, 1, 1, 0.3); }
+    .mobile-menu .mobile-logo img {
+      height: 100%; }
 
 /**
  * partials/sidebar
@@ -5191,13 +5226,24 @@ input[type="search"] {
       background-color: #010101;
       color: #fff; }
   .button--center {
-    width: initial;
-    margin: 5rem auto 1rem; }
+    width: 100%;
+    margin: 5rem auto 1rem;
+    justify-content: center; }
     @media screen and (min-width: 800px) {
       .button--center {
+        min-width: 43rem;
         margin: 10rem auto 1rem; } }
   .button-expand {
     margin-top: 6.5rem; }
+
+.menu-link {
+  position: relative;
+  padding: 1.3rem;
+  background-color: #fff; }
+  .menu-link span {
+    position: absolute;
+    left: -9999px;
+    height: 2.2rem; }
 
 .sister-buttons {
   margin-top: auto; }
@@ -5232,6 +5278,8 @@ h2 {
   h2.team-title {
     font-size: 5rem;
     padding-top: 2rem; }
+  h2.title-margin-btm {
+    margin-bottom: 8rem; }
 
 h3 {
   font-size: 3.12rem; }
@@ -5267,9 +5315,6 @@ p {
       border-bottom: 1px solid #8d8d8c;
       padding-top: 2.5rem;
       padding-bottom: 2.5rem; }
-      @media screen and (min-width: 800px) {
-        p.title--member {
-          padding-bottom: 1rem; } }
   p.testimonial {
     font-size: 2rem;
     line-height: 3rem;
@@ -5347,16 +5392,23 @@ form {
             flex: 1 1 75%; } }
       form .mc4wp-form-fields > input[type="submit"],
       form .mailchimp-form > input[type="submit"] {
+        display: flex;
+        justify-content: center;
         width: initial;
         padding: 1rem;
-        text-align: center;
-        display: block; }
+        text-align: center; }
         @media screen and (min-width: 800px) {
           form .mc4wp-form-fields > input[type="submit"],
           form .mailchimp-form > input[type="submit"] {
             width: initial;
             align-items: center;
             flex-direction: column; } }
+      form .mc4wp-form-fields > input[type="submit"]:hover,
+      form .mailchimp-form > input[type="submit"]:hover {
+        border: 1px solid #8d8d8c;
+        cursor: pointer;
+        background: #fff;
+        color: #010101; }
   form .mailchimp-form {
     margin-bottom: 0; }
 

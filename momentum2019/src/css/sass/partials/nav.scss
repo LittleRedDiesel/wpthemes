@@ -12,6 +12,8 @@
   border-bottom: 1px solid $lightgrey;
 
   @include media-above($break-large) {
+    width: 100%;
+    max-width: 1440px;
     background-color: transparent;
     display: flex;
     flex-direction: row;
@@ -19,9 +21,19 @@
     position: absolute;
     padding: 0;
     top: 0;
-    left: 0;
+    left: 50%;
     right: 0;
+    transform: translateX(-50%);
     z-index: 999;
+  }
+
+  .logo-img {
+    height: 62px;
+    display: none;
+
+    @include media-above($break-large) {
+      display: flex;
+    }
   }
 
   > div {
@@ -93,7 +105,7 @@
     @include media-above($break-large) {
       padding: 1rem 1.6rem;
       color: $white;
-      background-color: rgba($white, 0.3);
+      background-color: rgba($black, 0.7);
       font-size: 1.1rem;
       margin: 0;
       align-items: center;
@@ -102,6 +114,44 @@
         color: $black;
         background-color: $white;
       }
+    }
+  }
+}
+
+.mobile-menu {
+  height: 4rem;
+  display: flex;
+
+  @include media-above($break-large) {
+    display: none;
+  }
+
+  > a {
+    height: 100%;
+
+    .menu-img {
+      display: flex;
+
+      @include media-above($break-large) {
+        display: none;
+      }
+    }
+  }
+
+  .menu-link {
+    display: flex;
+
+    @include media-above($break-large) {
+      display: none;
+    }
+  }
+
+  .mobile-logo {
+    padding: 0.5rem 0;
+    background-color: rgba($black, 0.3);
+
+    img {
+      height: 100%;
     }
   }
 }

@@ -41,6 +41,10 @@ h2 {
       font-size: 5rem;
       padding-top: 2rem;
   }
+
+  &.title-margin-btm {
+    margin-bottom: 8rem;
+  }
 }
 
 h3 {
@@ -86,10 +90,6 @@ p {
       border-bottom: 1px solid $grey;
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
-
-      @include media-above($break-large) {
-        padding-bottom: 1rem;
-      }
     }
   }
 
