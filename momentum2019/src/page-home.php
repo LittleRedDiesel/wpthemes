@@ -106,7 +106,10 @@ Template Name: Home
 						<p><?php the_field('map_section_address2'); ?></p>
 					</div>
 					<div class="map panel panel--border col-md-6 col-sm-12">
-							<div class="map-wrapper"></div>
+							<div class="map-wrapper">
+								<div class='acf-map--empty'>
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
