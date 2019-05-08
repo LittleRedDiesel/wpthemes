@@ -18,106 +18,58 @@
 	}
 
 	.icon-close {
-		color: $white;
 		transition: all .4s ease-out;
-		font-size: 20px;
 		position: absolute;
-		top: 50px;
+		top: 1rem;
 		cursor: pointer;
-		right: 20px;
+		right: 1rem;
+		width: 40px;
 
-		@include media-above($break-large) {
-			font-size: 30px;
-			top: 100px;
-			right: 5%;
+		span {
+			position: absolute;
+			left: -9999rem;
 		}
 
 		&:hover {
-			color: $black;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid $white;
 		}
 	}
 
 	.featured-list.testimonial-list {
 		margin-top: 50px;
+	}
 
-		> div {
-			float: none;
-			margin: 0 auto;
+	h4 {
+		padding-left: 2rem;
+		text-align: left;
+		font-size: 2rem;
 
-			@include media-above($break-large) {
-				width: 80%;
-			}
-
-			&:before {
-				content: none;
-			}
-
-			.title {
-				color: $black;
-			}
-
-			p {
-				color: $white;
-				font-size: 18px;
-				line-height: 30px;
-				padding-top: 20px;
-				font-family: 'DINPro-Light';
-
-
-				@include media-above($break-large) {
-					font-size: 24px;
-					line-height: 36px;
-				}
-
-				&:after,
-				&:before {
-					transform: initial;
-					-ms-transform: initial;
-					-webkit-transform: initial;
-					display: inline;
-					position: static;
-					font-size: 20px;
-					line-height: 30px;
-				}
-			}
+		@include media-above($break-large) {
+			padding-left: 25%;
+			font-size: 3rem;
 		}
 	}
 
 	ul {
 		list-style-type: none;
-		padding: 0 20px 80px 20px;
+		padding-left: 0;
+		border-top: 1px solid $grey;
+		margin-top: 1rem;
 
 		li {
-			font-size: 16px;
-			font-family: 'DINPro-Medium', sans-serif;
-			padding: 10px;
+			font-size: 2rem;
+			border-bottom: 1px solid $grey;
+			padding-top: 1rem;
+			padding-right: 2rem;
+			padding-bottom: 1rem;
+			padding-left: 2rem;
+			text-align: left;
 
 			@include media-above($break-large) {
-				font-size: 20px;
-				padding: 15px;
-			}
-		}
-	}
-
-	.icon-arrow_up {
-		padding-bottom: 100px;
-		cursor: pointer;
-
-		&:before {
-			border-radius: 50px;
-			border: 1px solid;
-			font-size: 30px;
-			border-color: #00baff;
-			padding: 24px 18px;
-			color: $white;
-			border-color: $white;
-		}
-
-		&:hover {
-
-			&:before {
-				color: $black;
-				border-color: $black;
+				font-size: 3rem;
+				padding-left: 25%;
+				padding-right: 25%;
 			}
 		}
 	}
@@ -126,6 +78,17 @@
 		background-color: transparent\9;
 	}
 
+	.lightbox-content {
+		img {
+			margin-bottom: 4rem;
+			max-width: 50%;
+
+			@include media-above($break-large) {
+				width: initial;
+				margin-bottom: 12rem;
+			}
+		}
+	}
 }
 
 .qualifications {

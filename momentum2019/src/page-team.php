@@ -10,8 +10,10 @@ Template Name: Team
       <div class="section-content">
         <div class="panel-container panel-container--full-page bg-black">
           <div class="panel col-sm-12">
-						<h1 class="panel-heading"><?php the_field('team_section_title'); ?></h1>
-						<p><?php the_field('team_section_subtitle'); ?></p>
+						<h1 class="panel-heading panel-heading--large"><?php the_field('team_section_title'); ?></h1>
+            <div class="lined-text spacer-bottom full-width">
+              <p class="panel-text"><?php the_field('team_section_subtitle', false, false); ?></p>
+            </div>
 					</div>
 				</div>
 			</div>
@@ -42,19 +44,13 @@ Template Name: Team
 
 					if( !empty($qualifications_list) ): ?>
 
-						<a href="" class="qualifications-trigger lightbox-trigger" data-lightbox="qual-<?php echo $post->ID ?>">View qualifications</a>
+						<a href="" class="qualifications-trigger lightbox-trigger" data-lightbox="qual-<?php echo $post->ID ?>">View Qualifications >></a>
 						<div class="qualifications qual-<?php echo $post->ID ?>">
-							<div class="circular-clip">
 							<?php
-
 								$teamimage = get_field('team_photo');
-
 								if( !empty($teamimage) ): ?>
-
 									<img src="<?php echo $teamimage['url']; ?>" alt="<?php echo $teamimage['alt']; ?>" />
-
 							<?php endif; ?>
-							</div>
 							<h4 class="ellipsis-post"><?php the_field('qualifications_title'); ?></h4>
 							<?php the_field('qualifications_list'); ?>
 						</div>

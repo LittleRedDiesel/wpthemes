@@ -18,7 +18,8 @@
 				//Get clicked link href
 				var lbRef = $(this).data("lightbox"),
 					lbClass = "." + lbRef,
-					lbContent = $(lbClass).html();
+					lbContent = $(lbClass).html(),
+					url = window.location;
 
 				/*
 				If the lightbox window HTML already exists in document,
@@ -42,7 +43,7 @@
 					//create HTML markup for lightbox window
 					var lightbox =
 					"<div class=\"lightbox\">" +
-						"<a href=\"#\" class=\"icon icon-close\"><span>Click to close</span></a>" +
+						"<a href=\"#\" class=\"icon-close\"><img src=" + url + "momentum/dev/wp-content/uploads/2019/05/cross.png\" /><span>Click to close</span></a>" +
 						"<div class=\"lightbox-content\">" + //insert clicked link"s href into img src
 							lbContent +
 						"</div>" +
@@ -60,7 +61,7 @@
 				$(".lightbox").hide();
 			});
 
-			$(".lightbox .js-back-to-top").on("click", function(event) { //must use live, as the lightbox element is inserted into the DOM
+			$(".lightbox .js-back-to-top").on("click", function(event) {
 				event.preventDefault();
 
 				$(".lightbox").animate({
@@ -68,8 +69,6 @@
 				 	}, 700
 				);
 			});
-
-
 
 
 			// Interactive panels

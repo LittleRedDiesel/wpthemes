@@ -28,7 +28,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<div class="lightbox">
-		<a href="#" class="icon icon-close"><span>Click to close</span></a>
+		<a href="#" class="icon-close"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/cross.png" /><span>Click to close</span></a>
 		<div class="lightbox-content">
 		</div>
 	  </div>
