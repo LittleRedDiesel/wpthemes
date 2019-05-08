@@ -14,9 +14,17 @@
   max-width: 1440px;
   position: absolute;
   top: 0;
-  height: 47rem;
+  height: 25rem;
+
+  @include media-above($break-large) {
+    height: 47rem;
+  }
 }
 
 .site-content {
-    padding-top: 47rem;
+    padding-top: 25rem;
+
+    @include media-above($break-large) {
+      padding-top: 47rem;
+    }
 }

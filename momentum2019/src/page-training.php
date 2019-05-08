@@ -7,7 +7,7 @@ Template Name: Training
 <main id="main" class="site-main" role="main">
   <section id="content">
     <div class="page-banner-image col-xs-12" style="background-image: url(<?php the_field('training_section_background'); ?>);">
-      <h1 class="page-title"><?php the_field('training_section_title'); ?></h1>
+      <h1 class="page-title hide-mob"><?php the_field('training_section_title'); ?></h1>
     </div>
     <div class="site-content">
       <section class="col-xs-12">

@@ -24,6 +24,14 @@ h1 {
       font-size: 5.6rem;
     }
   }
+
+  &.hide-mob {
+    display: none;
+
+    @include media-above($break-large) {
+      display: flex;
+    }
+  }
 }
 
 h2 {
