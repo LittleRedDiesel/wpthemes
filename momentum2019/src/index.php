@@ -18,9 +18,15 @@
 				</section>
 				<!-- /section -->
 			</div>
+			<div class="row">
+				<section class="col-lg-2 tags-container">
+
+				</section>
+				<section class="col-lg-8 col-sm-12">
+					<?php get_sidebar(); ?>
+				</section>
+			</div>
 		</div>
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

@@ -70,38 +70,6 @@
 				);
 			});
 
-
-			// Interactive panels
-			if($(".primary-panels .panel-1").hasClass("js-active")){
-				$(".primary-panels .panel-1").parents(".panel-container").addClass("left");
-			} else {
-				$(".left").removeClass("left");
-			}
-
-			$(".js-switch-panel").on("click", function(e){
-				e.preventDefault();
-				$(this).parents(".panel-container").find(".js-active").removeClass("js-active");
-				$(this).parent(".panel").addClass("js-active");
-
-				var panel = $(this).data("panel");
-
-				if($(this).parents(".primary-panels").length){
-					$(".primary-panels-display > .js-active").removeClass("js-active");
-					$("." + panel).addClass("js-active");
-				} else if($(this).parents(".secondary-panels").length){
-					$(".tertiary-panels > .js-active").removeClass("js-active");
-					$("." + panel).addClass("js-active");
-				}
-
-				if($(".primary-panels .panel-1").hasClass("js-active")){
-					$(".primary-panels .panel-1").parents(".panel-container").addClass("left");
-				} else if($(".primary-panels .panel-2").hasClass("js-active")) {
-					$(".left").removeClass("left");
-				}
-
-
-			});
-
 			/* jshint ignore:start */
 			/*
 			*  new_map
@@ -450,7 +418,7 @@
 
 		$(".js-switch-panel").on("click", function(e){
 			e.preventDefault();
-			$(this).parents(".panel-container").find(".js-active").removeClass("js-active");
+			$(this).parents(".panel-container").find("> .js-active").removeClass("js-active");
 			$(this).parent(".panel").addClass("js-active");
 
 			var panel = $(this).data("panel");

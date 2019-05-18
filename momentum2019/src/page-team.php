@@ -11,7 +11,7 @@ Template Name: Team
         <div class="panel-container panel-container--full-page bg-black">
           <div class="panel col-sm-12">
 						<h1 class="panel-heading panel-heading--large"><?php the_field('team_section_title'); ?></h1>
-            <div class="lined-text spacer-bottom full-width">
+            <div class="lined-text lined-text--large spacer-bottom full-width">
               <p class="panel-text"><?php the_field('team_section_subtitle', false, false); ?></p>
             </div>
 					</div>

@@ -166,7 +166,7 @@ Template Name: Home
 				    	<?php endforeach; ?>
 							<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 						<?php endif; ?>
-					<a href="<?php the_field('team_section_homepage_button_link'); ?>" class="button button--white button--center"><?php the_field('team_section_button'); ?></a>
+					<a href="<?php the_field('team_section_homepage_button_link'); ?>" class="button button--white button--center button--v-center"><?php the_field('team_section_button'); ?></a>
 				</div>
 			</div>
 		</section>
@@ -180,7 +180,7 @@ Template Name: Home
 				    <?php foreach( $post_objects as $post): ?>
 				        <?php setup_postdata($post); ?>
 								<div class="panel panel--full-width panel--no-margin col-md-6 col-sm-12">
-									<div class="panel--fw-inner">
+									<div class="panel--fw-inner border-top">
 				        		<p class="testimonial ellipsis">&ldquo;<?php the_excerpt(); ?>&rdquo;</p>
 				            <p class="title title--member"><?php the_title(); ?></p>
 									</div>
@@ -188,7 +188,7 @@ Template Name: Home
 				    <?php endforeach; ?>
 				 <?php wp_reset_postdata(); ?>
 			 	<?php endif; ?>
-				<a href="<?php the_field('testimonial_section_button_link'); ?>" class="button button--white button--center"><?php the_field('testimonial_section_button'); ?></a>
+				<a href="<?php the_field('testimonial_section_button_link'); ?>" class="button button--white button--center button--v-center"><?php the_field('testimonial_section_button'); ?></a>
 			</div>
 			</div>
 		</section>
@@ -197,7 +197,7 @@ Template Name: Home
 				<div class="panel-container panel-container--border col-sm-12">
 					<h2><?php the_field('button_section_title'); ?></h2>
 					<p class="text-large"><?php the_field('button_section_wysiwyg', false, false); ?></p>
-					<a href="<?php the_field('button_section_link'); ?>" class="button button--white button--center"><?php the_field('button_section_button'); ?></a>
+					<a href="<?php the_field('button_section_link'); ?>" class="button button--white button--center button--v-center"><?php the_field('button_section_button'); ?></a>
 				</div>
 			</div>
 		</section>

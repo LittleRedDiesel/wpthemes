@@ -77,8 +77,12 @@
         display: flex;
         flex-direction: column;
 
-        @include media-above($break-large) {
-          border-top: 2px solid $grey;
+        .lined-text {
+          border-bottom: 1px solid $grey;
+        }
+
+        &.border-top {
+          border-top: 1px solid $grey;
         }
 
         > img {
@@ -123,7 +127,8 @@
     flex: 1 1 100%;
     flex-direction: column;
 
-    .primary-panels-display {
+    .primary-panels-display,
+    .tertiary-panels {
       & > .panel {
         display: none;
         padding: $half-gutter-width;
@@ -137,10 +142,44 @@
           display: block;
         }
       }
+
+      // Multi-step panels
+      &.panels-multi-step {
+        .panel {
+          text-align: center;
+
+          h4 {
+            font-size: 5.3rem;
+          }
+
+          &.panel1 {
+            padding-top: 12.5rem;
+          }
+        }
+      }
+    }
+
+    .primary-panels-display {
+      .panel2 {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .secondary-panels {
+      & > .panel {
+        padding-top: 1.5rem;
+
+        @include media-above($break-large) {
+          padding-top: 4.1rem;
+        }
+      }
     }
   }
 
-  &.primary-panels {
+  &.primary-panels,
+  &.secondary-panels {
     & > .panel {
       display: flex;
       width: 50%;
@@ -162,7 +201,7 @@
       h3 {
         font-size: 1.8rem;
         @include media-above($break-large) {
-          font-size: 5.6rem;
+          font-size: 5.4rem;
         }
       }
 

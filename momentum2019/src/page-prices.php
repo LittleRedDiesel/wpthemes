@@ -67,7 +67,7 @@ Template Name: Prices
                   <span class="price large-font blue"><?php the_field('price_price'); ?></span>
                   <span class="pps medium-bold"><?php the_field('price_per_session'); ?></span>
                   <span class="classes-secondary caps med-font"><?php the_field('price_frequency'); ?></span>
-                  <span class="spm blue medium-bold"><?php the_field('sessions_per_month'); ?></span>
+                  <span class="spm"><?php the_field('sessions_per_month'); ?></span>
 
                   <div class="sister-buttons">
                     <!-- If these buttons exist - display them -->

@@ -27,7 +27,7 @@ Template Name: Join us
 								</div>
 							</div>
 						</div>
-						<section class="primary-panels-display panels-display panels-calendar">
+						<section class="primary-panels-display panels-multi-step">
 							<div class="panel panel1 js-active">
 								<?php the_field('primary_panel_1_content'); ?>
 								<div class="sister-buttons">
@@ -35,11 +35,11 @@ Template Name: Join us
 									<?php
 									$pp1b1 = get_field('primary_panel_1_button_1_text');
 									if( !empty($pp1b1) ): ?>
-									<a href="<?php the_field('primary_panel_1_button_1_link'); ?>" class="button"><?php the_field('primary_panel_1_button_1_text'); ?></a>
+									<a href="<?php the_field('primary_panel_1_button_1_link'); ?>" class="button button--center button-expand"><?php the_field('primary_panel_1_button_1_text'); ?></a>
 									<?php endif;
 									$pp1b2 = get_field('primary_panel_1_button_2_text');
 									if( !empty($pp1b2) ): ?>
-									<a href="<?php the_field('primary_panel_1_button_2_link'); ?>" class="button"><?php the_field('primary_panel_1_button_2_text'); ?></a>
+									<a href="<?php the_field('primary_panel_1_button_2_link'); ?>" class="button button--center button-expand"><?php the_field('primary_panel_1_button_2_text'); ?></a>
 									<?php endif; ?>
 								</div>
 							</div>
@@ -60,11 +60,11 @@ Template Name: Join us
 											<?php
 											$pricebutton3 = get_field('tertiary_panel_1_button_text');
 											if( !empty($pricebutton3) ): ?>
-											<a href="<?php the_field('tertiary_panel_1_button_link'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text'); ?></a>
+											<a href="<?php the_field('tertiary_panel_1_button_link'); ?>" class="button button--center button-expand"><?php the_field('tertiary_panel_1_button_text'); ?></a>
 											<?php endif;
 											$pricebutton4 = get_field('tertiary_panel_1_button_text_2');
 											if( !empty($pricebutton4) ): ?>
-											<a href="<?php the_field('tertiary_panel_1_button_link_2'); ?>" class="button"><?php the_field('tertiary_panel_1_button_text_2'); ?></a>
+											<a href="<?php the_field('tertiary_panel_1_button_link_2'); ?>" class="button button--center button-expand"><?php the_field('tertiary_panel_1_button_text_2'); ?></a>
 											<?php endif; ?>
 										</div>
 									</div>
@@ -76,11 +76,11 @@ Template Name: Join us
 											<?php
 											$pricebutton5 = get_field('tertiary_panel_2_button_text');
 											if( !empty($pricebutton5) ): ?>
-											<a href="<?php the_field('tertiary_panel_2_button_link'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text'); ?></a>
+											<a href="<?php the_field('tertiary_panel_2_button_link'); ?>" class="button button--center button-expand"><?php the_field('tertiary_panel_2_button_text'); ?></a>
 											<?php endif;
 											$pricebutton6 = get_field('tertiary_panel_2_button_text_2');
 											if( !empty($pricebutton6) ): ?>
-											<a href="<?php the_field('tertiary_panel_2_button_link_2'); ?>" class="button"><?php the_field('tertiary_panel_2_button_text_2'); ?></a>
+											<a href="<?php the_field('tertiary_panel_2_button_link_2'); ?>" class="button button--center button-expand"><?php the_field('tertiary_panel_2_button_text_2'); ?></a>
 											<?php endif; ?>
 										</div>
 

@@ -4,7 +4,9 @@
 		<div class="wrap-content container-fluid">
 			<div class="row">
 				<!-- section -->
-				<section class="col-lg-9 col-sm-12 single-post-content">
+				<section class="col-lg-2 tags-container">
+				</section>
+				<section class="col-lg-8 col-sm-12 single-post-content">
 				<!-- section -->
 
 				<?php if ( have_posts() ) : while (have_posts() ) : the_post(); ?>
@@ -59,11 +61,16 @@
 				<?php endif; ?>
 
 				</section>
-			</div>
+		</div>
+		<div class="row">
+			<section class="col-lg-2 tags-container">
+
+			</section>
+			<section class="col-lg-8 col-sm-12">
+				<?php get_sidebar(); ?>
+			</section>
 		</div>
 	<!-- /section -->
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

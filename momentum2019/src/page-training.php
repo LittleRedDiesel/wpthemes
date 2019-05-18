@@ -11,7 +11,7 @@ Template Name: Training
     </div>
     <div class="site-content">
       <section class="col-xs-12">
-        <div class="lined-text spacer-bottom full-width">
+        <div class="lined-text lined-text--large spacer-bottom full-width">
           <p class="panel-text"><?php the_field('training_section_subtitle', false, false); ?></p>
         </div>
       </section>

@@ -75,6 +75,7 @@
   display: flex;
   flex-flow: row wrap;
   margin-top: 6.25rem;
+  margin-bottom: 7.7rem;
 
   .price-slide {
     margin-bottom: 1rem;
@@ -94,8 +95,14 @@
       }
 
       .button {
-        background: $white;
+        border: 1px solid $white;
+        background-color: $white;
         color: $black;
+
+        &:hover {
+          background-color: $black;
+          color: $white;
+        }
       }
     }
   }

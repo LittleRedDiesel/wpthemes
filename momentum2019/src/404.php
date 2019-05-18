@@ -1,24 +1,34 @@
 <?php get_header(); ?>
 
-	<main role="main" aria-label="Content">
-		<!-- section -->
-		<section>
+	<main role="main" aria-label="Content" class="error-page search-page">
+		<div class="wrap-content container-fluid">
+			<div class="row">
+				<section class="col-lg-2 tags-container">
 
-			<!-- article -->
-			<article id="post-404">
+				</section>
+				<!-- section -->
+				<section class="col-lg-8 col-sm-12">
 
-				<h1><?php esc_html_e( 'Page not found', 'html5blank' ); ?></h1>
-				<h2>
-					<a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html_e( 'Return home?', 'html5blank' ); ?></a>
-				</h2>
+					<div class="copytext">
+						<h1><?php esc_html_e( 'Not found', 'html5blank' ); ?></h1>
+						<p>Sorry, but your request could not be completed</p>
+					</div>
 
-			</article>
-			<!-- /article -->
+					<?php get_template_part( 'searchform' ); ?>
 
-		</section>
-		<!-- /section -->
+				</section>
+				<!-- /section -->
+			</div>
+
+			<div class="row">
+				<section class="col-lg-2 tags-container">
+
+				</section>
+				<section class="col-lg-8 col-sm-12">
+					<?php get_sidebar(); ?>
+				</section>
+			</div>
+		</div>
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

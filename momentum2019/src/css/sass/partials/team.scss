@@ -82,7 +82,8 @@
 
     .contact-email {
       order: 5;
-      word-wrap: break-word;
+      display: inline-block;
+      word-break: break-word;
       width: 100%;
       border-top: 1px solid $grey;
       border-bottom: 1px solid $grey;
@@ -90,6 +91,7 @@
       @include media-above($break-large) {
         order: initial;
         line-height: 3.3rem;
+        width: auto;
       }
     }
 
