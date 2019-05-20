@@ -4992,7 +4992,7 @@ input[type="search"] {
   margin-bottom: 2rem; }
 
 .sidebar .collapsing.archives.list {
-  margin: 0;
+  margin: 0 0 9.3rem 0;
   list-style-type: none;
   padding-left: 0; }
   .sidebar .collapsing.archives.list ul {
@@ -5000,6 +5000,14 @@ input[type="search"] {
   .sidebar .collapsing.archives.list li a {
     padding-bottom: 1rem;
     display: inline-flex; }
+
+.st-tag-cloud {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none; }
+  .st-tag-cloud li {
+    margin-bottom: 0.5rem;
+    word-break: break-word; }
 
 /**
  * partials/footer
@@ -5168,7 +5176,8 @@ input[type="search"] {
     min-height: 42rem; }
 
 .section-footer {
-  padding-bottom: 9rem; }
+  padding-bottom: 9rem;
+  line-height: 1.9rem; }
 
 .prices-section {
   display: flex;
@@ -5278,6 +5287,9 @@ h1 {
         h1.panel-heading--large {
           padding-right: 10%;
           font-size: 5.6rem; } }
+  h1.tag-title {
+    font-size: 3rem;
+    margin-bottom: 3.75rem; }
   h1.hide-mob {
     display: none; }
     @media screen and (min-width: 800px) {

@@ -1,19 +1,37 @@
 <?php get_header(); ?>
 
-	<main role="main" aria-label="Content">
-		<!-- section -->
-		<section>
+<main role="main" aria-label="Content" class="blog-page">
+		<div class="wrap-content container-fluid">
+			<div class="row">
+				<section class="col-lg-2 tags-container">
+					<h2 class="tags-title">Sort by tags</h2>
+					<div class="sidebar-widget">
+						<?php if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'widget-area-2' ) ) ?>
+					</div>
+				</section>
+				<!-- section -->
+				<section class="col-lg-7 col-sm-12">
 
-			<h1><?php esc_html_e( 'Tag Archive: ', 'html5blank' ); echo single_tag_title( '', false ); ?></h1>
+					<div class="copytext">
 
-			<?php get_template_part( 'loop' ); ?>
+						<h1 class="tag-title"><?php esc_html_e( 'Tag: ', 'html5blank' ); echo single_tag_title( '', false ); ?></h1>
 
-			<?php get_template_part( 'pagination' ); ?>
+						<?php get_template_part( 'loop' ); ?>
 
-		</section>
-		<!-- /section -->
+						<?php get_template_part( 'pagination' ); ?>
+					</div>
+
+				</section>
+			<!-- /section -->
+			</div>
+			<div class="row">
+				<section class="col-lg-2 tags-container">
+
+				</section>
+				<section class="col-lg-8 col-sm-12">
+					<?php get_sidebar(); ?>
+				</section>
+			</div>
+		</div>
 	</main>
-
-<?php get_sidebar(); ?>
-
 <?php get_footer(); ?>

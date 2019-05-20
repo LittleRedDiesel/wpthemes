@@ -36,6 +36,11 @@ h1 {
     }
   }
 
+  &.tag-title {
+    font-size: 3rem;
+    margin-bottom: 3.75rem;
+  }
+
   &.hide-mob {
     display: none;
 

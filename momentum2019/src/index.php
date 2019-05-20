@@ -5,6 +5,9 @@
 			<div class="row">
 				<section class="col-lg-2 tags-container">
 					<h2 class="tags-title">Sort by tags</h2>
+					<div class="sidebar-widget">
+						<?php if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'widget-area-2' ) ) ?>
+					</div>
 				</section>
 				<!-- section -->
 				<section class="col-lg-9 col-sm-12">
