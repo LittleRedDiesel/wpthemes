@@ -10,22 +10,16 @@ Template Name: Home
 </div> -->
 <main id="main" class="site-main" role="main">
 	<div class="wrap-content container-fluid">
-		<section class="row hero">
+		<section class="row-full hero"
+		<?php $image1 = get_field('image_background'); if( !empty($image1) ): ?> style="background-image: url(<?php echo $image1['url']; ?>)"	<?php endif; ?>>
 			<div class="image-mask row">
-				<?php
-
-				$image1 = get_field('image_background');
-
-				if( !empty($image1) ): ?>
-
-					<img src="<?php echo $image1['url']; ?>" class="banner-image" alt="<?php echo $image1['alt']; ?>" />
-
-				<?php endif; ?>
-
 				<h1 class="col-sm-8 col-md-12"><?php the_field('section_title'); ?></h1>
 			</div>
+		</section>
+
+		<section class="row-full bg-gradient">
 			<div class="section-content">
-				<div class="panel-container row">
+				<div class="panel-container col-xs-12 row">
 					<div class="panel panel--button col-md-6 col-xs-12">
 						<h2 class="panel-title"><?php the_field('incentive_title'); ?></h2>
 						<div class="lined-text">
@@ -201,7 +195,7 @@ Template Name: Home
 				</div>
 			</div>
 		</section>
-		<section class="row">
+		<section class="row-full">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
 					<h2><?php the_field('contact_section_title'); ?></h2>

@@ -1,10 +1,14 @@
 <?php get_header(); ?>
 
 	<main role="main" aria-label="Content">
-		<div class="wrap-content container-fluid">
+		<div class="wrap-content container-fluid section-content">
 			<div class="row">
 				<!-- section -->
 				<section class="col-lg-2 tags-container">
+					<h2 class="tags-title">Sort by tags</h2>
+					<div class="sidebar-widget">
+						<?php if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'widget-area-2' ) ) ?>
+					</div>
 				</section>
 				<section class="col-lg-8 col-sm-12 single-post-content">
 				<!-- section -->

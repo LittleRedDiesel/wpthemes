@@ -1,35 +1,19 @@
 .section-content {
   width: 100%;
+  max-width: $flexboxgrid-max-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Hero banner
 .hero {
+  padding-top: 8.1rem;
+  min-height: 47rem;
+
   .image-mask {
-    position: relative;
-    max-height: 25rem;
-    overflow: hidden;
-
-    @include media-above($break-large) {
-      max-height: 43rem;
-    }
-
-    h1 {
-      position: absolute;
-      top: 8rem;
-      left: 1rem;
-
-      @include media-above($break-large) {
-        top: 8rem;
-      }
-    }
-
-    img {
-      max-width: initial;
-
-      @include media-above($break-large) {
-        max-width: 100%;
-      }
-    }
+    max-width: $flexboxgrid-max-width;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -70,6 +54,9 @@
 .section-footer {
   padding-bottom: 9rem;
   line-height: 1.9rem;
+  max-width: $flexboxgrid-max-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prices-section {

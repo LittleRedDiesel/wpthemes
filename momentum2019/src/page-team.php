@@ -6,9 +6,9 @@ Template Name: Team
 <?php get_header(); ?>
 <main id="main" class="site-main" role="main">
   <div class="wrap-content container-fluid">
-    <section class="row-full row-full--nopadding-right">
+    <section class="row-full row-full--nopadding-right bg-black">
       <div class="section-content">
-        <div class="panel-container panel-container--full-page bg-black">
+        <div class="panel-container panel-container--full-page">
           <div class="panel col-sm-12">
 						<h1 class="panel-heading panel-heading--large"><?php the_field('team_section_title'); ?></h1>
             <div class="lined-text lined-text--large spacer-bottom full-width">
@@ -19,6 +19,7 @@ Template Name: Team
 			</div>
 		</section>
 		<section class="row-full">
+      <div class="section-content">
 		<?php
 		$post_objects = get_field('team_members_to_display');
 
@@ -108,7 +109,7 @@ Template Name: Team
 
 				<?php endwhile; wp_reset_query(); ?>
 			</div>
-
+    </div>
 	</section>
 </main>
 <?php get_footer(); ?>

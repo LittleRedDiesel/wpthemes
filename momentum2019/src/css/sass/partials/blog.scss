@@ -3,21 +3,7 @@
   padding-top: 7.25rem;
 
   .tags-container {
-    display: none;
-
-    @include media-above($break-large) {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .tags-title {
-      font-size: 1.3rem;
-      font-family: $font-family-base;
-      border-bottom: 1px solid $grey;
-      border-top: 1px solid $grey;
-      line-height: 1.8rem;
-      margin-bottom: 1.75rem;
-    }
+    margin-top: 0;
   }
 
   .blog-post,
@@ -91,5 +77,24 @@
       font-size: 3.6rem;
       margin-bottom: 8.6rem;
     }
+  }
+}
+
+.tags-container {
+  display: none;
+
+  @include media-above($break-large) {
+    display: flex;
+    margin-top: 3.25rem;
+    flex-direction: column;
+  }
+
+  .tags-title {
+    font-size: 1.3rem;
+    font-family: $font-family-base;
+    border-bottom: 1px solid $grey;
+    border-top: 1px solid $grey;
+    line-height: 1.8rem;
+    margin-bottom: 1.75rem;
   }
 }

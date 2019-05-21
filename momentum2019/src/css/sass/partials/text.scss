@@ -40,6 +40,10 @@
       @include media-above($break-large) {
         margin-bottom: 13.5rem;
       }
+
+      .meet-the-team & {
+        margin-bottom: 6.25rem;
+      }
     }
 
     .panel-button & {
