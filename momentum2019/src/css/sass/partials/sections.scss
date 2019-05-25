@@ -8,12 +8,20 @@
 // Hero banner
 .hero {
   padding-top: 8.1rem;
-  min-height: 47rem;
+  height: 25rem;
+
+  @include media-above($break-large) {
+    min-height: 47rem;
+  }
 
   .image-mask {
     max-width: $flexboxgrid-max-width;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  &--subhero {
+    padding-top: 4.8rem;
   }
 }
 
@@ -21,7 +29,7 @@
 // Map sections
 .map-text {
   padding-left: 0;
-  min-height: 40rem;
+  min-height: 20rem;
 
   @include media-above($break-large) {
     min-height: 44rem;
@@ -57,6 +65,11 @@
   max-width: $flexboxgrid-max-width;
   margin-left: auto;
   margin-right: auto;
+
+  p {
+    color: $grey;
+    font-size: 1.3rem;
+  }
 }
 
 .prices-section {

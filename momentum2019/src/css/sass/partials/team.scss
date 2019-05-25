@@ -109,8 +109,8 @@
     .qualifications-trigger {
       font-size: 1.3rem;
       color: $grey;
-      text-decoration: underline;
       order: 7;
+      transition: 0.3s;
 
       @include media-above($break-large) {
         order: initial;
@@ -118,6 +118,7 @@
 
       &:hover {
         text-decoration: none;
+        color: rgba($grey, 0.4);
       }
     }
   }

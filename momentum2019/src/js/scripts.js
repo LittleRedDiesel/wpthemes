@@ -272,11 +272,11 @@
 				var latlng = new google.maps.LatLng( $marker.attr("data-lat"), $marker.attr("data-lng") );
 
 				// create marker
-				var iconBase = "http://momentum-training.com/wp-content/themes/momentumtraining/images/";
+				var iconBase = "http://momentum.lrd-dev.com/wp-content/themes/momentum2019/img/";
 				var marker = new google.maps.Marker({
 					position	: latlng,
 					map			: map,
-					icon: iconBase + "map-marker.png"
+					icon: iconBase + "MMNTM-pin1.png"
 				});
 
 				// add to array

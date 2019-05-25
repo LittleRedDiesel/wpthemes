@@ -36,6 +36,14 @@
         }
     }
 
+    &.map {
+      padding-bottom: 2.2rem;
+
+      @include media-above($break-large) {
+        padding-bottom: 0;
+      }
+    }
+
     &--border {
         border-top: 1px solid $black;
         word-break: break-word;
@@ -78,10 +86,6 @@
       .panel--fw-inner {
         display: flex;
         flex-direction: column;
-
-        .lined-text {
-          border-bottom: 1px solid $grey;
-        }
 
         &.border-top {
           border-top: 1px solid $grey;

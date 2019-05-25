@@ -72,3 +72,11 @@
 .sister-buttons {
   margin-top: auto;
 }
+
+a {
+  transition: 0.3s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

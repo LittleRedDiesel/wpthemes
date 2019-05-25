@@ -28,9 +28,15 @@
     font-family: $font-family-base;
     font-size: 3.1rem;
     margin-bottom: 4.3rem;
+    transition: 0.3s;
 
     @include media-above($break-large) {
       font-size: 5.6rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $grey;
     }
   }
 
@@ -42,9 +48,11 @@
     padding: 2px 0;
 
     a {
-      text-decoration: underline;
+      transition: 0.3s;
+
       &:hover {
         text-decoration: none;
+        color: $grey;
       }
     }
   }
@@ -54,6 +62,15 @@
   .post-content a {
     font-size: 1.3rem;
     line-height: 1.8rem;
+  }
+
+  .post-content a {
+    transition: 0.3s;
+
+    &:hover {
+        color: $grey;
+        text-decoration: none;
+    }
   }
 
   .pagination {

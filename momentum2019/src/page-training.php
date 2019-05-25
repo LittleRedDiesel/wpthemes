@@ -6,9 +6,9 @@ Template Name: Training
 <?php get_header(); ?>
 <main id="main" class="site-main" role="main">
   <section id="content">
-    <section class="row-full hero" style="background-image: url(<?php the_field('training_section_background'); ?>)">
+    <section class="row-full hero hero--subhero" style="background-image: url(<?php the_field('training_section_background'); ?>)">
       <div class="image-mask row">
-        <h1 class="col-sm-8 col-md-12 page-title hide-mob"><?php the_field('training_section_title'); ?></h1>
+        <h1 class="col-sm-8 col-md-12"><?php the_field('training_section_title'); ?></h1>
       </div>
     </section>
     <section class="row-full">

@@ -26,6 +26,12 @@
     li a {
       padding-bottom: 1rem;
       display: inline-flex;
+      transition: 0.3s;
+
+      &:hover {
+        text-decoration: none;
+        color: $grey;
+      }
     }
   }
 }
@@ -39,5 +45,14 @@
   li {
     margin-bottom: 0.5rem;
     word-break: break-word;
+
+    a {
+      transition: 0.3s;
+
+      &:hover {
+        text-decoration: none;
+        color: $grey;
+      }
+    }
   }
 }

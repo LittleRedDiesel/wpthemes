@@ -30,20 +30,19 @@ Template Name: Timetable
 						<div class="panel panel1 js-active">
 							<?php the_field('panel_1_content'); ?>
               <iframe src="https://goteamup.com/p/1174690-momentum-training-hackney/" style="width: 100%; border: 0;
-              overflow: visible; height: 3100px;"/>
+              overflow: visible; height: 2000px;"></iframe>
 						</div>
 						<div class="panel panel2">
 							<?php the_field('panel_2_content'); ?>
               <iframe src="https://goteamup.com/p/1756846-momentum-training-old-str/" style="width: 100%; border: 0;
-              overflow: visible; height: 3100px;"/>
+              overflow: visible; height: 2000px;"></iframe>
 						</div>
 					</section>
 				</section>
 					<?php if (have_posts()) : while (have_posts()) : the_post();?>
 					<?php the_content(); ?>
 					<?php endwhile; endif; ?>
-				</section>
-				</div>
+			</div>
 		</section>
 	</div>
 </main>
