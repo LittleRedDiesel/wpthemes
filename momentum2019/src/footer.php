@@ -9,7 +9,7 @@
 						<?php wp_nav_menu( array( 'menu' => 'Extra Menu', 'menu_id' => 'menu-footer', 'menu_class' => 'menu-footer' ) ); ?>
 					</nav>
 					<div class="copyright">
-						<p>&copy;Momentum Training <?php echo esc_html( date( 'Y' ) ); ?></p>
+						<p><img class="footer-logo-img" src="<?php bloginfo('template_directory');  ?>/img/MMNTM_Training_Small.png" alt="Momentum Training <?php echo esc_html( date( 'Y' ) ); ?>" /></p>
 					</div>
 				</div>
 			</footer>

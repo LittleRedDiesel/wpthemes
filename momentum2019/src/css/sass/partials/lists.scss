@@ -2,6 +2,10 @@
   display: flex;
   flex-flow: row wrap;
 
+  &.team-list {
+    margin-bottom: 9.25rem;
+  }
+
   .list-item {
     display: flex;
     flex-direction: column;
@@ -39,11 +43,10 @@
   .bw-list-primary {
     display: flex;
     flex-direction: column;
-    flex: 1 1 100%;
-    align-items: flex-start;
-    margin-bottom: 4rem;
 
     @include media-above($break-large) {
+      flex-direction: column;
+      align-items: flex-start;
       flex: 1 1 33%;
       padding-top: 1.3rem;
       align-items: center;
@@ -51,6 +54,7 @@
 
     img {
       width: 50%;
+      margin-bottom: 4rem;
     }
   }
 
@@ -66,7 +70,7 @@
     h3 {
       margin-bottom: 1rem;
       font-size: 3rem;
-      
+
       @include media-above($break-large) {
         margin-bottom: 3.12rem;
       }

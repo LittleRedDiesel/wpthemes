@@ -3,6 +3,16 @@
   max-width: $flexboxgrid-max-width;
   margin-left: auto;
   margin-right: auto;
+
+  &.col-xs-12 {
+    .bw-list-item & {
+      padding-right: 0;
+
+      .lined-text p {
+        padding-right: 1.2rem;
+      }
+    }
+  }
 }
 
 // Hero banner
@@ -11,7 +21,7 @@
   height: 25rem;
 
   @include media-above($break-large) {
-    min-height: 47rem;
+    min-height: 39rem;
   }
 
   .image-mask {
@@ -36,7 +46,7 @@
   }
 
   h2, p {
-    font-size: 4rem;
+    font-size: 2.8rem;
 
     @include media-above($break-large) {
       font-size: 5.6rem;
@@ -55,7 +65,9 @@
 
   .panel-container--full-page & {
     padding-top: 0.5rem;
-    min-height: 42rem;
+    @include media-above($break-large) {
+      min-height: 42rem;
+    }
   }
 }
 
@@ -75,8 +87,13 @@
 .prices-section {
   display: flex;
   flex-flow: row wrap;
-  margin-top: 6.25rem;
-  margin-bottom: 7.7rem;
+  margin-top: 5rem;
+  margin-bottom: 6.2rem;
+
+  @include media-above($break-large) {
+    margin-top: 6.25rem;
+    margin-bottom: 7.7rem;
+  }
 
   .price-slide {
     margin-bottom: 1rem;

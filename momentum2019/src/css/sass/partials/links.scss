@@ -1,5 +1,5 @@
 .button {
-  font-size: 2rem;
+  font-size: 1.2rem;
   width: 100%;
   display: flex;
   background-color: $black;
@@ -10,6 +10,7 @@
   transition: 0.3s;
 
   @include media-above($break-medium) {
+    font-size: 2rem;
     min-height: 100px;
   }
 

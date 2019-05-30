@@ -51,6 +51,14 @@
     @include media-above($break-large) {
       flex: 1 1 50%;
     }
+
+    .footer-logo-img {
+      width: 70%;
+
+      @include media-above($break-large) {
+        width: 50%;
+      }
+    }
   }
 
   .site-footer-navigation {

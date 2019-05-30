@@ -5,18 +5,20 @@ Template Name: Join us
 ?>
 <?php get_header(); ?>
 <main id="main" class="site-main" role="main">
-
-
 	<div class="wrap-content container-fluid">
-    <section class="row-full row-full--nopadding">
+    <section class="row-full row-full--nopadding-right bg-black">
       <div class="section-content">
-        <div class="panel-container panel-container--full-page bg-black">
+        <div class="panel-container panel-container--full-page">
           <div class="panel col-sm-12">
 						<h1 class="panel-heading"><?php echo get_the_title(); ?></h1>
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="row-full row-full--nopadding-right">
+			<div class="section-content">
 				<div class="panel-container">
-					<section class="panel-section click-panels">
+					<section class="panel-section click-panels" style="background-image: url(<?php the_field('panels_background'); ?>);">
 						<div class="section-content">
 							<div class="panel-container primary-panels">
 								<div class="panel panel-1 js-active">
@@ -28,7 +30,7 @@ Template Name: Join us
 							</div>
 						</div>
 						<section class="primary-panels-display panels-multi-step">
-							<div class="panel panel1 js-active">
+							<div class="panel panel1 js-active col-xs-9">
 								<?php the_field('primary_panel_1_content'); ?>
 								<div class="sister-buttons">
 									<!-- If these buttons exist - display them -->
@@ -45,15 +47,16 @@ Template Name: Join us
 							</div>
 							<div class="panel panel2">
 								<div class="panel-container secondary-panels">
-									<div class="panel panel-1 js-active">
-										<a href="#" class="js-switch-panel" data-panel="panel3"><h4><?php the_field('secondary_panel_name_1'); ?></h4></a>
+									<div class="panel panel-1 js-active col-xs-4">
+										<a href="#" class="js-switch-panel" data-panel="panel3"><h3><?php the_field('secondary_panel_name_1'); ?></h3></a>
 									</div>
-									<div class="panel panel-2 right-panel">
-										<a href="#" class="js-switch-panel" data-panel="panel4"><h4><?php the_field('secondary_panel_name_2'); ?></h4></a>
+									<span class="divider-bubble">Or</span>
+									<div class="panel panel-2 right-panel col-xs-4">
+										<a href="#" class="js-switch-panel" data-panel="panel4"><h3><?php the_field('secondary_panel_name_2'); ?></h3></a>
 									</div>
 								</div>
 								<div class="panel-container tertiary-panels">
-									<div class="panel panel3 js-active">
+									<div class="panel panel3 js-active col-xs-8">
 										<?php the_field('tertiary_panel_1_content'); ?>
 										<div class="sister-buttons">
 											<!-- If these buttons exist - display them -->
@@ -68,7 +71,7 @@ Template Name: Join us
 											<?php endif; ?>
 										</div>
 									</div>
-									<div class="panel panel4">
+									<div class="panel panel4  col-xs-8">
 										<?php the_field('tertiary_panel_2_content'); ?>
 
 										<div class="sister-buttons">
@@ -95,8 +98,8 @@ Template Name: Join us
 
 		<section class="row-full" style="background-image: url(<?php the_field('prices_section_bg_1'); ?>);">
 			<div class="section-content">
-				<div class="panel-container panel-container--border panel-container--full-page col-sm-12">
-					<div class="map-text price-panels panel panel--border col-sm-12">
+				<div class="panel-container panel-container--border col-sm-12">
+					<div class="map-text price-panels panel--border col-sm-12">
 						<p><?php the_field('prices_subtitle1'); ?></p>
 						<div>
 							<?php $loop = new WP_Query( array( 'post_type' => 'prices', 'posts_per_page' => -1 , 'orderby' => 'date', 'order' => 'ASC', 'meta_key' => 'price_type',
@@ -138,7 +141,7 @@ Template Name: Join us
 		<section class="row-full" style="background-image: url(<?php the_field('prices_section_bg_2'); ?>);">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<div class="map-text panel panel--border col-sm-12">
+					<div class="map-text panel--border col-sm-12">
 						<p><?php the_field('prices_subtitle2'); ?></p>
 						<?php $loop = new WP_Query( array( 'post_type' => 'prices', 'posts_per_page' => -1 , 'orderby' => 'date', 'order' => 'ASC', 'meta_key' => 'price_type',
 			'meta_value'	=> 'Class pack' ) ); ?>
@@ -178,7 +181,7 @@ Template Name: Join us
 				</div>
 			</div>
 		</section>
-		<section class="section-footer">
+		<section class="section-footer col-xs-12">
 			<?php the_field('prices_section_footer'); ?>
 		</section>
 

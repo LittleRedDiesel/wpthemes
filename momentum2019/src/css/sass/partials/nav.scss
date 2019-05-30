@@ -8,8 +8,9 @@
   display: none;
   background-color: $black;
   color: $white;
-  padding-top: 3.5rem;
+  padding-top: 4rem;
   border-bottom: 1px solid $lightgrey;
+  overflow-y: scroll;
 
   @include media-above($break-large) {
     max-width: $flexboxgrid-max-width;
@@ -25,11 +26,14 @@
     left: 50%;
     right: 0;
     transform: translateX(-50%);
+    overflow-y: initial;
     z-index: 999;
   }
 
   .logo-img {
-    height: 62px;
+    width: 75px;
+    margin-top: auto;
+    margin-bottom: auto;
     display: none;
 
     @include media-above($break-large) {
@@ -44,12 +48,25 @@
     }
   }
 
+  > a {
+    display: flex;
+    flex-direction: column;
+
+    &.join-cta {
+      flex-direction: row;
+    }
+  }
+
   a {
     color: $grey;
     font-size: 2.5rem;
     transition: 0.3s;
 
     @include media-above($break-large) {
+      font-size: 1.2rem;
+    }
+
+    @include media-above($break-wide) {
       color: $white;
       font-size: 1.5rem;
     }
@@ -82,6 +99,8 @@
       padding: 1rem;
 
       @include media-above($break-large) {
+        display: flex;
+        align-items: center;
         padding: 1rem 0;
         margin-left: auto;
         margin-right: auto;
@@ -89,19 +108,23 @@
       }
 
       &:first-of-type {
-        @include media-above($break-large) {
+        @include media-above($break-wide) {
           padding-left: 3.8rem;
         }
       }
 
       &:last-of-type {
-        @include media-above($break-large) {
+        @include media-above($break-wide) {
           padding-right: 3.8rem;
         }
       }
 
       a {
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.1rem;
+
+        @include media-above($break-wide) {
+          letter-spacing: 0.2rem;
+        }
       }
 
       &.current-menu-item {
@@ -121,6 +144,8 @@
     font-size: 2rem;
     min-height: initial;
     letter-spacing: 0.15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     @include media-above($break-large) {
       padding: 1rem 1.6rem;
@@ -173,5 +198,20 @@
     img {
       height: 100%;
     }
+  }
+}
+
+.lock-scroll {
+  overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-container {
+  @include media-above($break-large) {
+    background-color: rgba($black, 0.3);
+    width: 100%;
+    position: fixed;
+    height: 62px;
   }
 }

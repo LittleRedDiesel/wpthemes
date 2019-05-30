@@ -4,7 +4,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
 
   @include media-above($break-large) {
     font-size: 8.75rem;
@@ -51,10 +51,18 @@ h1 {
 }
 
 h2 {
-  font-size: 3.1rem;
+  font-size: 2.2rem;
 
   @include media-above($break-large) {
     font-size: 5rem;
+  }
+
+  &.line-break--bottom {
+    margin-bottom: 3.12rem;
+
+    @include media-above($break-large) {
+      margin-bottom: 5rem;
+    }
   }
 
   &.panel-title {
@@ -64,8 +72,11 @@ h2 {
   &.team-title {
       font-size: 5rem;
       padding-top: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid $grey;
+
+      @include media-above($break-large) {
+        border-bottom: 1px solid $grey;
+        padding-bottom: 2rem;
+      }
   }
 
   &.title-margin-btm {
@@ -100,7 +111,7 @@ p {
   }
 
   &.title {
-    font-size: 3.1rem;
+    font-size: 2.4rem;
     font-family: $font-family-headings;
     text-transform: uppercase;
     margin-top: 1rem;
@@ -108,6 +119,7 @@ p {
 
     @include media-above($break-large) {
       margin-bottom: 5rem;
+      font-size: 3.1rem;
     }
 
     &--member {
@@ -134,12 +146,22 @@ p {
   }
 
   &.text-large {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0;
     padding-right: 15%;
 
     @include media-above($break-large) {
       font-size: 5.6rem;
+    }
+
+    .row-contact & {
+      padding-right: 0;
+      margin-bottom: 5rem;
+
+      @include media-above($break-large) {
+        padding-right: 15%;
+        margin-bottom: 2rem;
+      }
     }
   }
 

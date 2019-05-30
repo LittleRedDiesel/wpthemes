@@ -36,7 +36,13 @@
 		@include media-above($break-large) {
 			width: 555px;
 			height: 555px;
-			margin: 60px auto 0;
+			margin: 0 auto 0;
+		}
+
+		.page-template-page-home & {
+			@include media-above($break-large) {
+				margin: 60px auto 0;
+			}
 		}
 
 		> div {

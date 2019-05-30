@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-	<main role="main" aria-label="Content" class="blog-page">
-		<div class="wrap-content container-fluid section-content">
+	<main role="main" aria-label="Content" class="blog-page col-xs-12">
+		<div class="wrap-content container-fluid section-content col-xs-12">
 			<div class="row">
 				<section class="col-lg-2 tags-container">
 					<h2 class="tags-title">Sort by tags</h2>

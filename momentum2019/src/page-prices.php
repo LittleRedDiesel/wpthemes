@@ -11,7 +11,7 @@ Template Name: Prices
     <section class="row-full" style="background-image: url(<?php the_field('prices_section_bg_1'); ?>);">
       <div class="section-content">
         <div class="panel-container panel-container--border panel-container--full-page col-sm-12">
-          <div class="map-text price-panels panel panel--border col-sm-12">
+          <div class="map-text price-panels panel panel--border">
             <p><?php the_field('prices_subtitle1'); ?></p>
             <div>
       				<?php $loop = new WP_Query( array( 'post_type' => 'prices', 'posts_per_page' => -1 , 'orderby' => 'date', 'order' => 'ASC', 'meta_key' => 'price_type',
@@ -53,7 +53,7 @@ Template Name: Prices
     <section class="row-full" style="background-image: url(<?php the_field('prices_section_bg_2'); ?>);">
       <div class="section-content">
         <div class="panel-container panel-container--border col-sm-12">
-          <div class="map-text panel panel--border col-sm-12">
+          <div class="map-text panel--border">
             <p><?php the_field('prices_subtitle2'); ?></p>
             <?php $loop = new WP_Query( array( 'post_type' => 'prices', 'posts_per_page' => -1 , 'orderby' => 'date', 'order' => 'ASC', 'meta_key' => 'price_type',
       'meta_value'	=> 'Class pack' ) ); ?>
@@ -93,7 +93,7 @@ Template Name: Prices
         </div>
       </div>
     </section>
-    <section class="section-footer">
+    <section class="section-footer col-xs-12">
       <?php the_field('prices_section_footer'); ?>
     </section>
   </div>

@@ -11,10 +11,14 @@ Template Name: Training
         <h1 class="col-sm-8 col-md-12"><?php the_field('training_section_title'); ?></h1>
       </div>
     </section>
-    <section class="row-full">
-      <div class="section-content col-xs-12">
-        <div class="lined-text lined-text--large spacer-bottom full-width">
-          <p class="panel-text"><?php the_field('training_section_subtitle', false, false); ?></p>
+    <section class="row-full row-full--nopadding-right">
+      <div class="section-content">
+        <div class="panel-container">
+          <div class="panel col-sm-12">
+            <div class="lined-text lined-text--large spacer-bottom full-width">
+              <p class="panel-text"><?php the_field('training_section_subtitle', false, false); ?></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,6 +1,17 @@
 .team-list {
   .list-item {
     margin-bottom: 0;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    padding-bottom: 7rem;
+
+    @include media-above($break-large) {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 2rem;
+      padding-bottom: 0;
+    }
 
     .team-img {
       order: 2;
@@ -126,6 +137,10 @@
 
 .team-further {
     display: none;
+
+    .list-item {
+      margin-bottom: 9.25rem;
+    }
 
     &.visible {
       display: flex;

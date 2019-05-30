@@ -499,6 +499,15 @@
 			return;
 		}
 
+		function lockScroll() {
+			if ($("html").hasClass("lock-scroll")) {
+					$("html").removeClass("lock-scroll");
+			}
+			else {
+					$("html").addClass("lock-scroll");
+			}
+		}
+
 		// Toggle navigation; add or remove a class to both the button and the nav element itself
 		button.onclick = function(e) {
 			e.preventDefault();
@@ -509,6 +518,8 @@
 				nav.style.display = "block";
 				button.className += " active";
 			}
+			lockScroll();
+
 		};
 
 				});

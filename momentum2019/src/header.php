@@ -42,22 +42,23 @@
 						<img class="menu-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/menu.png" />
 						<span><?php _e( 'Menu', 'voidx' ); ?></span>
 					</a>
-					<a class="mobile-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/MMNTM_anim.2.gif" /></a>
+					<a class="mobile-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Mnmtm_Logo_01.gif" /></a>
 				</div>
 				<div class="site-branding">
 					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></h1>
 				</div>
 					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" id="site-navigation" role="navigation">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/MMNTM_anim.2.gif" /></a>
-						<div id="responsive-menu">
-							<?php html5blank_nav(); ?>
-						</div>
-						<a href="/join-us/" class="button join-cta <?php if ( is_page( 'join-us' )) { echo 'page-active'; } ?>">Join us</a>
-					</nav>
-					<!-- /nav -->
+					<div class="nav-container">
+						<!-- nav -->
+						<nav class="nav" id="site-navigation" role="navigation">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Mnmtm_Logo_01.gif" /></a>
+							<div id="responsive-menu">
+								<?php html5blank_nav(); ?>
+							</div>
+							<a href="/join-us/" class="button join-cta <?php if ( is_page( 'join-us' )) { echo 'page-active'; } ?>">Join us</a>
+						</nav>
+						<!-- /nav -->
+					</div>
 
 			</header>
 			<!-- /header -->

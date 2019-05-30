@@ -101,6 +101,9 @@ function html5blank_header_scripts() {
             // Modernizr
             wp_register_script( 'modernizr', get_template_directory_uri() . '/js/lib/modernizr.js', array(), '2.8.3' );
 
+            // Imagesloaded
+            wp_register_script( 'imagesloaded', get_template_directory_uri() . '/js/lib/imagesloaded.pkgd.min.js', array(), '4.2.4' );
+
             // Masonry
             wp_register_script( 'masonry', get_template_directory_uri() . '/js/lib/masonry.pkgd.min.js', array(), '4.2.2' );
 
@@ -114,7 +117,7 @@ function html5blank_header_scripts() {
                     'conditionizr',
                     'modernizr',
                     'jquery',
-                    'slick',
+                    'imagesloaded',
                     'masonry',
                     'google-map'
                 ),

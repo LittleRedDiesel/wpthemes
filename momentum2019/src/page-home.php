@@ -10,16 +10,16 @@ Template Name: Home
 </div> -->
 <main id="main" class="site-main" role="main">
 	<div class="wrap-content container-fluid">
-		<section class="row-full hero"
+		<section class="row-full hero hero--subhero"
 		<?php $image1 = get_field('image_background'); if( !empty($image1) ): ?> style="background-image: url(<?php echo $image1['url']; ?>)"	<?php endif; ?>>
 			<div class="image-mask row">
 				<h1 class="col-sm-8 col-md-12"><?php the_field('section_title'); ?></h1>
 			</div>
 		</section>
 
-		<section class="row-full bg-gradient">
+		<section class="bg-gradient">
 			<div class="section-content">
-				<div class="panel-container col-xs-12 row">
+				<div class="panel-container col-sm-12">
 					<div class="panel panel--button col-md-6 col-xs-12">
 						<h2 class="panel-title"><?php the_field('incentive_title'); ?></h2>
 						<div class="lined-text">
@@ -108,9 +108,9 @@ Template Name: Home
 				</div>
 			</div>
 		</section>
-		<section class="row-full bg-black">
+		<section class="row-full row-copy bg-black">
 			<div class="section-content">
-				<div class="panel-container">
+				<div class="panel-container panel-container--home">
 					<div class="panel panel--full-width col-md-6 col-sm-12">
 						<div class="panel--fw-inner">
 							<h3><?php the_field('copy-section-title'); ?></h3>
@@ -124,7 +124,7 @@ Template Name: Home
 				</div>
 			</div>
 			<div class="section-content">
-				<div class="panel-container">
+				<div class="panel-container panel-container--home-second">
 					<div class="panel panel--full-width col-md-6 col-sm-12">
 						<div class="panel--fw-inner">
 							<h3><?php the_field('copy-section-title-2'); ?></h3>
@@ -138,7 +138,7 @@ Template Name: Home
 				</div>
 			</div>
 		</section>
-		<section class="row-full" style="background-image: url(<?php the_field('team_section_bg'); ?>);">
+		<section class="row-full row-team" style="background-image: url(<?php the_field('team_section_bg'); ?>);">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
 					<h2 class="team-title"><?php the_field('team_section_title'); ?></h2>
@@ -166,7 +166,7 @@ Template Name: Home
 		</section>
 		<section class="row-full bg-black">
 			<div class="section-content">
-				<div class="panel-container panel-container--border col-sm-12">
+				<div class="panel-container panel-container--border panel-container--spacer-bottom col-sm-12">
 					<h2 class="title-margin-btm"><?php the_field('testimonial_section_title'); ?></h2>
 					<?php $post_objects = get_field('featured_testimonials');
 
@@ -182,24 +182,23 @@ Template Name: Home
 				    <?php endforeach; ?>
 				 <?php wp_reset_postdata(); ?>
 			 	<?php endif; ?>
-				<a href="<?php the_field('testimonial_section_button_link'); ?>" class="button button--white button--center button--v-center"><?php the_field('testimonial_section_button'); ?></a>
 			</div>
 			</div>
 		</section>
 		<section class="row-full" style="background-image: url(<?php the_field('button_section_bg'); ?>);">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<h2><?php the_field('button_section_title'); ?></h2>
+					<h2 class="line-break--bottom"><?php the_field('button_section_title'); ?></h2>
 					<p class="text-large"><?php the_field('button_section_wysiwyg', false, false); ?></p>
 					<a href="<?php the_field('button_section_link'); ?>" class="button button--white button--center button--v-center"><?php the_field('button_section_button'); ?></a>
 				</div>
 			</div>
 		</section>
-		<section class="row-full">
+		<section class="row-full row-contact">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<h2><?php the_field('contact_section_title'); ?></h2>
-					<p class="text-large border-top"><?php the_field('contact_section_content', false, false); ?></p>
+					<h2 class="line-break--bottom"><?php the_field('contact_section_title'); ?></h2>
+					<p class="text-large"><?php the_field('contact_section_content', false, false); ?></p>
 					<?php the_field('email_form'); ?>
 				</div>
 			</div>
