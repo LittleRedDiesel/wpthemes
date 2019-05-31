@@ -167,7 +167,7 @@ Template Name: Home
 		<section class="row-full bg-black">
 			<div class="section-content">
 				<div class="panel-container panel-container--border panel-container--spacer-bottom col-sm-12">
-					<h2 class="title-margin-btm"><?php the_field('testimonial_section_title'); ?></h2>
+					<h2 class="title-margin-btm title-pad-top"><?php the_field('testimonial_section_title'); ?></h2>
 					<?php $post_objects = get_field('featured_testimonials');
 
 					if( $post_objects ): ?>
@@ -188,7 +188,7 @@ Template Name: Home
 		<section class="row-full" style="background-image: url(<?php the_field('button_section_bg'); ?>);">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<h2 class="line-break--bottom"><?php the_field('button_section_title'); ?></h2>
+					<h2 class="line-break--bottom title-pad-top"><?php the_field('button_section_title'); ?></h2>
 					<p class="text-large"><?php the_field('button_section_wysiwyg', false, false); ?></p>
 					<a href="<?php the_field('button_section_link'); ?>" class="button button--white button--center button--v-center"><?php the_field('button_section_button'); ?></a>
 				</div>
@@ -197,7 +197,7 @@ Template Name: Home
 		<section class="row-full row-contact">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<h2 class="line-break--bottom"><?php the_field('contact_section_title'); ?></h2>
+					<h2 class="line-break--bottom title-pad-top"><?php the_field('contact_section_title'); ?></h2>
 					<p class="text-large"><?php the_field('contact_section_content', false, false); ?></p>
 					<?php the_field('email_form'); ?>
 				</div>

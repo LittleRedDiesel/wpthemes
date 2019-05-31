@@ -40,11 +40,15 @@
 
   &.secondary-panels,
   &.tertiary-panels {
-    margin-top: 9.3rem;
+    margin-top: 6rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+
+    @include media-above($break-large) {
+      margin-top: 9.3rem;
+    }
   }
 
   .panel {
@@ -176,17 +180,21 @@
   }
 
   .divider-bubble {
-    margin-right: 1rem;
-    margin-left: 1rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: 3.25rem;
-    background: $white;
-    height: 130px;
-    width: 130px;
-    text-transform: uppercase;
-    border-radius: 130px;
+    display: none;
+
+    @include media-above($break-large) {
+      margin-right: 1rem;
+      margin-left: 1rem;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      font-size: 3.25rem;
+      background: $white;
+      height: 130px;
+      width: 130px;
+      text-transform: uppercase;
+      border-radius: 130px;
+    }
   }
 
   // Hide/show panels
@@ -194,6 +202,25 @@
     display: flex;
     flex: 1 1 100%;
     flex-direction: column;
+
+    p {
+      font-size: 2rem;
+      text-align: left;
+
+      @include media-above($break-large) {
+        font-size: 3rem;
+      }
+    }
+
+    .primary-panels {
+      & > .panel h3 {
+        font-size: 1.2rem;
+
+        @include media-above($break-large) {
+          font-size: 5.4rem;
+        }
+      }
+    }
 
     .primary-panels-display,
     .tertiary-panels {
@@ -217,7 +244,12 @@
           text-align: center;
 
           h4 {
-            font-size: 5.3rem;
+            font-size: 2.8rem;
+            font-family: $font-family-headings;
+
+            @include media-above($break-large) {
+              font-size: 5.3rem;
+            }
           }
         }
       }
@@ -226,6 +258,20 @@
     .tertiary-panels {
       & > .panel {
         background: $white;
+        padding: 3rem 3rem 0;
+
+        p {
+          margin: 0;
+          font-size: 1.5rem;
+
+          @include media-above($break-large) {
+            font-size: 3rem;
+          }
+        }
+
+        .button-expand {
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -238,12 +284,18 @@
 
       &.panels-multi-step {
         .panel {
+
           &.panel1 {
             background: $white;
             margin-top: 7.6rem;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 7rem;
+            padding: 60px 40px 0;
+
+            @include media-above($break-large) {
+              padding: 140px 120px 0;
+            }
           }
           &.panel2 {
             margin-bottom: 7rem;
@@ -261,7 +313,12 @@
         }
 
          h3 {
-           font-size: 3.2rem;
+           font-size: 1.2rem;
+           text-align:left;
+
+           @include media-above($break-large) {
+             font-size: 3.2rem;
+           }
          }
       }
     }
@@ -275,7 +332,6 @@
       width: 50%;
       padding: $half-gutter-width;
       border-bottom: 1px solid $black;
-      position: relative;
       text-align: center;
 
       @include media-above($break-large) {
@@ -299,7 +355,7 @@
       }
 
       h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         @include media-above($break-large) {
           font-size: 5.4rem;
         }
@@ -310,9 +366,11 @@
         border-bottom: 0;
         background: $black;
         color: $white;
+        position: relative;
 
         &:after {
           top: 100%;
+          z-index: 1;
           left: 50%;
           border: solid transparent;
           content: " ";

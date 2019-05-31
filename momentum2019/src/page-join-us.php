@@ -30,7 +30,7 @@ Template Name: Join us
 							</div>
 						</div>
 						<section class="primary-panels-display panels-multi-step">
-							<div class="panel panel1 js-active col-xs-9">
+							<div class="panel panel1 js-active col-md-9 col-xs-11">
 								<?php the_field('primary_panel_1_content'); ?>
 								<div class="sister-buttons">
 									<!-- If these buttons exist - display them -->
@@ -47,11 +47,11 @@ Template Name: Join us
 							</div>
 							<div class="panel panel2">
 								<div class="panel-container secondary-panels">
-									<div class="panel panel-1 js-active col-xs-4">
+									<div class="panel panel-1 js-active col-md-4 col-xs-5">
 										<a href="#" class="js-switch-panel" data-panel="panel3"><h3><?php the_field('secondary_panel_name_1'); ?></h3></a>
 									</div>
 									<span class="divider-bubble">Or</span>
-									<div class="panel panel-2 right-panel col-xs-4">
+									<div class="panel panel-2 right-panel col-md-4 col-xs-5">
 										<a href="#" class="js-switch-panel" data-panel="panel4"><h3><?php the_field('secondary_panel_name_2'); ?></h3></a>
 									</div>
 								</div>

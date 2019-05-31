@@ -502,9 +502,11 @@
 		function lockScroll() {
 			if ($("html").hasClass("lock-scroll")) {
 					$("html").removeClass("lock-scroll");
+					$("html").css({"overflow-y": "scroll", "position": "static", "width": "auto"});
 			}
 			else {
 					$("html").addClass("lock-scroll");
+					$("html").css({"overflow-y": "hidden", "position": "fixed", "width": "100%"});
 			}
 		}
 

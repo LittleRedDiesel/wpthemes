@@ -9,6 +9,10 @@
   background-color: $black;
   color: $white;
   padding-top: 4rem;
+  top: 64px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
   border-bottom: 1px solid $lightgrey;
   overflow-y: scroll;
 
@@ -201,17 +205,12 @@
   }
 }
 
-.lock-scroll {
-  overflow-y: hidden;
-  position: fixed;
-  width: 100%;
-}
-
 .nav-container {
   @include media-above($break-large) {
     background-color: rgba($black, 0.3);
     width: 100%;
     position: fixed;
     height: 62px;
+    z-index: 999;
   }
 }
