@@ -107,7 +107,7 @@ function html5blank_nav() {
 //             // Masonry
 //             wp_register_script( 'masonry', get_template_directory_uri() . '/js/lib/masonry.pkgd.min.js', array(), '4.2.2' );
 //
-//             wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBc4ePmRzjvngPriEIh2WWOVkizllZFShQ&v=3.exp', array(), '3' );
+//             wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXX&v=3.exp', array(), '3' );
 //
 //             // Custom scripts
 //             wp_register_script(

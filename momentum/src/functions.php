@@ -45,7 +45,7 @@ add_action( 'after_setup_theme', 'voidx_setup', 11 );
 function wpb_adding_scripts() {
   wp_register_script('vendor', get_template_directory_uri() . '/js/wp-vendor.js','','1.1', true);
 
-  wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBc4ePmRzjvngPriEIh2WWOVkizllZFShQ&v=3.exp&sensor=false', array(), '3', true );
+  wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXXX&v=3.exp&sensor=false', array(), '3', true );
 
   wp_enqueue_script('vendor');
 }

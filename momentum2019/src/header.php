@@ -18,7 +18,7 @@
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/lib/imagesloaded.pkgd.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/conditionizr.js/4.1.0/conditionizr.js"></script>
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/scripts.js"></script>
-		<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBc4ePmRzjvngPriEIh2WWOVkizllZFShQ&#038;v=3.exp&#038;&#038;ver=3'></script>
+		<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXX&#038;v=3.exp&#038;&#038;ver=3'></script>
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/modules/maps.js"></script>
 		<script>
 		// conditionizr.com
