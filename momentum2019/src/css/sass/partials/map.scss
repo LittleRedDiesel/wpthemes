@@ -11,7 +11,6 @@
 		overflow:hidden;
 		width: 280px;
 		height: 280px;
-		z-index: 99;
 		margin: 0 auto;
 		position:fixed;
 
@@ -22,18 +21,27 @@
       -webkit-border-radius:999px;
       -o-border-radius:999px;
       overflow:hidden;
-      z-index: 99;
       margin: 0 auto;
 			width: 280px;
 			height: 280px;
 
 			@include media-above($break-large) {
+				width: 350px;
+	      height: 350px;
+			}
+
+			@include media-above($break-wide) {
 				width: 555px;
 	      height: 555px;
 			}
     }
 
 		@include media-above($break-large) {
+			width: 350px;
+			height: 350px;
+		}
+
+		@include media-above($break-wide) {
 			width: 555px;
 			height: 555px;
 			margin: 0 auto 0;
@@ -82,4 +90,25 @@
 	   z-index: 999;
 	}
 
+}
+
+.map-text {
+
+		.panel-extra {
+			margin-top: 70px;
+
+			span {
+				font-size: 1.8rem;
+				margin-bottom: 1rem;
+				display: block;
+			}
+
+			.mailchimp-form {
+				flex-flow: row nowrap;
+
+				input {
+					overflow: hidden;
+				}
+			}
+		}
 }

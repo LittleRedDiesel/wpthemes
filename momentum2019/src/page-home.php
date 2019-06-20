@@ -13,14 +13,14 @@ Template Name: Home
 		<section class="row-full hero hero--subhero"
 		<?php $image1 = get_field('image_background'); if( !empty($image1) ): ?> style="background-image: url(<?php echo $image1['url']; ?>)"	<?php endif; ?>>
 			<div class="image-mask row">
-				<h1 class="col-sm-8 col-md-12"><?php the_field('section_title'); ?></h1>
+				<h1 class="col-sm-12"><?php the_field('section_title'); ?></h1>
 			</div>
 		</section>
 
 		<section class="bg-gradient">
 			<div class="section-content">
 				<div class="panel-container col-sm-12">
-					<div class="panel panel--button col-md-6 col-xs-12">
+					<div class="panel panel--button col-sm-6 col-xs-12">
 						<h2 class="panel-title"><?php the_field('incentive_title'); ?></h2>
 						<div class="lined-text">
 							<p class="panel-text"><?php the_field('incentive_description', false, false); ?></p>
@@ -35,7 +35,7 @@ Template Name: Home
 
 						</div>
 					</div>
-					<div class="panel panel--button bg-black col-md-6 col-xs-12">
+					<div class="panel panel--button bg-black col-sm-6 col-xs-12">
 						<h2 class="panel-title"><?php the_field('incentive_title_2'); ?></h2>
 						<div class="lined-text">
 							<p class="panel-text"><?php the_field('incentive_description_2'); ?></p>
@@ -56,38 +56,18 @@ Template Name: Home
 		<section class="row-full" style="background-image: url(<?php the_field('map_section_bg_1'); ?>);">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<div class="map-text panel panel--border col-md-6 col-sm-12">
+					<div class="map-text panel panel--border col-sm-6 col-xs-12">
 						<h2><?php the_field('map_section_title'); ?></h2>
 						<p><?php the_field('map_section_address1'); ?></p>
 					</div>
-					<div class="map panel panel--border col-md-6 col-sm-12">
+					<div class="map panel panel--border col-sm-6 col-xs-12">
 						<?php
-
-							$args = array(
-									'post_type'      => 'locations',
-									'posts_per_page' => -1,
-							);
-
-							$the_query = new WP_Query($args);
-
 							echo "<div class='map-wrapper'><div class='acf-map'>";
-
-							while ( $the_query->have_posts() ) : $the_query->the_post();
-							$location = get_field('location_lat');
-
-							if( !empty($location) ) {
-
 						?>
-
-							<div class="marker" data-lat="<?php the_field('location_lat'); ?>" data-lng="<?php the_field('location_long'); ?>"></div>
-
+							<div class="marker" data-lat="<?php the_field('map_lat_1'); ?>" data-lng="<?php the_field('map_long_1'); ?>"></div>
 						<?php
-
-						}
-						endwhile;
 						echo '</div></div>';
 						wp_reset_postdata();
-
 						?>
 					</div>
 				</div>
@@ -96,14 +76,22 @@ Template Name: Home
 		<section class="row-full" style="background-image: url(<?php the_field('map_section_bg_2'); ?>);">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<div class="map-text panel panel--border col-md-6 col-sm-12">
+					<div class="map-text panel panel--border col-sm-6 col-xs-12">
 						<p><?php the_field('map_section_address2'); ?></p>
+						<div class="panel-extra">
+							<span><?php the_field('map_section_extra_text'); ?></span>
+							<?php the_field('map_section_extra'); ?>
+						</div>
 					</div>
-					<div class="map panel panel--border col-md-6 col-sm-12">
-							<div class="map-wrapper">
-								<div class='acf-map--empty'>
-								</div>
-							</div>
+					<div class="map panel panel--border col-sm-6 col-xs-12">
+						<?php
+							echo "<div class='map-wrapper'><div class='acf-map'>";
+						?>
+							<div class="marker" data-lat="<?php the_field('map_lat_2'); ?>" data-lng="<?php the_field('map_long_2'); ?>"></div>
+						<?php
+						echo '</div></div>';
+						wp_reset_postdata();
+						?>
 					</div>
 				</div>
 			</div>
@@ -111,12 +99,12 @@ Template Name: Home
 		<section class="row-full row-copy bg-black">
 			<div class="section-content">
 				<div class="panel-container panel-container--home">
-					<div class="panel panel--full-width col-md-6 col-sm-12">
+					<div class="panel panel--full-width col-sm-6 col-xs-12">
 						<div class="panel--fw-inner">
 							<h3><?php the_field('copy-section-title'); ?></h3>
 						</div>
 					</div>
-					<div class="panel panel--full-width col-md-6 col-sm-12">
+					<div class="panel panel--full-width col-sm-6 col-xs-12">
 						<div class="panel--fw-inner">
 							<div class="lined-text"><?php the_field('copy-section-wysiwyg'); ?></div>
 						</div>
@@ -125,12 +113,12 @@ Template Name: Home
 			</div>
 			<div class="section-content">
 				<div class="panel-container panel-container--home-second">
-					<div class="panel panel--full-width col-md-6 col-sm-12">
+					<div class="panel panel--full-width col-sm-6 col-xs-12">
 						<div class="panel--fw-inner">
 							<h3><?php the_field('copy-section-title-2'); ?></h3>
 						</div>
 					</div>
-					<div class="panel panel--full-width col-md-6 col-sm-12">
+					<div class="panel panel--full-width col-sm-6 col-xs-12">
 						<div class="panel--fw-inner">
 							<div class="lined-text"><?php the_field('copy-section-wysiwyg-2'); ?></div>
 						</div>
@@ -147,10 +135,12 @@ Template Name: Home
 						if( $post_objects ): ?>
 				    	<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
 				        <?php setup_postdata($post); ?>
-				        <div class="panel panel--full-width panel--no-margin col-md-6 col-xs-12">
+				        <div class="panel panel--full-width panel--no-margin col-sm-6 col-xs-12">
 									<div class="panel--fw-inner">
-										<p class="quote">&ldquo;<?php the_excerpt(); ?>&rdquo;</p>
-										<p class="title"><?php the_title(); ?></p>
+										<div class="panel--fw-inner-top">
+											<p class="quote">&ldquo;<?php the_excerpt(); ?>&rdquo;</p>
+											<p class="title"><?php the_title(); ?></p>
+										</div>
 											<?php $teamimage = get_field('team_photo');
 												if( !empty($teamimage) ): ?>
 													<img src="<?php echo $teamimage['url']; ?>" alt="<?php echo $teamimage['alt']; ?>" />
@@ -173,7 +163,7 @@ Template Name: Home
 					if( $post_objects ): ?>
 				    <?php foreach( $post_objects as $post): ?>
 				        <?php setup_postdata($post); ?>
-								<div class="panel panel--full-width panel--no-margin col-md-6 col-sm-12">
+								<div class="panel panel--full-width panel--no-margin col-sm-6 col-xs-12">
 									<div class="panel--fw-inner border-top">
 				        		<p class="testimonial ellipsis">&ldquo;<?php the_excerpt(); ?>&rdquo;</p>
 				            <p class="title title--member"><?php the_title(); ?></p>

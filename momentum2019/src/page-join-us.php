@@ -15,10 +15,10 @@ Template Name: Join us
 				</div>
 			</div>
 		</section>
-		<section class="row-full row-full--nopadding-right">
+		<section class="row-full row-full--nopadding-right"  style="background-image: url(<?php the_field('panels_background'); ?>);">
 			<div class="section-content">
 				<div class="panel-container">
-					<section class="panel-section click-panels" style="background-image: url(<?php the_field('panels_background'); ?>);">
+					<section class="panel-section click-panels">
 						<div class="section-content">
 							<div class="panel-container primary-panels">
 								<div class="panel panel-1 js-active">
@@ -37,7 +37,7 @@ Template Name: Join us
 									<?php
 									$pp1b1 = get_field('primary_panel_1_button_1_text');
 									if( !empty($pp1b1) ): ?>
-									<a href="<?php the_field('primary_panel_1_button_1_link'); ?>" class="button button--center button-expand"><?php the_field('primary_panel_1_button_1_text'); ?></a>
+									<a href="<?php the_field('primary_panel_1_button_1_link'); ?>" class="button button--center"><?php the_field('primary_panel_1_button_1_text'); ?></a>
 									<?php endif;
 									$pp1b2 = get_field('primary_panel_1_button_2_text');
 									if( !empty($pp1b2) ): ?>
@@ -63,11 +63,11 @@ Template Name: Join us
 											<?php
 											$pricebutton3 = get_field('tertiary_panel_1_button_text');
 											if( !empty($pricebutton3) ): ?>
-											<a href="<?php the_field('tertiary_panel_1_button_link'); ?>" class="button button--center button-expand"><?php the_field('tertiary_panel_1_button_text'); ?></a>
+											<a href="<?php the_field('tertiary_panel_1_button_link'); ?>" class="button button--center button--join-us"><?php the_field('tertiary_panel_1_button_text'); ?></a>
 											<?php endif;
 											$pricebutton4 = get_field('tertiary_panel_1_button_text_2');
 											if( !empty($pricebutton4) ): ?>
-											<a href="<?php the_field('tertiary_panel_1_button_link_2'); ?>" class="button button--center button-expand"><?php the_field('tertiary_panel_1_button_text_2'); ?></a>
+											<a href="<?php the_field('tertiary_panel_1_button_link_2'); ?>" class="button button--center button--join-us"><?php the_field('tertiary_panel_1_button_text_2'); ?></a>
 											<?php endif; ?>
 										</div>
 									</div>
@@ -79,11 +79,11 @@ Template Name: Join us
 											<?php
 											$pricebutton5 = get_field('tertiary_panel_2_button_text');
 											if( !empty($pricebutton5) ): ?>
-											<a href="<?php the_field('tertiary_panel_2_button_link'); ?>" class="button button--center button-expand"><?php the_field('tertiary_panel_2_button_text'); ?></a>
+											<a href="<?php the_field('tertiary_panel_2_button_link'); ?>" class="button button--center button--join-us"><?php the_field('tertiary_panel_2_button_text'); ?></a>
 											<?php endif;
 											$pricebutton6 = get_field('tertiary_panel_2_button_text_2');
 											if( !empty($pricebutton6) ): ?>
-											<a href="<?php the_field('tertiary_panel_2_button_link_2'); ?>" class="button button--center button-expand"><?php the_field('tertiary_panel_2_button_text_2'); ?></a>
+											<a href="<?php the_field('tertiary_panel_2_button_link_2'); ?>" class="button button--center button--join-us"><?php the_field('tertiary_panel_2_button_text_2'); ?></a>
 											<?php endif; ?>
 										</div>
 
@@ -99,14 +99,14 @@ Template Name: Join us
 		<section class="row-full" style="background-image: url(<?php the_field('prices_section_bg_1'); ?>);">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<div class="map-text price-panels panel--border col-sm-12">
+					<div class="map-text price-text price-panels panel--border col-sm-12">
 						<p><?php the_field('prices_subtitle1'); ?></p>
 						<div>
 							<?php $loop = new WP_Query( array( 'post_type' => 'prices', 'posts_per_page' => -1 , 'orderby' => 'date', 'order' => 'ASC', 'meta_key' => 'price_type',
 				'meta_value'	=> 'Regular membership' ) ); ?>
 							<div class="narrow prices-section regular-membership">
 								<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-								<div class="price-slide small-col-md-4 small-col-xs-12">
+								<div class="price-slide small-col-md-4 small-col-sm-6 small-col-xs-12">
 									<div class="price-slide-inner">
 										<span class="classes-primary small-font caps"><?php the_field('price_classes'); ?></span>
 										<span class="contract small-font"><?php the_field('price_contract'); ?></span>
@@ -141,14 +141,14 @@ Template Name: Join us
 		<section class="row-full" style="background-image: url(<?php the_field('prices_section_bg_2'); ?>);">
 			<div class="section-content">
 				<div class="panel-container panel-container--border col-sm-12">
-					<div class="map-text panel--border col-sm-12">
+					<div class="map-text price-text panel--border col-sm-12">
 						<p><?php the_field('prices_subtitle2'); ?></p>
 						<?php $loop = new WP_Query( array( 'post_type' => 'prices', 'posts_per_page' => -1 , 'orderby' => 'date', 'order' => 'ASC', 'meta_key' => 'price_type',
 			'meta_value'	=> 'Class pack' ) ); ?>
 						<div class="narrow prices-section class-pack">
 							<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-							<div class="price-slide small-col-md-3 small-col-xs-12">
+							<div class="price-slide small-col-md-3 small-col-sm-4 small-col-xs-12">
 								<div class="price-slide-inner">
 									<span class="classes-primary small-font caps"><?php the_field('price_classes'); ?></span>
 									<span class="contract caps small-font"><?php the_field('price_contract'); ?></span>

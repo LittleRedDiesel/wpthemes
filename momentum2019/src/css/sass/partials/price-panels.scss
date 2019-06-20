@@ -11,11 +11,23 @@
 
   .classes-primary {
     margin-bottom: 2.5rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     letter-spacing: 0.2rem;
     line-height: 2.4rem;
     padding-right: 1rem;
     font-family: $font-family-headings;
+
+    @include media-above($break-large) {
+      font-size: 1.5rem;
+    }
+
+    @include media-above($break-wide) {
+      font-size: 2rem;
+    }
+
+    .class-pack  & {
+      min-height: 76px;
+    }
   }
 
   .contract {
@@ -46,6 +58,10 @@
   .classes-secondary {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+
+    .class-pack  & {
+      min-height: 48px;
+    }
   }
 
   .lightgrey {

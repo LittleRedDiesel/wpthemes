@@ -2,7 +2,7 @@
 
 	<main role="main" aria-label="Content" class="error-page search-page">
 		<div class="wrap-content container-fluid">
-			<div class="row">
+			<div class="row-full">
 				<section class="col-lg-2 tags-container">
 
 				</section>
@@ -20,7 +20,7 @@
 				<!-- /section -->
 			</div>
 
-			<div class="row">
+			<div class="row-full">
 				<section class="col-lg-2 tags-container">
 
 				</section>

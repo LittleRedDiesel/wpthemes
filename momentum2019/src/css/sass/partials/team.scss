@@ -18,11 +18,12 @@
       margin: 0 auto;
       margin-bottom: 3.1rem;
       align-self: flex-start;
-      max-width: 50%;
+      max-width: 70%;
 
       @include media-above($break-large) {
         margin: 0 0 3.25rem 0;
         order: initial;
+        max-width: 50%;
       }
     }
 
@@ -44,6 +45,7 @@
         margin-bottom: 5rem;
         line-height: 1;
         order: initial;
+        margin-top: auto;
       }
     }
 
@@ -73,7 +75,7 @@
     .title {
       font-family: $font-family-headings;
       order: 1;
-      text-align: center;
+      text-align: left;
       margin-bottom: 3.1rem;
 
       @include media-above($break-large) {
@@ -103,6 +105,11 @@
         order: initial;
         line-height: 3.3rem;
         width: auto;
+        margin-top: auto;
+      }
+
+      .team-further & {
+        margin-top: initial;
       }
     }
 
@@ -140,6 +147,11 @@
 
     .list-item {
       margin-bottom: 9.25rem;
+
+      p.quote,
+      .contact-email {
+        margin-top: initial;
+      }
     }
 
     &.visible {

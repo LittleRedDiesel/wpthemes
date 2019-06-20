@@ -38,7 +38,7 @@
       margin-bottom: 1.5rem;
 
       @include media-above($break-large) {
-        margin-bottom: 13.5rem;
+        margin-bottom: 7rem;
       }
 
       .meet-the-team & {
@@ -48,5 +48,13 @@
 
     .panel-button & {
       margin-bottom: 4rem;
+    }
+
+    a {
+      color: $grey;
+
+      &:hover {
+        color: $lightgrey;
+      }
     }
 }

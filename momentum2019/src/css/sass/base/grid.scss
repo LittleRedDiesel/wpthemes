@@ -42,7 +42,7 @@ $half-gutter-width: $flexboxgrid-gutter-width * .5;
 .narrow {
   box-sizing: border-box;
   @include flexbox();
-  @include flex(0, 1, auto);
+  @include flex(0, 1, 100%);
   @include flex-direction(row);
   @include flex-wrap(wrap);
   margin-right: $gutter-compensation * 0.5;
@@ -52,7 +52,7 @@ $half-gutter-width: $flexboxgrid-gutter-width * .5;
 .row {
   box-sizing: border-box;
   @include flexbox();
-  @include flex(0, 1, auto);
+  @include flex(0, 1, 100%);
   @include flex-direction(row);
   @include flex-wrap(wrap);
   margin-right: $gutter-compensation;
@@ -63,7 +63,7 @@ $half-gutter-width: $flexboxgrid-gutter-width * .5;
   background-size: cover;
   box-sizing: border-box;
   @include flexbox();
-  @include flex(0, 1, auto);
+  @include flex(0, 1, 100%);
   @include flex-direction(row);
   @include flex-wrap(wrap);
 

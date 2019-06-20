@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <main role="main" aria-label="Content" class="error-page search-page">
-		<div class="wrap-content container-fluid section-content">
-			<div class="row">
+		<div class="wrap-content container-fluid section-content col-xs-12">
+			<div class="row-full">
 				<section class="col-lg-2 tags-container">
 					<h2 class="tags-title">Sort by tags</h2>
 					<div class="sidebar-widget">
@@ -24,7 +24,7 @@
 				</section>
 			<!-- /section -->
 			</div>
-			<div class="row">
+			<div class="row-full">
 				<section class="col-lg-2 tags-container">
 
 				</section>

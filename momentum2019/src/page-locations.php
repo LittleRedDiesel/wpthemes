@@ -16,32 +16,12 @@ Template Name: Locations
         </div>
         <div class="map panel panel--border col-md-6 col-sm-12">
           <?php
-
-            $args = array(
-                'post_type'      => 'locations',
-                'posts_per_page' => -1,
-            );
-
-            $the_query = new WP_Query($args);
-
             echo "<div class='map-wrapper'><div class='acf-map'>";
-
-            while ( $the_query->have_posts() ) : $the_query->the_post();
-            $location = get_field('location_lat');
-
-            if( !empty($location) ) {
-
           ?>
-
-            <div class="marker" data-lat="<?php the_field('location_lat'); ?>" data-lng="<?php the_field('location_long'); ?>"></div>
-
+            <div class="marker" data-lat="<?php the_field('map_lat_1'); ?>" data-lng="<?php the_field('map_long_1'); ?>"></div>
           <?php
-
-          }
-          endwhile;
           echo '</div></div>';
           wp_reset_postdata();
-
           ?>
         </div>
       </div>
@@ -52,12 +32,20 @@ Template Name: Locations
       <div class="panel-container panel-container--border col-sm-12">
         <div class="map-text panel panel--border col-md-6 col-sm-12">
           <p><?php the_field('map_section_address2'); ?></p>
+          <div class="panel-extra">
+            <span><?php the_field('map_section_extra_text'); ?></span>
+            <?php the_field('map_section_extra'); ?>
+          </div>
         </div>
         <div class="map panel panel--border col-md-6 col-sm-12">
-            <div class="map-wrapper">
-              <div class='acf-map--empty'>
-              </div>
-            </div>
+          <?php
+            echo "<div class='map-wrapper'><div class='acf-map'>";
+          ?>
+            <div class="marker" data-lat="<?php the_field('map_lat_2'); ?>" data-lng="<?php the_field('map_long_2'); ?>"></div>
+          <?php
+          echo '</div></div>';
+          wp_reset_postdata();
+          ?>
         </div>
       </div>
     </div>

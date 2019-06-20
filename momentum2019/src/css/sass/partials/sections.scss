@@ -48,8 +48,12 @@
   h2, p {
     font-size: 2.8rem;
 
+    @include media-above($break-small) {
+      font-size: 4rem;
+    }
+
     @include media-above($break-large) {
-      font-size: 5.6rem;
+      font-size: 5.4rem;
     }
   }
 
@@ -61,6 +65,10 @@
     font-family: $font-family-headings;
     text-transform: uppercase;
     margin: 0;
+
+    @include media-above($break-large) {
+      padding-top: 1.7rem;
+    }
   }
 
   .panel-container--full-page & {
@@ -101,7 +109,7 @@
 
     .price-slide-inner {
       display: flex;
-      flex: 1 1 auto;
+      flex: 1 1 100%;
       flex-direction: column;
       background: $black;
       color: $white;

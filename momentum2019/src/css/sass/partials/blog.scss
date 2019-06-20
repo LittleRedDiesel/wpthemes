@@ -33,7 +33,9 @@
     @include media-above($break-large) {
       font-size: 5.6rem;
     }
+  }
 
+  .post-title a {
     &:hover {
       text-decoration: none;
       color: $grey;

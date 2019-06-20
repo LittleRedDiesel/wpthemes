@@ -1,0 +1,30 @@
+.single-post-content {
+  .post {
+    h1, h2, h3, h4, b, strong {
+      color: $black;
+      text-transform: uppercase;
+    }
+
+    strong {
+      font-size: 1.7rem;
+    }
+
+     p, span {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+     }
+  }
+}
+
+
+.page-template-page-info {
+  h1.panel-heading.panel-heading--large {
+    font-size: 3.5rem;
+    line-height: 4rem;
+
+    @include media-above($break-large) {
+      font-size: 5.6rem;
+      line-height: 5rem;
+    }
+  }
+}

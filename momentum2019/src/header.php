@@ -14,8 +14,12 @@
 		<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 
 		<?php wp_head(); ?>
+		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/lib/masonry.pkgd.min.js"></script>
+		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/lib/imagesloaded.pkgd.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/conditionizr.js/4.1.0/conditionizr.js"></script>
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/scripts.js"></script>
+		<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBc4ePmRzjvngPriEIh2WWOVkizllZFShQ&#038;v=3.exp&#038;&#038;ver=3'></script>
+		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/modules/maps.js"></script>
 		<script>
 		// conditionizr.com
 		// configure environment tests
@@ -51,7 +55,7 @@
 					<div class="nav-container">
 						<!-- nav -->
 						<nav class="nav" id="site-navigation" role="navigation">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Mnmtm_Logo_01.gif" /></a>
+							<a class="logo-img-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Mnmtm_Logo_01.gif" /></a>
 							<div id="responsive-menu">
 								<?php html5blank_nav(); ?>
 							</div>

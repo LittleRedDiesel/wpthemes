@@ -32,8 +32,12 @@ form.search {
 
 // Search page styles
 .search-page {
+  .col-sm-12 {
+    width: 100%;
+  }
 
   .copytext {
+
     h1 {
       margin-top: 6rem;
     }

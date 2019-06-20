@@ -2,7 +2,7 @@
 
 	<main role="main" aria-label="Content">
 		<div class="wrap-content container-fluid section-content">
-			<div class="row">
+			<div class="row-full">
 				<!-- section -->
 				<section class="col-lg-2 tags-container">
 					<h2 class="tags-title">Sort by tags</h2>
@@ -10,7 +10,7 @@
 						<?php if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'widget-area-2' ) ) ?>
 					</div>
 				</section>
-				<section class="col-lg-8 col-sm-12 single-post-content">
+				<section class="col-lg-8 col-md-12 single-post-content">
 				<!-- section -->
 
 				<?php if ( have_posts() ) : while (have_posts() ) : the_post(); ?>
@@ -28,7 +28,7 @@
 
 						<!-- post title -->
 						<h1 class="post-title">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+							<?php the_title(); ?>
 						</h1>
 						<!-- /post title -->
 
@@ -38,12 +38,6 @@
 						</span>	<!-- /post details -->
 
 						<?php the_content(); // Dynamic Content. ?>
-
-						<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>' ); // Separated by commas with a line break at the end. ?>
-
-						<p><?php esc_html_e( 'Categorised in: ', 'html5blank' ); the_category( ', ' ); // Separated by commas. ?></p>
-
-						<p><?php esc_html_e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
 
 						<?php edit_post_link(); // Always handy to have Edit Post Links available. ?>
 
@@ -66,7 +60,7 @@
 
 				</section>
 		</div>
-		<div class="row">
+		<div class="row-full">
 			<section class="col-lg-2 tags-container">
 
 			</section>

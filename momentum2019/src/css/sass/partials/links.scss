@@ -37,8 +37,12 @@
     margin: 5rem auto 1rem;
     justify-content: center;
 
-    @include media-above($break-large) {
-      width: auto;
+    @include media-above($break-medium) {
+      width: 100%;
+      max-width: 43rem;
+    }
+
+    @include media-above($break-wide) {
       width: 43rem;
       margin: 10rem auto 1rem;
     }
@@ -56,6 +60,7 @@
     margin-top: 6.5rem;
     margin-bottom: 3.75rem;
   }
+
 }
 
 .menu-link {

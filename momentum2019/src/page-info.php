@@ -22,7 +22,7 @@ Template Name: Information page
               </div>
             </section>
             <section class="row-full">
-              <div class="section-content">
+              <div class="section-content col-md-12">
 
                 <div class="entry-content info-content">
                 <?php the_content(); ?>

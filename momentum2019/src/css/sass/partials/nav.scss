@@ -17,10 +17,10 @@
   overflow-y: scroll;
 
   @include media-above($break-large) {
+    background-color: rgba($black, 0.3);
     max-width: $flexboxgrid-max-width;
     width: 100%;
     height: 62px;
-    background-color: transparent;
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
@@ -30,8 +30,14 @@
     left: 50%;
     right: 0;
     transform: translateX(-50%);
-    overflow-y: initial;
+    overflow: hidden;
     z-index: 999;
+  }
+
+  .logo-img-link {
+    min-width: 8.8rem;
+    display: flex;
+    align-items: center;
   }
 
   .logo-img {
@@ -58,6 +64,7 @@
 
     &.join-cta {
       flex-direction: row;
+      border: none;
     }
   }
 
@@ -72,7 +79,7 @@
 
     @include media-above($break-wide) {
       color: $white;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 
     &:hover {
@@ -146,7 +153,7 @@
     background-color: $white;
     color: $black;
     font-size: 2rem;
-    min-height: initial;
+    min-height: inherit;
     letter-spacing: 0.15rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -154,7 +161,7 @@
     @include media-above($break-large) {
       padding: 1rem 1.6rem;
       color: $white;
-      background-color: rgba($black, 0.7);
+      background-color: transparent;
       font-size: 1.1rem;
       margin: 0;
       align-items: center;
@@ -202,15 +209,5 @@
     img {
       height: 100%;
     }
-  }
-}
-
-.nav-container {
-  @include media-above($break-large) {
-    background-color: rgba($black, 0.3);
-    width: 100%;
-    position: fixed;
-    height: 62px;
-    z-index: 999;
   }
 }

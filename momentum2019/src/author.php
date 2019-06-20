@@ -2,7 +2,7 @@
 
 <main role="main" aria-label="Content" class="error-page search-page">
 		<div class="wrap-content container-fluid section-content">
-			<div class="row">
+			<div class="row-full">
 				<section class="col-lg-2 tags-container">
 					<h2 class="tags-title">Sort by tags</h2>
 					<div class="sidebar-widget">

@@ -7,7 +7,7 @@
 .footer {
   display: flex;
   padding-top: 1.25rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   border-top: 1px solid $grey;
 
   @include media-above($break-large) {
@@ -16,6 +16,7 @@
 
   .footer-inner {
     display: flex;
+    width: 100%;
     flex-flow: row wrap;
     max-width: $flexboxgrid-max-width;
     margin-right: auto;
@@ -63,24 +64,32 @@
 
   .site-footer-navigation {
     border-bottom: 1px solid $grey;
+    margin-left: 1.15rem;
+    margin-right: 1.15rem;
 
     @include media-above($break-large) {
       border-bottom: none;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
   .copyright {
     align-self: flex-end;
+    margin-left: 1.15rem;
+    margin-right: 1.15rem;
 
     @include media-above($break-large) {
       padding-left: $half-gutter-width;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     p {
       width: 100%;
       border-top: 1px solid $grey;
       margin: 3rem 0 0;
-      padding-top: 0.8rem;
+      padding-top: 0.3rem;
       padding-bottom: 1rem * .5;
       font-size: 1.25rem;
       text-transform: uppercase;
@@ -99,14 +108,14 @@
     margin-bottom: 11rem;
 
     @include media-above($break-large) {
-      margin-bottom: 17rem;
+      margin-bottom: 7rem;
     }
 
     li {
       padding-left: 2.5rem;
 
       &:first-of-type {
-        padding-left: 0;
+        padding-left: 1.15rem;
       }
     }
   }

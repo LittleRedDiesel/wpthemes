@@ -45,7 +45,7 @@ Template Name: Team
 
     					if( !empty($qualifications_list) ): ?>
 
-    						<a href="" class="qualifications-trigger lightbox-trigger" data-lightbox="qual-<?php echo $post->ID ?>">View Qualifications >></a>
+    						<a href="" class="qualifications-trigger lightbox-trigger" data-lightbox="qual-<?php echo $post->ID ?>">View qualifications >></a>
     						<div class="qualifications qual-<?php echo $post->ID ?>">
     							<?php
     								$teamimage = get_field('team_photo');
