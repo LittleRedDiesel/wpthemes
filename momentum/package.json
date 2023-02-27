@@ -54,7 +54,7 @@
     "spin.js": "^2.3.2",
     "susy": "^2.2.12",
     "timeago": "^1.5.2",
-    "webpack": "^1.13.1",
+    "webpack": "^1.15.0",
     "wp-ajax-page-loader": "^0.2.1"
   },
   "scripts": {
