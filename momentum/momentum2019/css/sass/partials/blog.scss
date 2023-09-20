@@ -1,0 +1,117 @@
+.blog-page,
+.single-post {
+  padding-top: 7.25rem;
+
+  .tags-container {
+    margin-top: 0;
+  }
+
+  .blog-post,
+  .single-post-content article {
+      display: flex;
+      flex-flow: column wrap;
+      padding-bottom: 7.25rem;
+      padding-top: 2.25rem;
+      border-bottom: 1px solid $grey;
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+  }
+
+  .post-title,
+  .post-title a {
+    font-family: $font-family-base;
+    font-size: 3.1rem;
+    margin-bottom: 4.3rem;
+    transition: 0.3s;
+
+    @include media-above($break-large) {
+      font-size: 5.6rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $grey;
+    }
+  }
+
+  .meta {
+    border-bottom: 1px solid $grey;
+    border-top: 1px solid $grey;
+    margin-bottom: 2.25rem;
+    text-transform: uppercase;
+    padding: 2px 0;
+
+    a {
+      transition: 0.3s;
+
+      &:hover {
+        text-decoration: none;
+        color: $grey;
+      }
+    }
+  }
+
+  .post-content,
+  .post-content p,
+  .post-content a {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  .post-content a {
+    transition: 0.3s;
+
+    &:hover {
+        color: $grey;
+        text-decoration: none;
+    }
+  }
+
+  .pagination {
+    margin-bottom: 5.75rem;
+    font-size: 1.8rem;
+  }
+}
+
+.error-page {
+  padding-top: 4rem;
+  padding-bottom: 8.875rem;
+
+  .copytext {
+    h1 {
+      margin-top: 11rem;
+      margin-bottom: 5.6rem;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 3.6rem;
+      margin-bottom: 8.6rem;
+    }
+  }
+}
+
+.tags-container {
+  display: none;
+
+  @include media-above($break-large) {
+    display: flex;
+    margin-top: 3.25rem;
+    flex-direction: column;
+  }
+
+  .tags-title {
+    font-size: 1.3rem;
+    font-family: $font-family-base;
+    border-bottom: 1px solid $grey;
+    border-top: 1px solid $grey;
+    line-height: 1.8rem;
+    margin-bottom: 1.75rem;
+  }
+}

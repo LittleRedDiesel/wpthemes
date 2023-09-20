@@ -1,0 +1,58 @@
+/**
+ * partials/sidebar
+ * ---
+ */
+
+
+.sidebar {
+
+  .widget_collapsarch {
+    h3 {
+      font-size: 1rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid $grey;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .collapsing.archives.list {
+    margin: 0 0 9.3rem 0;
+    list-style-type: none;
+    padding-left: 0;
+
+    ul {
+      list-style-type: none;
+    }
+    li a {
+      padding-bottom: 1rem;
+      display: inline-flex;
+      transition: 0.3s;
+
+      &:hover {
+        text-decoration: none;
+        color: $grey;
+      }
+    }
+  }
+}
+
+// Tags
+.st-tag-cloud {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+
+  li {
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+
+    a {
+      transition: 0.3s;
+
+      &:hover {
+        text-decoration: none;
+        color: $grey;
+      }
+    }
+  }
+}

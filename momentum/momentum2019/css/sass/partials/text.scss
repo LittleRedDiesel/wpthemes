@@ -1,0 +1,52 @@
+.lined-text {
+    background: linear-gradient(transparent, transparent 37px, $grey 37px);
+    background-size: 38px 38px;
+    border-top: 1px solid $grey;
+    margin: 1rem 0;
+
+    p {
+      line-height: 2.4rem;
+      margin: 0;
+
+      @include media-above($break-medium) {
+        max-width: 80%;
+      }
+    }
+
+    &--large {
+      @include media-above($break-medium) {
+        background: linear-gradient(transparent, transparent 57px, $grey 59px);
+        background-size: 59px 59px;
+        border-top: 1px solid $grey;
+        border-bottom: 0;
+      }
+    }
+
+    &.full-width {
+      p {
+        max-width: 100%;
+        font-size: 1.5rem;
+
+        @include media-above($break-large) {
+          font-size: 2rem;
+          line-height: 3.75rem;
+        }
+      }
+    }
+
+    &.spacer-bottom {
+      margin-bottom: 1.5rem;
+
+      @include media-above($break-large) {
+        margin-bottom: 7rem;
+      }
+
+      .meet-the-team & {
+        margin-bottom: 6.25rem;
+      }
+    }
+
+    .panel-button & {
+      margin-bottom: 4rem;
+    }
+}

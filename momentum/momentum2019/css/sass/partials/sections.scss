@@ -1,0 +1,135 @@
+.section-content {
+  width: 100%;
+  max-width: $flexboxgrid-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.col-xs-12 {
+    .bw-list-item & {
+      padding-right: 0;
+
+      .lined-text p {
+        padding-right: 1.2rem;
+      }
+    }
+  }
+}
+
+// Hero banner
+.hero {
+  padding-top: 8.1rem;
+  height: 25rem;
+
+  @include media-above($break-large) {
+    min-height: 39rem;
+  }
+
+  .image-mask {
+    max-width: $flexboxgrid-max-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &--subhero {
+    padding-top: 4.8rem;
+  }
+}
+
+
+// Map sections
+.map-text {
+  padding-left: 0;
+  min-height: 20rem;
+
+  @include media-above($break-large) {
+    min-height: 44rem;
+  }
+
+  h2, p {
+    font-size: 2.8rem;
+
+    @include media-above($break-small) {
+      font-size: 4rem;
+    }
+
+    @include media-above($break-large) {
+      font-size: 5.4rem;
+    }
+  }
+
+  h2 {
+    margin-bottom: 4.3rem;
+  }
+
+  p {
+    font-family: $font-family-headings;
+    text-transform: uppercase;
+    margin: 0;
+    
+    @include media-above($break-large) {
+      padding-top: 1.7rem;
+    }
+  }
+
+  .panel-container--full-page & {
+    padding-top: 0.5rem;
+    @include media-above($break-large) {
+      min-height: 42rem;
+    }
+  }
+}
+
+.section-footer {
+  padding-bottom: 9rem;
+  line-height: 1.9rem;
+  max-width: $flexboxgrid-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    color: $grey;
+    font-size: 1.3rem;
+  }
+}
+
+.prices-section {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 5rem;
+  margin-bottom: 6.2rem;
+
+  @include media-above($break-large) {
+    margin-top: 6.25rem;
+    margin-bottom: 7.7rem;
+  }
+
+  .price-slide {
+    margin-bottom: 1rem;
+    display: flex;
+
+    .price-slide-inner {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      background: $black;
+      color: $white;
+      padding-top: 1rem;
+      padding-left: 1rem;
+
+      .sister-buttons {
+        padding-right: 1rem;
+      }
+
+      .button {
+        border: 1px solid $white;
+        background-color: $white;
+        color: $black;
+
+        &:hover {
+          background-color: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+}

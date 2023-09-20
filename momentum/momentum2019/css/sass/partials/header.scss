@@ -1,0 +1,34 @@
+/**
+ * partials/header
+ * ---
+ */
+
+
+// Header container
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-above($break-large) {
+    position: static;
+  }
+
+  h1 {
+    position: relative;
+
+    span {
+      position: absolute;
+      left: -9999px;
+    }
+  }
+}
+
+.icon-menu {
+  @include media-above($break-large) {
+    display: none;
+  }
+}

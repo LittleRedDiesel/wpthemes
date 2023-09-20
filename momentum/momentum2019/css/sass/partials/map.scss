@@ -1,0 +1,93 @@
+.map-wrapper {
+	width: 100%;
+	position: relative;
+	clear: both;
+
+	.acf-map {
+		border-radius:999px;
+		-moz-border-radius:999px;
+		-webkit-border-radius:999px;
+		-o-border-radius:999px;
+		overflow:hidden;
+		width: 280px;
+		height: 280px;
+		margin: 0 auto;
+		position:fixed;
+
+    &--empty {
+      background-color: $black;
+      border-radius:999px;
+      -moz-border-radius:999px;
+      -webkit-border-radius:999px;
+      -o-border-radius:999px;
+      overflow:hidden;
+      margin: 0 auto;
+			width: 280px;
+			height: 280px;
+
+			@include media-above($break-large) {
+				width: 350px;
+	      height: 350px;
+			}
+
+			@include media-above($break-wide) {
+				width: 555px;
+	      height: 555px;
+			}
+    }
+
+		@include media-above($break-large) {
+			width: 350px;
+			height: 350px;
+		}
+
+		@include media-above($break-wide) {
+			width: 555px;
+			height: 555px;
+			margin: 0 auto 0;
+		}
+
+		.page-template-page-home & {
+			@include media-above($break-large) {
+				margin: 60px auto 0;
+			}
+		}
+
+		> div {
+			height: 160%!important;
+			width: 160%!important;
+			top: -30%!important;
+			left: -30%!important;
+
+			@include media-above($break-large) {
+				height: 100%;
+				width: 100%;
+				left: 0;
+				top: 0;
+			}
+		}
+
+		&.map-large {
+			margin-top: 50px;
+
+			@include media-above($break-large) {
+				width: 830px;
+				height: 830px;
+			}
+		}
+	}
+
+	/* fixes potential theme css conflict */
+	.acf-map img {
+	   max-width: inherit !important;
+	}
+
+	.overlay {
+	   position: absolute;
+	   width: 100%;
+	   height: 100%;
+	   top: 0;
+	   z-index: 999;
+	}
+
+}

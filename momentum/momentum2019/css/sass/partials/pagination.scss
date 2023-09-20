@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+
+  .page-numbers {
+    display: none;
+    transition: 0.3s;
+
+    &.prev,
+    &.next {
+      display: block;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $grey;
+    }
+  }
+}

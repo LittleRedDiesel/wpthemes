@@ -1,0 +1,58 @@
+// Generic layout styles
+
+.bg-black {
+  background-color: $black;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}
+
+.page-banner-image {
+  width: 100%;
+  max-width: 1440px;
+  position: absolute;
+  top: 0;
+  height: 25rem;
+
+  @include media-above($break-large) {
+    height: 47rem;
+  }
+}
+
+.site-content {
+    padding-top: 25rem;
+
+    @include media-above($break-large) {
+      padding-top: 47rem;
+    }
+}
+
+.bg-gradient {
+  @include media-above($break-large) {
+    background: linear-gradient(to right, white 0%,white 50%,#000000 50%,black 50%,black 100%);
+  }
+}
+
+article {
+  border-top: 1px solid $grey;
+  padding-top: 2rem;
+
+  .archive & {
+    margin-bottom: 5rem;
+
+    & > h3 {
+      margin-bottom: 2rem;
+    }
+
+    & > span {
+      display: block;
+      margin-bottom: 1rem;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

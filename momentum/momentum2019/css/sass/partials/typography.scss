@@ -1,0 +1,186 @@
+h1, h2, h3 {
+  font-family: $font-family-headings;
+  word-break: break-word;
+}
+
+.title-pad-top {
+  padding-top: 0.3rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+
+  @include media-above($break-small) {
+    font-size: 5.6rem;
+  }
+
+  @include media-above($break-large) {
+    font-size: 7rem;
+  }
+
+  @include media-above($break-wide) {
+    font-size: 8.75rem;
+  }
+
+  &.page-title {
+    margin-top: 8.25rem;
+    margin-bottom: 14rem;
+  }
+
+  &.panel-heading {
+    font-size: 3.1rem;
+    margin-bottom: 3.75rem;
+
+    @include media-above($break-large) {
+      padding-right: 10%;
+      font-size: 5.6rem;
+    }
+
+    &--large {
+      font-size: 5.6rem;
+      line-height: 5rem;
+      margin-bottom: 3.75rem;
+
+      @include media-above($break-large) {
+        padding-right: 10%;
+        font-size: 5.6rem;
+      }
+    }
+  }
+
+  &.tag-title {
+    font-size: 3rem;
+    margin-bottom: 3.75rem;
+  }
+
+  &.hide-mob {
+    display: none;
+
+    @include media-above($break-large) {
+      display: flex;
+    }
+  }
+}
+
+h2 {
+  font-size: 2.2rem;
+
+  @include media-above($break-large) {
+    font-size: 5rem;
+  }
+
+  &.line-break--bottom {
+    margin-bottom: 3.12rem;
+
+    @include media-above($break-large) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &.panel-title {
+    margin-bottom: 3.5rem;
+  }
+
+  &.team-title {
+      font-size: 5rem;
+      padding-top: 2rem;
+
+      @include media-above($break-large) {
+        border-bottom: 1px solid $grey;
+        padding-bottom: 2rem;
+      }
+  }
+
+  &.title-margin-btm {
+    margin-bottom: 5.5rem;
+  }
+}
+
+h3 {
+  font-size: 3.12rem;
+}
+
+p {
+  font-size: 1.5rem;
+
+  &.no-margin {
+    margin: 0;
+  }
+
+  &.quote {
+    border-top: 1px solid $grey;
+    font-size: 3.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    padding-top: 2rem;
+
+    @include media-above($break-large) {
+      padding-top: 0;
+      border-top: 0;
+      margin-top: 5rem;
+    }
+  }
+
+  &.title {
+    font-size: 2.4rem;
+    font-family: $font-family-headings;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+
+    @include media-above($break-large) {
+      margin-bottom: 5rem;
+      font-size: 3.1rem;
+    }
+
+    &--member {
+      margin-top: 0;
+      font-size: 2.5rem;
+      border-top: 1px solid $grey;
+      border-bottom: 1px solid $grey;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &.testimonial {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+
+    @include media-above($break-large) {
+      font-size: 2.4rem;
+      line-height: 3.75rem;
+      padding-right: 3rem;
+    }
+  }
+
+  &.text-large {
+    font-size: 2.5rem;
+    margin: 0;
+    padding-right: 15%;
+
+    @include media-above($break-large) {
+      font-size: 5.6rem;
+    }
+
+    .row-contact & {
+      padding-right: 0;
+      margin-bottom: 5rem;
+
+      @include media-above($break-large) {
+        padding-right: 15%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &.border-top {
+    border-top: 1px solid $grey;
+    margin-top: 8.75rem;
+    margin-bottom: 6.2rem;
+    padding-right: 0;
+  }
+}

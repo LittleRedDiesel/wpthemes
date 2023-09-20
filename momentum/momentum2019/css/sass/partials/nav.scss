@@ -1,0 +1,212 @@
+/**
+ * partials/nav
+ * ---
+ * Menus
+ */
+
+.nav {
+  display: none;
+  background-color: $black;
+  color: $white;
+  padding-top: 4rem;
+  top: 64px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid $lightgrey;
+  overflow-y: scroll;
+
+  @include media-above($break-large) {
+    background-color: rgba($black, 0.3);
+    max-width: $flexboxgrid-max-width;
+    width: 100%;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    overflow: hidden;
+    z-index: 999;
+  }
+
+  .logo-img-link {
+    min-width: 8.8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-img {
+    width: 75px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+
+    @include media-above($break-large) {
+      display: flex;
+    }
+  }
+
+  > div {
+    @include media-above($break-large) {
+      display: flex;
+      flex: 1 1 auto;
+    }
+  }
+
+  > a {
+    display: flex;
+    flex-direction: column;
+
+    &.join-cta {
+      flex-direction: row;
+    }
+  }
+
+  a {
+    color: $grey;
+    font-size: 2.5rem;
+    transition: 0.3s;
+
+    @include media-above($break-large) {
+      font-size: 1.2rem;
+    }
+
+    @include media-above($break-wide) {
+      color: $white;
+      font-size: 1.3rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      @include media-above($break-large) {
+        color: $grey;
+      }
+    }
+  }
+
+  ul {
+    background-color: $black;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-top: 1px solid $grey;
+
+    @include media-above($break-large) {
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 auto;
+      border: none;
+    }
+
+    li {
+      border-bottom: 1px solid $grey;
+      padding: 1rem;
+
+      @include media-above($break-large) {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 0;
+      }
+
+      &:first-of-type {
+        @include media-above($break-wide) {
+          padding-left: 3.8rem;
+        }
+      }
+
+      &:last-of-type {
+        @include media-above($break-wide) {
+          padding-right: 3.8rem;
+        }
+      }
+
+      a {
+        letter-spacing: 0.1rem;
+
+        @include media-above($break-wide) {
+          letter-spacing: 0.2rem;
+        }
+      }
+
+      &.current-menu-item {
+        a {
+          color: $grey;
+        }
+      }
+    }
+  }
+
+  .button {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: $white;
+    color: $black;
+    font-size: 2rem;
+    min-height: inherit;
+    letter-spacing: 0.15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @include media-above($break-large) {
+      padding: 1rem 1.6rem;
+      color: $white;
+      background-color: transparent;
+      font-size: 1.1rem;
+      margin: 0;
+      align-items: center;
+
+      &:hover {
+        color: $black;
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.mobile-menu {
+  height: 4rem;
+  display: flex;
+
+  @include media-above($break-large) {
+    display: none;
+  }
+
+  > a {
+    height: 100%;
+
+    .menu-img {
+      display: flex;
+
+      @include media-above($break-large) {
+        display: none;
+      }
+    }
+  }
+
+  .menu-link {
+    display: flex;
+
+    @include media-above($break-large) {
+      display: none;
+    }
+  }
+
+  .mobile-logo {
+    padding: 0.5rem 0;
+    background-color: rgba($black, 0.3);
+
+    img {
+      height: 100%;
+    }
+  }
+}

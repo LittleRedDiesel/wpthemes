@@ -1,0 +1,159 @@
+.team-list {
+  .list-item {
+    margin-bottom: 0;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    padding-bottom: 7rem;
+
+    @include media-above($break-large) {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 2rem;
+      padding-bottom: 0;
+    }
+
+    .team-img {
+      order: 2;
+      margin: 0 auto;
+      margin-bottom: 3.1rem;
+      align-self: flex-start;
+      max-width: 50%;
+
+      @include media-above($break-large) {
+        margin: 0 0 3.25rem 0;
+        order: initial;
+      }
+    }
+
+    .title,
+    .quote {
+      text-transform: uppercase;
+      font-size: 3rem;
+    }
+
+    .quote {
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 4.5rem;
+      order: 4;
+      line-height: 3.6rem;
+      border-top: 0;
+
+      @include media-above($break-large) {
+        margin-bottom: 5rem;
+        line-height: 1;
+        order: initial;
+        margin-top: auto;
+      }
+    }
+
+    .detail {
+      order: 3;
+
+      @include media-above($break-large) {
+        order: initial;
+      }
+    }
+
+    .detail,
+    .detail p,
+    .contact-email,
+    .contact-tel {
+      font-size: 1.3rem;
+      margin-bottom: 0;
+      margin-top: 0;
+      line-height: 2.5rem;
+
+      @include media-above($break-large) {
+        font-size: 1.75rem;
+        line-height: 2.2rem;
+      }
+    }
+
+    .title {
+      font-family: $font-family-headings;
+      order: 1;
+      text-align: center;
+      margin-bottom: 3.1rem;
+
+      @include media-above($break-large) {
+        margin-bottom: 2.6rem;
+        order: initial;
+        text-align: left;
+      }
+    }
+
+    .detail {
+      margin-bottom: 3.75rem;
+
+      @include media-above($break-large) {
+        margin-bottom: 4.3rem;
+      }
+    }
+
+    .contact-email {
+      order: 5;
+      display: inline-block;
+      word-break: break-word;
+      width: 100%;
+      border-top: 1px solid $grey;
+      border-bottom: 1px solid $grey;
+
+      @include media-above($break-large) {
+        order: initial;
+        line-height: 3.3rem;
+        width: auto;
+        margin-top: auto;
+      }
+
+      .team-further & {
+        margin-top: initial;
+      }
+    }
+
+    .contact-tel {
+      margin-bottom: 2.2rem;
+      order: 6;
+      border-bottom: 1px solid $grey;
+
+      @include media-above($break-large) {
+        order: initial;
+        line-height: 3.3rem;
+      }
+    }
+
+    .qualifications-trigger {
+      font-size: 1.3rem;
+      color: $grey;
+      order: 7;
+      transition: 0.3s;
+
+      @include media-above($break-large) {
+        order: initial;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: rgba($grey, 0.4);
+      }
+    }
+  }
+}
+
+.team-further {
+    display: none;
+
+    .list-item {
+      margin-bottom: 9.25rem;
+
+      p.quote,
+      .contact-email {
+        margin-top: initial;
+      }
+    }
+
+    &.visible {
+      display: flex;
+    }
+}

@@ -1,0 +1,125 @@
+/**
+ * partials/footer
+ * ---
+ */
+
+
+.footer {
+  display: flex;
+  padding-top: 1.25rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid $grey;
+
+  @include media-above($break-large) {
+    padding-top: 1.6rem;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: $flexboxgrid-max-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    &.menu-footer {
+      width: 100%;
+
+      @include media-above($break-large) {
+        padding-right: $half-gutter-width;
+      }
+
+      li {
+        border-top: 1px solid $grey;
+        font-size: 2rem;
+        padding-top: 0;
+        padding-bottom: 1rem * .5;
+      }
+    }
+  }
+
+  .site-footer-navigation,
+  .copyright {
+    display: flex;
+    flex: 1 1 100%;
+
+    @include media-above($break-large) {
+      flex: 1 1 50%;
+    }
+
+    .footer-logo-img {
+      width: 70%;
+
+      @include media-above($break-large) {
+        width: 50%;
+      }
+    }
+  }
+
+  .site-footer-navigation {
+    border-bottom: 1px solid $grey;
+
+    @include media-above($break-large) {
+      border-bottom: none;
+    }
+  }
+
+  .copyright {
+    align-self: flex-end;
+
+    @include media-above($break-large) {
+      padding-left: $half-gutter-width;
+    }
+
+    p {
+      width: 100%;
+      border-top: 1px solid $grey;
+      margin: 3rem 0 0;
+      padding-top: 0.3rem;
+      padding-bottom: 1rem * .5;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      text-align: left;
+
+      @include media-above($break-large) {
+        text-align: right;
+        margin: 0;
+      }
+    }
+  }
+
+  .affiliates {
+    display: flex;
+    flex: 1 1 100%;
+    margin-bottom: 11rem;
+
+    @include media-above($break-large) {
+      margin-bottom: 7rem;
+    }
+
+    li {
+      padding-left: 2.5rem;
+
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .menu-item {
+    a {
+      transition: 0.3s;
+      font-size: 1.3rem;
+
+      &:hover {
+        text-decoration: none;
+        color: $grey;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+/**
+ * styles.scss
+ * ---
+ * Main `sass` file. Import here `sass` files
+ */
+
+@import "mixins/flex";
+
+// Configuration variables and settings
+@import "settings/library";
+
+// Base styles
+@import "base/colors";
+@import "base/variables";
+@import "base/grid";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/icons";
+
+// Partials
+@import "partials/reset";
+@import "partials/wordpress";
+@import "partials/utils";
+@import "partials/layout";
+@import "partials/panel";
+@import "partials/header";
+@import "partials/nav";
+@import "partials/sidebar";
+@import "partials/footer";
+@import "partials/print";
+@import "partials/sections";
+@import "partials/links";
+@import "partials/typography";
+@import "partials/text";
+@import "partials/forms";
+@import "partials/price-panels";
+@import "partials/lists";
+@import "partials/team";
+@import "partials/lightbox";
+@import "partials/blog";
+@import "partials/pagination";
+@import "partials/search";
+@import "partials/map";
+@import "partials/single-post";
